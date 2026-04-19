@@ -1,0 +1,501 @@
+session_id,customer_id,session_date,duration_minutes,pages_viewed,device_type,referral_source,cart_abandonment
+S0001,C001,2023-01-16,25,12,Desktop,Google Search,0
+S0002,C001,2023-01-20,18,8,Mobile,Direct,0
+S0003,C001,2023-02-10,32,15,Desktop,Email,0
+S0004,C001,2023-02-15,22,10,Tablet,Social Media,0
+S0005,C001,2023-03-05,28,14,Desktop,Google Search,0
+S0006,C001,2023-03-10,15,7,Mobile,Direct,0
+S0007,C001,2023-04-12,35,18,Desktop,Email,0
+S0008,C001,2023-05-18,20,9,Mobile,Social Media,0
+S0009,C001,2023-06-22,30,16,Desktop,Google Search,0
+S0010,C001,2023-07-28,25,12,Tablet,Direct,0
+S0011,C001,2023-09-08,28,14,Desktop,Email,0
+S0012,C001,2023-10-12,18,8,Mobile,Social Media,0
+S0013,C001,2023-11-18,32,15,Desktop,Google Search,0
+S0014,C001,2023-12-22,22,11,Tablet,Direct,0
+S0015,C002,2023-02-22,15,6,Mobile,Social Media,0
+S0016,C002,2023-03-28,8,3,Mobile,Direct,1
+S0017,C002,2023-04-02,12,5,Mobile,Google Search,0
+S0018,C002,2023-05-12,6,2,Mobile,Social Media,1
+S0019,C002,2023-06-18,10,4,Mobile,Direct,1
+S0020,C003,2023-01-10,35,18,Desktop,Google Search,0
+S0021,C003,2023-01-15,28,14,Desktop,Email,0
+S0022,C003,2023-02-18,40,22,Desktop,Direct,0
+S0023,C003,2023-02-20,32,16,Desktop,Google Search,0
+S0024,C003,2023-03-22,38,20,Desktop,Email,0
+S0025,C003,2023-03-25,25,12,Tablet,Social Media,0
+S0026,C003,2023-04-28,42,24,Desktop,Google Search,0
+S0027,C003,2023-04-30,30,15,Desktop,Direct,0
+S0028,C003,2023-06-08,35,18,Desktop,Email,0
+S0029,C003,2023-07-15,28,14,Tablet,Google Search,0
+S0030,C003,2023-08-22,40,21,Desktop,Direct,0
+S0031,C003,2023-10-02,32,16,Desktop,Email,0
+S0032,C003,2023-11-12,38,19,Desktop,Google Search,0
+S0033,C003,2023-12-18,25,13,Tablet,Social Media,0
+S0034,C004,2023-03-14,8,3,Mobile,Social Media,1
+S0035,C004,2023-03-15,5,2,Mobile,Direct,0
+S0036,C004,2023-04-01,4,1,Mobile,Social Media,1
+S0037,C005,2023-03-02,30,15,Desktop,Google Search,0
+S0038,C005,2023-03-05,25,12,Desktop,Email,0
+S0039,C005,2023-04-08,32,16,Desktop,Direct,0
+S0040,C005,2023-04-10,28,14,Tablet,Google Search,0
+S0041,C005,2023-05-12,35,18,Desktop,Email,0
+S0042,C005,2023-05-15,22,11,Desktop,Social Media,0
+S0043,C005,2023-06-18,30,15,Desktop,Google Search,0
+S0044,C005,2023-08-02,28,14,Tablet,Direct,0
+S0045,C005,2023-09-15,32,16,Desktop,Email,0
+S0046,C005,2023-10-30,25,13,Desktop,Google Search,0
+S0047,C005,2023-12-12,30,15,Desktop,Social Media,0
+S0048,C006,2023-04-06,6,2,Mobile,Social Media,1
+S0049,C006,2023-04-10,4,1,Mobile,Direct,0
+S0050,C006,2023-05-05,5,2,Mobile,Social Media,1
+S0051,C007,2023-01-24,28,14,Desktop,Google Search,0
+S0052,C007,2023-01-28,22,11,Desktop,Email,0
+S0053,C007,2023-03-02,32,16,Desktop,Direct,0
+S0054,C007,2023-03-05,25,12,Tablet,Google Search,0
+S0055,C007,2023-04-18,35,18,Desktop,Email,0
+S0056,C007,2023-04-20,28,14,Desktop,Social Media,0
+S0057,C007,2023-05-25,30,15,Desktop,Google Search,0
+S0058,C007,2023-07-10,25,12,Tablet,Direct,0
+S0059,C007,2023-08-22,32,16,Desktop,Email,0
+S0060,C007,2023-10-08,28,14,Desktop,Google Search,0
+S0061,C007,2023-11-20,30,15,Desktop,Social Media,0
+S0062,C007,2023-12-25,25,13,Tablet,Direct,0
+S0063,C008,2023-05-12,38,20,Desktop,Google Search,0
+S0064,C008,2023-05-15,32,16,Desktop,Email,0
+S0065,C008,2023-06-18,42,23,Desktop,Direct,0
+S0066,C008,2023-06-20,35,18,Desktop,Google Search,0
+S0067,C008,2023-07-22,40,21,Desktop,Email,0
+S0068,C008,2023-07-25,28,14,Tablet,Social Media,0
+S0069,C008,2023-08-28,45,25,Desktop,Google Search,0
+S0070,C008,2023-08-30,32,16,Desktop,Direct,0
+S0071,C008,2023-10-05,38,19,Desktop,Email,0
+S0072,C008,2023-11-15,35,18,Tablet,Google Search,0
+S0073,C008,2023-12-22,40,22,Desktop,Direct,0
+S0074,C009,2023-03-20,5,2,Mobile,Social Media,1
+S0075,C009,2023-03-22,4,1,Mobile,Direct,0
+S0076,C009,2023-04-12,3,1,Mobile,Social Media,1
+S0077,C010,2023-02-18,28,14,Desktop,Google Search,0
+S0078,C010,2023-02-20,22,11,Desktop,Email,0
+S0079,C010,2023-04-02,32,16,Desktop,Direct,0
+S0080,C010,2023-04-05,25,12,Tablet,Google Search,0
+S0081,C010,2023-05-22,35,18,Desktop,Email,0
+S0082,C010,2023-05-25,28,14,Desktop,Social Media,0
+S0083,C010,2023-06-30,30,15,Desktop,Google Search,0
+S0084,C010,2023-08-15,25,12,Tablet,Direct,0
+S0085,C010,2023-10-02,32,16,Desktop,Email,0
+S0086,C010,2023-11-18,28,14,Desktop,Google Search,0
+S0087,C010,2023-12-25,30,15,Desktop,Social Media,0
+S0088,C011,2023-06-05,40,22,Desktop,Google Search,0
+S0089,C011,2023-06-08,35,18,Desktop,Email,0
+S0090,C011,2023-07-12,45,25,Desktop,Direct,0
+S0091,C011,2023-07-15,38,20,Desktop,Google Search,0
+S0092,C011,2023-08-18,42,23,Desktop,Email,0
+S0093,C011,2023-08-22,30,15,Tablet,Social Media,0
+S0094,C011,2023-09-25,48,27,Desktop,Google Search,0
+S0095,C011,2023-09-28,35,18,Desktop,Direct,0
+S0096,C011,2023-10-25,40,21,Desktop,Email,0
+S0097,C011,2023-12-05,38,19,Tablet,Google Search,0
+S0098,C011,2023-12-20,42,24,Desktop,Direct,0
+S0099,C012,2023-04-25,6,2,Mobile,Social Media,1
+S0100,C012,2023-04-28,4,1,Mobile,Direct,0
+S0101,C012,2023-05-18,3,1,Mobile,Social Media,1
+S0102,C013,2023-02-02,28,14,Desktop,Google Search,0
+S0103,C013,2023-02-05,22,11,Desktop,Email,0
+S0104,C013,2023-03-15,32,16,Desktop,Direct,0
+S0105,C013,2023-03-18,25,12,Tablet,Google Search,0
+S0106,C013,2023-04-30,35,18,Desktop,Email,0
+S0107,C013,2023-05-02,28,14,Desktop,Social Media,0
+S0108,C013,2023-06-12,30,15,Desktop,Google Search,0
+S0109,C013,2023-08-02,25,12,Tablet,Direct,0
+S0110,C013,2023-09-15,32,16,Desktop,Email,0
+S0111,C013,2023-11-02,28,14,Desktop,Google Search,0
+S0112,C013,2023-12-18,30,15,Desktop,Social Media,0
+S0113,C014,2023-07-10,5,2,Mobile,Social Media,1
+S0114,C014,2023-07-12,4,1,Mobile,Direct,0
+S0115,C014,2023-08-02,3,1,Mobile,Social Media,1
+S0116,C015,2023-05-18,35,18,Desktop,Google Search,0
+S0117,C015,2023-05-22,28,14,Desktop,Email,0
+S0118,C015,2023-06-25,40,21,Desktop,Direct,0
+S0119,C015,2023-06-28,32,16,Desktop,Google Search,0
+S0120,C015,2023-08-02,38,20,Desktop,Email,0
+S0121,C015,2023-08-05,25,12,Tablet,Social Media,0
+S0122,C015,2023-09-08,42,23,Desktop,Google Search,0
+S0123,C015,2023-09-12,30,15,Desktop,Direct,0
+S0124,C015,2023-10-22,35,18,Desktop,Email,0
+S0125,C015,2023-12-08,32,16,Tablet,Google Search,0
+S0126,C015,2023-12-26,38,20,Desktop,Direct,0
+S0127,C016,2023-03-28,6,2,Mobile,Social Media,1
+S0128,C016,2023-03-30,4,1,Mobile,Direct,0
+S0129,C016,2023-04-15,3,1,Mobile,Social Media,1
+S0130,C017,2023-02-15,28,14,Desktop,Google Search,0
+S0131,C017,2023-02-18,22,11,Desktop,Email,0
+S0132,C017,2023-04-22,32,16,Desktop,Direct,0
+S0133,C017,2023-04-25,25,12,Tablet,Google Search,0
+S0134,C017,2023-06-05,35,18,Desktop,Email,0
+S0135,C017,2023-06-08,28,14,Desktop,Social Media,0
+S0136,C017,2023-07-20,30,15,Desktop,Google Search,0
+S0137,C017,2023-09-05,25,12,Tablet,Direct,0
+S0138,C017,2023-10-22,32,16,Desktop,Email,0
+S0139,C017,2023-12-10,28,14,Desktop,Google Search,0
+S0140,C018,2023-08-10,42,23,Desktop,Google Search,0
+S0141,C018,2023-08-12,35,18,Desktop,Email,0
+S0142,C018,2023-09-25,48,27,Desktop,Direct,0
+S0143,C018,2023-09-28,40,21,Desktop,Google Search,0
+S0144,C018,2023-10-12,45,25,Desktop,Email,0
+S0145,C018,2023-10-15,32,16,Tablet,Social Media,0
+S0146,C018,2023-11-18,50,28,Desktop,Google Search,0
+S0147,C018,2023-11-22,38,20,Desktop,Direct,0
+S0148,C018,2023-12-02,42,24,Desktop,Email,0
+S0149,C018,2023-12-25,40,22,Tablet,Google Search,0
+S0150,C019,2023-06-22,5,2,Mobile,Social Media,1
+S0151,C019,2023-06-25,4,1,Mobile,Direct,0
+S0152,C019,2023-07-08,3,1,Mobile,Social Media,1
+S0153,C020,2023-04-12,28,14,Desktop,Google Search,0
+S0154,C020,2023-04-15,22,11,Desktop,Email,0
+S0155,C020,2023-05-25,32,16,Desktop,Direct,0
+S0156,C020,2023-05-28,25,12,Tablet,Google Search,0
+S0157,C020,2023-07-08,35,18,Desktop,Email,0
+S0158,C020,2023-07-12,28,14,Desktop,Social Media,0
+S0159,C020,2023-08-25,30,15,Desktop,Google Search,0
+S0160,C020,2023-10-12,25,12,Tablet,Direct,0
+S0161,C020,2023-12-02,32,16,Desktop,Email,0
+S0162,C021,2023-01-08,38,20,Desktop,Google Search,0
+S0163,C021,2023-01-12,32,16,Desktop,Email,0
+S0164,C021,2023-02-22,42,23,Desktop,Direct,0
+S0165,C021,2023-02-25,35,18,Desktop,Google Search,0
+S0166,C021,2023-04-05,40,21,Desktop,Email,0
+S0167,C021,2023-04-08,28,14,Tablet,Social Media,0
+S0168,C021,2023-05-18,45,25,Desktop,Google Search,0
+S0169,C021,2023-05-20,32,16,Desktop,Direct,0
+S0170,C021,2023-07-02,38,19,Desktop,Email,0
+S0171,C021,2023-08-18,35,18,Tablet,Google Search,0
+S0172,C021,2023-10-05,42,24,Desktop,Direct,0
+S0173,C021,2023-11-22,40,21,Desktop,Email,0
+S0174,C021,2023-12-25,38,20,Desktop,Google Search,0
+S0175,C022,2023-09-05,5,2,Mobile,Social Media,1
+S0176,C022,2023-09-08,4,1,Mobile,Direct,0
+S0177,C022,2023-09-22,3,1,Mobile,Social Media,1
+S0178,C023,2023-05-30,28,14,Desktop,Google Search,0
+S0179,C023,2023-06-02,22,11,Desktop,Email,0
+S0180,C023,2023-07-15,32,16,Desktop,Direct,0
+S0181,C023,2023-07-18,25,12,Tablet,Google Search,0
+S0182,C023,2023-09-02,35,18,Desktop,Email,0
+S0183,C023,2023-09-05,28,14,Desktop,Social Media,0
+S0184,C023,2023-10-20,30,15,Desktop,Google Search,0
+S0185,C023,2023-12-05,25,12,Tablet,Direct,0
+S0186,C024,2023-03-18,6,2,Mobile,Social Media,1
+S0187,C024,2023-03-20,4,1,Mobile,Direct,0
+S0188,C024,2023-04-05,3,1,Mobile,Social Media,1
+S0189,C025,2023-07-25,40,21,Desktop,Google Search,0
+S0190,C025,2023-07-28,35,18,Desktop,Email,0
+S0191,C025,2023-09-02,45,25,Desktop,Direct,0
+S0192,C025,2023-09-05,38,20,Desktop,Google Search,0
+S0193,C025,2023-10-15,42,23,Desktop,Email,0
+S0194,C025,2023-10-18,30,15,Tablet,Social Media,0
+S0195,C025,2023-11-25,48,27,Desktop,Google Search,0
+S0196,C025,2023-11-28,35,18,Desktop,Direct,0
+S0197,C025,2023-12-12,40,22,Desktop,Email,0
+S0198,C025,2023-12-26,38,20,Tablet,Google Search,0
+S0199,C026,2023-02-10,5,2,Mobile,Social Media,1
+S0200,C026,2023-02-12,4,1,Mobile,Direct,0
+S0201,C027,2023-10-08,32,16,Desktop,Google Search,0
+S0202,C027,2023-10-12,28,14,Desktop,Email,0
+S0203,C027,2023-11-22,38,20,Desktop,Direct,0
+S0204,C027,2023-11-25,30,15,Desktop,Google Search,0
+S0205,C027,2023-12-15,35,18,Desktop,Email,0
+S0206,C027,2023-12-18,25,12,Tablet,Social Media,0
+S0207,C028,2023-06-18,42,23,Desktop,Google Search,0
+S0208,C028,2023-06-20,35,18,Desktop,Email,0
+S0209,C028,2023-08-02,48,27,Desktop,Direct,0
+S0210,C028,2023-08-02,40,21,Desktop,Google Search,0
+S0211,C028,2023-09-12,45,25,Desktop,Email,0
+S0212,C028,2023-09-15,32,16,Tablet,Social Media,0
+S0213,C028,2023-10-25,50,28,Desktop,Google Search,0
+S0214,C028,2023-10-28,38,20,Desktop,Direct,0
+S0215,C028,2023-12-02,42,24,Desktop,Email,0
+S0216,C028,2023-12-25,40,22,Tablet,Google Search,0
+S0217,C029,2023-04-22,5,2,Mobile,Social Media,1
+S0218,C029,2023-04-25,4,1,Mobile,Direct,0
+S0219,C029,2023-05-12,3,1,Mobile,Social Media,1
+S0220,C030,2023-08-28,28,14,Desktop,Google Search,0
+S0221,C030,2023-08-30,22,11,Desktop,Email,0
+S0222,C030,2023-10-08,32,16,Desktop,Direct,0
+S0223,C030,2023-10-12,25,12,Tablet,Google Search,0
+S0224,C030,2023-11-25,35,18,Desktop,Email,0
+S0225,C030,2023-11-28,28,14,Desktop,Social Media,0
+S0226,C030,2023-12-20,30,15,Desktop,Google Search,0
+S0227,C031,2023-01-20,35,18,Desktop,Google Search,0
+S0228,C031,2023-01-25,30,15,Desktop,Email,0
+S0229,C031,2023-03-08,42,23,Desktop,Direct,0
+S0230,C031,2023-03-10,32,16,Desktop,Google Search,0
+S0231,C031,2023-04-18,38,20,Desktop,Email,0
+S0232,C031,2023-04-22,28,14,Tablet,Social Media,0
+S0233,C031,2023-06-02,45,25,Desktop,Google Search,0
+S0234,C031,2023-06-05,35,18,Desktop,Direct,0
+S0235,C031,2023-07-18,40,21,Desktop,Email,0
+S0236,C031,2023-09-02,38,19,Tablet,Google Search,0
+S0237,C031,2023-10-20,42,24,Desktop,Direct,0
+S0238,C031,2023-12-08,40,22,Desktop,Email,0
+S0239,C032,2023-11-08,5,2,Mobile,Social Media,1
+S0240,C032,2023-11-10,4,1,Mobile,Direct,0
+S0241,C033,2023-07-12,28,14,Desktop,Google Search,0
+S0242,C033,2023-07-15,22,11,Desktop,Email,0
+S0243,C033,2023-09-02,32,16,Desktop,Direct,0
+S0244,C033,2023-09-02,25,12,Tablet,Google Search,0
+S0245,C033,2023-10-15,35,18,Desktop,Email,0
+S0246,C033,2023-10-18,28,14,Desktop,Social Media,0
+S0247,C033,2023-12-02,30,15,Desktop,Google Search,0
+S0248,C033,2023-12-20,25,12,Tablet,Direct,0
+S0249,C034,2023-05-25,6,2,Mobile,Social Media,1
+S0250,C034,2023-05-28,4,1,Mobile,Direct,0
+S0251,C035,2023-04-02,38,20,Desktop,Google Search,0
+S0252,C035,2023-04-05,32,16,Desktop,Email,0
+S0253,C035,2023-05-15,45,25,Desktop,Direct,0
+S0254,C035,2023-05-18,35,18,Desktop,Google Search,0
+S0255,C035,2023-06-30,42,23,Desktop,Email,0
+S0256,C035,2023-07-02,30,15,Tablet,Social Media,0
+S0257,C035,2023-08-12,48,27,Desktop,Google Search,0
+S0258,C035,2023-08-15,38,20,Desktop,Direct,0
+S0259,C035,2023-09-30,42,24,Desktop,Email,0
+S0260,C035,2023-11-15,40,22,Tablet,Google Search,0
+S0261,C035,2023-12-26,45,25,Desktop,Direct,0
+S0262,C036,2023-09-20,5,2,Mobile,Social Media,1
+S0263,C036,2023-09-22,4,1,Mobile,Direct,0
+S0264,C037,2023-02-25,28,14,Desktop,Google Search,0
+S0265,C037,2023-02-28,22,11,Desktop,Email,0
+S0266,C037,2023-04-10,32,16,Desktop,Direct,0
+S0267,C037,2023-04-12,25,12,Tablet,Google Search,0
+S0268,C037,2023-05-25,35,18,Desktop,Email,0
+S0269,C037,2023-05-28,28,14,Desktop,Social Media,0
+S0270,C037,2023-07-12,30,15,Desktop,Google Search,0
+S0271,C037,2023-09-02,25,12,Tablet,Direct,0
+S0272,C037,2023-10-18,32,16,Desktop,Email,0
+S0273,C037,2023-12-05,28,14,Desktop,Google Search,0
+S0274,C038,2023-12-05,40,21,Desktop,Google Search,0
+S0275,C038,2023-12-08,35,18,Desktop,Email,0
+S0276,C038,2023-12-18,45,25,Desktop,Direct,0
+S0277,C038,2023-12-20,38,20,Desktop,Google Search,0
+S0278,C039,2023-08-12,5,2,Mobile,Social Media,1
+S0279,C039,2023-08-15,4,1,Mobile,Direct,0
+S0280,C040,2023-06-30,28,14,Desktop,Google Search,0
+S0281,C040,2023-07-02,22,11,Desktop,Email,0
+S0282,C040,2023-08-15,32,16,Desktop,Direct,0
+S0283,C040,2023-08-18,25,12,Tablet,Google Search,0
+S0284,C040,2023-10-02,35,18,Desktop,Email,0
+S0285,C040,2023-10-05,28,14,Desktop,Social Media,0
+S0286,C040,2023-11-20,30,15,Desktop,Google Search,0
+S0287,C040,2023-12-26,25,12,Tablet,Direct,0
+S0288,C041,2023-04-18,38,20,Desktop,Google Search,0
+S0289,C041,2023-04-20,32,16,Desktop,Email,0
+S0290,C041,2023-06-02,45,25,Desktop,Direct,0
+S0291,C041,2023-06-05,35,18,Desktop,Google Search,0
+S0292,C041,2023-07-15,42,23,Desktop,Email,0
+S0293,C041,2023-07-18,30,15,Tablet,Social Media,0
+S0294,C041,2023-08-30,48,27,Desktop,Google Search,0
+S0295,C041,2023-09-02,38,20,Desktop,Direct,0
+S0296,C041,2023-10-15,42,24,Desktop,Email,0
+S0297,C041,2023-12-02,40,22,Tablet,Google Search,0
+S0298,C041,2023-12-26,45,25,Desktop,Direct,0
+S0299,C042,2023-10-22,5,2,Mobile,Social Media,1
+S0300,C042,2023-10-25,4,1,Mobile,Direct,0
+S0301,C043,2023-02-02,28,14,Desktop,Google Search,0
+S0302,C043,2023-02-05,22,11,Desktop,Email,0
+S0303,C043,2023-03-18,32,16,Desktop,Direct,0
+S0304,C043,2023-03-20,25,12,Tablet,Google Search,0
+S0305,C043,2023-05-05,35,18,Desktop,Email,0
+S0306,C043,2023-05-08,28,14,Desktop,Social Media,0
+S0307,C043,2023-06-20,30,15,Desktop,Google Search,0
+S0308,C043,2023-08-08,25,12,Tablet,Direct,0
+S0309,C043,2023-10-02,32,16,Desktop,Email,0
+S0310,C043,2023-11-18,28,14,Desktop,Google Search,0
+S0311,C043,2023-12-26,30,15,Desktop,Social Media,0
+S0312,C044,2023-08-02,6,2,Mobile,Social Media,1
+S0313,C044,2023-08-05,4,1,Mobile,Direct,0
+S0314,C045,2023-05-08,40,21,Desktop,Google Search,0
+S0315,C045,2023-05-12,35,18,Desktop,Email,0
+S0316,C045,2023-06-25,48,27,Desktop,Direct,0
+S0317,C045,2023-06-28,40,21,Desktop,Google Search,0
+S0318,C045,2023-08-08,45,25,Desktop,Email,0
+S0319,C045,2023-08-12,32,16,Tablet,Social Media,0
+S0320,C045,2023-09-25,52,29,Desktop,Google Search,0
+S0321,C045,2023-09-28,42,24,Desktop,Direct,0
+S0322,C045,2023-11-12,48,27,Desktop,Email,0
+S0323,C045,2023-12-26,45,25,Tablet,Google Search,0
+S0324,C046,2023-03-12,5,2,Mobile,Social Media,1
+S0325,C046,2023-03-15,4,1,Mobile,Direct,0
+S0326,C047,2023-11-28,28,14,Desktop,Google Search,0
+S0327,C047,2023-11-30,22,11,Desktop,Email,0
+S0328,C047,2023-12-12,32,16,Desktop,Direct,0
+S0329,C047,2023-12-15,25,12,Tablet,Google Search,0
+S0330,C048,2023-10-02,42,23,Desktop,Google Search,0
+S0331,C048,2023-10-05,35,18,Desktop,Email,0
+S0332,C048,2023-11-15,50,28,Desktop,Direct,0
+S0333,C048,2023-11-18,42,23,Desktop,Google Search,0
+S0334,C048,2023-12-25,48,27,Desktop,Email,0
+S0335,C048,2023-12-28,38,20,Tablet,Social Media,0
+S0336,C049,2023-02-18,5,2,Mobile,Social Media,1
+S0337,C049,2023-02-22,4,1,Mobile,Direct,0
+S0338,C050,2023-08-22,28,14,Desktop,Google Search,0
+S0339,C050,2023-08-25,22,11,Desktop,Email,0
+S0340,C050,2023-10-08,32,16,Desktop,Direct,0
+S0341,C050,2023-10-10,25,12,Tablet,Google Search,0
+S0342,C050,2023-11-22,35,18,Desktop,Email,0
+S0343,C050,2023-11-25,28,14,Desktop,Social Media,0
+S0344,C050,2023-12-26,30,15,Desktop,Google Search,0
+S0345,C051,2023-06-08,40,21,Desktop,Google Search,0
+S0346,C051,2023-06-10,35,18,Desktop,Email,0
+S0347,C051,2023-07-22,48,27,Desktop,Direct,0
+S0348,C051,2023-07-25,40,21,Desktop,Google Search,0
+S0349,C051,2023-09-05,45,25,Desktop,Email,0
+S0350,C051,2023-09-08,32,16,Tablet,Social Media,0
+S0351,C051,2023-10-20,52,29,Desktop,Google Search,0
+S0352,C051,2023-10-22,42,24,Desktop,Direct,0
+S0353,C051,2023-11-25,48,27,Desktop,Email,0
+S0354,C051,2023-12-26,45,25,Tablet,Google Search,0
+S0355,C052,2023-04-28,5,2,Mobile,Social Media,1
+S0356,C052,2023-04-30,4,1,Mobile,Direct,0
+S0357,C053,2023-12-15,32,16,Desktop,Google Search,0
+S0358,C053,2023-12-18,28,14,Desktop,Email,0
+S0359,C053,2023-12-26,38,20,Desktop,Direct,0
+S0360,C054,2023-10-10,6,2,Mobile,Social Media,1
+S0361,C054,2023-10-12,4,1,Mobile,Direct,0
+S0362,C055,2023-01-18,42,23,Desktop,Google Search,0
+S0363,C055,2023-01-20,35,18,Desktop,Email,0
+S0364,C055,2023-03-02,50,28,Desktop,Direct,0
+S0365,C055,2023-03-05,42,23,Desktop,Google Search,0
+S0366,C055,2023-04-15,48,27,Desktop,Email,0
+S0367,C055,2023-04-18,35,18,Tablet,Social Media,0
+S0368,C055,2023-05-30,55,30,Desktop,Google Search,0
+S0369,C055,2023-06-02,45,25,Desktop,Direct,0
+S0370,C055,2023-07-15,50,28,Desktop,Email,0
+S0371,C055,2023-09-02,48,27,Tablet,Google Search,0
+S0372,C055,2023-10-20,52,29,Desktop,Direct,0
+S0373,C055,2023-12-08,50,28,Desktop,Email,0
+S0374,C056,2023-07-20,5,2,Mobile,Social Media,1
+S0375,C056,2023-07-22,4,1,Mobile,Direct,0
+S0376,C057,2023-05-28,28,14,Desktop,Google Search,0
+S0377,C057,2023-05-30,22,11,Desktop,Email,0
+S0378,C057,2023-07-12,32,16,Desktop,Direct,0
+S0379,C057,2023-07-15,25,12,Tablet,Google Search,0
+S0380,C057,2023-08-30,35,18,Desktop,Email,0
+S0381,C057,2023-09-02,28,14,Desktop,Social Media,0
+S0382,C057,2023-10-18,30,15,Desktop,Google Search,0
+S0383,C057,2023-12-05,25,12,Tablet,Direct,0
+S0384,C058,2023-03-22,42,23,Desktop,Google Search,0
+S0385,C058,2023-03-25,35,18,Desktop,Email,0
+S0386,C058,2023-05-08,50,28,Desktop,Direct,0
+S0387,C058,2023-05-10,42,23,Desktop,Google Search,0
+S0388,C058,2023-06-22,48,27,Desktop,Email,0
+S0389,C058,2023-06-25,35,18,Tablet,Social Media,0
+S0390,C058,2023-08-05,55,30,Desktop,Google Search,0
+S0391,C058,2023-08-08,45,25,Desktop,Direct,0
+S0392,C058,2023-09-30,50,28,Desktop,Email,0
+S0393,C058,2023-11-15,48,27,Tablet,Google Search,0
+S0394,C058,2023-12-26,52,29,Desktop,Direct,0
+S0395,C059,2023-11-12,5,2,Mobile,Social Media,1
+S0396,C059,2023-11-15,4,1,Mobile,Direct,0
+S0397,C060,2023-09-18,28,14,Desktop,Google Search,0
+S0398,C060,2023-09-20,22,11,Desktop,Email,0
+S0399,C060,2023-11-02,32,16,Desktop,Direct,0
+S0400,C060,2023-11-05,25,12,Tablet,Google Search,0
+S0401,C060,2023-12-18,35,18,Desktop,Email,0
+S0402,C060,2023-12-20,28,14,Desktop,Social Media,0
+S0403,C061,2023-03-05,40,21,Desktop,Google Search,0
+S0404,C061,2023-03-08,35,18,Desktop,Email,0
+S0405,C061,2023-04-20,48,27,Desktop,Direct,0
+S0406,C061,2023-04-22,40,21,Desktop,Google Search,0
+S0407,C061,2023-06-05,45,25,Desktop,Email,0
+S0408,C061,2023-06-08,32,16,Tablet,Social Media,0
+S0409,C061,2023-07-20,52,29,Desktop,Google Search,0
+S0410,C061,2023-07-22,42,24,Desktop,Direct,0
+S0411,C061,2023-09-05,48,27,Desktop,Email,0
+S0412,C061,2023-10-22,45,25,Tablet,Google Search,0
+S0413,C061,2023-12-10,50,28,Desktop,Direct,0
+S0414,C062,2023-08-08,5,2,Mobile,Social Media,1
+S0415,C062,2023-08-10,4,1,Mobile,Direct,0
+S0416,C063,2023-06-22,28,14,Desktop,Google Search,0
+S0417,C063,2023-06-25,22,11,Desktop,Email,0
+S0418,C063,2023-08-10,32,16,Desktop,Direct,0
+S0419,C063,2023-08-12,25,12,Tablet,Google Search,0
+S0420,C063,2023-09-30,35,18,Desktop,Email,0
+S0421,C063,2023-10-02,28,14,Desktop,Social Media,0
+S0422,C063,2023-11-18,30,15,Desktop,Google Search,0
+S0423,C063,2023-12-26,25,12,Tablet,Direct,0
+S0424,C064,2023-05-05,6,2,Mobile,Social Media,1
+S0425,C064,2023-05-08,4,1,Mobile,Direct,0
+S0426,C065,2023-12-25,38,20,Desktop,Google Search,0
+S0427,C065,2023-12-28,32,16,Desktop,Email,0
+S0428,C066,2023-10-28,5,2,Mobile,Social Media,1
+S0429,C066,2023-10-30,4,1,Mobile,Direct,0
+S0430,C067,2023-01-12,28,14,Desktop,Google Search,0
+S0431,C067,2023-01-15,22,11,Desktop,Email,0
+S0432,C067,2023-02-25,32,16,Desktop,Direct,0
+S0433,C067,2023-02-28,25,12,Tablet,Google Search,0
+S0434,C067,2023-04-12,35,18,Desktop,Email,0
+S0435,C067,2023-04-15,28,14,Desktop,Social Media,0
+S0436,C067,2023-05-28,30,15,Desktop,Google Search,0
+S0437,C067,2023-07-12,25,12,Tablet,Direct,0
+S0438,C067,2023-09-02,32,16,Desktop,Email,0
+S0439,C067,2023-10-18,28,14,Desktop,Google Search,0
+S0440,C067,2023-12-05,30,15,Desktop,Social Media,0
+S0441,C068,2023-08-02,42,23,Desktop,Google Search,0
+S0442,C068,2023-08-05,35,18,Desktop,Email,0
+S0443,C068,2023-09-18,50,28,Desktop,Direct,0
+S0444,C068,2023-09-20,42,23,Desktop,Google Search,0
+S0445,C068,2023-11-05,48,27,Desktop,Email,0
+S0446,C068,2023-11-08,35,18,Tablet,Social Media,0
+S0447,C068,2023-12-20,55,30,Desktop,Google Search,0
+S0448,C068,2023-12-22,45,25,Desktop,Direct,0
+S0449,C069,2023-05-15,5,2,Mobile,Social Media,1
+S0450,C069,2023-05-18,4,1,Mobile,Direct,0
+S0451,C070,2023-03-28,28,14,Desktop,Google Search,0
+S0452,C070,2023-03-30,22,11,Desktop,Email,0
+S0453,C070,2023-05-12,32,16,Desktop,Direct,0
+S0454,C070,2023-05-15,25,12,Tablet,Google Search,0
+S0455,C070,2023-06-30,35,18,Desktop,Email,0
+S0456,C070,2023-07-02,28,14,Desktop,Social Media,0
+S0457,C070,2023-08-18,30,15,Desktop,Google Search,0
+S0458,C070,2023-10-05,25,12,Tablet,Direct,0
+S0459,C070,2023-12-02,32,16,Desktop,Email,0
+S0460,C071,2023-11-20,40,21,Desktop,Google Search,0
+S0461,C071,2023-11-22,35,18,Desktop,Email,0
+S0462,C071,2023-12-15,48,27,Desktop,Direct,0
+S0463,C071,2023-12-18,40,21,Desktop,Google Search,0
+S0464,C072,2023-09-25,5,2,Mobile,Social Media,1
+S0465,C072,2023-09-28,4,1,Mobile,Direct,0
+S0466,C073,2023-02-10,28,14,Desktop,Google Search,0
+S0467,C073,2023-02-12,22,11,Desktop,Email,0
+S0468,C073,2023-03-25,32,16,Desktop,Direct,0
+S0469,C073,2023-03-28,25,12,Tablet,Google Search,0
+S0470,C073,2023-05-12,35,18,Desktop,Email,0
+S0471,C073,2023-05-15,28,14,Desktop,Social Media,0
+S0472,C073,2023-06-30,30,15,Desktop,Google Search,0
+S0473,C073,2023-08-18,25,12,Tablet,Direct,0
+S0474,C073,2023-10-05,32,16,Desktop,Email,0
+S0475,C073,2023-12-02,28,14,Desktop,Google Search,0
+S0476,C074,2023-08-18,6,2,Mobile,Social Media,1
+S0477,C074,2023-08-20,4,1,Mobile,Direct,0
+S0478,C075,2023-07-02,40,21,Desktop,Google Search,0
+S0479,C075,2023-07-05,35,18,Desktop,Email,0
+S0480,C075,2023-08-18,48,27,Desktop,Direct,0
+S0481,C075,2023-08-20,40,21,Desktop,Google Search,0
+S0482,C075,2023-10-05,45,25,Desktop,Email,0
+S0483,C075,2023-10-08,32,16,Tablet,Social Media,0
+S0484,C075,2023-11-20,52,29,Desktop,Google Search,0
+S0485,C075,2023-11-22,42,24,Desktop,Direct,0
+S0486,C075,2023-12-26,48,27,Desktop,Email,0
+S0487,C076,2023-04-20,5,2,Mobile,Social Media,1
+S0488,C076,2023-04-22,4,1,Mobile,Direct,0
+S0489,C077,2023-12-10,32,16,Desktop,Google Search,0
+S0490,C077,2023-12-12,28,14,Desktop,Email,0
+S0491,C077,2023-12-26,38,20,Desktop,Direct,0
+S0492,C078,2023-10-15,42,23,Desktop,Google Search,0
+S0493,C078,2023-10-18,35,18,Desktop,Email,0
+S0494,C078,2023-12-02,50,28,Desktop,Direct,0
+S0495,C078,2023-12-05,42,23,Desktop,Google Search,0
+S0496,C079,2023-01-28,5,2,Mobile,Social Media,1
+S0497,C079,2023-01-30,4,1,Mobile,Direct,0
+S0498,C080,2023-07-10,28,14,Desktop,Google Search,0
+S0499,C080,2023-07-12,22,11,Desktop,Email,0
+S0500,C080,2023-08-25,32,16,Desktop,Direct,0

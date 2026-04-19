@@ -1,0 +1,1001 @@
+customer_id,signup_date,age,gender,location,subscription_tier,email_opt_in,churned
+C001,2023-01-15,34,F,New York,Premium,1,0
+C002,2023-02-20,28,M,Los Angeles,Basic,1,0
+C003,2023-01-08,45,F,Chicago,Premium,0,0
+C004,2023-03-12,23,M,Houston,Basic,1,1
+C005,2023-02-28,56,F,Phoenix,Standard,1,0
+C006,2023-04-05,31,M,Philadelphia,Basic,0,1
+C007,2023-01-22,29,F,San Antonio,Standard,1,0
+C008,2023-05-10,38,M,San Diego,Premium,1,0
+C009,2023-03-18,42,F,Dallas,Basic,0,1
+C010,2023-02-14,27,M,San Jose,Standard,1,0
+C011,2023-06-01,35,F,Austin,Premium,1,0
+C012,2023-04-22,48,M,Jacksonville,Basic,0,1
+C013,2023-01-30,26,F,Fort Worth,Standard,1,0
+C014,2023-07-08,33,M,Columbus,Basic,1,1
+C015,2023-05-15,51,F,Charlotte,Premium,0,0
+C016,2023-03-25,24,M,San Francisco,Basic,1,1
+C017,2023-02-10,39,F,Indianapolis,Standard,1,0
+C018,2023-08-12,44,M,Seattle,Premium,1,0
+C019,2023-06-20,30,F,Denver,Basic,0,1
+C020,2023-04-08,36,M,Boston,Standard,1,0
+C021,2023-01-05,52,F,El Paso,Premium,1,0
+C022,2023-09-01,25,M,Detroit,Basic,1,1
+C023,2023-05-28,41,F,Nashville,Standard,0,0
+C024,2023-03-14,32,M,Portland,Basic,1,1
+C025,2023-07-22,47,F,Memphis,Premium,1,0
+C026,2023-02-06,22,M,Oklahoma City,Basic,0,1
+C027,2023-10-05,37,F,Las Vegas,Standard,1,0
+C028,2023-06-12,43,M,Louisville,Premium,1,0
+C029,2023-04-18,29,F,Baltimore,Basic,1,1
+C030,2023-08-25,55,M,Milwaukee,Standard,0,0
+C031,2023-01-18,34,F,Albuquerque,Premium,1,0
+C032,2023-11-02,26,M,Tucson,Basic,1,1
+C033,2023-07-08,40,F,Fresno,Standard,1,0
+C034,2023-05-20,31,M,Sacramento,Basic,0,1
+C035,2023-03-30,49,F,Kansas City,Premium,1,0
+C036,2023-09-15,23,M,Mesa,Basic,1,1
+C037,2023-02-22,38,F,Atlanta,Standard,1,0
+C038,2023-12-01,46,M,Omaha,Premium,0,0
+C039,2023-08-08,28,F,Miami,Basic,1,1
+C040,2023-06-25,53,M,Raleigh,Standard,1,0
+C041,2023-04-12,35,F,Colorado Springs,Premium,1,0
+C042,2023-10-18,24,M,Virginia Beach,Basic,0,1
+C043,2023-01-28,42,F,Long Beach,Standard,1,0
+C044,2023-07-30,33,M,Oakland,Basic,1,1
+C045,2023-05-05,50,F,Minneapolis,Premium,1,0
+C046,2023-03-08,27,M,Tampa,Basic,1,1
+C047,2023-11-22,39,F,Tulsa,Standard,0,0
+C048,2023-09-28,45,M,Arlington,Premium,1,0
+C049,2023-02-15,30,F,New Orleans,Basic,1,1
+C050,2023-08-18,54,M,Wichita,Standard,1,0
+C051,2023-06-02,36,F,Cleveland,Premium,1,0
+C052,2023-04-25,22,M,Bakersfield,Basic,0,1
+C053,2023-12-10,41,F,Aurora,Standard,1,0
+C054,2023-10-05,32,M,Anaheim,Basic,1,1
+C055,2023-01-12,48,F,Honolulu,Premium,1,0
+C056,2023-07-15,25,M,Santa Ana,Basic,1,1
+C057,2023-05-22,37,F,Riverside,Standard,0,0
+C058,2023-03-18,44,M,Corpus Christi,Premium,1,0
+C059,2023-11-08,29,F,Lexington,Basic,1,1
+C060,2023-09-12,56,M,Stockton,Standard,1,0
+C061,2023-02-28,34,F,St. Louis,Premium,1,0
+C062,2023-08-02,23,M,Pittsburgh,Basic,0,1
+C063,2023-06-18,40,F,Anchorage,Standard,1,0
+C064,2023-04-30,31,M,Cincinnati,Basic,1,1
+C065,2023-12-20,47,F,Henderson,Premium,1,0
+C066,2023-10-25,26,M,Greensboro,Basic,1,1
+C067,2023-01-08,38,F,Plano,Standard,0,0
+C068,2023-07-28,43,M,Newark,Premium,1,0
+C069,2023-05-10,28,F,Lincoln,Basic,1,1
+C070,2023-03-22,52,M,Orlando,Standard,1,0
+C071,2023-11-15,35,F,Irvine,Premium,1,0
+C072,2023-09-20,24,M,Toledo,Basic,0,1
+C073,2023-02-05,41,F,Jersey City,Standard,1,0
+C074,2023-08-12,33,M,Chula Vista,Basic,1,1
+C075,2023-06-28,49,F,Durham,Premium,1,0
+C076,2023-04-15,27,M,Fort Wayne,Basic,1,1
+C077,2023-12-05,39,F,St. Petersburg,Standard,0,0
+C078,2023-10-10,46,M,Laredo,Premium,1,0
+C079,2023-01-25,30,F,Buffalo,Basic,1,1
+C080,2023-07-05,55,M,Madison,Standard,1,0
+C081,2023-05-18,36,F,Lubbock,Premium,1,0
+C082,2023-03-28,22,M,Chandler,Basic,0,1
+C083,2023-11-30,42,F,Scottsdale,Standard,1,0
+C084,2023-09-05,32,M,Glendale,Basic,1,1
+C085,2023-02-18,48,F,Reno,Premium,1,0
+C086,2023-08-22,25,M,Norfolk,Basic,1,1
+C087,2023-06-08,37,F,Gilbert,Standard,0,0
+C088,2023-04-20,44,M,North Las Vegas,Premium,1,0
+C089,2023-12-15,29,F,Irving,Basic,1,1
+C090,2023-10-28,53,M,Fremont,Standard,1,0
+C091,2023-01-20,34,F,Boise,Premium,1,0
+C092,2023-07-18,23,M,Richmond,Basic,0,1
+C093,2023-05-25,40,F,Spokane,Standard,1,0
+C094,2023-03-10,31,M,Des Moines,Basic,1,1
+C095,2023-11-25,47,F,Montgomery,Premium,1,0
+C096,2023-09-30,26,M,Modesto,Basic,1,1
+C097,2023-02-12,38,F,Fayetteville,Standard,0,0
+C098,2023-08-28,45,M,Tacoma,Premium,1,0
+C099,2023-06-15,28,F,Shreveport,Basic,1,1
+C100,2023-04-02,54,M,Fontana,Standard,1,0
+C101,2023-01-10,33,F,Moreno Valley,Premium,1,0
+C102,2023-07-25,24,M,Akron,Basic,0,1
+C103,2023-05-30,41,F,Yonkers,Standard,1,0
+C104,2023-03-15,32,M,Columbus,Basic,1,0
+C105,2023-11-18,50,F,Augusta,Premium,1,0
+C106,2023-09-22,27,M,Little Rock,Basic,1,1
+C107,2023-02-25,39,F,Amarillo,Standard,0,0
+C108,2023-08-05,46,M,Mobile,Premium,1,0
+C109,2023-06-22,30,F,Huntsville,Basic,1,1
+C110,2023-04-08,57,M,Grand Rapids,Standard,1,0
+C111,2023-12-28,35,F,Salt Lake City,Premium,1,0
+C112,2023-10-15,22,M,Tallahassee,Basic,0,1
+C113,2023-01-30,42,F,Worcester,Standard,1,0
+C114,2023-07-10,31,M,Newport News,Basic,1,0
+C115,2023-05-12,49,F,Knoxville,Premium,1,0
+C116,2023-03-20,26,M,Providence,Basic,1,1
+C117,2023-11-05,38,F,Santa Clarita,Standard,0,0
+C118,2023-09-08,43,M,Fort Lauderdale,Premium,1,0
+C119,2023-02-08,29,F,Brownsville,Basic,1,1
+C120,2023-08-15,52,M,Tempe,Standard,1,0
+C121,2023-06-30,34,F,Jackson,Premium,1,0
+C122,2023-04-18,23,M,Overland Park,Basic,0,1
+C123,2023-12-12,40,F,Cape Coral,Standard,1,0
+C124,2023-10-20,33,M,Garden Grove,Basic,1,0
+C125,2023-01-15,48,F,Oceanside,Premium,1,0
+C126,2023-07-02,25,M,Rancho Cucamonga,Basic,1,1
+C127,2023-05-08,37,F,Santa Rosa,Standard,0,0
+C128,2023-03-25,44,M,Port St. Lucie,Premium,1,0
+C129,2023-11-12,28,F,Chattanooga,Basic,1,1
+C130,2023-09-18,55,M,Ontario,Standard,1,0
+C131,2023-02-20,36,F,Vancouver,Premium,1,0
+C132,2023-08-25,24,M,Springfield,Basic,0,1
+C133,2023-06-05,43,F,Elk Grove,Standard,1,0
+C134,2023-04-12,31,M,Salem,Basic,1,0
+C135,2023-12-22,51,F,Lancaster,Premium,1,0
+C136,2023-10-08,27,M,Pembroke Pines,Basic,1,1
+C137,2023-01-05,40,F,Eugene,Standard,0,0
+C138,2023-07-20,47,M,Peoria,Premium,1,0
+C139,2023-05-15,30,F,Corona,Basic,1,1
+C140,2023-03-02,58,M,Palmdale,Standard,1,0
+C141,2023-11-28,35,F,Surprise,Premium,1,0
+C142,2023-09-25,22,M,Cary,Basic,0,1
+C143,2023-02-15,42,F,Hayward,Standard,1,0
+C144,2023-08-10,33,M,Fort Collins,Basic,1,0
+C145,2023-06-25,50,F,Springfield,Premium,1,0
+C146,2023-04-22,26,M,Lakewood,Basic,1,1
+C147,2023-12-08,39,F,Sunnyvale,Standard,0,0
+C148,2023-10-12,46,M,Clarksville,Premium,1,0
+C149,2023-01-22,29,F,Killeen,Basic,1,1
+C150,2023-07-12,54,M,Roseville,Standard,1,0
+C151,2023-05-20,34,F,Denton,Premium,1,0
+C152,2023-03-08,23,M,Hollywood,Basic,0,1
+C153,2023-11-20,41,F,Paterson,Standard,1,0
+C154,2023-09-15,32,M,Joliet,Basic,1,0
+C155,2023-02-28,49,F,Bridgeport,Premium,1,0
+C156,2023-08-18,25,M,Naperville,Basic,1,1
+C157,2023-06-10,38,F,Savannah,Standard,0,0
+C158,2023-04-28,45,M,Mesquite,Premium,1,0
+C159,2023-12-18,28,F,Rockford,Basic,1,1
+C160,2023-10-22,56,M,Torrance,Standard,1,0
+C161,2023-01-12,36,F,Syracuse,Premium,1,0
+C162,2023-07-08,24,M,McAllen,Basic,0,1
+C163,2023-05-25,44,F,Pasadena,Standard,1,0
+C164,2023-03-18,31,M,Escondido,Basic,1,0
+C165,2023-11-08,52,F,Orange,Premium,1,0
+C166,2023-09-28,27,M,Fullerton,Basic,1,1
+C167,2023-02-05,41,F,Dayton,Standard,0,0
+C168,2023-08-02,48,M,McKinney,Premium,1,0
+C169,2023-06-18,30,F,Hampton,Basic,1,1
+C170,2023-04-05,59,M,Warren,Standard,1,0
+C171,2023-12-25,35,F,West Valley City,Premium,1,0
+C172,2023-10-30,22,M,Olathe,Basic,0,1
+C173,2023-01-28,43,F,Columbia,Standard,1,0
+C174,2023-07-15,33,M,Sterling Heights,Basic,1,0
+C175,2023-05-02,51,F,Thornton,Premium,1,0
+C176,2023-03-22,26,M,Miramar,Basic,1,1
+C177,2023-11-15,40,F,Waco,Standard,0,0
+C178,2023-09-10,47,M,New Haven,Premium,1,0
+C179,2023-02-18,29,F,Carrollton,Basic,1,1
+C180,2023-08-22,55,M,Charleston,Standard,1,0
+C181,2023-06-28,34,F,Thousand Oaks,Premium,1,0
+C182,2023-04-15,23,M,Cedar Rapids,Basic,0,1
+C183,2023-12-02,42,F,Visalia,Standard,1,0
+C184,2023-10-18,32,M,Stamford,Basic,1,0
+C185,2023-01-08,50,F,Elizabeth,Premium,1,0
+C186,2023-07-28,25,M,Concord,Basic,1,1
+C187,2023-05-10,39,F,Simi Valley,Standard,0,0
+C188,2023-03-28,46,M,Coral Springs,Premium,1,0
+C189,2023-11-25,28,F,Hartford,Basic,1,1
+C190,2023-09-22,57,M,Topeka,Standard,1,0
+C191,2023-02-12,36,F,Kent,Premium,1,0
+C192,2023-08-08,24,M,Lafayette,Basic,0,1
+C193,2023-06-15,45,F,Midland,Standard,1,0
+C194,2023-04-02,31,M,Victorville,Basic,1,0
+C195,2023-12-15,53,F,Evansville,Premium,1,0
+C196,2023-10-25,27,M,Abilene,Basic,1,1
+C197,2023-01-18,42,F,Athens,Standard,0,0
+C198,2023-07-22,49,M,Vallejo,Premium,1,0
+C199,2023-05-28,30,F,Allentown,Basic,1,1
+C200,2023-08-12,60,M,Berkeley,Standard,1,0
+C201,2023-01-05,34,F,Norman,Premium,1,0
+C202,2023-09-02,23,M,Provo,Basic,0,1
+C203,2023-05-18,41,F,Lansing,Standard,1,0
+C204,2023-03-12,32,M,Odessa,Basic,1,1
+C205,2023-11-30,48,F,Arvada,Premium,1,0
+C206,2023-09-05,26,M,Pearland,Basic,1,1
+C207,2023-02-22,38,F,Ann Arbor,Standard,0,0
+C208,2023-08-28,44,M,Rochester,Premium,1,0
+C209,2023-06-08,29,F,Cambridge,Basic,1,0
+C210,2023-04-25,54,M,Independence,Standard,1,0
+C211,2023-12-10,35,F,Wilmington,Premium,1,0
+C212,2023-10-05,22,M,League City,Basic,0,1
+C213,2023-01-25,40,F,Round Rock,Standard,1,0
+C214,2023-07-05,33,M,Broken Arrow,Basic,1,0
+C215,2023-05-22,49,F,College Station,Premium,1,0
+C216,2023-03-08,25,M,Clearwater,Basic,1,1
+C217,2023-11-18,37,F,Richardson,Standard,0,0
+C218,2023-09-12,43,M,West Jordan,Premium,1,0
+C219,2023-02-08,28,F,Westminster,Basic,1,1
+C220,2023-08-15,52,M,Fairfield,Standard,1,0
+C221,2023-06-22,34,F,Billings,Premium,1,0
+C222,2023-04-08,24,M,Pueblo,Basic,0,1
+C223,2023-12-20,41,F,Murfreesboro,Standard,1,0
+C224,2023-10-15,31,M,High Point,Basic,1,0
+C225,2023-01-30,47,F,Elgin,Premium,1,0
+C226,2023-07-18,26,M,Gresham,Basic,1,1
+C227,2023-05-05,39,F,Antioch,Standard,0,0
+C228,2023-03-20,45,M,Inglewood,Premium,1,0
+C229,2023-11-08,29,F,Downey,Basic,1,1
+C230,2023-09-25,55,M,Carlsbad,Standard,1,0
+C231,2023-02-15,36,F,Costa Mesa,Premium,1,0
+C232,2023-08-02,23,M,Temecula,Basic,0,1
+C233,2023-06-28,42,F,San Buenaventura,Standard,1,0
+C234,2023-04-18,33,M,Flint,Basic,1,0
+C235,2023-12-05,51,F,Rialto,Premium,1,0
+C236,2023-10-20,27,M,El Cajon,Basic,1,1
+C237,2023-01-12,40,F,Jurupa Valley,Standard,0,0
+C238,2023-07-25,48,M,Waterbury,Premium,1,0
+C239,2023-05-12,30,F,Pompano Beach,Basic,1,1
+C240,2023-03-28,58,M,Everett,Standard,1,0
+C241,2023-11-22,35,F,South Bend,Premium,1,0
+C242,2023-09-18,22,M,Palm Bay,Basic,0,1
+C243,2023-02-25,43,F,West Covina,Standard,1,0
+C244,2023-08-10,32,M,Enterprise,Basic,1,0
+C245,2023-06-15,50,F,Richmond,Premium,1,0
+C246,2023-04-02,25,M,Green Bay,Basic,1,1
+C247,2023-12-15,38,F,Daly City,Standard,0,0
+C248,2023-10-28,44,M,Boulder,Premium,1,0
+C249,2023-01-08,28,F,Burbank,Basic,1,1
+C250,2023-07-10,53,M,El Monte,Standard,1,0
+C251,2023-05-25,34,F,Centennial,Premium,1,0
+C252,2023-03-15,24,M,Norwalk,Basic,0,1
+C253,2023-11-12,41,F,Lowell,Standard,1,0
+C254,2023-09-08,31,M,San Mateo,Basic,1,0
+C255,2023-02-20,48,F,North Charleston,Premium,1,0
+C256,2023-08-18,26,M,Miami Gardens,Basic,1,1
+C257,2023-06-05,39,F,Lewisville,Standard,0,0
+C258,2023-04-22,46,M,Tyler,Premium,1,0
+C259,2023-12-28,29,F,Davie,Basic,1,1
+C260,2023-10-10,56,M,Renton,Standard,1,0
+C261,2023-01-20,36,F,Lakeland,Premium,1,0
+C262,2023-07-02,23,M,Edinburg,Basic,0,1
+C263,2023-05-18,44,F,Bend,Standard,1,0
+C264,2023-03-05,33,M,Sunrise,Basic,1,0
+C265,2023-11-28,52,F,Sparks,Premium,1,0
+C266,2023-09-30,27,M,Allen,Basic,1,1
+C267,2023-02-10,42,F,Sandy Springs,Standard,0,0
+C268,2023-08-25,49,M,Menifee,Premium,1,0
+C269,2023-06-10,30,F,Vacaville,Basic,1,1
+C270,2023-04-28,60,M,Tuscaloosa,Standard,1,0
+C271,2023-12-12,35,F,Hesperia,Premium,1,0
+C272,2023-10-22,22,M,Clinton,Basic,0,1
+C273,2023-01-15,43,F,Woodbridge,Standard,1,0
+C274,2023-07-20,32,M,New Bedford,Basic,1,0
+C275,2023-05-08,51,F,Las Cruces,Premium,1,0
+C276,2023-03-25,25,M,Santa Maria,Basic,1,1
+C277,2023-11-05,40,F,Nampa,Standard,0,0
+C278,2023-09-15,47,M,El Centro,Premium,1,0
+C279,2023-02-28,28,F,Compton,Basic,1,1
+C280,2023-08-05,55,M,South Gate,Standard,1,0
+C281,2023-06-20,34,F,Carson,Premium,1,0
+C282,2023-04-12,24,M,Santa Clara,Basic,0,1
+C283,2023-12-22,41,F,Vista,Standard,1,0
+C284,2023-10-05,31,M,Mission Viejo,Basic,1,0
+C285,2023-01-28,48,F,Vacaville,Premium,1,0
+C286,2023-07-12,26,M,Westminster,Basic,1,1
+C287,2023-05-02,39,F,Redding,Standard,0,0
+C288,2023-03-18,45,M,Chico,Premium,1,0
+C289,2023-11-20,29,F,Citrus Heights,Basic,1,1
+C290,2023-09-22,54,M,Tracy,Standard,1,0
+C291,2023-02-05,36,F,Alhambra,Premium,1,0
+C292,2023-08-12,23,M,Livermore,Basic,0,1
+C293,2023-06-28,44,F,Hawthorne,Standard,1,0
+C294,2023-04-05,33,M,Whittier,Basic,1,0
+C295,2023-12-08,53,F,Lakewood,Premium,1,0
+C296,2023-10-18,27,M,Newport Beach,Basic,1,1
+C297,2023-01-10,42,F,San Leandro,Standard,0,0
+C298,2023-07-28,50,M,Buena Park,Premium,1,0
+C299,2023-05-15,30,F,Hemet,Basic,1,1
+C300,2023-08-22,61,M,Menifee,Standard,1,0
+C301,2023-01-18,35,F,Chino,Premium,1,0
+C302,2023-09-05,22,M,Lake Forest,Basic,0,1
+C303,2023-05-22,43,F,Napa,Standard,1,0
+C304,2023-03-10,32,M,Bellflower,Basic,1,0
+C305,2023-11-25,49,F,Mountain View,Premium,1,0
+C306,2023-09-28,25,M,Chino Hills,Basic,1,1
+C307,2023-02-18,38,F,Indio,Standard,0,0
+C308,2023-08-08,44,M,Tustin,Premium,1,0
+C309,2023-06-15,29,F,Baldwin Park,Basic,1,1
+C310,2023-04-02,56,M,Upland,Standard,1,0
+C311,2023-12-18,34,F,San Ramon,Premium,1,0
+C312,2023-10-25,24,M,Redlands,Basic,0,1
+C313,2023-01-05,41,F,Rancho Cordova,Standard,1,0
+C314,2023-07-08,33,M,Folsom,Basic,1,0
+C315,2023-05-28,50,F,Pleasanton,Premium,1,0
+C316,2023-03-22,26,M,Lynwood,Basic,1,1
+C317,2023-11-15,39,F,Palo Alto,Standard,0,0
+C318,2023-09-10,46,M,La Mesa,Premium,1,0
+C319,2023-02-12,28,F,Walnut Creek,Basic,1,1
+C320,2023-08-18,53,M,Perris,Standard,1,0
+C321,2023-06-22,35,F,Arcadia,Premium,1,0
+C322,2023-04-18,23,M,Camarillo,Basic,0,1
+C323,2023-12-25,42,F,Pittsburg,Standard,1,0
+C324,2023-10-30,31,M,South San Francisco,Basic,1,0
+C325,2023-01-22,48,F,Apple Valley,Premium,1,0
+C326,2023-07-15,26,M,Redwood City,Basic,1,1
+C327,2023-05-05,40,F,Milpitas,Standard,0,0
+C328,2023-03-28,47,M,San Marcos,Premium,1,0
+C329,2023-11-08,30,F,Eastvale,Basic,1,1
+C330,2023-09-18,57,M,Manteca,Standard,1,0
+C331,2023-02-25,36,F,National City,Premium,1,0
+C332,2023-08-02,24,M,Hanford,Basic,0,1
+C333,2023-06-10,45,F,Clovis,Standard,1,0
+C334,2023-04-08,34,M,Lodi,Basic,1,0
+C335,2023-12-02,54,F,Davis,Premium,1,0
+C336,2023-10-15,28,M,Madera,Basic,1,1
+C337,2023-01-30,43,F,Santa Cruz,Standard,0,0
+C338,2023-07-25,51,M,Turlock,Premium,1,0
+C339,2023-05-12,31,F,San Luis Obispo,Basic,1,1
+C340,2023-08-28,62,M,Tulare,Standard,1,0
+C341,2023-01-12,36,F,Redondo Beach,Premium,1,0
+C342,2023-09-02,23,M,La Habra,Basic,0,1
+C343,2023-05-25,44,F,Encinitas,Standard,1,0
+C344,2023-03-15,33,M,Porterville,Basic,1,0
+C345,2023-11-30,52,F,Yuba City,Premium,1,0
+C346,2023-09-20,27,M,Delano,Basic,1,1
+C347,2023-02-08,41,F,Montebello,Standard,0,0
+C348,2023-08-15,48,M,Pico Rivera,Premium,1,0
+C349,2023-06-05,30,F,Paramount,Basic,1,1
+C350,2023-04-22,59,M,La Mirada,Standard,1,0
+C351,2023-12-15,35,F,San Clemente,Premium,1,0
+C352,2023-10-08,22,M,Yorba Linda,Basic,0,1
+C353,2023-01-25,42,F,Rosemead,Standard,1,0
+C354,2023-07-02,32,M,Fountain Valley,Basic,1,0
+C355,2023-05-18,49,F,Diamond Bar,Premium,1,0
+C356,2023-03-05,25,M,Brea,Basic,1,1
+C357,2023-11-22,38,F,San Jacinto,Standard,0,0
+C358,2023-09-25,44,M,Colton,Premium,1,0
+C359,2023-02-20,29,F,Cathedral City,Basic,1,1
+C360,2023-08-10,55,M,Palm Desert,Standard,1,0
+C361,2023-06-28,34,F,Woodland,Premium,1,0
+C362,2023-04-15,24,M,Santee,Basic,0,1
+C363,2023-12-28,41,F,Highland,Standard,1,0
+C364,2023-10-20,31,M,Aliso Viejo,Basic,1,0
+C365,2023-01-08,47,F,La Quinta,Premium,1,0
+C366,2023-07-18,26,M,Azusa,Basic,1,1
+C367,2023-05-08,39,F,San Gabriel,Standard,0,0
+C368,2023-03-25,45,M,Laguna Niguel,Premium,1,0
+C369,2023-11-12,28,F,Glendora,Basic,1,1
+C370,2023-09-08,54,M,Covina,Standard,1,0
+C371,2023-02-15,35,F,Cerritos,Premium,1,0
+C372,2023-08-22,23,M,West Sacramento,Basic,0,1
+C373,2023-06-15,42,F,Rocklin,Standard,1,0
+C374,2023-04-02,33,M,San Bernardino,Basic,1,0
+C375,2023-12-12,50,F,Gilroy,Premium,1,0
+C376,2023-10-28,27,M,Hollister,Basic,1,1
+C377,2023-01-20,40,F,Morgan Hill,Standard,0,0
+C378,2023-07-10,46,M,Martinez,Premium,1,0
+C379,2023-05-28,30,F,Concord,Basic,1,1
+C380,2023-08-05,58,M,Antioch,Standard,1,0
+C381,2023-01-15,36,F,Richmond,Premium,1,0
+C382,2023-09-12,24,M,Brentwood,Basic,0,1
+C383,2023-05-02,45,F,Oakley,Standard,1,0
+C384,2023-03-18,34,M,Danville,Basic,1,0
+C385,2023-11-28,53,F,San Bruno,Premium,1,0
+C386,2023-09-30,28,M,Pacifica,Basic,1,1
+C387,2023-02-10,43,F,Foster City,Standard,0,0
+C388,2023-08-18,50,M,Belmont,Premium,1,0
+C389,2023-06-08,31,F,San Carlos,Basic,1,1
+C390,2023-04-25,61,M,Menlo Park,Standard,1,0
+C391,2023-12-22,37,F,Atherton,Premium,1,0
+C392,2023-10-10,25,M,Saratoga,Basic,0,1
+C393,2023-01-28,46,F,Los Gatos,Standard,1,0
+C394,2023-07-22,35,M,Campbell,Basic,1,0
+C395,2023-05-15,52,F,Cupertino,Premium,1,0
+C396,2023-03-08,29,M,Sunnyvale,Basic,1,1
+C397,2023-11-18,44,F,Santa Clara,Standard,0,0
+C398,2023-09-22,51,M,Fremont,Premium,1,0
+C399,2023-02-28,32,F,Newark,Basic,1,1
+C400,2023-08-25,63,M,Union City,Standard,1,0
+C401,2023-01-10,38,F,Hayward,Premium,1,0
+C402,2023-07-05,26,M,San Lorenzo,Basic,0,1
+C403,2023-05-22,47,F,Castro Valley,Standard,1,0
+C404,2023-03-28,36,M,San Leandro,Basic,1,0
+C405,2023-11-05,55,F,Alameda,Premium,1,0
+C406,2023-09-15,30,M,Oakland,Basic,1,1
+C407,2023-02-05,45,F,Berkeley,Standard,0,0
+C408,2023-08-12,52,M,Emeryville,Premium,1,0
+C409,2023-06-25,33,F,Albany,Basic,1,1
+C410,2023-04-12,64,M,El Cerrito,Standard,1,0
+C411,2023-12-05,39,F,Richmond,Premium,1,0
+C412,2023-10-22,27,M,San Pablo,Basic,0,1
+C413,2023-01-18,48,F,Pinole,Standard,1,0
+C414,2023-07-28,37,M,Hercules,Basic,1,0
+C415,2023-05-10,54,F,Rodeo,Premium,1,0
+C416,2023-03-22,31,M,Crockett,Basic,1,1
+C417,2023-11-25,46,F,Vallejo,Standard,0,0
+C418,2023-09-28,53,M,Benicia,Premium,1,0
+C419,2023-02-18,34,F,Fairfield,Basic,1,1
+C420,2023-08-08,65,M,Vacaville,Standard,1,0
+C421,2023-06-18,40,F,Dixon,Premium,1,0
+C422,2023-04-05,28,M,Winters,Basic,0,1
+C423,2023-12-18,49,F,Davis,Standard,1,0
+C424,2023-10-25,38,M,Woodland,Basic,1,0
+C425,2023-01-05,56,F,Sacramento,Premium,1,0
+C426,2023-07-15,32,M,West Sacramento,Basic,1,1
+C427,2023-05-28,47,F,Elk Grove,Standard,0,0
+C428,2023-03-15,54,M,Rancho Cordova,Premium,1,0
+C429,2023-11-08,35,F,Folsom,Basic,1,1
+C430,2023-09-18,66,M,Roseville,Standard,1,0
+C431,2023-02-25,41,F,Citrus Heights,Premium,1,0
+C432,2023-08-02,29,M,Orangevale,Basic,0,1
+C433,2023-06-10,50,F,Fair Oaks,Standard,1,0
+C434,2023-04-28,39,M,Carmichael,Basic,1,0
+C435,2023-12-25,57,F,North Highlands,Premium,1,0
+C436,2023-10-30,33,M,Antelope,Basic,1,1
+C437,2023-01-22,48,F,Arden-Arcade,Standard,0,0
+C438,2023-07-08,55,M,Florin,Premium,1,0
+C439,2023-05-05,36,F,Vineyard,Basic,1,1
+C440,2023-08-15,67,M,Rosemont,Standard,1,0
+C441,2023-01-28,42,F,La Riviera,Premium,1,0
+C442,2023-09-05,30,M,Parkway,Basic,0,1
+C443,2023-05-18,51,F,South Sacramento,Standard,1,0
+C444,2023-03-05,40,M,Valley Hi,Basic,1,0
+C445,2023-11-22,58,F,Fruitridge,Premium,1,0
+C446,2023-09-25,34,M,Oak Park,Basic,1,1
+C447,2023-02-12,49,F,Land Park,Standard,0,0
+C448,2023-08-22,56,M,Pocket,Premium,1,0
+C449,2023-06-05,37,F,Greenhaven,Basic,1,1
+C450,2023-04-22,68,M,Natomas,Standard,1,0
+C451,2023-12-08,43,F,North Sacramento,Premium,1,0
+C452,2023-10-15,31,M,Del Paso Heights,Basic,0,1
+C453,2023-01-12,52,F,Robla,Standard,1,0
+C454,2023-07-25,41,M,Gardenland,Basic,1,0
+C455,2023-05-12,59,F,Woodlake,Premium,1,0
+C456,2023-03-28,35,M,Campus Commons,Basic,1,1
+C457,2023-11-15,50,F,East Sacramento,Standard,0,0
+C458,2023-09-10,57,M,Tahoe Park,Premium,1,0
+C459,2023-02-08,38,F,Colonial Heights,Basic,1,1
+C460,2023-08-28,69,M,Fruitridge Pocket,Standard,1,0
+C461,2023-06-15,44,F,Meadowview,Premium,1,0
+C462,2023-04-02,32,M,Valley View,Basic,0,1
+C463,2023-12-20,53,F,Phoenix Park,Standard,1,0
+C464,2023-10-08,42,M,Hollywood Park,Basic,1,0
+C465,2023-01-30,60,F,Colonial Manor,Premium,1,0
+C466,2023-07-18,36,M,Mack Road,Basic,1,1
+C467,2023-05-02,51,F,Lemon Hill,Standard,0,0
+C468,2023-03-18,58,M,Parkway Estates,Premium,1,0
+C469,2023-11-28,39,F,Glen Elder,Basic,1,1
+C470,2023-09-22,70,M,Elder Creek,Standard,1,0
+C471,2023-02-20,45,F,Franklin,Premium,1,0
+C472,2023-08-05,33,M,Laguna,Basic,0,1
+C473,2023-06-22,52,F,Elk Grove,Standard,1,0
+C474,2023-04-18,43,M,Florin,Basic,1,0
+C475,2023-12-02,61,F,Pocket,Premium,1,0
+C476,2023-10-20,37,M,Meadowview,Basic,1,1
+C477,2023-01-08,52,F,Valley Hi,Standard,0,0
+C478,2023-07-10,59,M,Parkway,Premium,1,0
+C479,2023-05-25,40,F,Fruitridge,Basic,1,1
+C480,2023-08-18,71,M,Lemon Hill,Standard,1,0
+C481,2023-01-25,46,F,Glen Elder,Premium,1,0
+C482,2023-09-12,34,M,Elder Creek,Basic,0,1
+C483,2023-05-08,53,F,Franklin,Standard,1,0
+C484,2023-03-25,44,M,Laguna,Basic,1,0
+C485,2023-11-12,62,F,South Land Park,Premium,1,0
+C486,2023-09-28,38,M,Pocket,Basic,1,1
+C487,2023-02-15,53,F,Meadowview,Standard,0,0
+C488,2023-08-10,60,M,Valley Hi,Premium,1,0
+C489,2023-06-28,41,F,Parkway,Basic,1,1
+C490,2023-04-15,72,M,Fruitridge,Standard,1,0
+C491,2023-12-28,47,F,Lemon Hill,Premium,1,0
+C492,2023-10-18,35,M,Glen Elder,Basic,0,1
+C493,2023-01-15,54,F,Elder Creek,Standard,1,0
+C494,2023-07-28,45,M,Franklin,Basic,1,0
+C495,2023-05-15,63,F,Laguna,Premium,1,0
+C496,2023-03-08,39,M,South Land Park,Basic,1,1
+C497,2023-11-18,54,F,Pocket,Standard,0,0
+C498,2023-09-30,61,M,Meadowview,Premium,1,0
+C499,2023-02-28,42,F,Valley Hi,Basic,1,1
+C500,2023-08-25,73,M,Parkway,Standard,1,0
+C501,2023-01-18,48,F,Seattle,Premium,1,0
+C502,2023-09-02,36,M,Portland,Basic,0,1
+C503,2023-05-22,55,F,Denver,Standard,1,0
+C504,2023-03-12,46,M,Phoenix,Basic,1,0
+C505,2023-11-30,64,F,Dallas,Premium,1,0
+C506,2023-09-05,40,M,Houston,Basic,1,1
+C507,2023-02-22,55,F,Austin,Standard,0,0
+C508,2023-08-08,62,M,Chicago,Premium,1,0
+C509,2023-06-18,43,F,Miami,Basic,1,1
+C510,2023-04-05,74,M,Atlanta,Standard,1,0
+C511,2023-12-15,49,F,Boston,Premium,1,0
+C512,2023-10-25,37,M,New York,Basic,0,1
+C513,2023-01-05,56,F,Philadelphia,Standard,1,0
+C514,2023-07-15,47,M,Washington,Basic,1,0
+C515,2023-05-28,65,F,Detroit,Premium,1,0
+C516,2023-03-22,41,M,Minneapolis,Basic,1,1
+C517,2023-11-08,56,F,St. Louis,Standard,0,0
+C518,2023-09-18,63,M,Kansas City,Premium,1,0
+C519,2023-02-08,44,F,Nashville,Basic,1,1
+C520,2023-08-15,75,M,Memphis,Standard,1,0
+C521,2023-06-25,50,F,Louisville,Premium,1,0
+C522,2023-04-12,38,M,Cincinnati,Basic,0,1
+C523,2023-12-05,57,F,Cleveland,Standard,1,0
+C524,2023-10-22,48,M,Columbus,Basic,1,0
+C525,2023-01-28,66,F,Indianapolis,Premium,1,0
+C526,2023-07-08,42,M,Milwaukee,Basic,1,1
+C527,2023-05-05,57,F,Charlotte,Standard,0,0
+C528,2023-08-02,64,M,Raleigh,Premium,1,0
+C529,2023-06-08,45,F,Richmond,Basic,1,1
+C530,2023-04-25,76,M,Virginia Beach,Standard,1,0
+C531,2023-12-18,51,F,Jacksonville,Premium,1,0
+C532,2023-10-05,39,M,Tampa,Basic,0,1
+C533,2023-01-22,58,F,Orlando,Standard,1,0
+C534,2023-07-25,49,M,Fort Lauderdale,Basic,1,0
+C535,2023-05-18,67,F,West Palm Beach,Premium,1,0
+C536,2023-03-05,43,M,Boca Raton,Basic,1,1
+C537,2023-11-25,58,F,Naples,Standard,0,0
+C538,2023-09-15,65,M,Sarasota,Premium,1,0
+C539,2023-02-05,46,F,St. Petersburg,Basic,1,1
+C540,2023-08-22,77,M,Clearwater,Standard,1,0
+C541,2023-06-12,52,F,Gainesville,Premium,1,0
+C542,2023-04-02,40,M,Tallahassee,Basic,0,1
+C543,2023-12-25,59,F,Pensacola,Standard,1,0
+C544,2023-10-18,50,M,Mobile,Basic,1,0
+C545,2023-01-12,68,F,Birmingham,Premium,1,0
+C546,2023-07-02,44,M,Montgomery,Basic,1,1
+C547,2023-05-12,59,F,Huntsville,Standard,0,0
+C548,2023-03-28,66,M,Jackson,Premium,1,0
+C549,2023-11-05,47,F,New Orleans,Basic,1,1
+C550,2023-09-25,78,M,Baton Rouge,Standard,1,0
+C551,2023-02-18,53,F,Little Rock,Premium,1,0
+C552,2023-08-12,41,M,Oklahoma City,Basic,0,1
+C553,2023-06-28,60,F,Tulsa,Standard,1,0
+C554,2023-04-18,51,M,Wichita,Basic,1,0
+C555,2023-12-08,69,F,Omaha,Premium,1,0
+C556,2023-10-28,45,M,Lincoln,Basic,1,1
+C557,2023-01-30,60,F,Des Moines,Standard,0,0
+C558,2023-07-18,67,M,Kansas City,Premium,1,0
+C559,2023-05-02,48,F,St. Louis,Basic,1,1
+C560,2023-08-28,79,M,Springfield,Standard,1,0
+C561,2023-01-08,54,F,Columbia,Premium,1,0
+C562,2023-09-08,42,M,Jefferson City,Basic,0,1
+C563,2023-05-25,61,F,Topeka,Standard,1,0
+C564,2023-03-15,52,M,Lawrence,Basic,1,0
+C565,2023-11-22,70,F,Manhattan,Premium,1,0
+C566,2023-09-30,46,M,Wichita,Basic,1,1
+C567,2023-02-12,61,F,Overland Park,Standard,0,0
+C568,2023-08-05,68,M,Olathe,Premium,1,0
+C569,2023-06-15,49,F,Shawnee,Basic,1,1
+C570,2023-04-08,80,M,Lenexa,Standard,1,0
+C571,2023-12-20,55,F,Leawood,Premium,1,0
+C572,2023-10-10,43,M,Prairie Village,Basic,0,1
+C573,2023-01-25,62,F,Mission,Standard,1,0
+C574,2023-07-28,53,M,Merriam,Basic,1,0
+C575,2023-05-10,71,F,Roeland Park,Premium,1,0
+C576,2023-03-25,47,M,Westwood,Basic,1,1
+C577,2023-11-15,62,F,Fairway,Standard,0,0
+C578,2023-09-20,69,M,Mission Hills,Premium,1,0
+C579,2023-02-25,50,F,Lake Quivira,Basic,1,1
+C580,2023-08-18,81,M,Bonner Springs,Standard,1,0
+C581,2023-06-05,56,F,Edwardsville,Premium,1,0
+C582,2023-04-22,44,M,Basehor,Basic,0,1
+C583,2023-12-02,63,F,Tonganoxie,Standard,1,0
+C584,2023-10-15,54,M,Lansing,Basic,1,0
+C585,2023-01-18,72,F,Leavenworth,Premium,1,0
+C586,2023-07-10,48,M,Atchison,Basic,1,1
+C587,2023-05-28,63,F,Hiawatha,Standard,0,0
+C588,2023-03-08,70,M,Holton,Premium,1,0
+C589,2023-11-28,51,F,Topeka,Basic,1,1
+C590,2023-09-10,82,M,Lawrence,Standard,1,0
+C591,2023-02-08,57,F,Eudora,Premium,1,0
+C592,2023-08-25,45,M,Baldwin City,Basic,0,1
+C593,2023-06-18,64,F,Ottawa,Standard,1,0
+C594,2023-04-05,55,M,Paola,Basic,1,0
+C595,2023-12-28,73,F,Louisburg,Premium,1,0
+C596,2023-10-20,49,M,Spring Hill,Basic,1,1
+C597,2023-01-10,64,F,Gardner,Standard,0,0
+C598,2023-07-22,71,M,Edgerton,Premium,1,0
+C599,2023-05-05,52,F,De Soto,Basic,1,1
+C600,2023-08-10,83,M,Shawnee,Standard,1,0
+C601,2023-01-15,58,F,Lenexa,Premium,1,0
+C602,2023-09-05,46,M,Olathe,Basic,0,1
+C603,2023-05-22,65,F,Overland Park,Standard,1,0
+C604,2023-03-12,56,M,Leawood,Basic,1,0
+C605,2023-11-30,74,F,Prairie Village,Premium,1,0
+C606,2023-09-22,50,M,Mission,Basic,1,1
+C607,2023-02-20,65,F,Merriam,Standard,0,0
+C608,2023-08-08,72,M,Roeland Park,Premium,1,0
+C609,2023-06-25,53,F,Westwood,Basic,1,1
+C610,2023-04-12,84,M,Fairway,Standard,1,0
+C611,2023-12-15,59,F,Mission Hills,Premium,1,0
+C612,2023-10-25,47,M,Lake Quivira,Basic,0,1
+C613,2023-01-28,66,F,Bonner Springs,Standard,1,0
+C614,2023-07-05,57,M,Edwardsville,Basic,1,0
+C615,2023-05-18,75,F,Basehor,Premium,1,0
+C616,2023-03-22,51,M,Tonganoxie,Basic,1,1
+C617,2023-11-08,66,F,Lansing,Standard,0,0
+C618,2023-09-28,73,M,Leavenworth,Premium,1,0
+C619,2023-02-05,54,F,Atchison,Basic,1,1
+C620,2023-08-22,85,M,Hiawatha,Standard,1,0
+C621,2023-06-08,60,F,Holton,Premium,1,0
+C622,2023-04-25,48,M,Topeka,Basic,0,1
+C623,2023-12-05,67,F,Lawrence,Standard,1,0
+C624,2023-10-08,58,M,Eudora,Basic,1,0
+C625,2023-01-22,76,F,Baldwin City,Premium,1,0
+C626,2023-07-15,52,M,Ottawa,Basic,1,1
+C627,2023-05-02,67,F,Paola,Standard,0,0
+C628,2023-08-28,74,M,Louisburg,Premium,1,0
+C629,2023-06-15,55,F,Spring Hill,Basic,1,1
+C630,2023-04-02,86,M,Gardner,Standard,1,0
+C631,2023-12-18,61,F,Edgerton,Premium,1,0
+C632,2023-10-22,49,M,De Soto,Basic,0,1
+C633,2023-01-12,68,F,Shawnee,Standard,1,0
+C634,2023-07-28,59,M,Lenexa,Basic,1,0
+C635,2023-05-15,77,F,Olathe,Premium,1,0
+C636,2023-03-05,53,M,Overland Park,Basic,1,1
+C637,2023-11-25,68,F,Leawood,Standard,0,0
+C638,2023-09-15,75,M,Prairie Village,Premium,1,0
+C639,2023-02-18,56,F,Mission,Basic,1,1
+C640,2023-08-05,87,M,Merriam,Standard,1,0
+C641,2023-06-22,62,F,Roeland Park,Premium,1,0
+C642,2023-04-18,50,M,Westwood,Basic,0,1
+C643,2023-12-25,69,F,Fairway,Standard,1,0
+C644,2023-10-05,60,M,Mission Hills,Basic,1,0
+C645,2023-01-30,78,F,Lake Quivira,Premium,1,0
+C646,2023-07-08,54,M,Bonner Springs,Basic,1,1
+C647,2023-05-25,69,F,Edwardsville,Standard,0,0
+C648,2023-03-18,76,M,Basehor,Premium,1,0
+C649,2023-11-05,57,F,Tonganoxie,Basic,1,1
+C650,2023-09-25,88,M,Lansing,Standard,1,0
+C651,2023-02-12,63,F,Leavenworth,Premium,1,0
+C652,2023-08-15,51,M,Atchison,Basic,0,1
+C653,2023-06-28,70,F,Hiawatha,Standard,1,0
+C654,2023-04-08,61,M,Holton,Basic,1,0
+C655,2023-12-08,79,F,Seattle,Premium,1,0
+C656,2023-10-28,55,M,Portland,Basic,1,1
+C657,2023-01-08,70,F,Denver,Standard,0,0
+C658,2023-07-18,77,M,Phoenix,Premium,1,0
+C659,2023-05-08,58,F,Dallas,Basic,1,1
+C660,2023-08-18,89,M,Houston,Standard,1,0
+C661,2023-01-25,64,F,Austin,Premium,1,0
+C662,2023-09-02,52,M,Chicago,Basic,0,1
+C663,2023-05-28,71,F,Miami,Standard,1,0
+C664,2023-03-15,62,M,Atlanta,Basic,1,0
+C665,2023-11-22,80,F,Boston,Premium,1,0
+C666,2023-09-08,56,M,New York,Basic,1,1
+C667,2023-02-25,71,F,Philadelphia,Standard,0,0
+C668,2023-08-02,78,M,Washington,Premium,1,0
+C669,2023-06-12,59,F,Detroit,Basic,1,1
+C670,2023-04-28,90,M,Minneapolis,Standard,1,0
+C671,2023-12-20,65,F,St. Louis,Premium,1,0
+C672,2023-10-10,53,M,Kansas City,Basic,0,1
+C673,2023-01-18,72,F,Nashville,Standard,1,0
+C674,2023-07-25,63,M,Memphis,Basic,1,0
+C675,2023-05-10,81,F,Louisville,Premium,1,0
+C676,2023-03-28,57,M,Cincinnati,Basic,1,1
+C677,2023-11-15,72,F,Cleveland,Standard,0,0
+C678,2023-09-20,79,M,Columbus,Premium,1,0
+C679,2023-02-08,60,F,Indianapolis,Basic,1,1
+C680,2023-08-25,91,M,Milwaukee,Standard,1,0
+C681,2023-06-05,66,F,Charlotte,Premium,1,0
+C682,2023-04-22,54,M,Raleigh,Basic,0,1
+C683,2023-12-02,73,F,Richmond,Standard,1,0
+C684,2023-10-18,64,M,Virginia Beach,Basic,1,0
+C685,2023-01-10,82,F,Jacksonville,Premium,1,0
+C686,2023-07-10,58,M,Tampa,Basic,1,1
+C687,2023-05-25,73,F,Orlando,Standard,0,0
+C688,2023-03-08,80,M,Fort Lauderdale,Premium,1,0
+C689,2023-11-28,61,F,West Palm Beach,Basic,1,1
+C690,2023-09-30,92,M,Boca Raton,Standard,1,0
+C691,2023-02-15,67,F,Naples,Premium,1,0
+C692,2023-08-12,55,M,Sarasota,Basic,0,1
+C693,2023-06-28,74,F,St. Petersburg,Standard,1,0
+C694,2023-04-05,65,M,Clearwater,Basic,1,0
+C695,2023-12-28,83,F,Gainesville,Premium,1,0
+C696,2023-10-25,59,M,Tallahassee,Basic,1,1
+C697,2023-01-28,74,F,Pensacola,Standard,0,0
+C698,2023-07-02,81,M,Mobile,Premium,1,0
+C699,2023-05-18,62,F,Birmingham,Basic,1,1
+C700,2023-08-08,93,M,Montgomery,Standard,1,0
+C701,2023-01-15,68,F,Huntsville,Premium,1,0
+C702,2023-09-15,56,M,Jackson,Basic,0,1
+C703,2023-05-02,75,F,New Orleans,Standard,1,0
+C704,2023-03-22,66,M,Baton Rouge,Basic,1,0
+C705,2023-11-08,84,F,Little Rock,Premium,1,0
+C706,2023-09-18,60,M,Oklahoma City,Basic,1,1
+C707,2023-02-28,75,F,Tulsa,Standard,0,0
+C708,2023-08-22,82,M,Wichita,Premium,1,0
+C709,2023-06-08,63,F,Omaha,Basic,1,1
+C710,2023-04-25,94,M,Lincoln,Standard,1,0
+C711,2023-12-15,69,F,Des Moines,Premium,1,0
+C712,2023-10-05,57,M,Kansas City,Basic,0,1
+C713,2023-01-22,76,F,St. Louis,Standard,1,0
+C714,2023-07-18,67,M,Springfield,Basic,1,0
+C715,2023-05-28,85,F,Columbia,Premium,1,0
+C716,2023-03-05,61,M,Jefferson City,Basic,1,1
+C717,2023-11-25,76,F,Topeka,Standard,0,0
+C718,2023-09-10,83,M,Lawrence,Premium,1,0
+C719,2023-02-05,64,F,Manhattan,Basic,1,1
+C720,2023-08-28,95,M,Wichita,Standard,1,0
+C721,2023-06-15,70,F,Overland Park,Premium,1,0
+C722,2023-04-12,58,M,Olathe,Basic,0,1
+C723,2023-12-05,77,F,Shawnee,Standard,1,0
+C724,2023-10-22,68,M,Lenexa,Basic,1,0
+C725,2023-01-12,86,F,Leawood,Premium,1,0
+C726,2023-07-28,62,M,Prairie Village,Basic,1,1
+C727,2023-05-15,77,F,Mission,Standard,0,0
+C728,2023-08-05,84,M,Merriam,Premium,1,0
+C729,2023-06-22,65,F,Roeland Park,Basic,1,1
+C730,2023-04-02,96,M,Westwood,Standard,1,0
+C731,2023-12-18,71,F,Fairway,Premium,1,0
+C732,2023-10-08,59,M,Mission Hills,Basic,0,1
+C733,2023-01-30,78,F,Lake Quivira,Standard,1,0
+C734,2023-07-05,69,M,Bonner Springs,Basic,1,0
+C735,2023-05-22,87,F,Edwardsville,Premium,1,0
+C736,2023-03-18,63,M,Basehor,Basic,1,1
+C737,2023-11-05,78,F,Tonganoxie,Standard,0,0
+C738,2023-09-25,85,M,Lansing,Premium,1,0
+C739,2023-02-18,66,F,Leavenworth,Basic,1,1
+C740,2023-08-15,97,M,Atchison,Standard,1,0
+C741,2023-06-28,72,F,Hiawatha,Premium,1,0
+C742,2023-04-18,60,M,Holton,Basic,0,1
+C743,2023-12-25,79,F,Topeka,Standard,1,0
+C744,2023-10-28,70,M,Lawrence,Basic,1,0
+C745,2023-01-08,88,F,Eudora,Premium,1,0
+C746,2023-07-15,64,M,Baldwin City,Basic,1,1
+C747,2023-05-05,79,F,Ottawa,Standard,0,0
+C748,2023-08-25,86,M,Paola,Premium,1,0
+C749,2023-06-12,67,F,Louisburg,Basic,1,1
+C750,2023-04-08,98,M,Spring Hill,Standard,1,0
+C751,2023-01-18,73,F,Gardner,Premium,1,0
+C752,2023-09-02,61,M,Edgerton,Basic,0,1
+C753,2023-05-25,80,F,De Soto,Standard,1,0
+C754,2023-03-12,71,M,Shawnee,Basic,1,0
+C755,2023-11-30,89,F,Lenexa,Premium,1,0
+C756,2023-09-05,65,M,Olathe,Basic,1,1
+C757,2023-02-22,80,F,Overland Park,Standard,0,0
+C758,2023-08-10,87,M,Leawood,Premium,1,0
+C759,2023-06-25,68,F,Prairie Village,Basic,1,1
+C760,2023-04-22,99,M,Mission,Standard,1,0
+C761,2023-12-08,74,F,Merriam,Premium,1,0
+C762,2023-10-15,62,M,Roeland Park,Basic,0,1
+C763,2023-01-25,81,F,Westwood,Standard,1,0
+C764,2023-07-08,72,M,Fairway,Basic,1,0
+C765,2023-05-18,90,F,Mission Hills,Premium,1,0
+C766,2023-03-28,66,M,Lake Quivira,Basic,1,1
+C767,2023-11-18,81,F,Bonner Springs,Standard,0,0
+C768,2023-09-22,88,M,Edwardsville,Premium,1,0
+C769,2023-02-08,69,F,Basehor,Basic,1,1
+C770,2023-08-18,34,M,Tonganoxie,Standard,1,0
+C771,2023-06-05,75,F,Lansing,Premium,1,0
+C772,2023-04-28,63,M,Leavenworth,Basic,0,1
+C773,2023-12-20,82,F,Atchison,Standard,1,0
+C774,2023-10-10,73,M,Hiawatha,Basic,1,0
+C775,2023-01-10,91,F,Holton,Premium,1,0
+C776,2023-07-22,67,M,Topeka,Basic,1,1
+C777,2023-05-08,82,F,Lawrence,Standard,0,0
+C778,2023-08-02,89,M,Eudora,Premium,1,0
+C779,2023-06-18,70,F,Baldwin City,Basic,1,1
+C780,2023-04-05,35,M,Ottawa,Standard,1,0
+C781,2023-12-28,76,F,Paola,Premium,1,0
+C782,2023-10-20,64,M,Louisburg,Basic,0,1
+C783,2023-01-28,83,F,Spring Hill,Standard,1,0
+C784,2023-07-10,74,M,Gardner,Basic,1,0
+C785,2023-05-28,92,F,Edgerton,Premium,1,0
+C786,2023-03-15,68,M,De Soto,Basic,1,1
+C787,2023-11-28,83,F,Seattle,Standard,0,0
+C788,2023-09-08,90,M,Portland,Premium,1,0
+C789,2023-02-25,71,F,Denver,Basic,1,1
+C790,2023-08-22,36,M,Phoenix,Standard,1,0
+C791,2023-06-08,77,F,Dallas,Premium,1,0
+C792,2023-04-25,65,M,Houston,Basic,0,1
+C793,2023-12-02,84,F,Austin,Standard,1,0
+C794,2023-10-18,75,M,Chicago,Basic,1,0
+C795,2023-01-15,93,F,Miami,Premium,1,0
+C796,2023-07-25,69,M,Atlanta,Basic,1,1
+C797,2023-05-02,84,F,Boston,Standard,0,0
+C798,2023-08-28,91,M,New York,Premium,1,0
+C799,2023-06-15,72,F,Philadelphia,Basic,1,1
+C800,2023-04-12,37,M,Washington,Standard,1,0
+C801,2023-01-20,78,F,Detroit,Premium,1,0
+C802,2023-09-18,66,M,Minneapolis,Basic,0,1
+C803,2023-05-15,85,F,St. Louis,Standard,1,0
+C804,2023-03-05,76,M,Kansas City,Basic,1,0
+C805,2023-11-22,94,F,Nashville,Premium,1,0
+C806,2023-09-30,70,M,Memphis,Basic,1,1
+C807,2023-02-12,85,F,Louisville,Standard,0,0
+C808,2023-08-05,92,M,Cincinnati,Premium,1,0
+C809,2023-06-22,73,F,Cleveland,Basic,1,1
+C810,2023-04-02,38,M,Columbus,Standard,1,0
+C811,2023-12-15,79,F,Indianapolis,Premium,1,0
+C812,2023-10-25,67,M,Milwaukee,Basic,0,1
+C813,2023-01-05,86,F,Charlotte,Standard,1,0
+C814,2023-07-18,77,M,Raleigh,Basic,1,0
+C815,2023-05-25,95,F,Richmond,Premium,1,0
+C816,2023-03-22,71,M,Virginia Beach,Basic,1,1
+C817,2023-11-08,86,F,Jacksonville,Standard,0,0
+C818,2023-09-15,93,M,Tampa,Premium,1,0
+C819,2023-02-28,74,F,Orlando,Basic,1,1
+C820,2023-08-12,39,M,Fort Lauderdale,Standard,1,0
+C821,2023-06-28,80,F,West Palm Beach,Premium,1,0
+C822,2023-04-18,68,M,Boca Raton,Basic,0,1
+C823,2023-12-05,87,F,Naples,Standard,1,0
+C824,2023-10-08,78,M,Sarasota,Basic,1,0
+C825,2023-01-22,96,F,St. Petersburg,Premium,1,0
+C826,2023-07-02,72,M,Clearwater,Basic,1,1
+C827,2023-05-18,87,F,Gainesville,Standard,0,0
+C828,2023-08-18,94,M,Tallahassee,Premium,1,0
+C829,2023-06-05,75,F,Pensacola,Basic,1,1
+C830,2023-04-28,40,M,Mobile,Standard,1,0
+C831,2023-12-18,81,F,Birmingham,Premium,1,0
+C832,2023-10-22,69,M,Montgomery,Basic,0,1
+C833,2023-01-12,88,F,Huntsville,Standard,1,0
+C834,2023-07-28,79,M,Jackson,Basic,1,0
+C835,2023-05-05,97,F,New Orleans,Premium,1,0
+C836,2023-03-18,73,M,Baton Rouge,Basic,1,1
+C837,2023-11-25,88,F,Little Rock,Standard,0,0
+C838,2023-09-10,95,M,Oklahoma City,Premium,1,0
+C839,2023-02-05,76,F,Tulsa,Basic,1,1
+C840,2023-08-25,41,M,Wichita,Standard,1,0
+C841,2023-06-12,82,F,Omaha,Premium,1,0
+C842,2023-04-08,70,M,Lincoln,Basic,0,1
+C843,2023-12-25,89,F,Des Moines,Standard,1,0
+C844,2023-10-05,80,M,Kansas City,Basic,1,0
+C845,2023-01-30,98,F,St. Louis,Premium,1,0
+C846,2023-07-15,74,M,Springfield,Basic,1,1
+C847,2023-05-22,89,F,Columbia,Standard,0,0
+C848,2023-08-08,96,M,Jefferson City,Premium,1,0
+C849,2023-06-25,77,F,Topeka,Basic,1,1
+C850,2023-04-22,42,M,Lawrence,Standard,1,0
+C851,2023-01-08,83,F,Manhattan,Premium,1,0
+C852,2023-09-25,71,M,Wichita,Basic,0,1
+C853,2023-05-10,90,F,Overland Park,Standard,1,0
+C854,2023-03-08,81,M,Olathe,Basic,1,0
+C855,2023-11-30,99,F,Shawnee,Premium,1,0
+C856,2023-09-05,75,M,Lenexa,Basic,1,1
+C857,2023-02-20,90,F,Leawood,Standard,0,0
+C858,2023-08-15,97,M,Prairie Village,Premium,1,0
+C859,2023-06-02,78,F,Mission,Basic,1,1
+C860,2023-04-15,43,M,Merriam,Standard,1,0
+C861,2023-12-10,84,F,Roeland Park,Premium,1,0
+C862,2023-10-28,72,M,Westwood,Basic,0,1
+C863,2023-01-18,91,F,Fairway,Standard,1,0
+C864,2023-07-08,82,M,Mission Hills,Basic,1,0
+C865,2023-05-28,100,F,Lake Quivira,Premium,1,0
+C866,2023-03-25,76,M,Bonner Springs,Basic,1,1
+C867,2023-11-18,91,F,Edwardsville,Standard,0,0
+C868,2023-09-22,98,M,Basehor,Premium,1,0
+C869,2023-02-08,79,F,Tonganoxie,Basic,1,1
+C870,2023-08-28,44,M,Lansing,Standard,1,0
+C871,2023-06-18,85,F,Leavenworth,Premium,1,0
+C872,2023-04-05,73,M,Atchison,Basic,0,1
+C873,2023-12-28,92,F,Hiawatha,Standard,1,0
+C874,2023-10-15,83,M,Holton,Basic,1,0
+C875,2023-01-25,101,F,Topeka,Premium,1,0
+C876,2023-07-20,77,M,Lawrence,Basic,1,1
+C877,2023-05-05,92,F,Eudora,Standard,0,0
+C878,2023-08-02,99,M,Baldwin City,Premium,1,0
+C879,2023-06-22,80,F,Ottawa,Basic,1,1
+C880,2023-04-18,45,M,Paola,Standard,1,0
+C881,2023-01-10,86,F,Louisburg,Premium,1,0
+C882,2023-09-28,74,M,Spring Hill,Basic,0,1
+C883,2023-05-18,93,F,Gardner,Standard,1,0
+C884,2023-03-12,84,M,Edgerton,Basic,1,0
+C885,2023-11-25,102,F,De Soto,Premium,1,0
+C886,2023-09-08,78,M,Shawnee,Basic,1,1
+C887,2023-02-25,93,F,Lenexa,Standard,0,0
+C888,2023-08-18,100,M,Olathe,Premium,1,0
+C889,2023-06-05,81,F,Overland Park,Basic,1,1
+C890,2023-04-25,46,M,Leawood,Standard,1,0
+C891,2023-12-15,87,F,Prairie Village,Premium,1,0
+C892,2023-10-10,75,M,Mission,Basic,0,1
+C893,2023-01-22,94,F,Merriam,Standard,1,0
+C894,2023-07-12,85,M,Roeland Park,Basic,1,0
+C895,2023-05-25,103,F,Westwood,Premium,1,0
+C896,2023-03-08,79,M,Fairway,Basic,1,1
+C897,2023-11-08,94,F,Mission Hills,Standard,0,0
+C898,2023-09-18,101,M,Lake Quivira,Premium,1,0
+C899,2023-02-15,82,F,Bonner Springs,Basic,1,1
+C900,2023-08-08,47,M,Edwardsville,Standard,1,0
+C901,2023-06-28,88,F,Basehor,Premium,1,0
+C902,2023-04-12,76,M,Tonganoxie,Basic,0,1
+C903,2023-12-05,95,F,Lansing,Standard,1,0
+C904,2023-10-22,86,M,Leavenworth,Basic,1,0
+C905,2023-01-15,104,F,Atchison,Premium,1,0
+C906,2023-07-25,80,M,Hiawatha,Basic,1,1
+C907,2023-05-02,95,F,Holton,Standard,0,0
+C908,2023-08-25,102,M,Topeka,Premium,1,0
+C909,2023-06-12,83,F,Lawrence,Basic,1,1
+C910,2023-04-02,48,M,Eudora,Standard,1,0
+C911,2023-12-18,89,F,Baldwin City,Premium,1,0
+C912,2023-10-05,77,M,Ottawa,Basic,0,1
+C913,2023-01-28,96,F,Paola,Standard,1,0
+C914,2023-07-05,87,M,Louisburg,Basic,1,0
+C915,2023-05-20,105,F,Spring Hill,Premium,1,0
+C916,2023-03-18,81,M,Gardner,Basic,1,1
+C917,2023-11-28,96,F,Edgerton,Standard,0,0
+C918,2023-09-10,103,M,De Soto,Premium,1,0
+C919,2023-02-05,84,F,Shawnee,Basic,1,1
+C920,2023-08-15,49,M,Lenexa,Standard,1,0
+C921,2023-06-22,90,F,Olathe,Premium,1,0
+C922,2023-04-08,78,M,Overland Park,Basic,0,1
+C923,2023-12-25,97,F,Leawood,Standard,1,0
+C924,2023-10-18,88,M,Prairie Village,Basic,1,0
+C925,2023-01-05,106,F,Mission,Premium,1,0
+C926,2023-07-18,82,M,Merriam,Basic,1,1
+C927,2023-05-08,97,F,Roeland Park,Standard,0,0
+C928,2023-08-05,104,M,Westwood,Premium,1,0
+C929,2023-06-25,85,F,Fairway,Basic,1,1
+C930,2023-04-22,50,M,Mission Hills,Standard,1,0
+C931,2023-01-18,91,F,Lake Quivira,Premium,1,0
+C932,2023-09-30,79,M,Bonner Springs,Basic,0,1
+C933,2023-05-15,98,F,Edwardsville,Standard,1,0
+C934,2023-03-05,89,M,Basehor,Basic,1,0
+C935,2023-11-22,107,F,Tonganoxie,Premium,1,0
+C936,2023-09-15,83,M,Lansing,Basic,1,1
+C937,2023-02-28,98,F,Leavenworth,Standard,0,0
+C938,2023-08-12,105,M,Atchison,Premium,1,0
+C939,2023-06-08,86,F,Hiawatha,Basic,1,1
+C940,2023-04-28,51,M,Holton,Standard,1,0
+C941,2023-12-08,92,F,Topeka,Premium,1,0
+C942,2023-10-25,80,M,Lawrence,Basic,0,1
+C943,2023-01-12,99,F,Eudora,Standard,1,0
+C944,2023-07-28,90,M,Baldwin City,Basic,1,0
+C945,2023-05-25,108,F,Ottawa,Premium,1,0
+C946,2023-03-22,84,M,Paola,Basic,1,1
+C947,2023-11-05,99,F,Louisburg,Standard,0,0
+C948,2023-09-25,106,M,Spring Hill,Premium,1,0
+C949,2023-02-12,87,F,Gardner,Basic,1,1
+C950,2023-08-22,52,M,Edgerton,Standard,1,0
+C951,2023-06-15,93,F,De Soto,Premium,1,0
+C952,2023-04-05,81,M,Shawnee,Basic,0,1
+C953,2023-12-28,100,F,Lenexa,Standard,1,0
+C954,2023-10-08,91,M,Olathe,Basic,1,0
+C955,2023-01-30,109,F,Overland Park,Premium,1,0
+C956,2023-07-10,85,M,Leawood,Basic,1,1
+C957,2023-05-02,100,F,Prairie Village,Standard,0,0
+C958,2023-08-28,107,M,Mission,Premium,1,0
+C959,2023-06-18,88,F,Merriam,Basic,1,1
+C960,2023-04-15,53,M,Roeland Park,Standard,1,0
+C961,2023-01-08,94,F,Westwood,Premium,1,0
+C962,2023-09-02,82,M,Fairway,Basic,0,1
+C963,2023-05-22,101,F,Mission Hills,Standard,1,0
+C964,2023-03-12,92,M,Lake Quivira,Basic,1,0
+C965,2023-11-30,110,F,Bonner Springs,Premium,1,0
+C966,2023-09-08,86,M,Edwardsville,Basic,1,1
+C967,2023-02-20,101,F,Basehor,Standard,0,0
+C968,2023-08-05,108,M,Tonganoxie,Premium,1,0
+C969,2023-06-28,89,F,Lansing,Basic,1,1
+C970,2023-04-25,54,M,Leavenworth,Standard,1,0
+C971,2023-12-15,95,F,Atchison,Premium,1,0
+C972,2023-10-20,83,M,Hiawatha,Basic,0,1
+C973,2023-01-25,102,F,Holton,Standard,1,0
+C974,2023-07-15,93,M,Topeka,Basic,1,0
+C975,2023-05-10,111,F,Lawrence,Premium,1,0
+C976,2023-03-28,87,M,Eudora,Basic,1,1
+C977,2023-11-18,102,F,Baldwin City,Standard,0,0
+C978,2023-09-22,109,M,Ottawa,Premium,1,0
+C979,2023-02-08,90,F,Paola,Basic,1,1
+C980,2023-08-18,55,M,Louisburg,Standard,1,0
+C981,2023-06-05,96,F,Spring Hill,Premium,1,0
+C982,2023-04-18,84,M,Gardner,Basic,0,1
+C983,2023-12-05,103,F,Edgerton,Standard,1,0
+C984,2023-10-28,94,M,De Soto,Basic,1,0
+C985,2023-01-15,112,F,Shawnee,Premium,1,0
+C986,2023-07-22,88,M,Lenexa,Basic,1,1
+C987,2023-05-28,103,F,Olathe,Standard,0,0
+C988,2023-08-10,110,M,Overland Park,Premium,1,0
+C989,2023-06-22,91,F,Leawood,Basic,1,1
+C990,2023-04-08,56,M,Prairie Village,Standard,1,0
+C991,2023-12-18,97,F,Mission,Premium,1,0
+C992,2023-10-10,85,M,Merriam,Basic,0,1
+C993,2023-01-28,104,F,Roeland Park,Standard,1,0
+C994,2023-07-08,95,M,Westwood,Basic,1,0
+C995,2023-05-18,113,F,Fairway,Premium,1,0
+C996,2023-03-08,89,M,Mission Hills,Basic,1,1
+C997,2023-11-25,104,F,Lake Quivira,Standard,0,0
+C998,2023-09-18,111,M,Bonner Springs,Premium,1,0
+C999,2023-02-25,92,F,Edwardsville,Basic,1,1
+C1000,2023-08-25,57,M,Basehor,Standard,1,0

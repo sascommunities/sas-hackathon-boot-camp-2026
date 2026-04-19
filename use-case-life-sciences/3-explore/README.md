@@ -1,0 +1,173 @@
+# Step 3: Explore
+
+In this step you will use **SAS Visual Analytics** and its built-in **Copilot** to visually explore the Analytical Base Table (ABT) you created in Step 2. The goal is to understand the patterns behind patient readmission before building a predictive model.
+
+---
+
+## Prerequisites
+
+The analytical base table should already be loaded into the **Public** CAS library. If you completed Step 2 the data was saved as `life_sciences_abt.csv`. Your bootcamp environment has this pre-loaded as a CAS table named **`LIFE_SCIENCES_ABT`** in the **Public** caslib.
+
+---
+
+## Accessing the Data in SAS Visual Analytics
+
+1. Open **SAS Visual Analytics** from the SAS Viya home page
+2. Click **New Report**
+3. In the data panel click on the Add Data button and from the available tables please select **LIFE_SCIENCES_ABT**
+4. Add it as your data source — you should see all the features from Step 2 listed in the data items pane on the left
+
+> **Tip:** If the table does not appear in the Public caslib, ask your SAS Mentor to help promote it. You can also load it directly by uploading the CSV through the **Manage Data** interface.
+
+---
+
+## Using the SAS Visual Analytics Copilot
+
+SAS Visual Analytics includes a **Copilot** — an AI assistant that helps you explore data faster. You can find the Copilot icon in the top right hand corner. The Copilot can:
+
+- **Suggest visualizations** based on the variables you select
+- **Answer questions** about your data in natural language
+- **Generate insights** by automatically scanning for interesting patterns
+- **Build charts** from plain-language prompts
+
+### How to Use the Copilot
+
+1. Click the **Copilot** icon to open the assistant panel
+2. Type a question or request in natural language
+3. The Copilot will suggest or create a visualization directly in your report
+4. You can refine the result by following up with additional prompts
+5. You can right click into the chat panel and get suggestions on prompts to help you.
+
+---
+
+## Guided Exploration: Questions to Ask
+
+Work through the following questions to build your understanding of the readmission patterns. For each question, try creating the visualization manually **and/or** by asking the Copilot.
+
+### Understanding the Target Variable
+
+**Goal:** Get a baseline understanding of readmission in the dataset.
+
+- *"Show me the distribution of readmitted patients"*
+- *"What percentage of patients were readmitted within 30 days?"*
+
+Create a **bar chart** or **pie chart** of the `readmitted_30days` variable. Note the readmission rate — this establishes the class balance and the baseline your model needs to beat.
+
+### Hypothesis 1: Comorbidity Burden Drives Readmission
+
+**Goal:** Validate whether patients with more comorbidities are readmitted at higher rates.
+
+- *"Compare the average comorbidity count between readmitted and non-readmitted patients"*
+- *"Show me readmission rate by number of comorbidities"*
+- *"Is there a threshold of comorbidity count where readmission risk increases sharply?"*
+
+Create **box plots** of `comorbidity_count` grouped by `readmitted_30days`. Also create a **bar chart** showing readmission rate at each comorbidity count level.
+
+> **What to look for:** Readmitted patients should have a higher average comorbidity count. Look for a threshold effect — risk may accelerate above a certain number of conditions.
+
+### Hypothesis 2: Length of Stay Signals Severity
+
+**Goal:** Determine whether length of stay predicts readmission.
+
+- *"Show me the distribution of length of stay by readmission status"*
+- *"What is the average length of stay for readmitted vs. non-readmitted patients?"*
+- *"Is there a U-shaped relationship between length of stay and readmission?"*
+
+Create a **histogram** of `length_of_stay` colored by `readmitted_30days`. Also create a **bar chart** using the LOS category variables (`los_Short`, `los_Medium`, `los_Long`) to compare readmission rates across categories.
+
+> **What to look for:** Very short stays (potential premature discharge) and very long stays (very sick patients) may both carry elevated risk, creating a U-shaped pattern.
+
+### Hypothesis 3: Emergency Admissions Carry Higher Risk
+
+**Goal:** Explore whether unplanned admissions predict readmission.
+
+- *"What is the readmission rate for emergency vs. elective admissions?"*
+- *"Show me readmission rates by admission type"*
+
+Create a **stacked bar chart** showing readmission proportions for emergency vs. non-emergency admissions using the `emergency_flag` variable.
+
+> **What to look for:** Emergency admissions should have a meaningfully higher readmission rate than elective admissions, reflecting less controlled discharge planning.
+
+### Hypothesis 4: Medication Complexity Increases Risk
+
+**Goal:** Test whether polypharmacy and high-risk medications predict readmission.
+
+- *"Compare medication counts between readmitted and non-readmitted patients"*
+- *"What is the readmission rate for patients with polypharmacy?"*
+- *"Show me the impact of high-risk medications on readmission"*
+
+Create **box plots** of `medication_count` and `high_risk_med_count` grouped by `readmitted_30days`. Create a **bar chart** comparing readmission rates for `polypharmacy_flag` = 0 vs. 1.
+
+> **What to look for:** Patients on more medications — especially high-risk medications — should have higher readmission rates due to adherence challenges and drug interaction risks.
+
+### Hypothesis 5: Abnormal Clinical Measures Predict Readmission
+
+**Goal:** Investigate whether vital signs and lab results at admission predict readmission.
+
+- *"Show me readmission rates by lab results flag"*
+- *"Compare blood pressure distributions between readmitted and non-readmitted patients"*
+- *"What is the readmission rate by BMI category?"*
+- *"How does clinical risk score relate to readmission?"*
+
+Create **box plots** of `blood_pressure_systolic`, `glucose_level`, and `bmi` grouped by `readmitted_30days`. Create a **bar chart** of readmission rate by `clinical_risk_score`.
+
+> **What to look for:** Patients with abnormal lab results, hypertension, diabetic-range glucose, or extreme BMI values should show elevated readmission risk. The composite `clinical_risk_score` should show a clear dose-response relationship with readmission.
+
+### Correlation and Multi-Variable Exploration
+
+**Goal:** Find feature interactions and the strongest predictors.
+
+- *"Which features are most correlated with readmission?"*
+- *"Show me a correlation matrix of the top 10 numeric features"*
+- *"Create a decision tree to show which factors split readmitted from non-readmitted patients"*
+
+Use the Copilot's **automated analysis** feature to let it scan for the strongest relationships.
+
+> **What to look for:** The Copilot may surface interactions you wouldn't have checked manually, such as "patients with high comorbidity count AND emergency admission AND polypharmacy have a readmission probability above 60%."
+
+---
+
+## HIPAA Considerations for Visualizations
+
+When building dashboards and reports from patient data, keep these principles in mind:
+
+- **Avoid small cell sizes:** If a filter combination results in fewer than 10 patients, suppress the result to prevent potential re-identification
+- **Aggregate, do not display individual records:** Show distributions and averages, not patient-level detail
+- **Role-based access:** When publishing reports, ensure access is restricted to authorized clinical and administrative staff
+- **Audit trails:** SAS Visual Analytics logs all report access and data queries — this supports HIPAA compliance requirements
+- **De-identification:** The synthetic data from Step 1 eliminates these concerns entirely — a key benefit of the SAS Data Maker workflow
+
+---
+
+## Building Your Report
+
+As you work through the questions above, organize your findings into a report:
+
+1. **Overview Page:** Readmission distribution, key summary stats
+2. **Clinical Profile Page:** Comorbidities, clinical measures, lab results by readmission status
+3. **Admission Page:** Length of stay, admission type, discharge disposition patterns
+4. **Medication Page:** Medication count, polypharmacy, high-risk medications
+5. **Risk Factors Page:** Clinical risk score, insurance type, age distributions
+
+Use **filters** and **interactions** between visualizations — clicking a bar in one chart should filter the others. This lets you drill into segments like "Medicare patients with 3+ comorbidities admitted through the emergency department."
+
+---
+
+## Key Takeaways to Carry Forward
+
+Before moving on to Step 4, summarize what you have learned:
+
+1. **Which hypotheses were confirmed?** (likely H1, H3, and H4)
+2. **Which features show the strongest separation** between readmitted and non-readmitted patients?
+3. **Are there any surprising patterns** the Copilot surfaced?
+4. **What is the class balance?** (important for model training strategy)
+
+These insights will directly inform the model building approach in the next step.
+
+Finally feel free to save the report, the default location is My Folder, which is ideal here as to not clutter up the workspace for everybody else. You can also give it a name so that it is easier to remember what this report is about.
+
+---
+
+## Next Steps
+
+Proceed to **[Step 4: Model](../4-model/)** to build and compare predictive models in SAS Model Studio.

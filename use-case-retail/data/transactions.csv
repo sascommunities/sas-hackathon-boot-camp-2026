@@ -1,0 +1,764 @@
+transaction_id,customer_id,transaction_date,amount,product_category,payment_method,discount_applied
+T0001,C001,2023-01-20,89.99,Electronics,Credit Card,0
+T0002,C001,2023-02-15,45.50,Clothing,Credit Card,0.1
+T0003,C001,2023-03-10,120.00,Home & Garden,PayPal,0
+T0004,C002,2023-02-25,35.99,Books,Debit Card,0
+T0005,C002,2023-04-02,78.50,Electronics,Credit Card,0.15
+T0006,C003,2023-01-15,200.00,Electronics,Credit Card,0
+T0007,C003,2023-02-20,55.00,Clothing,Credit Card,0
+T0008,C003,2023-03-25,89.99,Home & Garden,Credit Card,0.1
+T0009,C003,2023-04-30,145.00,Electronics,PayPal,0
+T0010,C004,2023-03-15,25.99,Books,Debit Card,0
+T0011,C005,2023-03-05,150.00,Electronics,Credit Card,0
+T0012,C005,2023-04-10,67.50,Clothing,Credit Card,0.05
+T0013,C005,2023-05-15,95.00,Home & Garden,PayPal,0
+T0014,C006,2023-04-10,42.99,Books,Debit Card,0
+T0015,C007,2023-01-28,180.00,Electronics,Credit Card,0
+T0016,C007,2023-03-05,55.00,Clothing,PayPal,0.1
+T0017,C007,2023-04-20,78.99,Home & Garden,Credit Card,0
+T0018,C008,2023-05-15,250.00,Electronics,Credit Card,0
+T0019,C008,2023-06-20,89.50,Clothing,Credit Card,0
+T0020,C008,2023-07-25,120.00,Home & Garden,PayPal,0.15
+T0021,C008,2023-08-30,175.00,Electronics,Credit Card,0
+T0022,C009,2023-03-22,32.99,Books,Debit Card,0
+T0023,C010,2023-02-20,145.00,Electronics,Credit Card,0
+T0024,C010,2023-04-05,68.50,Clothing,PayPal,0.1
+T0025,C010,2023-05-25,95.00,Home & Garden,Credit Card,0
+T0026,C011,2023-06-08,320.00,Electronics,Credit Card,0
+T0027,C011,2023-07-15,105.00,Clothing,Credit Card,0
+T0028,C011,2023-08-22,145.00,Home & Garden,PayPal,0
+T0029,C011,2023-09-28,210.00,Electronics,Credit Card,0.1
+T0030,C012,2023-04-28,28.99,Books,Debit Card,0
+T0031,C013,2023-02-05,165.00,Electronics,Credit Card,0
+T0032,C013,2023-03-18,72.50,Clothing,PayPal,0
+T0033,C013,2023-05-02,88.99,Home & Garden,Credit Card,0.05
+T0034,C014,2023-07-12,38.99,Books,Debit Card,0
+T0035,C015,2023-05-22,280.00,Electronics,Credit Card,0
+T0036,C015,2023-06-28,115.00,Clothing,Credit Card,0
+T0037,C015,2023-08-05,155.00,Home & Garden,PayPal,0.1
+T0038,C015,2023-09-12,195.00,Electronics,Credit Card,0
+T0039,C016,2023-03-30,22.99,Books,Debit Card,0
+T0040,C017,2023-02-18,175.00,Electronics,Credit Card,0
+T0041,C017,2023-04-25,82.50,Clothing,PayPal,0
+T0042,C017,2023-06-08,105.00,Home & Garden,Credit Card,0.15
+T0043,C018,2023-08-20,350.00,Electronics,Credit Card,0
+T0044,C018,2023-09-28,125.00,Clothing,Credit Card,0
+T0045,C018,2023-10-15,165.00,Home & Garden,PayPal,0
+T0046,C018,2023-11-22,245.00,Electronics,Credit Card,0.1
+T0047,C019,2023-06-25,35.99,Books,Debit Card,0
+T0048,C020,2023-04-15,195.00,Electronics,Credit Card,0
+T0049,C020,2023-05-28,88.50,Clothing,PayPal,0
+T0050,C020,2023-07-12,115.00,Home & Garden,Credit Card,0
+T0051,C021,2023-01-12,290.00,Electronics,Credit Card,0
+T0052,C021,2023-02-25,105.00,Clothing,Credit Card,0
+T0053,C021,2023-04-08,135.00,Home & Garden,PayPal,0.05
+T0054,C021,2023-05-20,185.00,Electronics,Credit Card,0
+T0055,C022,2023-09-08,29.99,Books,Debit Card,0
+T0056,C023,2023-06-02,185.00,Electronics,Credit Card,0
+T0057,C023,2023-07-18,78.50,Clothing,PayPal,0
+T0058,C023,2023-09-05,110.00,Home & Garden,Credit Card,0.1
+T0059,C024,2023-03-20,42.99,Books,Debit Card,0
+T0060,C025,2023-07-28,310.00,Electronics,Credit Card,0
+T0061,C025,2023-09-05,118.00,Clothing,Credit Card,0
+T0062,C025,2023-10-18,148.00,Home & Garden,PayPal,0
+T0063,C025,2023-11-28,225.00,Electronics,Credit Card,0.15
+T0064,C026,2023-02-12,25.99,Books,Debit Card,0
+T0065,C027,2023-10-12,205.00,Electronics,Credit Card,0
+T0066,C027,2023-11-25,92.50,Clothing,PayPal,0
+T0067,C027,2023-12-18,125.00,Home & Garden,Credit Card,0
+T0068,C028,2023-06-20,340.00,Electronics,Credit Card,0
+T0069,C028,2023-08-02,128.00,Clothing,Credit Card,0
+T0070,C028,2023-09-15,158.00,Home & Garden,PayPal,0.1
+T0071,C028,2023-10-28,235.00,Electronics,Credit Card,0
+T0072,C029,2023-04-25,38.99,Books,Debit Card,0
+T0073,C030,2023-08-30,215.00,Electronics,Credit Card,0
+T0074,C030,2023-10-12,98.50,Clothing,PayPal,0
+T0075,C030,2023-11-28,132.00,Home & Garden,Credit Card,0.05
+T0076,C031,2023-01-25,275.00,Electronics,Credit Card,0
+T0077,C031,2023-03-10,108.00,Clothing,Credit Card,0
+T0078,C031,2023-04-22,142.00,Home & Garden,PayPal,0
+T0079,C031,2023-06-05,195.00,Electronics,Credit Card,0.1
+T0080,C032,2023-11-10,32.99,Books,Debit Card,0
+T0081,C033,2023-07-15,225.00,Electronics,Credit Card,0
+T0082,C033,2023-09-02,102.50,Clothing,PayPal,0
+T0083,C033,2023-10-18,138.00,Home & Garden,Credit Card,0
+T0084,C034,2023-05-28,45.99,Books,Debit Card,0
+T0085,C035,2023-04-05,295.00,Electronics,Credit Card,0
+T0086,C035,2023-05-18,115.00,Clothing,Credit Card,0
+T0087,C035,2023-07-02,152.00,Home & Garden,PayPal,0.15
+T0088,C035,2023-08-15,215.00,Electronics,Credit Card,0
+T0089,C036,2023-09-22,28.99,Books,Debit Card,0
+T0090,C037,2023-02-28,235.00,Electronics,Credit Card,0
+T0091,C037,2023-04-12,108.50,Clothing,PayPal,0
+T0092,C037,2023-05-28,145.00,Home & Garden,Credit Card,0.1
+T0093,C038,2023-12-08,360.00,Electronics,Credit Card,0
+T0094,C038,2023-12-20,135.00,Clothing,Credit Card,0
+T0095,C039,2023-08-15,35.99,Books,Debit Card,0
+T0096,C040,2023-07-02,245.00,Electronics,Credit Card,0
+T0097,C040,2023-08-18,112.50,Clothing,PayPal,0
+T0098,C040,2023-10-05,148.00,Home & Garden,Credit Card,0.05
+T0099,C041,2023-04-20,305.00,Electronics,Credit Card,0
+T0100,C041,2023-06-05,122.00,Clothing,Credit Card,0
+T0101,C041,2023-07-18,158.00,Home & Garden,PayPal,0
+T0102,C041,2023-09-02,225.00,Electronics,Credit Card,0.1
+T0103,C042,2023-10-25,42.99,Books,Debit Card,0
+T0104,C043,2023-02-05,255.00,Electronics,Credit Card,0
+T0105,C043,2023-03-20,118.50,Clothing,PayPal,0
+T0106,C043,2023-05-08,155.00,Home & Garden,Credit Card,0
+T0107,C044,2023-08-05,48.99,Books,Debit Card,0
+T0108,C045,2023-05-12,315.00,Electronics,Credit Card,0
+T0109,C045,2023-06-28,128.00,Clothing,Credit Card,0
+T0110,C045,2023-08-12,165.00,Home & Garden,PayPal,0.15
+T0111,C045,2023-09-28,235.00,Electronics,Credit Card,0
+T0112,C046,2023-03-15,38.99,Books,Debit Card,0
+T0113,C047,2023-11-30,265.00,Electronics,Credit Card,0
+T0114,C047,2023-12-15,125.00,Clothing,PayPal,0
+T0115,C048,2023-10-05,375.00,Electronics,Credit Card,0
+T0116,C048,2023-11-18,138.00,Clothing,Credit Card,0
+T0117,C048,2023-12-28,175.00,Home & Garden,PayPal,0.1
+T0118,C049,2023-02-22,32.99,Books,Debit Card,0
+T0119,C050,2023-08-25,275.00,Electronics,Credit Card,0
+T0120,C050,2023-10-10,125.50,Clothing,PayPal,0
+T0121,C050,2023-11-25,162.00,Home & Garden,Credit Card,0.05
+T0122,C051,2023-06-10,325.00,Electronics,Credit Card,0
+T0123,C051,2023-07-25,132.00,Clothing,Credit Card,0
+T0124,C051,2023-09-08,168.00,Home & Garden,PayPal,0
+T0125,C051,2023-10-22,245.00,Electronics,Credit Card,0.1
+T0126,C052,2023-04-30,25.99,Books,Debit Card,0
+T0127,C053,2023-12-18,285.00,Electronics,Credit Card,0
+T0128,C053,2023-12-28,128.50,Clothing,PayPal,0
+T0129,C054,2023-10-12,52.99,Books,Debit Card,0
+T0130,C055,2023-01-20,335.00,Electronics,Credit Card,0
+T0131,C055,2023-03-05,138.00,Clothing,Credit Card,0
+T0132,C055,2023-04-18,175.00,Home & Garden,PayPal,0.15
+T0133,C055,2023-06-02,255.00,Electronics,Credit Card,0
+T0134,C056,2023-07-22,35.99,Books,Debit Card,0
+T0135,C057,2023-05-30,295.00,Electronics,Credit Card,0
+T0136,C057,2023-07-15,135.50,Clothing,PayPal,0
+T0137,C057,2023-09-02,172.00,Home & Garden,Credit Card,0.1
+T0138,C058,2023-03-25,385.00,Electronics,Credit Card,0
+T0139,C058,2023-05-10,145.00,Clothing,Credit Card,0
+T0140,C058,2023-06-25,182.00,Home & Garden,PayPal,0
+T0141,C058,2023-08-08,265.00,Electronics,Credit Card,0.05
+T0142,C059,2023-11-15,42.99,Books,Debit Card,0
+T0143,C060,2023-09-20,305.00,Electronics,Credit Card,0
+T0144,C060,2023-11-05,142.50,Clothing,PayPal,0
+T0145,C060,2023-12-20,178.00,Home & Garden,Credit Card,0
+T0146,C061,2023-03-08,345.00,Electronics,Credit Card,0
+T0147,C061,2023-04-22,152.00,Clothing,Credit Card,0
+T0148,C061,2023-06-08,188.00,Home & Garden,PayPal,0.15
+T0149,C061,2023-07-22,275.00,Electronics,Credit Card,0
+T0150,C062,2023-08-10,28.99,Books,Debit Card,0
+T0151,C063,2023-06-25,315.00,Electronics,Credit Card,0
+T0152,C063,2023-08-12,148.50,Clothing,PayPal,0
+T0153,C063,2023-10-02,185.00,Home & Garden,Credit Card,0.1
+T0154,C064,2023-05-08,55.99,Books,Debit Card,0
+T0155,C065,2023-12-28,365.00,Electronics,Credit Card,0
+T0156,C066,2023-10-30,38.99,Books,Debit Card,0
+T0157,C067,2023-01-15,325.00,Electronics,Credit Card,0
+T0158,C067,2023-02-28,155.00,Clothing,Credit Card,0
+T0159,C067,2023-04-15,192.00,Home & Garden,PayPal,0.05
+T0160,C067,2023-05-30,285.00,Electronics,Credit Card,0
+T0161,C068,2023-08-05,395.00,Electronics,Credit Card,0
+T0162,C068,2023-09-20,162.00,Clothing,Credit Card,0
+T0163,C068,2023-11-08,198.00,Home & Garden,PayPal,0
+T0164,C068,2023-12-22,295.00,Electronics,Credit Card,0.15
+T0165,C069,2023-05-18,45.99,Books,Debit Card,0
+T0166,C070,2023-03-30,335.00,Electronics,Credit Card,0
+T0167,C070,2023-05-15,158.50,Clothing,PayPal,0
+T0168,C070,2023-07-02,195.00,Home & Garden,Credit Card,0.1
+T0169,C071,2023-11-22,375.00,Electronics,Credit Card,0
+T0170,C071,2023-12-18,168.00,Clothing,Credit Card,0
+T0171,C072,2023-09-28,32.99,Books,Debit Card,0
+T0172,C073,2023-02-12,345.00,Electronics,Credit Card,0
+T0173,C073,2023-03-28,162.50,Clothing,PayPal,0
+T0174,C073,2023-05-15,198.00,Home & Garden,Credit Card,0.05
+T0175,C074,2023-08-20,58.99,Books,Debit Card,0
+T0176,C075,2023-07-05,385.00,Electronics,Credit Card,0
+T0177,C075,2023-08-20,175.00,Clothing,Credit Card,0
+T0178,C075,2023-10-08,212.00,Home & Garden,PayPal,0
+T0179,C075,2023-11-22,305.00,Electronics,Credit Card,0.15
+T0180,C076,2023-04-22,42.99,Books,Debit Card,0
+T0181,C077,2023-12-12,355.00,Electronics,Credit Card,0
+T0182,C077,2023-12-28,168.50,Clothing,PayPal,0
+T0183,C078,2023-10-18,405.00,Electronics,Credit Card,0
+T0184,C078,2023-12-05,182.00,Clothing,Credit Card,0
+T0185,C079,2023-01-30,35.99,Books,Debit Card,0
+T0186,C080,2023-07-12,365.00,Electronics,Credit Card,0
+T0187,C080,2023-08-28,172.50,Clothing,PayPal,0
+T0188,C080,2023-10-15,208.00,Home & Garden,Credit Card,0.1
+T0189,C081,2023-05-25,395.00,Electronics,Credit Card,0
+T0190,C081,2023-07-12,185.00,Clothing,Credit Card,0
+T0191,C081,2023-08-28,222.00,Home & Garden,PayPal,0
+T0192,C081,2023-10-12,315.00,Electronics,Credit Card,0.05
+T0193,C082,2023-03-05,28.99,Books,Debit Card,0
+T0194,C083,2023-12-08,375.00,Electronics,Credit Card,0
+T0195,C083,2023-12-22,178.50,Clothing,PayPal,0
+T0196,C084,2023-09-12,62.99,Books,Debit Card,0
+T0197,C085,2023-02-25,405.00,Electronics,Credit Card,0
+T0198,C085,2023-04-12,192.00,Clothing,Credit Card,0
+T0199,C085,2023-05-28,228.00,Home & Garden,PayPal,0.15
+T0200,C085,2023-07-15,325.00,Electronics,Credit Card,0
+T0201,C086,2023-08-30,38.99,Books,Debit Card,0
+T0202,C087,2023-06-15,385.00,Electronics,Credit Card,0
+T0203,C087,2023-08-02,185.50,Clothing,PayPal,0
+T0204,C087,2023-09-18,222.00,Home & Garden,Credit Card,0.1
+T0205,C088,2023-04-28,425.00,Electronics,Credit Card,0
+T0206,C088,2023-06-15,198.00,Clothing,Credit Card,0
+T0207,C088,2023-08-02,235.00,Home & Garden,PayPal,0
+T0208,C088,2023-09-18,335.00,Electronics,Credit Card,0.05
+T0209,C089,2023-12-22,45.99,Books,Debit Card,0
+T0210,C090,2023-11-05,395.00,Electronics,Credit Card,0
+T0211,C090,2023-12-20,192.50,Clothing,PayPal,0
+T0212,C091,2023-01-28,415.00,Electronics,Credit Card,0
+T0213,C091,2023-03-15,205.00,Clothing,Credit Card,0
+T0214,C091,2023-05-02,242.00,Home & Garden,PayPal,0.15
+T0215,C091,2023-06-18,345.00,Electronics,Credit Card,0
+T0216,C092,2023-07-05,32.99,Books,Debit Card,0
+T0217,C093,2023-05-12,405.00,Electronics,Credit Card,0
+T0218,C093,2023-06-28,198.50,Clothing,PayPal,0
+T0219,C093,2023-08-15,235.00,Home & Garden,Credit Card,0.1
+T0220,C094,2023-03-18,68.99,Books,Debit Card,0
+T0221,C095,2023-12-02,435.00,Electronics,Credit Card,0
+T0222,C095,2023-12-18,212.00,Clothing,Credit Card,0
+T0223,C096,2023-10-08,42.99,Books,Debit Card,0
+T0224,C097,2023-02-20,415.00,Electronics,Credit Card,0
+T0225,C097,2023-04-08,205.50,Clothing,PayPal,0
+T0226,C097,2023-05-25,242.00,Home & Garden,Credit Card,0.05
+T0227,C098,2023-09-05,445.00,Electronics,Credit Card,0
+T0228,C098,2023-10-22,218.00,Clothing,Credit Card,0
+T0229,C098,2023-12-10,255.00,Home & Garden,PayPal,0
+T0230,C098,2023-12-28,355.00,Electronics,Credit Card,0.15
+T0231,C099,2023-06-22,38.99,Books,Debit Card,0
+T0232,C100,2023-04-10,425.00,Electronics,Credit Card,0
+T0233,C100,2023-05-28,212.50,Clothing,PayPal,0
+T0234,C100,2023-07-15,248.00,Home & Garden,Credit Card,0.1
+T0235,C101,2023-01-18,455.00,Electronics,Credit Card,0
+T0236,C101,2023-03-08,225.00,Clothing,Credit Card,0
+T0237,C101,2023-04-25,262.00,Home & Garden,PayPal,0
+T0238,C101,2023-06-12,365.00,Electronics,Credit Card,0.05
+T0239,C102,2023-07-30,35.99,Books,Debit Card,0
+T0240,C103,2023-06-05,435.00,Electronics,Credit Card,0
+T0241,C103,2023-07-22,218.50,Clothing,PayPal,0
+T0242,C103,2023-09-10,255.00,Home & Garden,Credit Card,0
+T0243,C104,2023-03-22,165.00,Electronics,Credit Card,0
+T0244,C104,2023-05-10,78.50,Clothing,PayPal,0
+T0245,C104,2023-07-02,115.00,Home & Garden,Credit Card,0.1
+T0246,C105,2023-11-25,465.00,Electronics,Credit Card,0
+T0247,C105,2023-12-15,232.00,Clothing,Credit Card,0
+T0248,C106,2023-09-30,48.99,Books,Debit Card,0
+T0249,C107,2023-03-02,445.00,Electronics,Credit Card,0
+T0250,C107,2023-04-20,225.50,Clothing,PayPal,0
+T0251,C001,2023-04-15,78.50,Clothing,Credit Card,0.1
+T0252,C001,2023-05-20,135.00,Home & Garden,PayPal,0
+T0253,C001,2023-06-25,195.00,Electronics,Credit Card,0
+T0254,C001,2023-07-30,65.00,Books,Debit Card,0
+T0255,C001,2023-09-10,145.00,Clothing,Credit Card,0.05
+T0256,C001,2023-10-15,210.00,Electronics,PayPal,0
+T0257,C001,2023-11-20,88.50,Home & Garden,Credit Card,0
+T0258,C001,2023-12-25,165.00,Clothing,Credit Card,0.15
+T0259,C003,2023-06-10,175.00,Electronics,Credit Card,0
+T0260,C003,2023-07-18,62.50,Clothing,PayPal,0
+T0261,C003,2023-08-25,98.00,Home & Garden,Credit Card,0.1
+T0262,C003,2023-10-05,155.00,Electronics,Credit Card,0
+T0263,C003,2023-11-15,72.50,Books,Debit Card,0
+T0264,C003,2023-12-20,185.00,Clothing,PayPal,0
+T0265,C005,2023-06-20,125.00,Electronics,Credit Card,0
+T0266,C005,2023-08-05,58.50,Clothing,PayPal,0
+T0267,C005,2023-09-18,82.00,Home & Garden,Credit Card,0.1
+T0268,C005,2023-11-02,118.00,Electronics,Credit Card,0
+T0269,C005,2023-12-15,55.50,Books,Debit Card,0
+T0270,C007,2023-05-28,145.00,Electronics,Credit Card,0
+T0271,C007,2023-07-12,68.50,Clothing,PayPal,0
+T0272,C007,2023-08-25,95.00,Home & Garden,Credit Card,0.05
+T0273,C007,2023-10-10,165.00,Electronics,Credit Card,0
+T0274,C007,2023-11-22,75.50,Clothing,PayPal,0
+T0275,C007,2023-12-28,115.00,Home & Garden,Credit Card,0
+T0276,C008,2023-10-08,195.00,Electronics,Credit Card,0.1
+T0277,C008,2023-11-18,82.50,Clothing,PayPal,0
+T0278,C008,2023-12-25,138.00,Home & Garden,Credit Card,0
+T0279,C010,2023-07-02,165.00,Electronics,Credit Card,0
+T0280,C010,2023-08-18,72.50,Clothing,PayPal,0.1
+T0281,C010,2023-10-05,108.00,Home & Garden,Credit Card,0
+T0282,C010,2023-11-20,155.00,Electronics,Credit Card,0
+T0283,C010,2023-12-28,68.50,Books,Debit Card,0
+T0284,C011,2023-10-28,185.00,Clothing,PayPal,0
+T0285,C011,2023-12-08,225.00,Electronics,Credit Card,0.05
+T0286,C011,2023-12-22,98.50,Home & Garden,Credit Card,0
+T0287,C013,2023-06-15,135.00,Electronics,Credit Card,0
+T0288,C013,2023-08-02,62.50,Clothing,PayPal,0
+T0289,C013,2023-09-18,88.00,Home & Garden,Credit Card,0.1
+T0290,C013,2023-11-05,145.00,Electronics,Credit Card,0
+T0291,C013,2023-12-20,58.50,Books,Debit Card,0
+T0292,C015,2023-10-25,175.00,Clothing,PayPal,0
+T0293,C015,2023-12-10,215.00,Electronics,Credit Card,0.1
+T0294,C015,2023-12-28,92.50,Home & Garden,Credit Card,0
+T0295,C017,2023-07-22,155.00,Electronics,Credit Card,0
+T0296,C017,2023-09-08,68.50,Clothing,PayPal,0
+T0297,C017,2023-10-25,98.00,Home & Garden,Credit Card,0.05
+T0298,C017,2023-12-12,165.00,Electronics,Credit Card,0
+T0299,C018,2023-12-05,135.00,Clothing,PayPal,0
+T0300,C018,2023-12-28,185.00,Home & Garden,Credit Card,0.1
+T0301,C020,2023-08-28,165.00,Electronics,Credit Card,0
+T0302,C020,2023-10-15,75.50,Clothing,PayPal,0
+T0303,C020,2023-12-02,125.00,Home & Garden,Credit Card,0
+T0304,C021,2023-07-05,168.00,Clothing,PayPal,0
+T0305,C021,2023-08-20,205.00,Electronics,Credit Card,0.1
+T0306,C021,2023-10-08,95.50,Home & Garden,Credit Card,0
+T0307,C021,2023-11-25,175.00,Electronics,Credit Card,0
+T0308,C021,2023-12-28,82.50,Books,Debit Card,0
+T0309,C023,2023-10-22,165.00,Electronics,Credit Card,0
+T0310,C023,2023-12-08,78.50,Clothing,PayPal,0
+T0311,C025,2023-12-15,188.00,Clothing,PayPal,0.05
+T0312,C025,2023-12-28,145.00,Home & Garden,Credit Card,0
+T0313,C027,2023-12-28,145.00,Electronics,Credit Card,0
+T0314,C028,2023-12-05,168.00,Clothing,PayPal,0
+T0315,C028,2023-12-28,195.00,Home & Garden,Credit Card,0.1
+T0316,C030,2023-12-22,175.00,Electronics,Credit Card,0
+T0317,C031,2023-07-20,162.00,Clothing,PayPal,0
+T0318,C031,2023-09-05,198.00,Electronics,Credit Card,0.05
+T0319,C031,2023-10-22,88.50,Home & Garden,Credit Card,0
+T0320,C031,2023-12-10,175.00,Electronics,Credit Card,0
+T0321,C033,2023-12-02,158.00,Electronics,Credit Card,0
+T0322,C033,2023-12-22,72.50,Clothing,PayPal,0
+T0323,C035,2023-10-02,178.00,Clothing,PayPal,0
+T0324,C035,2023-11-18,218.00,Electronics,Credit Card,0.1
+T0325,C035,2023-12-28,98.50,Home & Garden,Credit Card,0
+T0326,C037,2023-07-15,165.00,Electronics,Credit Card,0
+T0327,C037,2023-09-02,78.50,Clothing,PayPal,0
+T0328,C037,2023-10-20,115.00,Home & Garden,Credit Card,0.05
+T0329,C037,2023-12-08,175.00,Electronics,Credit Card,0
+T0330,C038,2023-12-28,98.50,Home & Garden,Credit Card,0.1
+T0331,C040,2023-11-22,175.00,Electronics,Credit Card,0
+T0332,C040,2023-12-28,85.50,Clothing,PayPal,0
+T0333,C041,2023-10-18,182.00,Clothing,PayPal,0
+T0334,C041,2023-12-05,228.00,Electronics,Credit Card,0.1
+T0335,C041,2023-12-28,105.50,Home & Garden,Credit Card,0
+T0336,C043,2023-06-22,175.00,Electronics,Credit Card,0
+T0337,C043,2023-08-10,82.50,Clothing,PayPal,0
+T0338,C043,2023-10-02,122.00,Home & Garden,Credit Card,0.05
+T0339,C043,2023-11-20,185.00,Electronics,Credit Card,0
+T0340,C043,2023-12-28,78.50,Books,Debit Card,0
+T0341,C045,2023-11-15,185.00,Clothing,PayPal,0
+T0342,C045,2023-12-28,238.00,Electronics,Credit Card,0.1
+T0343,C047,2023-12-28,115.00,Home & Garden,Credit Card,0
+T0344,C048,2023-12-28,135.00,Books,Debit Card,0
+T0345,C050,2023-12-28,182.00,Electronics,Credit Card,0
+T0346,C051,2023-11-28,192.00,Clothing,PayPal,0
+T0347,C051,2023-12-28,248.00,Electronics,Credit Card,0.05
+T0348,C053,2023-12-28,155.00,Home & Garden,Credit Card,0
+T0349,C055,2023-07-18,188.00,Clothing,PayPal,0
+T0350,C055,2023-09-05,258.00,Electronics,Credit Card,0.1
+T0351,C055,2023-10-22,118.50,Home & Garden,Credit Card,0
+T0352,C055,2023-12-10,195.00,Electronics,Credit Card,0
+T0353,C057,2023-10-20,185.00,Electronics,Credit Card,0
+T0354,C057,2023-12-08,92.50,Clothing,PayPal,0
+T0355,C058,2023-10-02,198.00,Clothing,PayPal,0.05
+T0356,C058,2023-11-18,268.00,Electronics,Credit Card,0
+T0357,C058,2023-12-28,125.50,Home & Garden,Credit Card,0
+T0358,C060,2023-12-28,195.00,Electronics,Credit Card,0.1
+T0359,C061,2023-09-08,202.00,Clothing,PayPal,0
+T0360,C061,2023-10-25,278.00,Electronics,Credit Card,0.05
+T0361,C061,2023-12-12,135.50,Home & Garden,Credit Card,0
+T0362,C063,2023-11-20,195.00,Electronics,Credit Card,0
+T0363,C063,2023-12-28,98.50,Clothing,PayPal,0
+T0364,C065,2023-12-28,185.00,Clothing,PayPal,0.1
+T0365,C067,2023-07-15,195.00,Electronics,Credit Card,0
+T0366,C067,2023-09-02,92.50,Clothing,PayPal,0
+T0367,C067,2023-10-20,135.00,Home & Garden,Credit Card,0.05
+T0368,C067,2023-12-08,205.00,Electronics,Credit Card,0
+T0369,C068,2023-12-28,145.00,Home & Garden,Credit Card,0.1
+T0370,C070,2023-08-20,205.00,Electronics,Credit Card,0
+T0371,C070,2023-10-08,98.50,Clothing,PayPal,0
+T0372,C070,2023-12-02,155.00,Home & Garden,Credit Card,0
+T0373,C071,2023-12-28,218.00,Electronics,Credit Card,0.05
+T0374,C073,2023-07-02,195.00,Electronics,Credit Card,0
+T0375,C073,2023-08-20,92.50,Clothing,PayPal,0
+T0376,C073,2023-10-08,138.00,Home & Garden,Credit Card,0.1
+T0377,C073,2023-12-02,208.00,Electronics,Credit Card,0
+T0378,C075,2023-12-28,215.00,Clothing,PayPal,0
+T0379,C077,2023-12-28,188.00,Home & Garden,Credit Card,0.05
+T0380,C078,2023-12-28,225.00,Electronics,Credit Card,0
+T0381,C080,2023-12-02,215.00,Electronics,Credit Card,0
+T0382,C080,2023-12-28,108.50,Clothing,PayPal,0
+T0383,C081,2023-11-28,225.00,Clothing,PayPal,0
+T0384,C081,2023-12-28,318.00,Electronics,Credit Card,0.1
+T0385,C083,2023-12-28,195.00,Home & Garden,Credit Card,0
+T0386,C085,2023-09-02,218.00,Clothing,PayPal,0
+T0387,C085,2023-10-20,328.00,Electronics,Credit Card,0.05
+T0388,C085,2023-12-08,152.50,Home & Garden,Credit Card,0
+T0389,C087,2023-11-05,225.00,Electronics,Credit Card,0
+T0390,C087,2023-12-22,112.50,Clothing,PayPal,0
+T0391,C088,2023-11-05,238.00,Clothing,PayPal,0
+T0392,C088,2023-12-22,338.00,Electronics,Credit Card,0.1
+T0393,C090,2023-12-28,218.00,Home & Garden,Credit Card,0
+T0394,C091,2023-08-05,248.00,Clothing,PayPal,0
+T0395,C091,2023-09-22,348.00,Electronics,Credit Card,0.05
+T0396,C091,2023-11-10,168.50,Home & Garden,Credit Card,0
+T0397,C091,2023-12-28,255.00,Electronics,Credit Card,0
+T0398,C093,2023-10-02,245.00,Electronics,Credit Card,0
+T0399,C093,2023-11-20,118.50,Clothing,PayPal,0
+T0400,C093,2023-12-28,175.00,Home & Garden,Credit Card,0.1
+T0401,C095,2023-12-28,258.00,Electronics,Credit Card,0.05
+T0402,C097,2023-07-12,245.00,Electronics,Credit Card,0
+T0403,C097,2023-09-02,118.50,Clothing,PayPal,0
+T0404,C097,2023-10-22,168.00,Home & Garden,Credit Card,0.1
+T0405,C097,2023-12-10,265.00,Electronics,Credit Card,0
+T0406,C098,2023-12-28,175.00,Books,Debit Card,0
+T0407,C100,2023-09-02,265.00,Electronics,Credit Card,0
+T0408,C100,2023-10-22,128.50,Clothing,PayPal,0
+T0409,C100,2023-12-10,188.00,Home & Garden,Credit Card,0.05
+T0410,C101,2023-08-02,275.00,Clothing,PayPal,0
+T0411,C101,2023-09-20,368.00,Electronics,Credit Card,0.1
+T0412,C101,2023-11-08,178.50,Home & Garden,Credit Card,0
+T0413,C101,2023-12-28,285.00,Electronics,Credit Card,0
+T0414,C103,2023-11-02,275.00,Electronics,Credit Card,0
+T0415,C103,2023-12-22,135.50,Clothing,PayPal,0
+T0416,C104,2023-09-15,178.00,Electronics,Credit Card,0
+T0417,C104,2023-11-05,88.50,Clothing,PayPal,0.1
+T0418,C104,2023-12-22,135.00,Home & Garden,Credit Card,0
+T0419,C105,2023-12-28,285.00,Home & Garden,Credit Card,0.05
+T0420,C107,2023-06-08,268.00,Home & Garden,Credit Card,0
+T0421,C107,2023-08-02,285.00,Electronics,Credit Card,0.1
+T0422,C107,2023-09-22,135.50,Clothing,PayPal,0
+T0423,C107,2023-11-12,198.00,Home & Garden,Credit Card,0
+T0424,C107,2023-12-28,295.00,Electronics,Credit Card,0
+T0425,C108,2023-09-02,375.00,Electronics,Credit Card,0
+T0426,C108,2023-10-18,178.50,Clothing,PayPal,0
+T0427,C108,2023-12-05,225.00,Home & Garden,Credit Card,0.15
+T0428,C108,2023-12-28,305.00,Electronics,Credit Card,0
+T0429,C109,2023-06-28,35.99,Books,Debit Card,0
+T0430,C110,2023-04-15,285.00,Electronics,Credit Card,0
+T0431,C110,2023-06-02,135.50,Clothing,PayPal,0
+T0432,C110,2023-07-20,178.00,Home & Garden,Credit Card,0.1
+T0433,C110,2023-09-08,235.00,Electronics,Credit Card,0
+T0434,C110,2023-11-02,118.50,Clothing,PayPal,0
+T0435,C110,2023-12-20,165.00,Home & Garden,Credit Card,0
+T0436,C111,2023-12-28,295.00,Electronics,Credit Card,0.05
+T0437,C113,2023-02-05,265.00,Electronics,Credit Card,0
+T0438,C113,2023-03-22,125.50,Clothing,PayPal,0
+T0439,C113,2023-05-10,168.00,Home & Garden,Credit Card,0.1
+T0440,C113,2023-07-02,225.00,Electronics,Credit Card,0
+T0441,C113,2023-08-22,108.50,Clothing,PayPal,0
+T0442,C113,2023-10-12,148.00,Home & Garden,Credit Card,0
+T0443,C113,2023-12-05,235.00,Electronics,Credit Card,0
+T0444,C114,2023-07-18,185.00,Electronics,Credit Card,0
+T0445,C114,2023-09-05,92.50,Clothing,PayPal,0
+T0446,C114,2023-10-25,132.00,Home & Garden,Credit Card,0.05
+T0447,C114,2023-12-15,198.00,Electronics,Credit Card,0
+T0448,C115,2023-05-20,295.00,Electronics,Credit Card,0
+T0449,C115,2023-07-08,142.50,Clothing,PayPal,0
+T0450,C115,2023-08-28,188.00,Home & Garden,Credit Card,0.1
+T0451,C115,2023-10-18,265.00,Electronics,Credit Card,0
+T0452,C115,2023-12-08,135.50,Clothing,PayPal,0
+T0453,C117,2023-11-12,275.00,Electronics,Credit Card,0
+T0454,C117,2023-12-28,132.50,Clothing,PayPal,0
+T0455,C118,2023-09-15,345.00,Electronics,Credit Card,0
+T0456,C118,2023-11-02,165.50,Clothing,PayPal,0.1
+T0457,C118,2023-12-20,215.00,Home & Garden,Credit Card,0
+T0458,C120,2023-08-22,285.00,Electronics,Credit Card,0
+T0459,C120,2023-10-10,138.50,Clothing,PayPal,0
+T0460,C120,2023-12-02,182.00,Home & Garden,Credit Card,0.05
+T0461,C121,2023-07-08,325.00,Electronics,Credit Card,0
+T0462,C121,2023-08-25,155.50,Clothing,PayPal,0
+T0463,C121,2023-10-15,198.00,Home & Garden,Credit Card,0.1
+T0464,C121,2023-12-05,285.00,Electronics,Credit Card,0
+T0465,C123,2023-12-20,265.00,Electronics,Credit Card,0
+T0466,C123,2023-12-28,128.50,Clothing,PayPal,0
+T0467,C124,2023-10-28,195.00,Electronics,Credit Card,0
+T0468,C124,2023-12-15,98.50,Clothing,PayPal,0.05
+T0469,C125,2023-01-22,305.00,Electronics,Credit Card,0
+T0470,C125,2023-03-10,148.50,Clothing,PayPal,0
+T0471,C125,2023-05-02,192.00,Home & Garden,Credit Card,0.1
+T0472,C125,2023-06-22,275.00,Electronics,Credit Card,0
+T0473,C125,2023-08-15,138.50,Clothing,PayPal,0
+T0474,C125,2023-10-08,178.00,Home & Garden,Credit Card,0
+T0475,C125,2023-12-02,295.00,Electronics,Credit Card,0
+T0476,C127,2023-05-15,285.00,Electronics,Credit Card,0
+T0477,C127,2023-07-05,138.50,Clothing,PayPal,0
+T0478,C127,2023-08-28,182.00,Home & Garden,Credit Card,0.05
+T0479,C127,2023-10-20,255.00,Electronics,Credit Card,0
+T0480,C127,2023-12-12,125.50,Clothing,PayPal,0
+T0481,C128,2023-04-02,355.00,Electronics,Credit Card,0
+T0482,C128,2023-05-22,168.50,Clothing,PayPal,0.1
+T0483,C128,2023-07-15,218.00,Home & Garden,Credit Card,0
+T0484,C128,2023-09-08,305.00,Electronics,Credit Card,0
+T0485,C128,2023-11-02,152.50,Clothing,PayPal,0
+T0486,C128,2023-12-25,195.00,Home & Garden,Credit Card,0
+T0487,C130,2023-09-25,295.00,Electronics,Credit Card,0
+T0488,C130,2023-11-15,142.50,Clothing,PayPal,0
+T0489,C130,2023-12-28,188.00,Home & Garden,Credit Card,0.05
+T0490,C131,2023-02-28,325.00,Electronics,Credit Card,0
+T0491,C131,2023-04-18,158.50,Clothing,PayPal,0.1
+T0492,C131,2023-06-12,205.00,Home & Garden,Credit Card,0
+T0493,C131,2023-08-08,295.00,Electronics,Credit Card,0
+T0494,C131,2023-10-02,145.50,Clothing,PayPal,0
+T0495,C131,2023-12-02,192.00,Home & Garden,Credit Card,0
+T0496,C133,2023-06-12,305.00,Electronics,Credit Card,0
+T0497,C133,2023-08-05,148.50,Clothing,PayPal,0
+T0498,C133,2023-10-02,195.00,Home & Garden,Credit Card,0.05
+T0499,C133,2023-12-02,275.00,Electronics,Credit Card,0
+T0500,C134,2023-04-02,195.00,Electronics,Credit Card,0
+T0501,C134,2023-05-22,98.50,Clothing,PayPal,0
+T0502,C134,2023-07-15,142.00,Home & Garden,Credit Card,0.1
+T0503,C134,2023-09-10,218.00,Electronics,Credit Card,0
+T0504,C134,2023-11-05,108.50,Clothing,PayPal,0
+T0505,C134,2023-12-28,155.00,Home & Garden,Credit Card,0
+T0506,C135,2023-12-28,345.00,Electronics,Credit Card,0
+T0507,C137,2023-01-12,285.00,Electronics,Credit Card,0
+T0508,C137,2023-02-28,138.50,Clothing,PayPal,0.05
+T0509,C137,2023-04-22,182.00,Home & Garden,Credit Card,0
+T0510,C137,2023-06-18,255.00,Electronics,Credit Card,0
+T0511,C137,2023-08-15,125.50,Clothing,PayPal,0
+T0512,C137,2023-10-12,168.00,Home & Garden,Credit Card,0.1
+T0513,C137,2023-12-08,275.00,Electronics,Credit Card,0
+T0514,C138,2023-07-28,365.00,Electronics,Credit Card,0
+T0515,C138,2023-09-18,175.50,Clothing,PayPal,0
+T0516,C138,2023-11-12,225.00,Home & Garden,Credit Card,0.05
+T0517,C138,2023-12-28,315.00,Electronics,Credit Card,0
+T0518,C140,2023-03-10,295.00,Electronics,Credit Card,0
+T0519,C140,2023-05-05,142.50,Clothing,PayPal,0.1
+T0520,C140,2023-07-02,188.00,Home & Garden,Credit Card,0
+T0521,C140,2023-09-02,265.00,Electronics,Credit Card,0
+T0522,C140,2023-11-02,135.50,Clothing,PayPal,0
+T0523,C140,2023-12-28,175.00,Home & Garden,Credit Card,0
+T0524,C141,2023-12-05,335.00,Electronics,Credit Card,0
+T0525,C141,2023-12-22,162.50,Clothing,PayPal,0
+T0526,C143,2023-02-22,275.00,Electronics,Credit Card,0
+T0527,C143,2023-04-15,132.50,Clothing,PayPal,0.05
+T0528,C143,2023-06-12,175.00,Home & Garden,Credit Card,0
+T0529,C143,2023-08-10,245.00,Electronics,Credit Card,0
+T0530,C143,2023-10-08,118.50,Clothing,PayPal,0
+T0531,C143,2023-12-05,162.00,Home & Garden,Credit Card,0.1
+T0532,C144,2023-08-18,205.00,Electronics,Credit Card,0
+T0533,C144,2023-10-08,102.50,Clothing,PayPal,0
+T0534,C144,2023-12-02,148.00,Home & Garden,Credit Card,0
+T0535,C145,2023-05-12,315.00,Electronics,Credit Card,0
+T0536,C145,2023-07-05,152.50,Clothing,PayPal,0.05
+T0537,C145,2023-09-02,198.00,Home & Garden,Credit Card,0
+T0538,C145,2023-11-02,285.00,Electronics,Credit Card,0
+T0539,C145,2023-12-28,142.50,Clothing,PayPal,0
+T0540,C147,2023-12-15,275.00,Electronics,Credit Card,0.1
+T0541,C147,2023-12-28,132.50,Clothing,PayPal,0
+T0542,C148,2023-10-20,355.00,Electronics,Credit Card,0
+T0543,C148,2023-12-10,172.50,Clothing,PayPal,0
+T0544,C148,2023-12-28,218.00,Home & Garden,Credit Card,0.05
+T0545,C150,2023-07-20,305.00,Electronics,Credit Card,0
+T0546,C150,2023-09-12,148.50,Clothing,PayPal,0.1
+T0547,C150,2023-11-08,195.00,Home & Garden,Credit Card,0
+T0548,C150,2023-12-28,275.00,Electronics,Credit Card,0
+T0549,C151,2023-05-28,325.00,Electronics,Credit Card,0
+T0550,C151,2023-07-22,158.50,Clothing,PayPal,0
+T0551,C151,2023-09-18,205.00,Home & Garden,Credit Card,0.05
+T0552,C151,2023-11-15,295.00,Electronics,Credit Card,0
+T0553,C151,2023-12-28,152.50,Clothing,PayPal,0
+T0554,C153,2023-12-02,285.00,Electronics,Credit Card,0.1
+T0555,C153,2023-12-22,138.50,Clothing,PayPal,0
+T0556,C154,2023-09-22,215.00,Electronics,Credit Card,0
+T0557,C154,2023-11-15,108.50,Clothing,PayPal,0
+T0558,C154,2023-12-28,155.00,Home & Garden,Credit Card,0.05
+T0559,C155,2023-03-08,335.00,Electronics,Credit Card,0
+T0560,C155,2023-05-02,162.50,Clothing,PayPal,0.1
+T0561,C155,2023-07-02,208.00,Home & Garden,Credit Card,0
+T0562,C155,2023-09-05,305.00,Electronics,Credit Card,0
+T0563,C155,2023-11-05,152.50,Clothing,PayPal,0
+T0564,C155,2023-12-28,198.00,Home & Garden,Credit Card,0
+T0565,C157,2023-06-18,295.00,Electronics,Credit Card,0
+T0566,C157,2023-08-12,142.50,Clothing,PayPal,0.05
+T0567,C157,2023-10-10,188.00,Home & Garden,Credit Card,0
+T0568,C157,2023-12-10,265.00,Electronics,Credit Card,0
+T0569,C158,2023-05-05,375.00,Electronics,Credit Card,0
+T0570,C158,2023-06-28,182.50,Clothing,PayPal,0.1
+T0571,C158,2023-08-25,235.00,Home & Garden,Credit Card,0
+T0572,C158,2023-10-22,325.00,Electronics,Credit Card,0
+T0573,C158,2023-12-18,168.50,Clothing,PayPal,0
+T0574,C160,2023-10-30,305.00,Electronics,Credit Card,0
+T0575,C160,2023-12-22,148.50,Clothing,PayPal,0.05
+T0576,C161,2023-01-20,325.00,Electronics,Credit Card,0
+T0577,C161,2023-03-15,158.50,Clothing,PayPal,0.1
+T0578,C161,2023-05-12,205.00,Home & Garden,Credit Card,0
+T0579,C161,2023-07-10,295.00,Electronics,Credit Card,0
+T0580,C161,2023-09-08,148.50,Clothing,PayPal,0
+T0581,C161,2023-11-08,192.00,Home & Garden,Credit Card,0
+T0582,C161,2023-12-28,315.00,Electronics,Credit Card,0
+T0583,C163,2023-05-30,295.00,Electronics,Credit Card,0
+T0584,C163,2023-07-28,142.50,Clothing,PayPal,0.05
+T0585,C163,2023-09-25,188.00,Home & Garden,Credit Card,0
+T0586,C163,2023-11-25,265.00,Electronics,Credit Card,0
+T0587,C163,2023-12-28,135.50,Clothing,PayPal,0
+T0588,C164,2023-03-25,215.00,Electronics,Credit Card,0
+T0589,C164,2023-05-20,108.50,Clothing,PayPal,0.1
+T0590,C164,2023-07-18,152.00,Home & Garden,Credit Card,0
+T0591,C164,2023-09-18,238.00,Electronics,Credit Card,0
+T0592,C164,2023-11-18,118.50,Clothing,PayPal,0
+T0593,C164,2023-12-28,165.00,Home & Garden,Credit Card,0
+T0594,C165,2023-11-15,345.00,Electronics,Credit Card,0.05
+T0595,C165,2023-12-28,168.50,Clothing,PayPal,0
+T0596,C167,2023-02-12,285.00,Electronics,Credit Card,0
+T0597,C167,2023-04-08,138.50,Clothing,PayPal,0.1
+T0598,C167,2023-06-08,182.00,Home & Garden,Credit Card,0
+T0599,C167,2023-08-08,255.00,Electronics,Credit Card,0
+T0600,C167,2023-10-10,128.50,Clothing,PayPal,0
+T0601,C167,2023-12-12,172.00,Home & Garden,Credit Card,0.05
+T0602,C168,2023-08-10,365.00,Electronics,Credit Card,0
+T0603,C168,2023-10-02,178.50,Clothing,PayPal,0.1
+T0604,C168,2023-11-28,228.00,Home & Garden,Credit Card,0
+T0605,C168,2023-12-28,315.00,Electronics,Credit Card,0
+T0606,C170,2023-04-12,305.00,Electronics,Credit Card,0
+T0607,C170,2023-06-10,148.50,Clothing,PayPal,0
+T0608,C170,2023-08-10,195.00,Home & Garden,Credit Card,0.05
+T0609,C170,2023-10-12,275.00,Electronics,Credit Card,0
+T0610,C170,2023-12-15,142.50,Clothing,PayPal,0
+T0611,C171,2023-12-28,335.00,Electronics,Credit Card,0.1
+T0612,C173,2023-02-05,275.00,Electronics,Credit Card,0
+T0613,C173,2023-03-28,132.50,Clothing,PayPal,0
+T0614,C173,2023-05-28,175.00,Home & Garden,Credit Card,0.05
+T0615,C173,2023-07-28,245.00,Electronics,Credit Card,0
+T0616,C173,2023-09-30,118.50,Clothing,PayPal,0
+T0617,C173,2023-12-02,162.00,Home & Garden,Credit Card,0.1
+T0618,C174,2023-07-22,225.00,Electronics,Credit Card,0
+T0619,C174,2023-09-18,112.50,Clothing,PayPal,0
+T0620,C174,2023-11-18,158.00,Home & Garden,Credit Card,0
+T0621,C174,2023-12-28,248.00,Electronics,Credit Card,0.05
+T0622,C175,2023-05-10,335.00,Electronics,Credit Card,0
+T0623,C175,2023-07-05,162.50,Clothing,PayPal,0.1
+T0624,C175,2023-09-05,208.00,Home & Garden,Credit Card,0
+T0625,C175,2023-11-08,305.00,Electronics,Credit Card,0
+T0626,C175,2023-12-28,155.50,Clothing,PayPal,0
+T0627,C177,2023-11-22,285.00,Electronics,Credit Card,0
+T0628,C177,2023-12-28,138.50,Clothing,PayPal,0.05
+T0629,C178,2023-09-18,375.00,Electronics,Credit Card,0
+T0630,C178,2023-11-10,182.50,Clothing,PayPal,0.1
+T0631,C178,2023-12-28,235.00,Home & Garden,Credit Card,0
+T0632,C180,2023-08-30,305.00,Electronics,Credit Card,0
+T0633,C180,2023-10-28,148.50,Clothing,PayPal,0
+T0634,C180,2023-12-28,195.00,Home & Garden,Credit Card,0.05
+T0635,C181,2023-07-05,345.00,Electronics,Credit Card,0
+T0636,C181,2023-08-28,168.50,Clothing,PayPal,0.1
+T0637,C181,2023-10-25,218.00,Home & Garden,Credit Card,0
+T0638,C181,2023-12-22,305.00,Electronics,Credit Card,0
+T0639,C183,2023-12-18,285.00,Electronics,Credit Card,0.05
+T0640,C183,2023-12-28,138.50,Clothing,PayPal,0
+T0641,C184,2023-10-25,235.00,Electronics,Credit Card,0
+T0642,C184,2023-12-20,118.50,Clothing,PayPal,0.1
+T0643,C185,2023-01-15,355.00,Electronics,Credit Card,0
+T0644,C185,2023-03-10,172.50,Clothing,PayPal,0
+T0645,C185,2023-05-10,218.00,Home & Garden,Credit Card,0.05
+T0646,C185,2023-07-12,325.00,Electronics,Credit Card,0
+T0647,C185,2023-09-12,158.50,Clothing,PayPal,0
+T0648,C185,2023-11-15,205.00,Home & Garden,Credit Card,0.1
+T0649,C185,2023-12-28,345.00,Electronics,Credit Card,0
+T0650,C187,2023-05-18,295.00,Electronics,Credit Card,0
+T0651,C187,2023-07-15,142.50,Clothing,PayPal,0.05
+T0652,C187,2023-09-15,188.00,Home & Garden,Credit Card,0
+T0653,C187,2023-11-20,265.00,Electronics,Credit Card,0
+T0654,C187,2023-12-28,135.50,Clothing,PayPal,0
+T0655,C188,2023-04-05,375.00,Electronics,Credit Card,0
+T0656,C188,2023-06-02,182.50,Clothing,PayPal,0.1
+T0657,C188,2023-08-05,235.00,Home & Garden,Credit Card,0
+T0658,C188,2023-10-08,325.00,Electronics,Credit Card,0
+T0659,C188,2023-12-10,165.50,Clothing,PayPal,0
+T0660,C190,2023-09-30,315.00,Electronics,Credit Card,0.05
+T0661,C190,2023-11-28,152.50,Clothing,PayPal,0
+T0662,C190,2023-12-28,198.00,Home & Garden,Credit Card,0
+T0663,C191,2023-02-20,335.00,Electronics,Credit Card,0
+T0664,C191,2023-04-18,162.50,Clothing,PayPal,0.1
+T0665,C191,2023-06-20,208.00,Home & Garden,Credit Card,0
+T0666,C191,2023-08-22,305.00,Electronics,Credit Card,0
+T0667,C191,2023-10-25,152.50,Clothing,PayPal,0
+T0668,C191,2023-12-28,198.00,Home & Garden,Credit Card,0
+T0669,C193,2023-06-22,305.00,Electronics,Credit Card,0
+T0670,C193,2023-08-20,148.50,Clothing,PayPal,0.05
+T0671,C193,2023-10-22,195.00,Home & Garden,Credit Card,0
+T0672,C193,2023-12-25,275.00,Electronics,Credit Card,0
+T0673,C194,2023-04-10,215.00,Electronics,Credit Card,0
+T0674,C194,2023-06-08,108.50,Clothing,PayPal,0.1
+T0675,C194,2023-08-10,152.00,Home & Garden,Credit Card,0
+T0676,C194,2023-10-15,238.00,Electronics,Credit Card,0
+T0677,C194,2023-12-18,118.50,Clothing,PayPal,0
+T0678,C195,2023-12-22,355.00,Electronics,Credit Card,0.05
+T0679,C195,2023-12-28,172.50,Clothing,PayPal,0
+T0680,C197,2023-01-25,285.00,Electronics,Credit Card,0
+T0681,C197,2023-03-22,138.50,Clothing,PayPal,0.1
+T0682,C197,2023-05-25,182.00,Home & Garden,Credit Card,0
+T0683,C197,2023-07-28,255.00,Electronics,Credit Card,0
+T0684,C197,2023-09-30,128.50,Clothing,PayPal,0
+T0685,C197,2023-12-05,172.00,Home & Garden,Credit Card,0.05
+T0686,C198,2023-07-30,375.00,Electronics,Credit Card,0
+T0687,C198,2023-09-25,182.50,Clothing,PayPal,0.1
+T0688,C198,2023-11-28,235.00,Home & Garden,Credit Card,0
+T0689,C198,2023-12-28,325.00,Electronics,Credit Card,0
+T0690,C200,2023-08-20,315.00,Electronics,Credit Card,0
+T0691,C200,2023-10-18,152.50,Clothing,PayPal,0.05
+T0692,C200,2023-12-20,198.00,Home & Garden,Credit Card,0
+T0693,C002,2023-05-15,55.00,Home & Garden,Credit Card,0
+T0694,C002,2023-06-20,42.99,Books,Debit Card,0
+T0695,C004,2023-04-02,18.99,Books,Debit Card,0
+T0696,C006,2023-05-08,35.50,Clothing,Debit Card,0
+T0697,C009,2023-04-15,22.99,Books,Debit Card,0
+T0698,C012,2023-05-20,28.50,Clothing,Debit Card,0
+T0699,C014,2023-08-05,19.99,Books,Debit Card,0
+T0700,C016,2023-04-18,32.50,Home & Garden,Debit Card,0
+T0701,C019,2023-07-10,25.99,Books,Debit Card,0
+T0702,C022,2023-09-25,38.50,Clothing,Debit Card,0
+T0703,C024,2023-04-08,22.99,Books,Debit Card,0
+T0704,C026,2023-03-05,28.50,Home & Garden,Debit Card,0
+T0705,C029,2023-05-15,19.99,Books,Debit Card,0
+T0706,C032,2023-11-28,35.50,Clothing,Debit Card,0
+T0707,C034,2023-06-15,25.99,Books,Debit Card,0
+T0708,C036,2023-10-10,42.50,Home & Garden,Debit Card,0
+T0709,C039,2023-09-02,22.99,Books,Debit Card,0
+T0710,C042,2023-11-12,38.50,Clothing,Debit Card,0
+T0711,C044,2023-08-28,28.99,Books,Debit Card,0
+T0712,C046,2023-04-05,32.50,Home & Garden,Debit Card,0
+T0713,C049,2023-03-10,19.99,Books,Debit Card,0
+T0714,C052,2023-05-18,35.50,Clothing,Debit Card,0
+T0715,C054,2023-11-02,25.99,Books,Debit Card,0
+T0716,C056,2023-08-10,42.50,Home & Garden,Debit Card,0
+T0717,C059,2023-12-05,22.99,Books,Debit Card,0
+T0718,C062,2023-09-05,38.50,Clothing,Debit Card,0
+T0719,C064,2023-06-02,28.99,Books,Debit Card,0
+T0720,C066,2023-11-18,32.50,Home & Garden,Debit Card,0
+T0721,C069,2023-06-08,19.99,Books,Debit Card,0
+T0722,C072,2023-10-15,35.50,Clothing,Debit Card,0
+T0723,C074,2023-09-10,25.99,Books,Debit Card,0
+T0724,C076,2023-05-10,42.50,Home & Garden,Debit Card,0
+T0725,C079,2023-02-18,22.99,Books,Debit Card,0
+T0726,C082,2023-04-02,38.50,Clothing,Debit Card,0
+T0727,C084,2023-10-02,28.99,Books,Debit Card,0
+T0728,C086,2023-09-18,32.50,Home & Garden,Debit Card,0
+T0729,C089,2023-12-28,19.99,Books,Debit Card,0
+T0730,C092,2023-08-02,35.50,Clothing,Debit Card,0
+T0731,C094,2023-04-08,25.99,Books,Debit Card,0
+T0732,C096,2023-10-28,42.50,Home & Garden,Debit Card,0
+T0733,C099,2023-07-10,22.99,Books,Debit Card,0
+T0734,C102,2023-08-18,38.50,Clothing,Debit Card,0
+T0735,C106,2023-10-18,28.99,Books,Debit Card,0
+T0736,C109,2023-07-15,32.50,Home & Garden,Debit Card,0
+T0737,C112,2023-10-25,19.99,Books,Debit Card,0
+T0738,C116,2023-04-02,35.50,Clothing,Debit Card,0
+T0739,C119,2023-03-05,25.99,Books,Debit Card,0
+T0740,C122,2023-11-02,42.50,Home & Garden,Debit Card,0
+T0741,C126,2023-07-20,22.99,Books,Debit Card,0
+T0742,C129,2023-12-08,38.50,Clothing,Debit Card,0
+T0743,C132,2023-08-18,28.99,Books,Debit Card,0
+T0744,C136,2023-11-05,32.50,Home & Garden,Debit Card,0
+T0745,C139,2023-06-02,19.99,Books,Debit Card,0
+T0746,C142,2023-10-08,35.50,Clothing,Debit Card,0
+T0747,C146,2023-05-05,25.99,Books,Debit Card,0
+T0748,C149,2023-02-10,42.50,Home & Garden,Debit Card,0
+T0749,C152,2023-04-02,22.99,Books,Debit Card,0
+T0750,C156,2023-09-05,38.50,Clothing,Debit Card,0
+T0751,C159,2023-12-28,28.99,Books,Debit Card,0
+T0752,C162,2023-08-02,32.50,Home & Garden,Debit Card,0
+T0753,C166,2023-10-15,19.99,Books,Debit Card,0
+T0754,C169,2023-07-05,35.50,Clothing,Debit Card,0
+T0755,C172,2023-11-18,25.99,Books,Debit Card,0
+T0756,C176,2023-04-10,42.50,Home & Garden,Debit Card,0
+T0757,C179,2023-03-08,22.99,Books,Debit Card,0
+T0758,C182,2023-05-02,38.50,Clothing,Debit Card,0
+T0759,C186,2023-08-10,28.99,Books,Debit Card,0
+T0760,C189,2023-12-15,32.50,Home & Garden,Debit Card,0
+T0761,C192,2023-09-02,19.99,Books,Debit Card,0
+T0762,C196,2023-11-12,35.50,Clothing,Debit Card,0
+T0763,C199,2023-06-15,25.99,Books,Debit Card,0

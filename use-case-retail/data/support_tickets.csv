@@ -1,0 +1,401 @@
+ticket_id,customer_id,ticket_date,issue_category,priority,resolution_time_hours,satisfaction_score,resolved
+TK001,C004,2023-03-18,Billing,High,48,2,1
+TK002,C004,2023-03-25,Product Quality,Medium,72,1,1
+TK003,C006,2023-04-12,Shipping,High,36,2,1
+TK004,C006,2023-04-20,Billing,High,96,1,1
+TK005,C009,2023-03-25,Product Quality,High,48,2,1
+TK006,C009,2023-04-02,Refund Request,High,72,1,1
+TK007,C012,2023-05-01,Shipping,Medium,24,3,1
+TK008,C012,2023-05-15,Technical Issue,High,48,2,1
+TK009,C014,2023-07-15,Billing,High,36,2,1
+TK010,C014,2023-07-28,Account Access,High,72,1,1
+TK011,C016,2023-04-02,Product Quality,High,48,2,1
+TK012,C016,2023-04-10,Refund Request,High,96,1,1
+TK013,C019,2023-06-28,Shipping,High,36,2,1
+TK014,C019,2023-07-05,Billing,High,72,1,1
+TK015,C022,2023-09-12,Product Quality,High,48,2,1
+TK016,C022,2023-09-20,Technical Issue,High,96,1,1
+TK017,C024,2023-03-25,Billing,High,36,2,1
+TK018,C024,2023-04-02,Refund Request,High,72,1,1
+TK019,C026,2023-02-15,Shipping,High,48,2,1
+TK020,C026,2023-02-25,Product Quality,High,96,1,1
+TK021,C029,2023-04-28,Account Access,High,36,2,1
+TK022,C029,2023-05-05,Billing,High,72,1,1
+TK023,C032,2023-11-15,Technical Issue,High,48,2,1
+TK024,C032,2023-11-22,Refund Request,High,96,1,1
+TK025,C034,2023-06-02,Shipping,High,36,2,1
+TK026,C034,2023-06-10,Product Quality,High,72,1,1
+TK027,C036,2023-09-28,Billing,High,48,2,1
+TK028,C036,2023-10-05,Account Access,High,96,1,1
+TK029,C039,2023-08-20,Technical Issue,High,36,2,1
+TK030,C039,2023-08-28,Refund Request,High,72,1,1
+TK031,C042,2023-10-28,Shipping,High,48,2,1
+TK032,C042,2023-11-05,Product Quality,High,96,1,1
+TK033,C044,2023-08-12,Billing,High,36,2,1
+TK034,C044,2023-08-20,Technical Issue,High,72,1,1
+TK035,C046,2023-03-20,Refund Request,High,48,2,1
+TK036,C046,2023-03-28,Shipping,High,96,1,1
+TK037,C049,2023-02-28,Product Quality,High,36,2,1
+TK038,C049,2023-03-08,Account Access,High,72,1,1
+TK039,C052,2023-05-05,Billing,High,48,2,1
+TK040,C052,2023-05-12,Technical Issue,High,96,1,1
+TK041,C054,2023-10-18,Refund Request,High,36,2,1
+TK042,C054,2023-10-25,Shipping,High,72,1,1
+TK043,C056,2023-07-28,Product Quality,High,48,2,1
+TK044,C056,2023-08-05,Billing,High,96,1,1
+TK045,C059,2023-11-20,Account Access,High,36,2,1
+TK046,C059,2023-11-28,Technical Issue,High,72,1,1
+TK047,C062,2023-08-15,Refund Request,High,48,2,1
+TK048,C062,2023-08-22,Shipping,High,96,1,1
+TK049,C064,2023-05-15,Product Quality,High,36,2,1
+TK050,C064,2023-05-22,Billing,High,72,1,1
+TK051,C066,2023-11-02,Account Access,High,48,2,1
+TK052,C066,2023-11-10,Technical Issue,High,96,1,1
+TK053,C069,2023-05-22,Refund Request,High,36,2,1
+TK054,C069,2023-05-30,Shipping,High,72,1,1
+TK055,C072,2023-10-02,Product Quality,High,48,2,1
+TK056,C072,2023-10-10,Billing,High,96,1,1
+TK057,C074,2023-08-25,Account Access,High,36,2,1
+TK058,C074,2023-09-02,Technical Issue,High,72,1,1
+TK059,C076,2023-04-28,Refund Request,High,48,2,1
+TK060,C076,2023-05-05,Shipping,High,96,1,1
+TK061,C079,2023-02-02,Product Quality,High,36,2,1
+TK062,C079,2023-02-10,Billing,High,72,1,1
+TK063,C082,2023-03-12,Account Access,High,48,2,1
+TK064,C082,2023-03-20,Technical Issue,High,96,1,1
+TK065,C084,2023-09-18,Refund Request,High,36,2,1
+TK066,C084,2023-09-25,Shipping,High,72,1,1
+TK067,C086,2023-09-05,Product Quality,High,48,2,1
+TK068,C086,2023-09-12,Billing,High,96,1,1
+TK069,C089,2023-12-28,Account Access,High,36,2,1
+TK070,C092,2023-07-12,Technical Issue,High,48,2,1
+TK071,C092,2023-07-20,Refund Request,High,96,1,1
+TK072,C094,2023-03-25,Shipping,High,36,2,1
+TK073,C094,2023-04-02,Product Quality,High,72,1,1
+TK074,C096,2023-10-15,Billing,High,48,2,1
+TK075,C096,2023-10-22,Account Access,High,96,1,1
+TK076,C099,2023-06-28,Technical Issue,High,36,2,1
+TK077,C099,2023-07-05,Refund Request,High,72,1,1
+TK078,C102,2023-08-05,Shipping,High,48,2,1
+TK079,C102,2023-08-12,Product Quality,High,96,1,1
+TK080,C106,2023-10-05,Billing,High,36,2,1
+TK081,C106,2023-10-12,Account Access,High,72,1,1
+TK082,C109,2023-07-02,Technical Issue,High,48,2,1
+TK083,C109,2023-07-10,Refund Request,High,96,1,1
+TK084,C112,2023-10-30,Shipping,High,36,2,1
+TK085,C112,2023-11-08,Product Quality,High,72,1,1
+TK086,C116,2023-03-28,Billing,High,48,2,1
+TK087,C116,2023-04-05,Account Access,High,96,1,1
+TK088,C119,2023-02-15,Technical Issue,High,36,2,1
+TK089,C119,2023-02-22,Refund Request,High,72,1,1
+TK090,C122,2023-11-08,Shipping,High,48,2,1
+TK091,C122,2023-11-15,Product Quality,High,96,1,1
+TK092,C126,2023-07-28,Billing,High,36,2,1
+TK093,C126,2023-08-05,Account Access,High,72,1,1
+TK094,C129,2023-11-22,Technical Issue,High,48,2,1
+TK095,C129,2023-11-30,Refund Request,High,96,1,1
+TK096,C132,2023-08-25,Shipping,High,36,2,1
+TK097,C132,2023-09-02,Product Quality,High,72,1,1
+TK098,C136,2023-10-30,Billing,High,48,2,1
+TK099,C136,2023-11-08,Account Access,High,96,1,1
+TK100,C139,2023-05-20,Technical Issue,High,36,2,1
+TK101,C139,2023-05-28,Refund Request,High,72,1,1
+TK102,C142,2023-09-30,Shipping,High,48,2,1
+TK103,C142,2023-10-08,Product Quality,High,96,1,1
+TK104,C146,2023-04-30,Billing,High,36,2,1
+TK105,C146,2023-05-08,Account Access,High,72,1,1
+TK106,C149,2023-02-05,Technical Issue,High,48,2,1
+TK107,C149,2023-02-12,Refund Request,High,96,1,1
+TK108,C152,2023-03-28,Shipping,High,36,2,1
+TK109,C152,2023-04-05,Product Quality,High,72,1,1
+TK110,C156,2023-08-28,Billing,High,48,2,1
+TK111,C156,2023-09-05,Account Access,High,96,1,1
+TK112,C159,2023-12-22,Technical Issue,High,36,2,1
+TK113,C162,2023-07-15,Refund Request,High,48,2,1
+TK114,C162,2023-07-22,Shipping,High,96,1,1
+TK115,C166,2023-10-05,Product Quality,High,36,2,1
+TK116,C166,2023-10-12,Billing,High,72,1,1
+TK117,C169,2023-06-25,Account Access,High,48,2,1
+TK118,C169,2023-07-02,Technical Issue,High,96,1,1
+TK119,C172,2023-11-05,Refund Request,High,36,2,1
+TK120,C172,2023-11-12,Shipping,High,72,1,1
+TK121,C176,2023-04-02,Product Quality,High,48,2,1
+TK122,C176,2023-04-10,Billing,High,96,1,1
+TK123,C179,2023-02-25,Account Access,High,36,2,1
+TK124,C179,2023-03-05,Technical Issue,High,72,1,1
+TK125,C182,2023-04-25,Refund Request,High,48,2,1
+TK126,C182,2023-05-02,Shipping,High,96,1,1
+TK127,C186,2023-08-02,Product Quality,High,36,2,1
+TK128,C186,2023-08-10,Billing,High,72,1,1
+TK129,C189,2023-11-30,Account Access,High,48,2,1
+TK130,C189,2023-12-08,Technical Issue,High,96,1,1
+TK131,C192,2023-08-18,Refund Request,High,36,2,1
+TK132,C192,2023-08-25,Shipping,High,72,1,1
+TK133,C196,2023-11-02,Product Quality,High,48,2,1
+TK134,C196,2023-11-10,Billing,High,96,1,1
+TK135,C199,2023-06-08,Account Access,High,36,2,1
+TK136,C199,2023-06-15,Technical Issue,High,72,1,1
+TK137,C001,2023-06-15,General Inquiry,Low,8,5,1
+TK138,C003,2023-05-20,General Inquiry,Low,4,5,1
+TK139,C005,2023-07-12,General Inquiry,Low,6,5,1
+TK140,C007,2023-09-18,General Inquiry,Low,5,5,1
+TK141,C008,2023-11-22,General Inquiry,Low,4,5,1
+TK142,C010,2023-08-30,General Inquiry,Low,6,5,1
+TK143,C011,2023-10-15,General Inquiry,Low,5,5,1
+TK144,C013,2023-10-20,General Inquiry,Low,4,5,1
+TK145,C015,2023-11-05,General Inquiry,Low,6,5,1
+TK146,C017,2023-09-28,General Inquiry,Low,5,5,1
+TK147,C018,2023-12-10,General Inquiry,Low,4,5,1
+TK148,C020,2023-09-20,General Inquiry,Low,6,5,1
+TK149,C021,2023-09-15,General Inquiry,Low,5,5,1
+TK150,C023,2023-08-25,General Inquiry,Low,4,5,1
+TK151,C025,2023-12-08,General Inquiry,Low,6,5,1
+TK152,C027,2023-12-05,General Inquiry,Low,5,5,1
+TK153,C028,2023-11-15,General Inquiry,Low,4,5,1
+TK154,C030,2023-10-25,General Inquiry,Low,6,5,1
+TK155,C031,2023-08-12,General Inquiry,Low,5,5,1
+TK156,C033,2023-11-08,General Inquiry,Low,4,5,1
+TK157,C035,2023-10-18,General Inquiry,Low,6,5,1
+TK158,C037,2023-08-18,General Inquiry,Low,5,5,1
+TK159,C038,2023-12-15,General Inquiry,Low,4,5,1
+TK160,C040,2023-09-25,General Inquiry,Low,6,5,1
+TK161,C041,2023-11-25,General Inquiry,Low,5,5,1
+TK162,C043,2023-09-08,General Inquiry,Low,4,5,1
+TK163,C045,2023-10-28,General Inquiry,Low,6,5,1
+TK164,C047,2023-12-20,General Inquiry,Low,5,5,1
+TK165,C048,2023-12-12,General Inquiry,Low,4,5,1
+TK166,C050,2023-10-18,General Inquiry,Low,6,5,1
+TK167,C051,2023-12-02,General Inquiry,Low,5,5,1
+TK168,C053,2023-12-25,General Inquiry,Low,4,5,1
+TK169,C055,2023-08-22,General Inquiry,Low,6,5,1
+TK170,C057,2023-11-12,General Inquiry,Low,5,5,1
+TK171,C058,2023-10-08,General Inquiry,Low,4,5,1
+TK172,C060,2023-11-18,General Inquiry,Low,6,5,1
+TK173,C061,2023-08-28,General Inquiry,Low,5,5,1
+TK174,C063,2023-10-12,General Inquiry,Low,4,5,1
+TK175,C065,2023-12-22,General Inquiry,Low,6,5,1
+TK176,C067,2023-08-05,General Inquiry,Low,5,5,1
+TK177,C068,2023-10-22,General Inquiry,Low,4,5,1
+TK178,C070,2023-06-18,General Inquiry,Low,6,5,1
+TK179,C071,2023-12-10,General Inquiry,Low,5,5,1
+TK180,C073,2023-07-18,General Inquiry,Low,4,5,1
+TK181,C075,2023-09-02,General Inquiry,Low,6,5,1
+TK182,C077,2023-12-18,General Inquiry,Low,5,5,1
+TK183,C078,2023-11-20,General Inquiry,Low,4,5,1
+TK184,C080,2023-09-15,General Inquiry,Low,6,5,1
+TK185,C081,2023-11-02,General Inquiry,Low,5,5,1
+TK186,C083,2023-12-15,General Inquiry,Low,4,5,1
+TK187,C085,2023-08-08,General Inquiry,Low,6,5,1
+TK188,C087,2023-10-25,General Inquiry,Low,5,5,1
+TK189,C088,2023-10-05,General Inquiry,Low,4,5,1
+TK190,C090,2023-11-28,General Inquiry,Low,6,5,1
+TK191,C091,2023-07-25,General Inquiry,Low,5,5,1
+TK192,C093,2023-09-22,General Inquiry,Low,4,5,1
+TK193,C095,2023-12-10,General Inquiry,Low,6,5,1
+TK194,C097,2023-06-28,General Inquiry,Low,5,5,1
+TK195,C098,2023-11-08,General Inquiry,Low,4,5,1
+TK196,C100,2023-06-15,General Inquiry,Low,6,5,1
+TK197,C002,2023-05-02,Shipping,Medium,18,4,1
+TK198,C004,2023-04-08,Technical Issue,Low,12,3,1
+TK199,C006,2023-05-25,General Inquiry,Low,6,4,1
+TK200,C009,2023-04-20,Shipping,Medium,20,3,1
+TK201,C012,2023-06-02,Billing,Low,10,4,1
+TK202,C014,2023-08-10,General Inquiry,Low,5,4,1
+TK203,C016,2023-04-22,Shipping,Medium,22,3,1
+TK204,C019,2023-07-18,Technical Issue,Low,14,3,1
+TK205,C022,2023-10-02,General Inquiry,Low,6,4,1
+TK206,C024,2023-04-15,Billing,Medium,16,3,1
+TK207,C026,2023-03-08,Technical Issue,Low,12,3,1
+TK208,C029,2023-05-18,Shipping,Medium,24,3,1
+TK209,C032,2023-12-02,Billing,Low,10,4,1
+TK210,C034,2023-06-22,General Inquiry,Low,5,4,1
+TK211,C036,2023-10-18,Technical Issue,Medium,18,3,1
+TK212,C039,2023-09-08,Shipping,Low,14,4,1
+TK213,C042,2023-11-20,General Inquiry,Low,6,4,1
+TK214,C044,2023-09-02,Billing,Medium,20,3,1
+TK215,C046,2023-04-10,Technical Issue,Low,12,3,1
+TK216,C049,2023-03-22,Shipping,Medium,22,3,1
+TK217,C052,2023-05-25,General Inquiry,Low,5,4,1
+TK218,C054,2023-11-05,Billing,Low,10,4,1
+TK219,C056,2023-08-18,Technical Issue,Medium,16,3,1
+TK220,C059,2023-12-10,Shipping,Low,14,4,1
+TK221,C062,2023-09-05,General Inquiry,Low,6,4,1
+TK222,C064,2023-06-05,Billing,Medium,18,3,1
+TK223,C066,2023-11-22,Technical Issue,Low,12,3,1
+TK224,C069,2023-06-12,Shipping,Medium,20,3,1
+TK225,C072,2023-10-22,General Inquiry,Low,5,4,1
+TK226,C074,2023-09-15,Billing,Low,10,4,1
+TK227,C076,2023-05-18,Technical Issue,Medium,22,3,1
+TK228,C079,2023-02-22,Shipping,Low,14,4,1
+TK229,C082,2023-04-05,General Inquiry,Low,6,4,1
+TK230,C084,2023-10-10,Billing,Medium,16,3,1
+TK231,C086,2023-09-22,Technical Issue,Low,12,3,1
+TK232,C089,2023-12-18,Shipping,Medium,18,3,1
+TK233,C092,2023-08-02,General Inquiry,Low,5,4,1
+TK234,C094,2023-04-18,Billing,Low,10,4,1
+TK235,C096,2023-11-05,Technical Issue,Medium,20,3,1
+TK236,C099,2023-07-18,Shipping,Low,14,4,1
+TK237,C102,2023-08-25,General Inquiry,Low,6,4,1
+TK238,C106,2023-10-25,Billing,Medium,22,3,1
+TK239,C109,2023-07-25,Technical Issue,Low,12,3,1
+TK240,C112,2023-11-22,Shipping,Medium,16,3,1
+TK241,C116,2023-04-18,General Inquiry,Low,5,4,1
+TK242,C119,2023-03-08,Billing,Low,10,4,1
+TK243,C122,2023-11-28,Technical Issue,Medium,18,3,1
+TK244,C126,2023-08-18,Shipping,Low,14,4,1
+TK245,C129,2023-12-15,General Inquiry,Low,6,4,1
+TK246,C132,2023-09-15,Billing,Medium,20,3,1
+TK247,C136,2023-11-22,Technical Issue,Low,12,3,1
+TK248,C139,2023-06-10,Shipping,Medium,22,3,1
+TK249,C142,2023-10-22,General Inquiry,Low,5,4,1
+TK250,C146,2023-05-22,Billing,Low,10,4,1
+TK251,C149,2023-02-25,Technical Issue,Medium,16,3,1
+TK252,C152,2023-04-18,Shipping,Low,14,4,1
+TK253,C156,2023-09-18,General Inquiry,Low,6,4,1
+TK254,C159,2023-12-10,Billing,Medium,18,3,1
+TK255,C162,2023-08-05,Technical Issue,Low,12,3,1
+TK256,C166,2023-10-25,Shipping,Medium,20,3,1
+TK257,C169,2023-07-15,General Inquiry,Low,5,4,1
+TK258,C172,2023-11-25,Billing,Low,10,4,1
+TK259,C176,2023-04-22,Technical Issue,Medium,22,3,1
+TK260,C179,2023-03-18,Shipping,Low,14,4,1
+TK261,C182,2023-05-15,General Inquiry,Low,6,4,1
+TK262,C186,2023-08-22,Billing,Medium,16,3,1
+TK263,C189,2023-12-22,Technical Issue,Low,12,3,1
+TK264,C192,2023-09-08,Shipping,Medium,18,3,1
+TK265,C196,2023-11-22,General Inquiry,Low,5,4,1
+TK266,C199,2023-06-28,Billing,Low,10,4,1
+TK267,C202,2023-09-15,Technical Issue,High,48,2,1
+TK268,C202,2023-09-22,Refund Request,High,72,1,1
+TK269,C204,2023-03-25,Shipping,High,36,2,1
+TK270,C204,2023-04-02,Product Quality,High,96,1,1
+TK271,C206,2023-09-18,Billing,High,48,2,1
+TK272,C206,2023-09-25,Account Access,High,72,1,1
+TK273,C212,2023-10-18,Technical Issue,High,36,2,1
+TK274,C212,2023-10-25,Refund Request,High,96,1,1
+TK275,C216,2023-03-30,Shipping,High,48,2,1
+TK276,C216,2023-04-08,Product Quality,High,72,1,1
+TK277,C219,2023-02-22,Billing,High,36,2,1
+TK278,C219,2023-03-02,Account Access,High,96,1,1
+TK279,C222,2023-04-22,Technical Issue,High,48,2,1
+TK280,C222,2023-04-30,Refund Request,High,72,1,1
+TK281,C226,2023-07-30,Shipping,High,36,2,1
+TK282,C226,2023-08-08,Product Quality,High,96,1,1
+TK283,C229,2023-11-22,Billing,High,48,2,1
+TK284,C229,2023-11-30,Account Access,High,72,1,1
+TK285,C232,2023-08-15,Technical Issue,High,36,2,1
+TK286,C232,2023-08-22,Refund Request,High,96,1,1
+TK287,C236,2023-10-28,Shipping,High,48,2,1
+TK288,C236,2023-11-05,Product Quality,High,72,1,1
+TK289,C239,2023-05-22,Billing,High,36,2,1
+TK290,C239,2023-05-30,Account Access,High,96,1,1
+TK291,C242,2023-09-30,Technical Issue,High,48,2,1
+TK292,C242,2023-10-08,Refund Request,High,72,1,1
+TK293,C246,2023-04-15,Shipping,High,36,2,1
+TK294,C246,2023-04-22,Product Quality,High,96,1,1
+TK295,C249,2023-01-22,Billing,High,48,2,1
+TK296,C249,2023-01-30,Account Access,High,72,1,1
+TK297,C252,2023-03-28,Technical Issue,High,36,2,1
+TK298,C252,2023-04-05,Refund Request,High,96,1,1
+TK299,C256,2023-09-02,Shipping,High,48,2,1
+TK300,C256,2023-09-10,Product Quality,High,72,1,1
+TK301,C259,2023-12-15,Billing,High,36,2,1
+TK302,C262,2023-07-15,Technical Issue,High,48,2,1
+TK303,C262,2023-07-22,Refund Request,High,72,1,1
+TK304,C266,2023-10-08,Shipping,High,36,2,1
+TK305,C266,2023-10-15,Product Quality,High,96,1,1
+TK306,C269,2023-06-22,Billing,High,48,2,1
+TK307,C269,2023-06-30,Account Access,High,72,1,1
+TK308,C272,2023-11-05,Technical Issue,High,36,2,1
+TK309,C272,2023-11-12,Refund Request,High,96,1,1
+TK310,C276,2023-04-08,Shipping,High,48,2,1
+TK311,C276,2023-04-15,Product Quality,High,72,1,1
+TK312,C279,2023-03-12,Billing,High,36,2,1
+TK313,C279,2023-03-20,Account Access,High,96,1,1
+TK314,C282,2023-04-25,Technical Issue,High,48,2,1
+TK315,C282,2023-05-02,Refund Request,High,72,1,1
+TK316,C286,2023-07-25,Shipping,High,36,2,1
+TK317,C286,2023-08-02,Product Quality,High,96,1,1
+TK318,C289,2023-12-02,Billing,High,48,2,1
+TK319,C289,2023-12-10,Account Access,High,72,1,1
+TK320,C292,2023-08-25,Technical Issue,High,36,2,1
+TK321,C292,2023-09-02,Refund Request,High,96,1,1
+TK322,C296,2023-11-02,Shipping,High,48,2,1
+TK323,C296,2023-11-10,Product Quality,High,72,1,1
+TK324,C299,2023-05-28,Billing,High,36,2,1
+TK325,C299,2023-06-05,Account Access,High,96,1,1
+TK326,C302,2023-09-18,Technical Issue,High,48,2,1
+TK327,C302,2023-09-25,Refund Request,High,72,1,1
+TK328,C306,2023-10-12,Shipping,High,36,2,1
+TK329,C306,2023-10-20,Product Quality,High,96,1,1
+TK330,C309,2023-07-02,Billing,High,48,2,1
+TK331,C309,2023-07-10,Account Access,High,72,1,1
+TK332,C312,2023-11-08,Technical Issue,High,36,2,1
+TK333,C312,2023-11-15,Refund Request,High,96,1,1
+TK334,C316,2023-04-05,Shipping,High,48,2,1
+TK335,C316,2023-04-12,Product Quality,High,72,1,1
+TK336,C319,2023-02-25,Billing,High,36,2,1
+TK337,C319,2023-03-05,Account Access,High,96,1,1
+TK338,C322,2023-05-02,Technical Issue,High,48,2,1
+TK339,C322,2023-05-10,Refund Request,High,72,1,1
+TK340,C326,2023-08-02,Shipping,High,36,2,1
+TK341,C326,2023-08-10,Product Quality,High,96,1,1
+TK342,C329,2023-11-22,Billing,High,48,2,1
+TK343,C329,2023-11-30,Account Access,High,72,1,1
+TK344,C332,2023-08-18,Technical Issue,High,36,2,1
+TK345,C332,2023-08-25,Refund Request,High,96,1,1
+TK346,C336,2023-10-28,Shipping,High,48,2,1
+TK347,C336,2023-11-05,Product Quality,High,72,1,1
+TK348,C339,2023-06-02,Billing,High,36,2,1
+TK349,C339,2023-06-10,Account Access,High,96,1,1
+TK350,C342,2023-09-15,Technical Issue,High,48,2,1
+TK351,C342,2023-09-22,Refund Request,High,72,1,1
+TK352,C346,2023-10-05,Shipping,High,36,2,1
+TK353,C346,2023-10-12,Product Quality,High,96,1,1
+TK354,C349,2023-06-18,Billing,High,48,2,1
+TK355,C349,2023-06-25,Account Access,High,72,1,1
+TK356,C352,2023-10-22,Technical Issue,High,36,2,1
+TK357,C352,2023-10-30,Refund Request,High,96,1,1
+TK358,C356,2023-03-18,Shipping,High,48,2,1
+TK359,C356,2023-03-25,Product Quality,High,72,1,1
+TK360,C359,2023-03-05,Billing,High,36,2,1
+TK361,C359,2023-03-12,Account Access,High,96,1,1
+TK362,C362,2023-04-28,Technical Issue,High,48,2,1
+TK363,C362,2023-05-05,Refund Request,High,72,1,1
+TK364,C366,2023-08-02,Shipping,High,36,2,1
+TK365,C366,2023-08-10,Product Quality,High,96,1,1
+TK366,C369,2023-11-25,Billing,High,48,2,1
+TK367,C369,2023-12-02,Account Access,High,72,1,1
+TK368,C372,2023-09-05,Technical Issue,High,36,2,1
+TK369,C372,2023-09-12,Refund Request,High,96,1,1
+TK370,C376,2023-11-08,Shipping,High,48,2,1
+TK371,C376,2023-11-15,Product Quality,High,72,1,1
+TK372,C379,2023-06-08,Billing,High,36,2,1
+TK373,C379,2023-06-15,Account Access,High,96,1,1
+TK374,C382,2023-09-25,Technical Issue,High,48,2,1
+TK375,C382,2023-10-02,Refund Request,High,72,1,1
+TK376,C386,2023-10-12,Shipping,High,36,2,1
+TK377,C386,2023-10-20,Product Quality,High,96,1,1
+TK378,C389,2023-07-02,Billing,High,48,2,1
+TK379,C389,2023-07-10,Account Access,High,72,1,1
+TK380,C392,2023-11-05,Technical Issue,High,36,2,1
+TK381,C392,2023-11-12,Refund Request,High,96,1,1
+TK382,C396,2023-03-22,Shipping,High,48,2,1
+TK383,C396,2023-03-30,Product Quality,High,72,1,1
+TK384,C399,2023-03-12,Billing,High,36,2,1
+TK385,C399,2023-03-20,Account Access,High,96,1,1
+TK386,C402,2023-07-18,Technical Issue,High,48,2,1
+TK387,C402,2023-07-25,Refund Request,High,72,1,1
+TK388,C406,2023-10-02,Shipping,High,36,2,1
+TK389,C406,2023-10-10,Product Quality,High,96,1,1
+TK390,C409,2023-07-08,Billing,High,48,2,1
+TK391,C409,2023-07-15,Account Access,High,72,1,1
+TK392,C412,2023-11-05,Technical Issue,High,36,2,1
+TK393,C412,2023-11-12,Refund Request,High,96,1,1
+TK394,C416,2023-04-05,Shipping,High,48,2,1
+TK395,C416,2023-04-12,Product Quality,High,72,1,1
+TK396,C419,2023-03-02,Billing,High,36,2,1
+TK397,C419,2023-03-10,Account Access,High,96,1,1
+TK398,C422,2023-04-18,Technical Issue,High,48,2,1
+TK399,C422,2023-04-25,Refund Request,High,72,1,1
+TK400,C426,2023-07-28,Shipping,High,36,2,1

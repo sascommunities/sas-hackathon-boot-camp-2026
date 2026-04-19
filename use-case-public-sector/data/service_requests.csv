@@ -1,0 +1,501 @@
+request_id,citizen_id,submission_date,request_type,department,priority_level,location_district,response_time_hours,citizen_satisfaction,resolved
+REQ000001,CIT00182,2024-02-19,Parking Issue,Transportation,Medium,Lakewood,97.9,2.6,True
+REQ000002,CIT00240,2024-08-04,Property Assessment,Building & Safety,High,Southside,25.2,3.5,False
+REQ000003,CIT00032,2024-01-28,Water Main Break,Utilities,Critical,Southside,2.6,4.8,True
+REQ000004,CIT00056,2024-07-25,Sidewalk Repair,Public Works,High,Industrial,43.9,3.3,True
+REQ000005,CIT00098,2024-05-07,Street Light Outage,Public Works,High,Downtown,26.7,3.9,True
+REQ000006,CIT00072,2024-10-01,Property Assessment,Building & Safety,Low,Midtown,324.7,2.6,False
+REQ000007,CIT00143,2024-08-04,Crosswalk Request,Transportation,Low,Downtown,228.1,3.3,True
+REQ000008,CIT00039,2024-08-24,Street Light Outage,Public Works,Medium,Eastgate,69.3,3.7,True
+REQ000009,CIT00051,2024-08-14,Composting Program,Environmental Services,Critical,Eastgate,11.1,1.5,True
+REQ000010,CIT00008,2024-01-26,Tree Trimming,Parks & Recreation,Medium,Harbor,101.3,3.1,True
+REQ000011,CIT00086,2024-02-17,Property Violation,Code Enforcement,Medium,Eastgate,90.2,3.1,True
+REQ000012,CIT00247,2024-07-27,Meter Reading,Utilities,Low,Lakewood,297.7,3.3,True
+REQ000013,CIT00031,2024-04-19,Parking Issue,Transportation,Low,Industrial,205.2,3.8,True
+REQ000014,CIT00002,2024-03-25,Meter Reading,Utilities,Low,Lakewood,188.6,3.5,True
+REQ000015,CIT00233,2024-07-18,Sidewalk Repair,Public Works,Low,Lakewood,133.5,4.8,True
+REQ000016,CIT00285,2024-05-26,Facility Booking,Parks & Recreation,High,Southside,17.4,4.3,False
+REQ000017,CIT00080,2024-12-04,Property Assessment,Building & Safety,High,Midtown,27.6,4.4,True
+REQ000018,CIT00112,2024-04-07,Permit Inspection,Permits & Licensing,Low,Lakewood,226.7,3.9,True
+REQ000019,CIT00278,2024-01-30,Composting Program,Environmental Services,Low,Northside,274.0,3.2,False
+REQ000020,CIT00030,2024-02-01,Illegal Dumping,Environmental Services,Critical,Lakewood,5.0,3.6,True
+REQ000021,CIT00245,2024-01-26,Service Connection,Utilities,Low,Southside,375.7,1.6,True
+REQ000022,CIT00081,2024-09-14,Tree Trimming,Parks & Recreation,Medium,Southside,63.7,3.9,False
+REQ000023,CIT00042,2024-01-30,Graffiti Removal,Code Enforcement,Low,Highland,222.0,4.4,True
+REQ000024,CIT00035,2024-04-05,Water Main Break,Utilities,Critical,Southside,4.1,4.7,True
+REQ000025,CIT00207,2024-12-11,Sewer Backup,Utilities,High,Lakewood,19.2,4.9,True
+REQ000026,CIT00297,2024-03-02,Safety Violation,Building & Safety,Medium,Downtown,85.1,2.8,False
+REQ000027,CIT00042,2024-10-31,Pothole Repair,Public Works,Medium,Southside,51.2,4.4,True
+REQ000028,CIT00290,2024-08-02,Bike Lane Request,Transportation,Medium,Riverside,48.7,4.5,False
+REQ000029,CIT00134,2024-09-24,Bus Stop Concern,Transportation,Medium,Southside,127.7,1.8,False
+REQ000030,CIT00123,2024-04-14,Sidewalk Repair,Public Works,Low,Industrial,304.9,2.8,True
+REQ000031,CIT00068,2024-05-15,Facility Booking,Parks & Recreation,High,Westbrook,24.5,3.9,True
+REQ000032,CIT00235,2024-12-09,Trail Repair,Parks & Recreation,Medium,Harbor,109.8,3.4,True
+REQ000033,CIT00005,2024-06-10,Trash Collection,Environmental Services,Medium,Eastgate,69.8,3.6,True
+REQ000034,CIT00289,2024-08-22,Tree Trimming,Parks & Recreation,Medium,Lakewood,82.1,3.6,False
+REQ000035,CIT00276,2024-02-21,Permit Application,Permits & Licensing,High,Harbor,40.7,2.6,True
+REQ000036,CIT00136,2024-04-19,Tree Trimming,Parks & Recreation,Low,Downtown,254.4,3.3,True
+REQ000037,CIT00036,2024-03-08,Sidewalk Repair,Public Works,High,Highland,26.0,4.2,True
+REQ000038,CIT00146,2024-05-05,Construction Complaint,Building & Safety,Critical,Southside,8.5,3.2,True
+REQ000039,CIT00279,2024-03-21,Road Damage,Public Works,Low,Highland,216.7,3.6,False
+REQ000040,CIT00271,2024-12-26,Bus Stop Concern,Transportation,Low,Westbrook,266.8,2.6,True
+REQ000041,CIT00154,2024-01-05,Composting Program,Environmental Services,Medium,Riverside,79.2,3.5,True
+REQ000042,CIT00069,2024-12-05,Traffic Signal Issue,Transportation,High,Downtown,42.4,3.5,True
+REQ000043,CIT00055,2024-05-15,Noise Complaint,Code Enforcement,Low,Harbor,208.9,4.5,True
+REQ000044,CIT00140,2024-10-10,License Renewal,Permits & Licensing,Medium,Southside,93.7,2.6,True
+REQ000045,CIT00108,2024-05-24,Event Permit,Permits & Licensing,Low,Industrial,405.6,2.4,True
+REQ000046,CIT00136,2024-06-24,License Renewal,Permits & Licensing,High,Northside,29.2,4.2,True
+REQ000047,CIT00129,2024-09-15,Meter Reading,Utilities,Medium,Northside,88.7,3.3,True
+REQ000048,CIT00217,2024-01-27,Pothole Repair,Public Works,Low,Southside,342.1,2.0,True
+REQ000049,CIT00002,2024-05-21,Building Inspection,Building & Safety,High,Lakewood,15.4,4.4,True
+REQ000050,CIT00135,2024-06-19,Crosswalk Request,Transportation,Medium,Downtown,68.8,3.9,False
+REQ000051,CIT00283,2024-03-23,Business License,Permits & Licensing,Low,Industrial,223.9,4.3,False
+REQ000052,CIT00288,2024-12-27,Business License,Permits & Licensing,Medium,Southside,112.6,3.1,True
+REQ000053,CIT00039,2024-01-05,Water Main Break,Utilities,High,Northside,45.1,1.2,True
+REQ000054,CIT00280,2024-12-19,Playground Equipment,Parks & Recreation,Low,Downtown,157.8,4.9,True
+REQ000055,CIT00299,2024-01-19,Permit Inspection,Permits & Licensing,Medium,Eastgate,89.8,3.0,True
+REQ000056,CIT00221,2024-10-09,Playground Equipment,Parks & Recreation,Medium,Midtown,116.1,3.4,True
+REQ000057,CIT00158,2024-03-06,Trash Collection,Environmental Services,Medium,Westbrook,62.7,4.1,True
+REQ000058,CIT00184,2024-07-05,Building Inspection,Building & Safety,High,Northside,14.6,4.1,False
+REQ000059,CIT00053,2024-04-17,Crosswalk Request,Transportation,Medium,Midtown,108.2,2.8,True
+REQ000060,CIT00209,2024-06-30,Composting Program,Environmental Services,Medium,Northside,111.1,3.0,True
+REQ000061,CIT00122,2024-11-13,Crosswalk Request,Transportation,Low,Downtown,285.4,2.5,True
+REQ000062,CIT00212,2024-03-24,Crosswalk Request,Transportation,Low,Harbor,184.2,3.8,True
+REQ000063,CIT00171,2024-01-13,Street Light Outage,Public Works,Critical,Harbor,5.0,4.2,False
+REQ000064,CIT00137,2024-07-29,Crosswalk Request,Transportation,Medium,Southside,123.6,2.7,True
+REQ000065,CIT00196,2024-03-22,Noise Complaint,Code Enforcement,High,Harbor,43.8,3.1,True
+REQ000066,CIT00114,2024-01-20,Road Damage,Public Works,Medium,Lakewood,60.0,4.3,True
+REQ000067,CIT00180,2024-04-12,Business License,Permits & Licensing,Low,Southside,272.1,3.2,True
+REQ000068,CIT00115,2024-06-05,Street Light Outage,Public Works,High,Westbrook,25.3,4.4,False
+REQ000069,CIT00205,2024-01-13,Sewer Backup,Utilities,Critical,Westbrook,11.2,2.0,True
+REQ000070,CIT00036,2024-06-17,Zoning Issue,Code Enforcement,Low,Midtown,162.2,3.8,True
+REQ000071,CIT00261,2024-05-22,Permit Inspection,Permits & Licensing,High,Lakewood,38.2,3.1,False
+REQ000072,CIT00170,2024-07-23,Bike Lane Request,Transportation,Medium,Northside,104.6,3.2,True
+REQ000073,CIT00134,2024-01-15,Pothole Repair,Public Works,High,Downtown,37.3,3.5,True
+REQ000074,CIT00136,2024-04-01,Tree Trimming,Parks & Recreation,High,Midtown,31.7,3.5,True
+REQ000075,CIT00223,2024-01-20,Traffic Signal Issue,Transportation,Critical,Midtown,3.8,4.8,True
+REQ000076,CIT00224,2024-06-25,Construction Complaint,Building & Safety,Low,Midtown,154.0,4.3,True
+REQ000077,CIT00060,2024-11-06,Graffiti Removal,Code Enforcement,Medium,Industrial,78.4,4.1,False
+REQ000078,CIT00098,2024-07-16,Graffiti Removal,Code Enforcement,Low,Lakewood,131.2,4.5,True
+REQ000079,CIT00224,2024-05-10,Building Inspection,Building & Safety,Medium,Highland,72.1,4.2,True
+REQ000080,CIT00276,2024-01-01,Storm Drain Issue,Public Works,High,Southside,33.3,2.8,True
+REQ000081,CIT00187,2024-12-17,Safety Violation,Building & Safety,Critical,Highland,8.7,3.1,True
+REQ000082,CIT00170,2024-08-08,Traffic Signal Issue,Transportation,Critical,Downtown,4.8,4.3,True
+REQ000083,CIT00064,2024-11-15,Permit Inspection,Permits & Licensing,Low,Westbrook,158.7,5.0,True
+REQ000084,CIT00159,2024-06-02,Bike Lane Request,Transportation,High,Lakewood,27.2,3.8,True
+REQ000085,CIT00168,2024-12-07,Facility Booking,Parks & Recreation,Low,Westbrook,178.0,3.8,True
+REQ000086,CIT00284,2024-07-25,Permit Inspection,Permits & Licensing,Medium,Downtown,53.4,5.0,True
+REQ000087,CIT00216,2024-03-06,Street Light Outage,Public Works,High,Highland,35.3,2.8,True
+REQ000088,CIT00090,2024-12-06,Business License,Permits & Licensing,Low,Lakewood,272.6,3.1,True
+REQ000089,CIT00155,2024-11-11,Tree Trimming,Parks & Recreation,Medium,Midtown,116.2,2.6,True
+REQ000090,CIT00001,2024-07-26,Event Permit,Permits & Licensing,High,Midtown,19.3,4.6,True
+REQ000091,CIT00108,2024-06-04,Water Quality,Utilities,Medium,Downtown,90.0,2.8,True
+REQ000092,CIT00165,2024-08-08,Event Permit,Permits & Licensing,Medium,Midtown,61.6,4.2,False
+REQ000093,CIT00227,2024-08-26,Road Damage,Public Works,Low,Eastgate,140.0,4.7,False
+REQ000094,CIT00262,2024-12-11,Crosswalk Request,Transportation,Low,Eastgate,276.3,2.5,True
+REQ000095,CIT00044,2024-08-30,Sewer Backup,Utilities,Critical,Northside,9.1,2.6,True
+REQ000096,CIT00172,2024-05-25,Graffiti Removal,Code Enforcement,High,Downtown,20.9,4.2,True
+REQ000097,CIT00159,2024-02-17,Playground Equipment,Parks & Recreation,Low,Westbrook,278.3,3.1,True
+REQ000098,CIT00076,2024-04-25,Street Light Outage,Public Works,Critical,Midtown,10.1,3.3,False
+REQ000099,CIT00126,2024-01-13,Traffic Signal Issue,Transportation,High,Highland,38.7,3.2,True
+REQ000100,CIT00038,2024-08-31,Storm Drain Issue,Public Works,Medium,University,90.1,3.0,True
+REQ000101,CIT00295,2024-08-21,Property Assessment,Building & Safety,High,Highland,40.3,3.0,True
+REQ000102,CIT00254,2024-04-09,Facility Booking,Parks & Recreation,High,Eastgate,27.9,4.1,False
+REQ000103,CIT00076,2024-07-23,Street Light Outage,Public Works,Critical,Southside,6.4,3.8,True
+REQ000104,CIT00055,2024-12-01,Pothole Repair,Public Works,Medium,University,55.6,4.8,True
+REQ000105,CIT00091,2024-08-05,Sewer Backup,Utilities,High,Northside,17.8,4.1,True
+REQ000106,CIT00238,2024-12-22,Service Connection,Utilities,High,Midtown,36.7,2.6,True
+REQ000107,CIT00063,2024-01-26,Safety Violation,Building & Safety,High,Westbrook,31.3,2.9,True
+REQ000108,CIT00238,2024-08-21,Property Violation,Code Enforcement,High,Southside,57.7,1.5,True
+REQ000109,CIT00287,2024-12-07,Bike Lane Request,Transportation,Critical,Midtown,3.0,4.4,True
+REQ000110,CIT00227,2024-10-31,Bus Stop Concern,Transportation,Low,Midtown,266.2,3.3,False
+REQ000111,CIT00219,2024-11-09,Composting Program,Environmental Services,Medium,Highland,59.5,4.2,True
+REQ000112,CIT00082,2024-10-07,Meter Reading,Utilities,Low,Downtown,155.7,4.0,True
+REQ000113,CIT00133,2024-08-31,Hazardous Waste,Environmental Services,Medium,Northside,54.0,4.0,True
+REQ000114,CIT00267,2024-05-06,Zoning Issue,Code Enforcement,Low,Southside,152.3,4.5,True
+REQ000115,CIT00141,2024-09-05,Playground Equipment,Parks & Recreation,Low,Eastgate,170.6,3.7,False
+REQ000116,CIT00147,2024-08-13,Water Main Break,Utilities,High,Eastgate,27.4,4.0,True
+REQ000117,CIT00172,2024-04-30,Illegal Dumping,Environmental Services,Low,Westbrook,209.0,4.4,True
+REQ000118,CIT00042,2024-06-12,Bike Lane Request,Transportation,Low,Riverside,145.3,4.3,True
+REQ000119,CIT00119,2024-03-11,Sewer Backup,Utilities,High,Eastgate,44.2,2.7,True
+REQ000120,CIT00110,2024-07-15,Crosswalk Request,Transportation,Low,Industrial,154.1,4.6,True
+REQ000121,CIT00209,2024-02-02,Meter Reading,Utilities,Low,Downtown,276.3,3.0,False
+REQ000122,CIT00239,2024-06-18,Graffiti Removal,Code Enforcement,High,Westbrook,24.0,4.3,True
+REQ000123,CIT00106,2024-07-31,Pothole Repair,Public Works,High,Midtown,28.8,3.6,True
+REQ000124,CIT00300,2024-08-03,Hazardous Waste,Environmental Services,Critical,Northside,2.7,4.9,True
+REQ000125,CIT00295,2024-12-22,Traffic Signal Issue,Transportation,Critical,Downtown,8.5,2.6,True
+REQ000126,CIT00004,2024-07-13,Hazardous Waste,Environmental Services,Medium,Harbor,96.8,2.7,True
+REQ000127,CIT00200,2024-06-29,Construction Complaint,Building & Safety,Low,Southside,268.1,3.2,True
+REQ000128,CIT00280,2024-08-02,Storm Drain Issue,Public Works,Low,Highland,224.5,3.5,True
+REQ000129,CIT00250,2024-11-04,Recycling Issue,Environmental Services,Medium,Downtown,103.2,3.1,True
+REQ000130,CIT00224,2024-04-22,Illegal Dumping,Environmental Services,High,Westbrook,17.1,4.7,True
+REQ000131,CIT00200,2024-09-05,Trash Collection,Environmental Services,Low,Northside,312.3,3.2,False
+REQ000132,CIT00085,2024-06-21,Hazardous Waste,Environmental Services,Medium,Highland,112.0,3.1,True
+REQ000133,CIT00274,2024-08-27,Street Light Outage,Public Works,High,Lakewood,21.8,3.7,True
+REQ000134,CIT00289,2024-01-14,Facility Booking,Parks & Recreation,Low,Eastgate,316.1,3.0,True
+REQ000135,CIT00043,2024-12-05,Pothole Repair,Public Works,Medium,Eastgate,107.2,3.2,True
+REQ000136,CIT00070,2024-11-25,Facility Booking,Parks & Recreation,Medium,Southside,137.7,1.5,True
+REQ000137,CIT00026,2024-08-24,Street Light Outage,Public Works,Critical,Northside,8.0,2.8,True
+REQ000138,CIT00168,2024-05-13,Hazardous Waste,Environmental Services,High,Industrial,19.3,4.7,True
+REQ000139,CIT00168,2024-04-18,Parking Issue,Transportation,Low,Southside,160.9,3.7,True
+REQ000140,CIT00143,2024-06-21,Road Damage,Public Works,Medium,Southside,142.7,1.5,False
+REQ000141,CIT00042,2024-08-03,Permit Inspection,Permits & Licensing,High,Midtown,21.0,4.6,True
+REQ000142,CIT00277,2024-08-28,Pothole Repair,Public Works,Critical,Southside,11.8,2.3,False
+REQ000143,CIT00115,2024-01-27,Trail Repair,Parks & Recreation,Low,Eastgate,148.1,4.0,True
+REQ000144,CIT00021,2024-11-28,Trash Collection,Environmental Services,Medium,Southside,101.7,2.5,True
+REQ000145,CIT00103,2024-01-16,Sewer Backup,Utilities,Critical,Downtown,10.4,3.1,True
+REQ000146,CIT00079,2024-01-11,Service Connection,Utilities,High,Riverside,32.9,3.5,True
+REQ000147,CIT00243,2024-05-02,Crosswalk Request,Transportation,High,Eastgate,20.2,4.6,False
+REQ000148,CIT00289,2024-12-08,Permit Application,Permits & Licensing,Medium,Riverside,63.2,4.5,False
+REQ000149,CIT00132,2024-04-21,Meter Reading,Utilities,High,Lakewood,33.4,2.6,True
+REQ000150,CIT00059,2024-07-07,Sewer Backup,Utilities,Critical,Eastgate,11.4,1.3,True
+REQ000151,CIT00056,2024-03-24,Water Quality,Utilities,Medium,Highland,67.8,3.7,True
+REQ000152,CIT00160,2024-10-23,Water Main Break,Utilities,Medium,Lakewood,80.8,4.2,False
+REQ000153,CIT00204,2024-10-21,Road Damage,Public Works,Low,Industrial,304.5,3.3,True
+REQ000154,CIT00125,2024-04-11,Permit Application,Permits & Licensing,Medium,Westbrook,76.9,3.7,True
+REQ000155,CIT00062,2024-02-22,Trail Repair,Parks & Recreation,Critical,Riverside,7.9,2.9,True
+REQ000156,CIT00178,2024-10-16,Pothole Repair,Public Works,Medium,Downtown,91.7,3.4,False
+REQ000157,CIT00190,2024-09-29,Meter Reading,Utilities,Low,Midtown,311.4,2.7,True
+REQ000158,CIT00175,2024-02-05,Tree Trimming,Parks & Recreation,High,Harbor,16.6,4.6,False
+REQ000159,CIT00251,2024-01-07,Parking Issue,Transportation,High,Downtown,24.1,3.6,False
+REQ000160,CIT00186,2024-02-24,Hazardous Waste,Environmental Services,High,University,15.1,4.4,True
+REQ000161,CIT00079,2024-11-21,Facility Booking,Parks & Recreation,Low,Westbrook,178.0,3.6,True
+REQ000162,CIT00268,2024-08-10,Street Light Outage,Public Works,Critical,Industrial,13.2,1.4,True
+REQ000163,CIT00276,2024-11-29,Construction Complaint,Building & Safety,Low,Northside,148.0,4.3,True
+REQ000164,CIT00224,2024-09-04,Meter Reading,Utilities,Low,Northside,294.7,2.6,True
+REQ000165,CIT00166,2024-10-30,Zoning Issue,Code Enforcement,Low,Downtown,224.7,3.8,True
+REQ000166,CIT00143,2024-05-05,Trash Collection,Environmental Services,Low,Riverside,229.2,2.6,True
+REQ000167,CIT00238,2024-08-18,Playground Equipment,Parks & Recreation,Medium,Downtown,81.1,3.8,False
+REQ000168,CIT00195,2024-10-18,Storm Drain Issue,Public Works,Medium,Westbrook,100.2,3.1,True
+REQ000169,CIT00254,2024-06-21,Trash Collection,Environmental Services,High,Southside,39.3,3.5,False
+REQ000170,CIT00250,2024-06-15,Safety Violation,Building & Safety,Medium,Westbrook,101.4,3.0,True
+REQ000171,CIT00133,2024-04-18,Zoning Issue,Code Enforcement,Medium,Midtown,77.3,3.8,True
+REQ000172,CIT00142,2024-06-23,Illegal Dumping,Environmental Services,Low,Northside,325.5,2.7,True
+REQ000173,CIT00265,2024-10-11,Water Main Break,Utilities,High,Highland,20.3,4.6,True
+REQ000174,CIT00124,2024-04-07,Water Main Break,Utilities,Medium,Riverside,61.3,3.8,True
+REQ000175,CIT00285,2024-07-27,Road Damage,Public Works,High,Southside,58.6,1.9,True
+REQ000176,CIT00252,2024-05-03,Property Assessment,Building & Safety,High,Southside,17.6,4.8,True
+REQ000177,CIT00048,2024-08-17,Pothole Repair,Public Works,Medium,Northside,63.7,4.4,True
+REQ000178,CIT00208,2024-05-30,Playground Equipment,Parks & Recreation,Low,Midtown,291.2,3.1,True
+REQ000179,CIT00157,2024-12-20,Street Light Outage,Public Works,High,Southside,17.6,4.9,True
+REQ000180,CIT00189,2024-12-05,Tree Trimming,Parks & Recreation,Low,Northside,316.2,3.0,True
+REQ000181,CIT00272,2024-08-30,Composting Program,Environmental Services,Low,Westbrook,212.9,4.1,False
+REQ000182,CIT00282,2024-06-25,Hazardous Waste,Environmental Services,Medium,Midtown,60.3,3.5,True
+REQ000183,CIT00233,2024-06-18,Construction Complaint,Building & Safety,Medium,Highland,113.6,3.0,True
+REQ000184,CIT00129,2024-05-18,Sidewalk Repair,Public Works,Low,Riverside,214.6,4.3,True
+REQ000185,CIT00099,2024-04-28,Pothole Repair,Public Works,Medium,Northside,51.6,4.7,True
+REQ000186,CIT00275,2024-06-10,Water Main Break,Utilities,High,Northside,25.7,4.3,True
+REQ000187,CIT00099,2024-12-19,Recycling Issue,Environmental Services,Low,Industrial,206.0,4.1,False
+REQ000188,CIT00142,2024-04-20,Property Assessment,Building & Safety,Low,Downtown,298.6,3.0,True
+REQ000189,CIT00145,2024-10-28,Tree Trimming,Parks & Recreation,Medium,Downtown,117.2,3.2,False
+REQ000190,CIT00152,2024-02-21,Playground Equipment,Parks & Recreation,Medium,Lakewood,70.9,4.3,False
+REQ000191,CIT00092,2024-04-26,Zoning Issue,Code Enforcement,High,Southside,28.5,3.5,True
+REQ000192,CIT00274,2024-06-03,Trash Collection,Environmental Services,Medium,Harbor,77.7,3.6,True
+REQ000193,CIT00024,2024-03-05,Trail Repair,Parks & Recreation,Medium,Midtown,115.4,2.7,True
+REQ000194,CIT00150,2024-01-28,Event Permit,Permits & Licensing,Low,Downtown,155.2,4.6,True
+REQ000195,CIT00252,2024-12-23,License Renewal,Permits & Licensing,Medium,Westbrook,65.8,4.0,True
+REQ000196,CIT00294,2024-02-22,Trash Collection,Environmental Services,High,Riverside,44.6,3.3,True
+REQ000197,CIT00246,2024-05-25,Road Damage,Public Works,Low,Northside,263.3,2.9,True
+REQ000198,CIT00095,2024-08-13,Zoning Issue,Code Enforcement,High,University,23.3,4.2,True
+REQ000199,CIT00245,2024-01-27,Sidewalk Repair,Public Works,Low,Southside,266.0,2.6,True
+REQ000200,CIT00206,2024-02-28,Traffic Signal Issue,Transportation,High,Westbrook,22.8,4.1,True
+REQ000201,CIT00296,2024-09-08,Pothole Repair,Public Works,Low,Riverside,314.9,2.8,True
+REQ000202,CIT00078,2024-11-18,Water Main Break,Utilities,Critical,Midtown,7.7,3.2,False
+REQ000203,CIT00044,2024-03-17,Construction Complaint,Building & Safety,Medium,Downtown,107.5,3.3,True
+REQ000204,CIT00286,2024-05-07,Water Main Break,Utilities,High,Downtown,47.3,1.3,True
+REQ000205,CIT00116,2024-08-01,Service Connection,Utilities,High,Downtown,35.7,3.0,True
+REQ000206,CIT00231,2024-09-24,Road Damage,Public Works,Medium,Southside,144.0,2.5,True
+REQ000207,CIT00220,2024-08-14,Permit Inspection,Permits & Licensing,Medium,Southside,52.4,4.7,True
+REQ000208,CIT00031,2024-06-05,Tree Trimming,Parks & Recreation,Medium,Southside,99.3,3.3,False
+REQ000209,CIT00107,2024-11-08,Traffic Signal Issue,Transportation,High,Southside,45.0,1.3,True
+REQ000210,CIT00136,2024-11-16,Crosswalk Request,Transportation,Medium,Midtown,63.9,3.9,True
+REQ000211,CIT00081,2024-12-04,Noise Complaint,Code Enforcement,Medium,Westbrook,69.8,4.4,True
+REQ000212,CIT00283,2024-05-02,License Renewal,Permits & Licensing,Medium,Riverside,50.4,4.5,True
+REQ000213,CIT00002,2024-02-08,Street Light Outage,Public Works,Critical,Harbor,9.2,2.6,True
+REQ000214,CIT00241,2024-07-28,Road Damage,Public Works,Medium,University,95.6,2.6,True
+REQ000215,CIT00119,2024-05-29,Water Main Break,Utilities,High,Midtown,41.3,3.1,True
+REQ000216,CIT00233,2024-05-27,Trail Repair,Parks & Recreation,Low,Southside,251.6,3.2,True
+REQ000217,CIT00136,2024-02-06,Safety Violation,Building & Safety,Medium,Northside,107.6,2.5,True
+REQ000218,CIT00102,2024-11-16,Storm Drain Issue,Public Works,High,Riverside,20.3,4.5,True
+REQ000219,CIT00279,2024-08-05,Permit Application,Permits & Licensing,Low,Midtown,321.8,3.4,True
+REQ000220,CIT00137,2024-04-25,Sewer Backup,Utilities,High,Industrial,37.4,2.9,True
+REQ000221,CIT00031,2024-03-13,Noise Complaint,Code Enforcement,Low,Midtown,236.7,3.3,True
+REQ000222,CIT00292,2024-03-25,Construction Complaint,Building & Safety,Critical,Southside,11.9,1.8,True
+REQ000223,CIT00064,2024-05-27,Meter Reading,Utilities,Medium,Downtown,67.6,3.5,False
+REQ000224,CIT00207,2024-08-27,Permit Inspection,Permits & Licensing,Medium,Lakewood,72.9,4.2,True
+REQ000225,CIT00277,2024-05-19,Event Permit,Permits & Licensing,Medium,Industrial,87.0,2.5,True
+REQ000226,CIT00042,2024-09-09,Meter Reading,Utilities,Medium,Downtown,115.6,2.7,True
+REQ000227,CIT00222,2024-11-02,Park Maintenance,Parks & Recreation,Medium,Riverside,78.0,3.7,True
+REQ000228,CIT00129,2024-06-14,Bike Lane Request,Transportation,High,Midtown,15.0,4.4,True
+REQ000229,CIT00118,2024-01-14,Pothole Repair,Public Works,Medium,Riverside,59.7,3.7,True
+REQ000230,CIT00011,2024-12-11,Graffiti Removal,Code Enforcement,Critical,Downtown,4.3,4.9,False
+REQ000231,CIT00296,2024-12-10,Bus Stop Concern,Transportation,Low,Downtown,244.0,2.9,True
+REQ000232,CIT00241,2024-01-21,Sewer Backup,Utilities,Low,Industrial,188.4,4.1,True
+REQ000233,CIT00143,2024-09-22,Business License,Permits & Licensing,Medium,Southside,107.2,3.4,True
+REQ000234,CIT00224,2024-04-02,Bike Lane Request,Transportation,Low,Eastgate,299.8,3.3,True
+REQ000235,CIT00047,2024-11-21,Facility Booking,Parks & Recreation,High,University,15.4,4.5,True
+REQ000236,CIT00210,2024-08-28,Zoning Issue,Code Enforcement,Low,Northside,282.5,2.6,True
+REQ000237,CIT00054,2024-06-19,Bus Stop Concern,Transportation,Medium,Eastgate,86.2,2.7,True
+REQ000238,CIT00211,2024-03-23,Illegal Dumping,Environmental Services,High,Northside,17.4,4.3,True
+REQ000239,CIT00148,2024-12-21,Parking Issue,Transportation,Medium,Downtown,50.5,4.4,True
+REQ000240,CIT00282,2024-12-05,Road Damage,Public Works,Medium,Southside,141.8,1.4,True
+REQ000241,CIT00046,2024-01-19,Parking Issue,Transportation,Low,Lakewood,298.4,3.2,False
+REQ000242,CIT00166,2024-06-10,Construction Complaint,Building & Safety,Low,Lakewood,197.9,4.2,True
+REQ000243,CIT00264,2024-02-29,Road Damage,Public Works,Critical,Northside,11.9,2.5,True
+REQ000244,CIT00237,2024-01-01,Service Connection,Utilities,Medium,Midtown,68.8,4.0,True
+REQ000245,CIT00097,2024-07-30,Traffic Signal Issue,Transportation,High,Southside,40.5,2.7,False
+REQ000246,CIT00256,2024-09-22,Water Quality,Utilities,High,Riverside,40.1,2.5,True
+REQ000247,CIT00027,2024-11-16,Road Damage,Public Works,High,Harbor,24.0,4.3,True
+REQ000248,CIT00282,2024-04-14,Zoning Issue,Code Enforcement,Low,Downtown,331.5,3.2,False
+REQ000249,CIT00225,2024-03-08,Construction Complaint,Building & Safety,Medium,Riverside,91.4,3.2,True
+REQ000250,CIT00063,2024-12-23,Parking Issue,Transportation,Low,Industrial,204.0,3.7,True
+REQ000251,CIT00123,2024-01-15,Composting Program,Environmental Services,Low,Downtown,148.3,4.6,False
+REQ000252,CIT00160,2024-12-29,Street Light Outage,Public Works,Critical,Southside,8.7,2.8,True
+REQ000253,CIT00283,2024-10-09,Pothole Repair,Public Works,Low,Southside,149.9,4.4,True
+REQ000254,CIT00116,2024-07-27,Pothole Repair,Public Works,Low,Highland,328.5,2.6,False
+REQ000255,CIT00061,2024-02-28,Meter Reading,Utilities,Medium,Westbrook,53.0,4.1,True
+REQ000256,CIT00256,2024-11-27,Safety Violation,Building & Safety,Critical,Eastgate,3.4,4.7,True
+REQ000257,CIT00140,2024-05-29,Bike Lane Request,Transportation,Medium,University,105.0,3.2,True
+REQ000258,CIT00242,2024-07-31,Business License,Permits & Licensing,Low,Downtown,178.7,3.7,True
+REQ000259,CIT00283,2024-05-04,Meter Reading,Utilities,Medium,Downtown,100.5,2.8,True
+REQ000260,CIT00098,2024-03-15,Meter Reading,Utilities,Medium,Downtown,54.8,4.8,False
+REQ000261,CIT00070,2024-11-02,Service Connection,Utilities,Low,Eastgate,277.5,3.3,True
+REQ000262,CIT00213,2024-02-05,Sidewalk Repair,Public Works,High,Southside,21.3,4.0,False
+REQ000263,CIT00137,2024-06-23,Event Permit,Permits & Licensing,Medium,Westbrook,54.1,4.5,True
+REQ000264,CIT00153,2024-01-02,Water Quality,Utilities,Medium,Northside,54.8,4.3,True
+REQ000265,CIT00251,2024-10-27,Storm Drain Issue,Public Works,Critical,Eastgate,7.3,3.4,False
+REQ000266,CIT00276,2024-03-17,Meter Reading,Utilities,High,Southside,25.8,4.2,True
+REQ000267,CIT00171,2024-09-04,Construction Complaint,Building & Safety,Low,Highland,147.7,4.6,True
+REQ000268,CIT00194,2024-10-09,Composting Program,Environmental Services,High,Midtown,30.0,4.2,True
+REQ000269,CIT00097,2024-08-21,Sidewalk Repair,Public Works,Low,Southside,255.6,3.3,True
+REQ000270,CIT00293,2024-12-23,Street Light Outage,Public Works,Critical,Downtown,6.8,4.1,True
+REQ000271,CIT00211,2024-07-15,Street Light Outage,Public Works,Medium,Downtown,90.2,3.0,True
+REQ000272,CIT00243,2024-01-23,Water Quality,Utilities,High,Downtown,29.9,4.2,True
+REQ000273,CIT00198,2024-12-27,Property Assessment,Building & Safety,Medium,Midtown,106.3,3.1,True
+REQ000274,CIT00254,2024-12-05,Safety Violation,Building & Safety,Critical,Westbrook,3.9,4.7,True
+REQ000275,CIT00258,2024-01-19,Safety Violation,Building & Safety,Critical,Downtown,5.2,3.6,True
+REQ000276,CIT00052,2024-10-29,Illegal Dumping,Environmental Services,Medium,Lakewood,76.5,4.3,True
+REQ000277,CIT00270,2024-08-13,Traffic Signal Issue,Transportation,Critical,Southside,3.8,5.0,True
+REQ000278,CIT00074,2024-08-21,Pothole Repair,Public Works,Medium,Westbrook,59.7,4.2,False
+REQ000279,CIT00039,2024-07-28,Crosswalk Request,Transportation,Medium,Eastgate,56.3,4.9,True
+REQ000280,CIT00174,2024-08-28,Construction Complaint,Building & Safety,Medium,Eastgate,94.7,2.6,True
+REQ000281,CIT00042,2024-11-15,Business License,Permits & Licensing,Medium,University,58.9,4.0,True
+REQ000282,CIT00195,2024-06-17,Service Connection,Utilities,Medium,Southside,63.8,3.7,True
+REQ000283,CIT00278,2024-06-11,Facility Booking,Parks & Recreation,Low,Riverside,248.6,3.4,True
+REQ000284,CIT00121,2024-01-19,Building Inspection,Building & Safety,High,Riverside,14.9,4.6,False
+REQ000285,CIT00117,2024-11-19,Construction Complaint,Building & Safety,Low,Downtown,152.7,4.4,True
+REQ000286,CIT00051,2024-02-16,Road Damage,Public Works,Critical,Industrial,9.9,2.6,True
+REQ000287,CIT00228,2024-11-20,Water Main Break,Utilities,Critical,Industrial,6.2,3.6,False
+REQ000288,CIT00015,2024-03-26,Permit Inspection,Permits & Licensing,Low,Lakewood,128.7,4.4,True
+REQ000289,CIT00029,2024-01-24,Water Quality,Utilities,Critical,Lakewood,6.8,4.3,False
+REQ000290,CIT00192,2024-05-30,Sidewalk Repair,Public Works,Critical,Downtown,10.1,2.8,True
+REQ000291,CIT00126,2024-08-08,Crosswalk Request,Transportation,Medium,Eastgate,51.9,4.6,False
+REQ000292,CIT00290,2024-09-28,Property Assessment,Building & Safety,Low,Eastgate,130.4,4.8,False
+REQ000293,CIT00088,2024-12-15,Sewer Backup,Utilities,High,Industrial,39.9,3.1,True
+REQ000294,CIT00196,2024-03-30,Water Main Break,Utilities,High,University,31.5,3.1,True
+REQ000295,CIT00255,2024-11-13,Sewer Backup,Utilities,High,Northside,14.1,4.6,True
+REQ000296,CIT00119,2024-10-25,Crosswalk Request,Transportation,Low,Highland,137.3,4.4,True
+REQ000297,CIT00236,2024-08-24,Sidewalk Repair,Public Works,Low,Eastgate,131.0,4.4,True
+REQ000298,CIT00239,2024-05-10,Traffic Signal Issue,Transportation,High,Midtown,17.2,4.5,True
+REQ000299,CIT00081,2024-05-27,Storm Drain Issue,Public Works,Medium,Riverside,111.2,3.1,False
+REQ000300,CIT00177,2024-02-07,Road Damage,Public Works,Low,Downtown,160.0,4.0,True
+REQ000301,CIT00218,2024-10-27,Sidewalk Repair,Public Works,Critical,Midtown,5.0,3.6,True
+REQ000302,CIT00234,2024-12-19,Sidewalk Repair,Public Works,Low,Westbrook,173.1,3.9,False
+REQ000303,CIT00197,2024-06-03,Sewer Backup,Utilities,Critical,Downtown,5.8,4.1,True
+REQ000304,CIT00122,2024-09-04,Pothole Repair,Public Works,Medium,Highland,77.6,4.0,True
+REQ000305,CIT00184,2024-07-14,Storm Drain Issue,Public Works,Medium,Northside,55.1,5.0,True
+REQ000306,CIT00152,2024-10-21,Illegal Dumping,Environmental Services,Medium,Eastgate,65.1,3.6,True
+REQ000307,CIT00141,2024-01-12,Hazardous Waste,Environmental Services,Medium,Riverside,82.2,4.4,True
+REQ000308,CIT00026,2024-01-05,Tree Trimming,Parks & Recreation,Medium,Industrial,128.1,2.3,False
+REQ000309,CIT00147,2024-11-06,Facility Booking,Parks & Recreation,Medium,Eastgate,118.4,2.7,True
+REQ000310,CIT00113,2024-04-27,Construction Complaint,Building & Safety,High,Eastgate,32.8,3.3,True
+REQ000311,CIT00129,2024-11-21,Property Violation,Code Enforcement,Low,Lakewood,150.2,4.4,True
+REQ000312,CIT00050,2024-12-13,Crosswalk Request,Transportation,Medium,Harbor,69.4,3.9,True
+REQ000313,CIT00159,2024-11-17,Pothole Repair,Public Works,Critical,Midtown,11.1,2.5,True
+REQ000314,CIT00297,2024-08-13,Building Inspection,Building & Safety,Medium,Westbrook,78.1,3.9,True
+REQ000315,CIT00047,2024-07-05,Sewer Backup,Utilities,Medium,Westbrook,87.8,3.1,True
+REQ000316,CIT00213,2024-05-31,Illegal Dumping,Environmental Services,Low,Southside,337.3,2.8,True
+REQ000317,CIT00068,2024-03-30,Sewer Backup,Utilities,Critical,Lakewood,8.1,3.0,True
+REQ000318,CIT00272,2024-10-03,Trail Repair,Parks & Recreation,Medium,Riverside,85.0,2.8,True
+REQ000319,CIT00085,2024-09-13,Bus Stop Concern,Transportation,Low,Lakewood,125.2,4.6,False
+REQ000320,CIT00152,2024-05-11,Road Damage,Public Works,Medium,Downtown,93.0,3.1,True
+REQ000321,CIT00240,2024-06-22,Traffic Signal Issue,Transportation,Critical,Northside,2.2,4.9,True
+REQ000322,CIT00116,2024-02-08,Property Violation,Code Enforcement,Medium,Midtown,78.9,4.2,False
+REQ000323,CIT00286,2024-12-12,Meter Reading,Utilities,Low,Southside,175.0,3.8,True
+REQ000324,CIT00203,2024-07-06,Water Main Break,Utilities,High,Highland,14.9,4.1,True
+REQ000325,CIT00275,2024-01-08,Bus Stop Concern,Transportation,Low,Southside,256.8,2.5,True
+REQ000326,CIT00189,2024-03-04,Meter Reading,Utilities,High,University,12.7,4.2,False
+REQ000327,CIT00300,2024-12-10,Bus Stop Concern,Transportation,Medium,Highland,96.9,3.4,False
+REQ000328,CIT00056,2024-07-14,Illegal Dumping,Environmental Services,Low,Midtown,130.6,4.2,False
+REQ000329,CIT00242,2024-12-11,Playground Equipment,Parks & Recreation,Low,Downtown,305.6,3.0,True
+REQ000330,CIT00288,2024-01-13,Tree Trimming,Parks & Recreation,High,Industrial,26.2,3.7,False
+REQ000331,CIT00114,2024-06-16,Service Connection,Utilities,Critical,Southside,12.1,2.0,False
+REQ000332,CIT00238,2024-11-27,Building Inspection,Building & Safety,Low,Lakewood,277.5,3.1,True
+REQ000333,CIT00210,2024-12-24,Bus Stop Concern,Transportation,Medium,Eastgate,94.5,3.2,True
+REQ000334,CIT00024,2024-02-29,Crosswalk Request,Transportation,Low,Northside,289.2,3.4,True
+REQ000335,CIT00253,2024-01-20,Illegal Dumping,Environmental Services,High,Midtown,18.6,5.0,True
+REQ000336,CIT00121,2024-02-29,Building Inspection,Building & Safety,Low,Westbrook,143.5,4.2,True
+REQ000337,CIT00199,2024-10-02,Recycling Issue,Environmental Services,High,Southside,53.9,2.1,True
+REQ000338,CIT00277,2024-08-20,Water Quality,Utilities,Critical,Lakewood,5.3,4.0,True
+REQ000339,CIT00080,2024-08-02,Bike Lane Request,Transportation,Low,Southside,369.1,1.2,False
+REQ000340,CIT00251,2024-07-31,Building Inspection,Building & Safety,Medium,Industrial,136.7,1.5,False
+REQ000341,CIT00144,2024-11-11,Road Damage,Public Works,High,Lakewood,36.4,2.8,False
+REQ000342,CIT00112,2024-01-17,Sidewalk Repair,Public Works,Low,Lakewood,222.7,4.3,True
+REQ000343,CIT00121,2024-08-15,Road Damage,Public Works,High,Riverside,18.8,4.7,True
+REQ000344,CIT00189,2024-07-04,Water Main Break,Utilities,High,Midtown,41.9,3.2,True
+REQ000345,CIT00032,2024-10-05,Zoning Issue,Code Enforcement,Medium,Lakewood,74.1,4.4,True
+REQ000346,CIT00098,2024-07-22,Sidewalk Repair,Public Works,Medium,Midtown,51.4,5.0,True
+REQ000347,CIT00047,2024-03-03,Meter Reading,Utilities,Low,Northside,323.5,2.8,True
+REQ000348,CIT00011,2024-12-05,Safety Violation,Building & Safety,Medium,Downtown,87.2,3.5,True
+REQ000349,CIT00125,2024-01-26,Construction Complaint,Building & Safety,Medium,Riverside,79.7,4.4,True
+REQ000350,CIT00106,2024-03-05,Bike Lane Request,Transportation,Low,Harbor,177.8,4.2,True
+REQ000351,CIT00107,2024-02-05,Bike Lane Request,Transportation,Medium,Industrial,77.4,4.1,True
+REQ000352,CIT00120,2024-10-27,Crosswalk Request,Transportation,Low,Industrial,253.0,3.1,False
+REQ000353,CIT00002,2024-06-17,Crosswalk Request,Transportation,Critical,Southside,2.7,4.4,True
+REQ000354,CIT00067,2024-05-21,Street Light Outage,Public Works,Critical,Midtown,9.4,2.7,True
+REQ000355,CIT00090,2024-10-03,Sidewalk Repair,Public Works,High,University,27.5,3.6,True
+REQ000356,CIT00068,2024-02-26,Building Inspection,Building & Safety,Medium,Highland,99.7,2.6,True
+REQ000357,CIT00122,2024-01-08,Permit Inspection,Permits & Licensing,Low,Downtown,161.0,3.5,True
+REQ000358,CIT00009,2024-10-28,Illegal Dumping,Environmental Services,Medium,Eastgate,96.6,3.0,False
+REQ000359,CIT00027,2024-03-30,Zoning Issue,Code Enforcement,Low,Industrial,284.6,3.0,False
+REQ000360,CIT00270,2024-03-05,Hazardous Waste,Environmental Services,Low,Riverside,334.3,3.4,True
+REQ000361,CIT00244,2024-02-28,Trash Collection,Environmental Services,Medium,Downtown,77.1,3.7,True
+REQ000362,CIT00263,2024-08-17,Construction Complaint,Building & Safety,High,Downtown,23.1,3.7,True
+REQ000363,CIT00232,2024-10-30,Pothole Repair,Public Works,Low,Riverside,182.9,3.9,True
+REQ000364,CIT00023,2024-09-14,Property Violation,Code Enforcement,Critical,Westbrook,5.3,3.6,False
+REQ000365,CIT00155,2024-12-03,Storm Drain Issue,Public Works,Low,Southside,198.5,4.3,True
+REQ000366,CIT00032,2024-08-22,Water Main Break,Utilities,Medium,Downtown,113.5,2.7,False
+REQ000367,CIT00219,2024-09-02,Parking Issue,Transportation,Low,University,173.3,4.4,True
+REQ000368,CIT00252,2024-12-17,Noise Complaint,Code Enforcement,Low,Westbrook,286.2,3.4,False
+REQ000369,CIT00038,2024-12-30,Hazardous Waste,Environmental Services,High,Northside,22.2,3.8,True
+REQ000370,CIT00076,2024-02-11,Construction Complaint,Building & Safety,Medium,Northside,97.8,2.7,True
+REQ000371,CIT00141,2024-02-03,Crosswalk Request,Transportation,High,Lakewood,35.2,2.7,True
+REQ000372,CIT00281,2024-11-15,Storm Drain Issue,Public Works,Medium,Eastgate,50.9,4.3,False
+REQ000373,CIT00196,2024-12-30,Permit Inspection,Permits & Licensing,Medium,Downtown,60.9,3.9,False
+REQ000374,CIT00151,2024-11-01,Storm Drain Issue,Public Works,High,Downtown,47.3,1.6,True
+REQ000375,CIT00051,2024-08-20,Property Assessment,Building & Safety,Medium,Northside,58.5,4.9,False
+REQ000376,CIT00283,2024-12-25,Noise Complaint,Code Enforcement,Medium,Midtown,53.0,4.3,True
+REQ000377,CIT00232,2024-04-20,Meter Reading,Utilities,Medium,Downtown,90.9,3.3,True
+REQ000378,CIT00174,2024-04-26,Road Damage,Public Works,Low,Northside,184.8,4.1,True
+REQ000379,CIT00213,2024-08-20,Meter Reading,Utilities,Medium,Midtown,62.7,4.0,True
+REQ000380,CIT00219,2024-02-18,Sidewalk Repair,Public Works,Low,Midtown,194.1,4.2,True
+REQ000381,CIT00192,2024-06-09,Water Quality,Utilities,Medium,Downtown,91.9,2.7,True
+REQ000382,CIT00035,2024-03-19,Road Damage,Public Works,Low,Southside,177.5,3.5,True
+REQ000383,CIT00048,2024-02-16,Pothole Repair,Public Works,Medium,University,59.6,4.5,True
+REQ000384,CIT00191,2024-08-09,Trash Collection,Environmental Services,Medium,Midtown,87.9,3.0,True
+REQ000385,CIT00031,2024-03-07,Storm Drain Issue,Public Works,Critical,Southside,7.0,3.8,False
+REQ000386,CIT00288,2024-10-27,Composting Program,Environmental Services,Medium,Midtown,51.6,4.3,True
+REQ000387,CIT00211,2024-06-17,Park Maintenance,Parks & Recreation,High,University,27.3,3.8,False
+REQ000388,CIT00027,2024-06-30,Parking Issue,Transportation,Medium,Southside,132.9,2.1,True
+REQ000389,CIT00181,2024-05-27,Construction Complaint,Building & Safety,Medium,Midtown,74.2,4.3,False
+REQ000390,CIT00260,2024-02-23,Service Connection,Utilities,High,Midtown,42.4,2.9,True
+REQ000391,CIT00247,2024-04-18,Crosswalk Request,Transportation,Medium,Westbrook,101.9,2.9,True
+REQ000392,CIT00180,2024-04-24,Pothole Repair,Public Works,High,Riverside,19.3,4.3,True
+REQ000393,CIT00059,2024-10-11,Bus Stop Concern,Transportation,Low,Harbor,353.3,1.6,True
+REQ000394,CIT00116,2024-05-22,Graffiti Removal,Code Enforcement,Medium,Lakewood,66.2,3.9,True
+REQ000395,CIT00286,2024-08-07,Tree Trimming,Parks & Recreation,Low,Downtown,331.1,2.7,True
+REQ000396,CIT00137,2024-01-14,Graffiti Removal,Code Enforcement,Medium,Northside,100.4,3.1,True
+REQ000397,CIT00140,2024-01-15,Recycling Issue,Environmental Services,Critical,Riverside,5.4,4.1,True
+REQ000398,CIT00174,2024-12-25,Zoning Issue,Code Enforcement,Low,Southside,349.3,1.6,True
+REQ000399,CIT00093,2024-06-28,Noise Complaint,Code Enforcement,Medium,Midtown,54.3,4.8,False
+REQ000400,CIT00206,2024-03-14,Storm Drain Issue,Public Works,Medium,Northside,98.9,3.0,True
+REQ000401,CIT00016,2024-02-05,Street Light Outage,Public Works,High,Downtown,23.6,4.1,False
+REQ000402,CIT00111,2024-02-16,Service Connection,Utilities,Medium,University,99.8,3.4,True
+REQ000403,CIT00233,2024-07-11,Facility Booking,Parks & Recreation,Low,Lakewood,146.2,4.3,True
+REQ000404,CIT00190,2024-06-23,Sewer Backup,Utilities,Critical,Northside,5.8,4.1,False
+REQ000405,CIT00291,2024-06-08,Illegal Dumping,Environmental Services,Critical,Industrial,8.4,3.2,True
+REQ000406,CIT00027,2024-11-01,Water Main Break,Utilities,High,Riverside,24.0,4.0,True
+REQ000407,CIT00026,2024-03-20,Recycling Issue,Environmental Services,Low,Downtown,214.2,4.2,True
+REQ000408,CIT00140,2024-12-11,Park Maintenance,Parks & Recreation,Medium,Southside,147.1,1.8,True
+REQ000409,CIT00249,2024-08-14,Hazardous Waste,Environmental Services,Low,Westbrook,192.6,4.4,True
+REQ000410,CIT00213,2024-11-06,Meter Reading,Utilities,High,Westbrook,15.1,5.0,True
+REQ000411,CIT00263,2024-05-19,Sewer Backup,Utilities,High,Westbrook,27.4,3.6,True
+REQ000412,CIT00221,2024-02-28,Zoning Issue,Code Enforcement,Low,Northside,229.1,3.3,True
+REQ000413,CIT00250,2024-02-26,Water Quality,Utilities,Low,Downtown,131.4,4.8,True
+REQ000414,CIT00024,2024-09-26,Sidewalk Repair,Public Works,Medium,Midtown,66.9,3.9,True
+REQ000415,CIT00029,2024-04-22,Parking Issue,Transportation,Medium,Riverside,71.9,3.8,True
+REQ000416,CIT00155,2024-01-04,Safety Violation,Building & Safety,Medium,Industrial,151.8,2.3,True
+REQ000417,CIT00131,2024-04-18,Recycling Issue,Environmental Services,Low,Highland,218.4,4.0,True
+REQ000418,CIT00062,2024-05-28,Trail Repair,Parks & Recreation,Medium,University,52.0,4.5,False
+REQ000419,CIT00221,2024-01-04,Meter Reading,Utilities,Medium,Northside,72.7,4.4,True
+REQ000420,CIT00195,2024-03-30,Crosswalk Request,Transportation,Low,Downtown,328.2,2.9,True
+REQ000421,CIT00257,2024-09-29,Street Light Outage,Public Works,Critical,University,7.8,2.6,True
+REQ000422,CIT00037,2024-10-13,Illegal Dumping,Environmental Services,Medium,Midtown,94.7,3.4,True
+REQ000423,CIT00224,2024-07-22,Pothole Repair,Public Works,Medium,Northside,113.4,3.3,True
+REQ000424,CIT00040,2024-01-10,Property Assessment,Building & Safety,Low,Industrial,237.5,3.1,True
+REQ000425,CIT00294,2024-06-09,Property Assessment,Building & Safety,Medium,Downtown,118.9,2.7,True
+REQ000426,CIT00149,2024-07-26,Facility Booking,Parks & Recreation,High,Eastgate,32.4,2.5,True
+REQ000427,CIT00011,2024-02-28,Parking Issue,Transportation,High,Midtown,15.1,4.5,False
+REQ000428,CIT00236,2024-06-15,Safety Violation,Building & Safety,Critical,Downtown,11.4,2.1,False
+REQ000429,CIT00046,2024-12-19,Water Quality,Utilities,Medium,University,67.8,3.8,True
+REQ000430,CIT00125,2024-08-11,Trash Collection,Environmental Services,Critical,Northside,10.0,3.2,True
+REQ000431,CIT00269,2024-08-11,Property Assessment,Building & Safety,Low,Southside,396.4,2.1,False
+REQ000432,CIT00159,2024-02-10,Property Assessment,Building & Safety,High,Eastgate,43.3,2.7,False
+REQ000433,CIT00171,2024-06-22,Playground Equipment,Parks & Recreation,Medium,Industrial,90.3,2.9,True
+REQ000434,CIT00262,2024-03-27,Park Maintenance,Parks & Recreation,Low,Southside,233.7,2.9,True
+REQ000435,CIT00272,2024-11-20,Pothole Repair,Public Works,Medium,Midtown,58.9,4.1,True
+REQ000436,CIT00179,2024-09-18,Crosswalk Request,Transportation,High,Eastgate,30.2,2.5,True
+REQ000437,CIT00121,2024-06-28,Sewer Backup,Utilities,Low,Southside,373.3,1.8,False
+REQ000438,CIT00132,2024-02-22,Recycling Issue,Environmental Services,Medium,Industrial,125.3,3.0,True
+REQ000439,CIT00079,2024-04-11,License Renewal,Permits & Licensing,Medium,Downtown,110.1,3.0,True
+REQ000440,CIT00091,2024-12-01,Traffic Signal Issue,Transportation,High,Midtown,19.3,4.8,True
+REQ000441,CIT00238,2024-11-17,Road Damage,Public Works,Critical,Westbrook,4.9,4.0,False
+REQ000442,CIT00290,2024-10-15,Property Assessment,Building & Safety,Low,Downtown,184.3,4.3,True
+REQ000443,CIT00166,2024-11-25,Tree Trimming,Parks & Recreation,Low,Southside,356.2,2.5,True
+REQ000444,CIT00078,2024-11-17,Sidewalk Repair,Public Works,High,Westbrook,37.5,3.5,True
+REQ000445,CIT00241,2024-08-13,Pothole Repair,Public Works,High,Southside,18.8,4.0,True
+REQ000446,CIT00141,2024-08-14,Sidewalk Repair,Public Works,Medium,Riverside,78.8,3.5,True
+REQ000447,CIT00181,2024-10-29,Pothole Repair,Public Works,High,Midtown,27.6,4.0,True
+REQ000448,CIT00159,2024-09-16,Building Inspection,Building & Safety,High,Midtown,24.1,4.1,False
+REQ000449,CIT00020,2024-08-24,Business License,Permits & Licensing,Medium,Westbrook,68.1,4.5,True
+REQ000450,CIT00147,2024-01-30,Water Quality,Utilities,Low,Southside,269.7,2.6,True
+REQ000451,CIT00260,2024-02-09,Pothole Repair,Public Works,Low,Eastgate,230.3,2.8,True
+REQ000452,CIT00298,2024-07-15,Road Damage,Public Works,Medium,Harbor,127.7,1.9,False
+REQ000453,CIT00231,2024-10-10,Pothole Repair,Public Works,High,University,15.3,4.2,False
+REQ000454,CIT00165,2024-10-19,Crosswalk Request,Transportation,Low,Southside,262.3,3.2,False
+REQ000455,CIT00257,2024-11-05,Facility Booking,Parks & Recreation,Medium,Riverside,77.2,3.7,False
+REQ000456,CIT00231,2024-03-18,Noise Complaint,Code Enforcement,Medium,Riverside,64.4,4.0,True
+REQ000457,CIT00044,2024-02-22,Bus Stop Concern,Transportation,Critical,Highland,5.7,4.3,True
+REQ000458,CIT00021,2024-09-15,Safety Violation,Building & Safety,High,Eastgate,40.1,3.0,True
+REQ000459,CIT00225,2024-05-06,Meter Reading,Utilities,Medium,Midtown,65.2,3.7,True
+REQ000460,CIT00082,2024-09-25,Tree Trimming,Parks & Recreation,Low,Highland,230.4,2.9,False
+REQ000461,CIT00145,2024-07-05,Water Quality,Utilities,High,Downtown,32.5,3.4,True
+REQ000462,CIT00174,2024-07-17,Hazardous Waste,Environmental Services,Medium,Downtown,81.0,3.9,False
+REQ000463,CIT00027,2024-12-13,Tree Trimming,Parks & Recreation,Critical,University,4.5,4.3,False
+REQ000464,CIT00034,2024-11-19,Permit Inspection,Permits & Licensing,Medium,Southside,103.6,2.8,True
+REQ000465,CIT00286,2024-06-17,Pothole Repair,Public Works,Low,Eastgate,196.4,3.8,True
+REQ000466,CIT00146,2024-12-13,Property Assessment,Building & Safety,Low,Southside,371.4,1.7,True
+REQ000467,CIT00077,2024-05-09,Event Permit,Permits & Licensing,Low,Lakewood,274.7,3.1,True
+REQ000468,CIT00299,2024-06-19,Water Main Break,Utilities,Medium,Riverside,101.2,2.7,False
+REQ000469,CIT00180,2024-12-05,Street Light Outage,Public Works,Critical,Westbrook,4.2,4.1,False
+REQ000470,CIT00067,2024-06-07,Road Damage,Public Works,Low,Southside,295.5,2.6,True
+REQ000471,CIT00159,2024-10-31,Park Maintenance,Parks & Recreation,Low,Eastgate,272.1,2.7,True
+REQ000472,CIT00169,2024-10-13,Property Assessment,Building & Safety,Critical,University,10.0,2.7,True
+REQ000473,CIT00217,2024-03-06,Building Inspection,Building & Safety,Low,Westbrook,288.0,3.4,False
+REQ000474,CIT00010,2024-09-17,Construction Complaint,Building & Safety,Medium,Southside,63.4,3.5,True
+REQ000475,CIT00093,2024-07-04,Construction Complaint,Building & Safety,Medium,Industrial,86.9,2.8,True
+REQ000476,CIT00249,2024-04-19,Illegal Dumping,Environmental Services,Medium,Harbor,77.0,4.1,False
+REQ000477,CIT00071,2024-04-08,Street Light Outage,Public Works,Critical,Riverside,4.7,4.5,True
+REQ000478,CIT00152,2024-03-20,Water Main Break,Utilities,Critical,Riverside,8.3,3.0,True
+REQ000479,CIT00277,2024-02-21,Tree Trimming,Parks & Recreation,Medium,Southside,70.3,3.8,True
+REQ000480,CIT00173,2024-09-26,Traffic Signal Issue,Transportation,Medium,University,110.5,3.2,True
+REQ000481,CIT00193,2024-11-12,Recycling Issue,Environmental Services,High,Industrial,19.2,4.8,True
+REQ000482,CIT00093,2024-03-19,Sewer Backup,Utilities,High,Riverside,13.2,4.6,True
+REQ000483,CIT00085,2024-12-20,Bike Lane Request,Transportation,Low,Riverside,148.8,4.7,True
+REQ000484,CIT00211,2024-08-12,Pothole Repair,Public Works,Low,Downtown,309.5,3.0,True
+REQ000485,CIT00228,2024-07-05,Street Light Outage,Public Works,Critical,Midtown,10.3,3.1,True
+REQ000486,CIT00230,2024-11-08,Sidewalk Repair,Public Works,Low,Southside,160.9,3.9,False
+REQ000487,CIT00123,2024-04-29,Service Connection,Utilities,High,Lakewood,16.1,4.7,True
+REQ000488,CIT00100,2024-06-07,Meter Reading,Utilities,Medium,Harbor,72.6,4.4,True
+REQ000489,CIT00226,2024-07-07,Service Connection,Utilities,High,Midtown,47.1,2.5,True
+REQ000490,CIT00196,2024-08-24,Zoning Issue,Code Enforcement,Medium,Highland,57.2,4.7,False
+REQ000491,CIT00215,2024-09-14,Graffiti Removal,Code Enforcement,Medium,Downtown,74.1,4.3,True
+REQ000492,CIT00071,2024-03-23,Crosswalk Request,Transportation,Low,Eastgate,221.3,4.4,True
+REQ000493,CIT00247,2024-05-08,Building Inspection,Building & Safety,Medium,Downtown,118.0,2.9,True
+REQ000494,CIT00265,2024-07-09,Building Inspection,Building & Safety,Medium,Highland,99.5,2.8,True
+REQ000495,CIT00043,2024-03-04,Sidewalk Repair,Public Works,Medium,Downtown,91.0,3.4,False
+REQ000496,CIT00231,2024-03-23,Bus Stop Concern,Transportation,Medium,Downtown,96.3,3.3,True
+REQ000497,CIT00224,2024-09-19,Crosswalk Request,Transportation,High,Midtown,20.8,4.6,True
+REQ000498,CIT00231,2024-02-16,Street Light Outage,Public Works,Critical,Midtown,9.6,2.5,False
+REQ000499,CIT00213,2024-06-27,Traffic Signal Issue,Transportation,High,Riverside,15.3,4.8,True
+REQ000500,CIT00258,2024-01-28,Road Damage,Public Works,Low,Northside,132.3,4.6,False

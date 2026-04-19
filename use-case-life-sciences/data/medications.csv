@@ -1,0 +1,327 @@
+medication_id,patient_id,medication_name,medication_class,dosage,frequency,high_risk_flag,start_date,end_date
+M001,P001,Lisinopril,ACE Inhibitor,10mg,Daily,0,2025-01-15,2025-01-20
+M002,P001,Metoprolol,Beta Blocker,50mg,Twice daily,0,2025-01-15,2025-01-20
+M003,P001,Warfarin,Anticoagulant,5mg,Daily,1,2025-01-15,2025-01-20
+M004,P002,Albuterol,Bronchodilator,90mcg,As needed,0,2025-01-16,2025-01-19
+M005,P003,Amlodipine,Calcium Channel Blocker,10mg,Daily,0,2025-01-17,2025-01-24
+M006,P003,Atorvastatin,Statin,40mg,Daily,0,2025-01-17,2025-01-24
+M007,P003,Aspirin,Antiplatelet,81mg,Daily,0,2025-01-17,2025-01-24
+M008,P003,Furosemide,Diuretic,40mg,Daily,0,2025-01-17,2025-01-24
+M009,P004,Ibuprofen,NSAID,400mg,As needed,0,2025-01-18,2025-01-21
+M010,P005,Metformin,Antidiabetic,1000mg,Twice daily,0,2025-01-19,2025-01-28
+M011,P005,Insulin Glargine,Insulin,20 units,Daily,1,2025-01-19,2025-01-28
+M012,P005,Lisinopril,ACE Inhibitor,20mg,Daily,0,2025-01-19,2025-01-28
+M013,P005,Carvedilol,Beta Blocker,25mg,Twice daily,0,2025-01-19,2025-01-28
+M014,P005,Warfarin,Anticoagulant,7.5mg,Daily,1,2025-01-19,2025-01-28
+M015,P006,Omeprazole,Proton Pump Inhibitor,20mg,Daily,0,2025-01-20,2025-01-22
+M016,P007,Prednisone,Corticosteroid,40mg,Daily,0,2025-01-21,2025-01-26
+M017,P007,Albuterol,Bronchodilator,90mcg,As needed,0,2025-01-21,2025-01-26
+M018,P008,Metformin,Antidiabetic,500mg,Twice daily,0,2025-01-22,2025-01-27
+M019,P008,Glipizide,Sulfonylurea,10mg,Daily,0,2025-01-22,2025-01-27
+M020,P009,Digoxin,Cardiac Glycoside,0.125mg,Daily,1,2025-01-23,2025-01-31
+M021,P009,Warfarin,Anticoagulant,5mg,Daily,1,2025-01-23,2025-01-31
+M022,P009,Furosemide,Diuretic,80mg,Daily,0,2025-01-23,2025-01-31
+M023,P010,Acetaminophen,Analgesic,500mg,As needed,0,2025-01-24,2025-01-27
+M024,P011,Levetiracetam,Anticonvulsant,500mg,Twice daily,0,2025-01-25,2025-01-29
+M025,P012,Nitroglycerin,Nitrate,0.4mg,As needed,0,2025-01-26,2025-02-02
+M026,P012,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-01-26,2025-02-02
+M027,P012,Clopidogrel,Antiplatelet,75mg,Daily,0,2025-01-26,2025-02-02
+M028,P013,Famotidine,H2 Blocker,20mg,Daily,0,2025-01-27,2025-01-29
+M029,P014,Montelukast,Leukotriene Modifier,10mg,Daily,0,2025-01-28,2025-02-01
+M030,P015,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-01-29,2025-02-08
+M031,P015,Carvedilol,Beta Blocker,12.5mg,Twice daily,0,2025-01-29,2025-02-08
+M032,P015,Spironolactone,Diuretic,25mg,Daily,0,2025-01-29,2025-02-08
+M033,P015,Sacubitril-Valsartan,ARNi,49-51mg,Twice daily,0,2025-01-29,2025-02-08
+M034,P016,Celecoxib,NSAID,200mg,Daily,0,2025-01-30,2025-02-02
+M035,P017,Levothyroxine,Thyroid Hormone,100mcg,Daily,0,2025-01-31,2025-02-06
+M036,P017,Metformin,Antidiabetic,850mg,Twice daily,0,2025-01-31,2025-02-06
+M037,P018,Pantoprazole,Proton Pump Inhibitor,40mg,Daily,0,2025-02-01,2025-02-04
+M038,P019,Diltiazem,Calcium Channel Blocker,180mg,Daily,0,2025-02-02,2025-02-10
+M039,P019,Rivaroxaban,Anticoagulant,20mg,Daily,1,2025-02-02,2025-02-10
+M040,P019,Digoxin,Cardiac Glycoside,0.25mg,Daily,1,2025-02-02,2025-02-10
+M041,P020,Fluticasone,Corticosteroid,110mcg,Twice daily,0,2025-02-03,2025-02-06
+M042,P021,Gabapentin,Anticonvulsant,300mg,Three times daily,0,2025-02-04,2025-02-08
+M043,P022,Losartan,ARB,50mg,Daily,0,2025-02-05,2025-02-11
+M044,P022,Hydrochlorothiazide,Diuretic,25mg,Daily,0,2025-02-05,2025-02-11
+M045,P023,Prednisone,Corticosteroid,60mg,Daily,0,2025-02-06,2025-02-15
+M046,P023,Azithromycin,Antibiotic,500mg,Daily,0,2025-02-06,2025-02-15
+M047,P024,Naproxen,NSAID,500mg,Twice daily,0,2025-02-07,2025-02-10
+M048,P025,Sitagliptin,DPP-4 Inhibitor,100mg,Daily,0,2025-02-08,2025-02-13
+M049,P026,Isosorbide Mononitrate,Nitrate,30mg,Daily,0,2025-02-09,2025-02-15
+M050,P026,Atorvastatin,Statin,80mg,Daily,0,2025-02-09,2025-02-15
+M051,P027,Sucralfate,GI Protectant,1g,Four times daily,0,2025-02-10,2025-02-12
+M052,P028,Ipratropium,Anticholinergic,17mcg,Four times daily,0,2025-02-11,2025-02-19
+M053,P028,Budesonide,Corticosteroid,180mcg,Twice daily,0,2025-02-11,2025-02-19
+M054,P029,Duloxetine,SNRI,60mg,Daily,0,2025-02-12,2025-02-16
+M055,P030,Rosuvastatin,Statin,20mg,Daily,0,2025-02-13,2025-02-18
+M056,P031,Enoxaparin,Anticoagulant,40mg,Daily,1,2025-02-14,2025-02-24
+M057,P031,Metoprolol,Beta Blocker,50mg,Twice daily,0,2025-02-14,2025-02-24
+M058,P031,Lisinopril,ACE Inhibitor,10mg,Daily,0,2025-02-14,2025-02-24
+M059,P031,Furosemide,Diuretic,40mg,Daily,0,2025-02-14,2025-02-24
+M060,P032,Meloxicam,NSAID,15mg,Daily,0,2025-02-15,2025-02-18
+M061,P033,Insulin Aspart,Insulin,Variable,With meals,1,2025-02-16,2025-02-22
+M062,P033,Metformin,Antidiabetic,1000mg,Twice daily,0,2025-02-16,2025-02-22
+M063,P034,Dicyclomine,Antispasmodic,20mg,Four times daily,0,2025-02-17,2025-02-20
+M064,P035,Amiodarone,Antiarrhythmic,200mg,Daily,1,2025-02-18,2025-02-26
+M065,P035,Warfarin,Anticoagulant,6mg,Daily,1,2025-02-18,2025-02-26
+M066,P036,Cetirizine,Antihistamine,10mg,Daily,0,2025-02-19,2025-02-22
+M067,P037,Memantine,NMDA Antagonist,10mg,Twice daily,0,2025-02-20,2025-02-24
+M068,P038,Dobutamine,Inotrope,5mcg/kg/min,Continuous,1,2025-02-21,2025-03-02
+M069,P038,Heparin,Anticoagulant,5000 units,Twice daily,1,2025-02-21,2025-03-02
+M070,P039,Cyclobenzaprine,Muscle Relaxant,10mg,Three times daily,0,2025-02-22,2025-02-25
+M071,P040,Pioglitazone,Thiazolidinedione,30mg,Daily,0,2025-02-23,2025-02-28
+M072,P040,Lisinopril,ACE Inhibitor,20mg,Daily,0,2025-02-23,2025-02-28
+M073,P041,Esomeprazole,Proton Pump Inhibitor,40mg,Daily,0,2025-02-24,2025-02-27
+M074,P042,Clopidogrel,Antiplatelet,75mg,Daily,0,2025-02-25,2025-03-03
+M075,P042,Bisoprolol,Beta Blocker,5mg,Daily,0,2025-02-25,2025-03-03
+M076,P043,Loratadine,Antihistamine,10mg,Daily,0,2025-02-26,2025-02-28
+M077,P044,Donepezil,Cholinesterase Inhibitor,10mg,Daily,0,2025-02-27,2025-03-06
+M078,P044,Quetiapine,Antipsychotic,25mg,At bedtime,0,2025-02-27,2025-03-06
+M079,P045,Diclofenac,NSAID,75mg,Twice daily,0,2025-02-28,2025-03-03
+M080,P046,Valsartan,ARB,160mg,Daily,0,2025-03-01,2025-03-06
+M081,P047,Propylthiouracil,Antithyroid,50mg,Three times daily,0,2025-03-02,2025-03-05
+M082,P048,Methylprednisolone,Corticosteroid,125mg,Daily,0,2025-03-03,2025-03-12
+M083,P048,Ceftriaxone,Antibiotic,1g,Daily,0,2025-03-03,2025-03-12
+M084,P049,Ranitidine,H2 Blocker,150mg,Twice daily,0,2025-03-04,2025-03-07
+M085,P050,Nitroglycerin Patch,Nitrate,0.4mg/hr,Daily,0,2025-03-05,2025-03-11
+M086,P050,Metoprolol Succinate,Beta Blocker,100mg,Daily,0,2025-03-05,2025-03-11
+M087,P051,Sertraline,SSRI,100mg,Daily,0,2025-03-06,2025-03-10
+M088,P052,Dabigatran,Anticoagulant,150mg,Twice daily,1,2025-03-07,2025-03-15
+M089,P052,Diltiazem,Calcium Channel Blocker,240mg,Daily,0,2025-03-07,2025-03-15
+M090,P053,Tramadol,Opioid,50mg,As needed,1,2025-03-08,2025-03-11
+M091,P054,Canagliflozin,SGLT2 Inhibitor,100mg,Daily,0,2025-03-09,2025-03-13
+M092,P055,Insulin Lispro,Insulin,Variable,With meals,1,2025-03-10,2025-03-20
+M093,P055,Metformin,Antidiabetic,1000mg,Twice daily,0,2025-03-10,2025-03-20
+M094,P055,Lisinopril,ACE Inhibitor,40mg,Daily,0,2025-03-10,2025-03-20
+M095,P055,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-03-10,2025-03-20
+M096,P056,Tiotropium,Anticholinergic,18mcg,Daily,0,2025-03-11,2025-03-14
+M097,P057,Loperamide,Antidiarrheal,2mg,As needed,0,2025-03-12,2025-03-18
+M098,P058,Rizatriptan,Triptan,10mg,As needed,0,2025-03-13,2025-03-17
+M099,P059,Ranolazine,Antianginal,500mg,Twice daily,0,2025-03-14,2025-03-21
+M100,P059,Atorvastatin,Statin,40mg,Daily,0,2025-03-14,2025-03-21
+M101,P060,Methocarbamol,Muscle Relaxant,750mg,Four times daily,0,2025-03-15,2025-03-17
+M102,P061,Empagliflozin,SGLT2 Inhibitor,25mg,Daily,0,2025-03-16,2025-03-21
+M103,P062,Fluticasone-Salmeterol,Combination,250-50mcg,Twice daily,0,2025-03-17,2025-03-20
+M104,P063,Warfarin,Anticoagulant,4mg,Daily,1,2025-03-18,2025-03-26
+M105,P063,Carvedilol,Beta Blocker,25mg,Twice daily,0,2025-03-18,2025-03-26
+M106,P063,Furosemide,Diuretic,80mg,Daily,0,2025-03-18,2025-03-26
+M107,P064,Ondansetron,Antiemetic,4mg,As needed,0,2025-03-19,2025-03-22
+M108,P065,Rivastigmine,Cholinesterase Inhibitor,6mg,Twice daily,0,2025-03-20,2025-03-27
+M109,P065,Memantine,NMDA Antagonist,20mg,Daily,0,2025-03-20,2025-03-27
+M110,P066,Amlodipine,Calcium Channel Blocker,5mg,Daily,0,2025-03-21,2025-03-26
+M111,P067,Vancomycin,Antibiotic,1g,Twice daily,0,2025-03-22,2025-04-01
+M112,P067,Piperacillin-Tazobactam,Antibiotic,3.375g,Every 6 hours,0,2025-03-22,2025-04-01
+M113,P067,Enoxaparin,Anticoagulant,40mg,Daily,1,2025-03-22,2025-04-01
+M114,P068,Tizanidine,Muscle Relaxant,4mg,Three times daily,0,2025-03-23,2025-03-26
+M115,P069,Liraglutide,GLP-1 Agonist,1.2mg,Daily,0,2025-03-24,2025-03-30
+M116,P069,Metformin,Antidiabetic,1000mg,Twice daily,0,2025-03-24,2025-03-30
+M117,P070,Misoprostol,Prostaglandin,200mcg,Four times daily,0,2025-03-25,2025-03-28
+M118,P071,Rivaroxaban,Anticoagulant,15mg,Daily,1,2025-03-26,2025-04-03
+M119,P071,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-03-26,2025-04-03
+M120,P072,Venlafaxine,SNRI,150mg,Daily,0,2025-03-27,2025-03-31
+M121,P073,Formoterol,LABA,12mcg,Twice daily,0,2025-03-28,2025-04-01
+M122,P074,Morphine,Opioid,15mg,Every 4 hours,1,2025-03-29,2025-04-07
+M123,P074,Apixaban,Anticoagulant,2.5mg,Twice daily,1,2025-03-29,2025-04-07
+M124,P074,Furosemide,Diuretic,120mg,Daily,0,2025-03-29,2025-04-07
+M125,P075,Colchicine,Anti-gout,0.6mg,Twice daily,0,2025-03-30,2025-04-01
+M126,P076,Dapagliflozin,SGLT2 Inhibitor,10mg,Daily,0,2025-03-31,2025-04-06
+M127,P076,Lisinopril,ACE Inhibitor,20mg,Daily,0,2025-03-31,2025-04-06
+M128,P077,Lactulose,Laxative,30ml,Three times daily,0,2025-04-01,2025-04-04
+M129,P078,Dobutamine,Inotrope,7.5mcg/kg/min,Continuous,1,2025-04-02,2025-04-10
+M130,P078,Heparin,Anticoagulant,Continuous,IV,1,2025-04-02,2025-04-10
+M131,P078,Furosemide,Diuretic,100mg,Twice daily,0,2025-04-02,2025-04-10
+M132,P079,Escitalopram,SSRI,20mg,Daily,0,2025-04-03,2025-04-07
+M133,P080,Budesonide-Formoterol,Combination,160-4.5mcg,Twice daily,0,2025-04-04,2025-04-09
+M134,P081,Clopidogrel,Antiplatelet,75mg,Daily,0,2025-04-05,2025-04-11
+M135,P081,Atorvastatin,Statin,80mg,Daily,0,2025-04-05,2025-04-11
+M136,P082,Oxycodone,Opioid,10mg,Every 6 hours,1,2025-04-06,2025-04-14
+M137,P082,Gabapentin,Anticonvulsant,600mg,Three times daily,0,2025-04-06,2025-04-14
+M138,P083,Estradiol,Hormone,0.5mg,Daily,0,2025-04-07,2025-04-09
+M139,P084,Metoclopramide,Antiemetic,10mg,Three times daily,0,2025-04-08,2025-04-15
+M140,P084,Omeprazole,Proton Pump Inhibitor,40mg,Daily,0,2025-04-08,2025-04-15
+M141,P085,Baclofen,Muscle Relaxant,10mg,Three times daily,0,2025-04-09,2025-04-13
+M142,P086,Digoxin,Cardiac Glycoside,0.125mg,Daily,1,2025-04-10,2025-04-17
+M143,P086,Warfarin,Anticoagulant,5mg,Daily,1,2025-04-10,2025-04-17
+M144,P087,Montelukast,Leukotriene Modifier,10mg,Daily,0,2025-04-11,2025-04-15
+M145,P088,Enoxaparin,Anticoagulant,60mg,Twice daily,1,2025-04-12,2025-04-20
+M146,P088,Metoprolol,Beta Blocker,50mg,Twice daily,0,2025-04-12,2025-04-20
+M147,P089,Folic Acid,Vitamin,1mg,Daily,0,2025-04-13,2025-04-15
+M148,P090,Famotidine,H2 Blocker,40mg,Twice daily,0,2025-04-14,2025-04-18
+M149,P091,Insulin NPH,Insulin,30 units,Twice daily,1,2025-04-15,2025-04-25
+M150,P091,Metformin,Antidiabetic,1000mg,Twice daily,0,2025-04-15,2025-04-25
+M151,P091,Lisinopril,ACE Inhibitor,40mg,Daily,0,2025-04-15,2025-04-25
+M152,P091,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-04-15,2025-04-25
+M153,P091,Atorvastatin,Statin,80mg,Daily,0,2025-04-15,2025-04-25
+M154,P092,Pregabalin,Anticonvulsant,150mg,Twice daily,0,2025-04-16,2025-04-20
+M155,P093,Azithromycin,Antibiotic,250mg,Daily,0,2025-04-17,2025-04-24
+M156,P093,Prednisone,Corticosteroid,40mg,Daily,0,2025-04-17,2025-04-24
+M157,P094,Isosorbide Dinitrate,Nitrate,20mg,Three times daily,0,2025-04-18,2025-04-23
+M158,P095,Hydrocodone-Acetaminophen,Opioid,5-325mg,Every 6 hours,1,2025-04-19,2025-04-27
+M159,P095,Gabapentin,Anticonvulsant,400mg,Three times daily,0,2025-04-19,2025-04-27
+M160,P096,Methimazole,Antithyroid,10mg,Daily,0,2025-04-20,2025-04-23
+M161,P097,Polyethylene Glycol,Laxative,17g,Daily,0,2025-04-21,2025-04-26
+M162,P098,Sumatriptan,Triptan,50mg,As needed,0,2025-04-22,2025-04-25
+M163,P099,Dabigatran,Anticoagulant,110mg,Twice daily,1,2025-04-23,2025-05-01
+M164,P099,Diltiazem,Calcium Channel Blocker,360mg,Daily,0,2025-04-23,2025-05-01
+M165,P100,Ipratropium-Albuterol,Combination,0.5-2.5mg,Four times daily,0,2025-04-24,2025-04-28
+M166,P101,Calcium Carbonate,Supplement,500mg,Twice daily,0,2025-04-25,2025-04-30
+M167,P102,Glimepiride,Sulfonylurea,4mg,Daily,0,2025-04-26,2025-05-02
+M168,P102,Metformin,Antidiabetic,850mg,Twice daily,0,2025-04-26,2025-05-02
+M169,P103,Rivaroxaban,Anticoagulant,20mg,Daily,1,2025-04-27,2025-05-07
+M170,P103,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-04-27,2025-05-07
+M171,P103,Furosemide,Diuretic,80mg,Daily,0,2025-04-27,2025-05-07
+M172,P103,Spironolactone,Diuretic,50mg,Daily,0,2025-04-27,2025-05-07
+M173,P104,Simvastatin,Statin,20mg,Daily,0,2025-04-28,2025-05-01
+M174,P105,Galantamine,Cholinesterase Inhibitor,16mg,Twice daily,0,2025-04-29,2025-05-06
+M175,P106,Albuterol,Bronchodilator,90mcg,As needed,0,2025-04-30,2025-05-04
+M176,P107,Warfarin,Anticoagulant,7.5mg,Daily,1,2025-05-01,2025-05-09
+M177,P107,Carvedilol,Beta Blocker,25mg,Twice daily,0,2025-05-01,2025-05-09
+M178,P107,Furosemide,Diuretic,80mg,Daily,0,2025-05-01,2025-05-09
+M179,P108,Carisoprodol,Muscle Relaxant,350mg,Three times daily,0,2025-05-02,2025-05-04
+M180,P109,Levothyroxine,Thyroid Hormone,75mcg,Daily,0,2025-05-03,2025-05-08
+M181,P110,Sulfasalazine,Anti-inflammatory,500mg,Twice daily,0,2025-05-04,2025-05-07
+M182,P111,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-05-05,2025-05-13
+M183,P111,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-05-05,2025-05-13
+M184,P112,Mirtazapine,Antidepressant,30mg,At bedtime,0,2025-05-06,2025-05-10
+M185,P113,Fluticasone,Corticosteroid,220mcg,Twice daily,0,2025-05-07,2025-05-12
+M186,P114,Etodolac,NSAID,400mg,Twice daily,0,2025-05-08,2025-05-12
+M187,P115,Insulin Detemir,Insulin,40 units,Daily,1,2025-05-09,2025-05-19
+M188,P115,Insulin Aspart,Insulin,Variable,With meals,1,2025-05-09,2025-05-19
+M189,P115,Lisinopril,ACE Inhibitor,40mg,Daily,0,2025-05-09,2025-05-19
+M190,P115,Atorvastatin,Statin,80mg,Daily,0,2025-05-09,2025-05-19
+M191,P115,Aspirin,Antiplatelet,81mg,Daily,0,2025-05-09,2025-05-19
+M192,P116,Vitamin D,Supplement,2000 IU,Daily,0,2025-05-10,2025-05-12
+M193,P117,Loperamide,Antidiarrheal,4mg,As needed,0,2025-05-11,2025-05-18
+M194,P117,Ondansetron,Antiemetic,8mg,Three times daily,0,2025-05-11,2025-05-18
+M195,P118,Amitriptyline,TCA,25mg,At bedtime,0,2025-05-12,2025-05-16
+M196,P119,Enoxaparin,Anticoagulant,80mg,Twice daily,1,2025-05-13,2025-05-21
+M197,P119,Metoprolol,Beta Blocker,50mg,Twice daily,0,2025-05-13,2025-05-21
+M198,P120,Guaifenesin,Expectorant,600mg,Every 12 hours,0,2025-05-14,2025-05-18
+M199,P121,Indomethacin,NSAID,25mg,Three times daily,0,2025-05-15,2025-05-19
+M200,P122,Semaglutide,GLP-1 Agonist,0.5mg,Weekly,0,2025-05-16,2025-05-22
+M201,P122,Metformin,Antidiabetic,1000mg,Twice daily,0,2025-05-16,2025-05-22
+M202,P123,Milrinone,Inotrope,0.375mcg/kg/min,Continuous,1,2025-05-17,2025-05-27
+M203,P123,Heparin,Anticoagulant,Continuous,IV,1,2025-05-17,2025-05-27
+M204,P123,Furosemide,Diuretic,160mg,Daily,0,2025-05-17,2025-05-27
+M205,P124,Acetaminophen,Analgesic,1000mg,Every 6 hours,0,2025-05-18,2025-05-20
+M206,P125,Insulin Glargine,Insulin,25 units,Daily,1,2025-05-19,2025-05-24
+M207,P126,Omeprazole,Proton Pump Inhibitor,20mg,Daily,0,2025-05-20,2025-05-23
+M208,P127,Dabigatran,Anticoagulant,150mg,Twice daily,1,2025-05-21,2025-05-29
+M209,P127,Diltiazem,Calcium Channel Blocker,240mg,Daily,0,2025-05-21,2025-05-29
+M210,P128,Oxybutynin,Anticholinergic,5mg,Three times daily,0,2025-05-22,2025-05-26
+M211,P129,Metformin,Antidiabetic,500mg,Twice daily,0,2025-05-23,2025-05-27
+M212,P130,Dobutamine,Inotrope,10mcg/kg/min,Continuous,1,2025-05-24,2025-06-02
+M213,P130,Warfarin,Anticoagulant,10mg,Daily,1,2025-05-24,2025-06-02
+M214,P130,Furosemide,Diuretic,200mg,Daily,0,2025-05-24,2025-06-02
+M215,P131,Bismuth Subsalicylate,Antidiarrheal,524mg,As needed,0,2025-05-25,2025-05-27
+M216,P132,Levetiracetam,Anticonvulsant,1000mg,Twice daily,0,2025-05-26,2025-06-02
+M217,P132,Lacosamide,Anticonvulsant,100mg,Twice daily,0,2025-05-26,2025-06-02
+M218,P133,Beclomethasone,Corticosteroid,80mcg,Twice daily,0,2025-05-27,2025-05-30
+M219,P134,Rivaroxaban,Anticoagulant,20mg,Daily,1,2025-05-28,2025-06-05
+M220,P134,Carvedilol,Beta Blocker,25mg,Twice daily,0,2025-05-28,2025-06-05
+M221,P135,Diazepam,Benzodiazepine,5mg,Three times daily,1,2025-05-29,2025-06-02
+M222,P136,Sitagliptin,DPP-4 Inhibitor,50mg,Daily,0,2025-05-30,2025-06-03
+M223,P137,Pantoprazole,Proton Pump Inhibitor,40mg,Daily,0,2025-05-31,2025-06-03
+M224,P138,Clopidogrel,Antiplatelet,75mg,Daily,0,2025-06-01,2025-06-08
+M225,P138,Bisoprolol,Beta Blocker,10mg,Daily,0,2025-06-01,2025-06-08
+M226,P139,Lorazepam,Benzodiazepine,0.5mg,As needed,1,2025-06-02,2025-06-04
+M227,P140,Azithromycin,Antibiotic,500mg,Daily,0,2025-06-03,2025-06-10
+M228,P140,Prednisone,Corticosteroid,60mg,Daily,0,2025-06-03,2025-06-10
+M229,P141,Piroxicam,NSAID,20mg,Daily,0,2025-06-04,2025-06-08
+M230,P142,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-06-05,2025-06-14
+M231,P142,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-06-05,2025-06-14
+M232,P142,Furosemide,Diuretic,80mg,Daily,0,2025-06-05,2025-06-14
+M233,P143,Levothyroxine,Thyroid Hormone,50mcg,Daily,0,2025-06-06,2025-06-09
+M234,P144,Atorvastatin,Statin,40mg,Daily,0,2025-06-07,2025-06-11
+M235,P145,Topiramate,Anticonvulsant,100mg,Twice daily,0,2025-06-08,2025-06-12
+M236,P146,Warfarin,Anticoagulant,6mg,Daily,1,2025-06-09,2025-06-17
+M237,P146,Digoxin,Cardiac Glycoside,0.25mg,Daily,1,2025-06-09,2025-06-17
+M238,P147,Fluoxetine,SSRI,40mg,Daily,0,2025-06-10,2025-06-14
+M239,P148,Metoprolol,Beta Blocker,50mg,Twice daily,0,2025-06-11,2025-06-16
+M240,P149,Naproxen,NSAID,250mg,Twice daily,0,2025-06-12,2025-06-15
+M241,P150,Enoxaparin,Anticoagulant,60mg,Twice daily,1,2025-06-13,2025-06-21
+M242,P150,Carvedilol,Beta Blocker,12.5mg,Twice daily,0,2025-06-13,2025-06-21
+M243,P151,Doxycycline,Antibiotic,100mg,Twice daily,0,2025-06-14,2025-06-18
+M244,P152,Donepezil,Cholinesterase Inhibitor,10mg,Daily,0,2025-06-15,2025-06-24
+M245,P152,Quetiapine,Antipsychotic,50mg,At bedtime,0,2025-06-15,2025-06-24
+M246,P153,Cetirizine,Antihistamine,10mg,Daily,0,2025-06-16,2025-06-19
+M247,P154,Ranolazine,Antianginal,1000mg,Twice daily,0,2025-06-17,2025-06-24
+M248,P154,Atorvastatin,Statin,80mg,Daily,0,2025-06-17,2025-06-24
+M249,P155,Celecoxib,NSAID,200mg,Daily,0,2025-06-18,2025-06-22
+M250,P156,Linagliptin,DPP-4 Inhibitor,5mg,Daily,0,2025-06-19,2025-06-23
+M251,P157,Ranitidine,H2 Blocker,150mg,Twice daily,0,2025-06-20,2025-06-23
+M252,P158,Rivaroxaban,Anticoagulant,20mg,Daily,1,2025-06-21,2025-06-29
+M253,P158,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-06-21,2025-06-29
+M254,P159,Clonazepam,Benzodiazepine,0.5mg,Twice daily,1,2025-06-22,2025-06-24
+M255,P160,Tiotropium,Anticholinergic,18mcg,Daily,0,2025-06-23,2025-06-28
+M256,P161,Methotrexate,Immunosuppressant,15mg,Weekly,0,2025-06-24,2025-06-27
+M257,P162,Dobutamine,Inotrope,5mcg/kg/min,Continuous,1,2025-06-25,2025-07-04
+M258,P162,Heparin,Anticoagulant,Continuous,IV,1,2025-06-25,2025-07-04
+M259,P163,Pioglitazone,Thiazolidinedione,45mg,Daily,0,2025-06-26,2025-06-29
+M260,P164,Mesalamine,Anti-inflammatory,800mg,Three times daily,0,2025-06-27,2025-07-03
+M261,P165,Amitriptyline,TCA,50mg,At bedtime,0,2025-06-28,2025-07-02
+M262,P166,Dabigatran,Anticoagulant,150mg,Twice daily,1,2025-06-29,2025-07-07
+M263,P166,Diltiazem,Calcium Channel Blocker,360mg,Daily,0,2025-06-29,2025-07-07
+M264,P167,Fexofenadine,Antihistamine,180mg,Daily,0,2025-06-30,2025-07-02
+M265,P168,Allopurinol,Anti-gout,300mg,Daily,0,2025-07-01,2025-07-05
+M266,P169,Insulin Glargine,Insulin,50 units,Daily,1,2025-07-02,2025-07-12
+M267,P169,Insulin Lispro,Insulin,Variable,With meals,1,2025-07-02,2025-07-12
+M268,P169,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-07-02,2025-07-12
+M269,P169,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-07-02,2025-07-12
+M270,P170,Metformin,Antidiabetic,500mg,Daily,0,2025-07-03,2025-07-06
+M271,P171,Prochlorperazine,Antiemetic,10mg,Every 6 hours,0,2025-07-04,2025-07-11
+M272,P172,Gabapentin,Anticonvulsant,300mg,Three times daily,0,2025-07-05,2025-07-09
+M273,P173,Warfarin,Anticoagulant,7.5mg,Daily,1,2025-07-06,2025-07-14
+M274,P173,Carvedilol,Beta Blocker,25mg,Twice daily,0,2025-07-06,2025-07-14
+M275,P174,Ibuprofen,NSAID,600mg,Three times daily,0,2025-07-07,2025-07-09
+M276,P175,Amlodipine,Calcium Channel Blocker,10mg,Daily,0,2025-07-08,2025-07-12
+M277,P176,Rosuvastatin,Statin,10mg,Daily,0,2025-07-09,2025-07-14
+M278,P177,Milrinone,Inotrope,0.5mcg/kg/min,Continuous,1,2025-07-10,2025-07-20
+M279,P177,Enoxaparin,Anticoagulant,80mg,Twice daily,1,2025-07-10,2025-07-20
+M280,P177,Furosemide,Diuretic,160mg,Daily,0,2025-07-10,2025-07-20
+M281,P178,Famotidine,H2 Blocker,20mg,Twice daily,0,2025-07-11,2025-07-13
+M282,P179,Memantine,NMDA Antagonist,10mg,Twice daily,0,2025-07-12,2025-07-17
+M283,P180,Albuterol,Bronchodilator,90mcg,As needed,0,2025-07-13,2025-07-17
+M284,P181,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-07-14,2025-07-22
+M285,P181,Metoprolol,Beta Blocker,50mg,Twice daily,0,2025-07-14,2025-07-22
+M286,P182,Diclofenac Gel,NSAID,1%,Four times daily,0,2025-07-15,2025-07-19
+M287,P183,Empagliflozin,SGLT2 Inhibitor,10mg,Daily,0,2025-07-16,2025-07-20
+M288,P184,Dicyclomine,Antispasmodic,10mg,Four times daily,0,2025-07-17,2025-07-20
+M289,P185,Clopidogrel,Antiplatelet,75mg,Daily,0,2025-07-18,2025-07-25
+M290,P185,Metoprolol,Beta Blocker,100mg,Twice daily,0,2025-07-18,2025-07-25
+M291,P186,Valproic Acid,Anticonvulsant,500mg,Twice daily,0,2025-07-19,2025-07-23
+M292,P187,Rivaroxaban,Anticoagulant,20mg,Daily,1,2025-07-20,2025-07-30
+M293,P187,Prednisone,Corticosteroid,60mg,Daily,0,2025-07-20,2025-07-30
+M294,P188,Acetaminophen,Analgesic,500mg,As needed,0,2025-07-21,2025-07-23
+M295,P189,Glipizide,Sulfonylurea,5mg,Daily,0,2025-07-22,2025-07-27
+M296,P190,Esomeprazole,Proton Pump Inhibitor,40mg,Daily,0,2025-07-23,2025-07-26
+M297,P191,Dobutamine,Inotrope,7.5mcg/kg/min,Continuous,1,2025-07-24,2025-08-02
+M298,P191,Warfarin,Anticoagulant,5mg,Daily,1,2025-07-24,2025-08-02
+M299,P191,Furosemide,Diuretic,120mg,Daily,0,2025-07-24,2025-08-02
+M300,P192,Duloxetine,SNRI,30mg,Daily,0,2025-07-25,2025-07-29
+M301,P193,Azithromycin,Antibiotic,250mg,Daily,0,2025-07-26,2025-08-02
+M302,P194,Ketorolac,NSAID,10mg,Every 6 hours,0,2025-07-27,2025-07-31
+M303,P195,Enoxaparin,Anticoagulant,60mg,Twice daily,1,2025-07-28,2025-08-05
+M304,P195,Carvedilol,Beta Blocker,12.5mg,Twice daily,0,2025-07-28,2025-08-05
+M305,P196,Saxagliptin,DPP-4 Inhibitor,5mg,Daily,0,2025-07-29,2025-08-01
+M306,P197,Sucralfate,GI Protectant,1g,Four times daily,0,2025-07-30,2025-08-03
+M307,P198,Rizatriptan,Triptan,10mg,As needed,0,2025-07-31,2025-08-03
+M308,P199,Dabigatran,Anticoagulant,150mg,Twice daily,1,2025-08-01,2025-08-09
+M309,P199,Diltiazem,Calcium Channel Blocker,240mg,Daily,0,2025-08-01,2025-08-09
+M310,P200,Budesonide,Corticosteroid,400mcg,Twice daily,0,2025-08-02,2025-08-05
+M311,P250,Insulin Glargine,Insulin,35 units,Daily,1,2025-09-21,2025-10-01
+M312,P250,Metformin,Antidiabetic,1000mg,Twice daily,0,2025-09-21,2025-10-01
+M313,P250,Lisinopril,ACE Inhibitor,40mg,Daily,0,2025-09-21,2025-10-01
+M314,P250,Apixaban,Anticoagulant,5mg,Twice daily,1,2025-09-21,2025-10-01
+M315,P300,Prednisone,Corticosteroid,40mg,Daily,0,2025-11-10,2025-11-17
+M316,P300,Azithromycin,Antibiotic,500mg,Daily,0,2025-11-10,2025-11-17
+M317,P350,Dobutamine,Inotrope,10mcg/kg/min,Continuous,1,2025-12-30,2026-01-08
+M318,P350,Heparin,Anticoagulant,Continuous,IV,1,2025-12-30,2026-01-08
+M319,P350,Furosemide,Diuretic,200mg,Daily,0,2025-12-30,2026-01-08
+M320,P400,Clopidogrel,Antiplatelet,75mg,Daily,0,2025-03-23,2025-03-27
+M321,P400,Atorvastatin,Statin,80mg,Daily,0,2025-03-23,2025-03-27
+M322,P450,Insulin Aspart,Insulin,Variable,With meals,1,2025-05-12,2025-05-18
+M323,P450,Lisinopril,ACE Inhibitor,20mg,Daily,0,2025-05-12,2025-05-18
+M324,P500,Milrinone,Inotrope,0.375mcg/kg/min,Continuous,1,2025-07-01,2025-07-10
+M325,P500,Warfarin,Anticoagulant,7.5mg,Daily,1,2025-07-01,2025-07-10
+M326,P500,Furosemide,Diuretic,120mg,Daily,0,2025-07-01,2025-07-10

@@ -1,0 +1,253 @@
+# Step 4: Model
+
+In this step you will use **SAS Model Studio** to build, compare, and evaluate patient readmission prediction models. SAS Model Studio provides a visual pipeline interface, a built-in **Copilot**, **AutoML** capabilities, and tools for custom model building — all with integrated fairness assessment. At the end you will register your champion model to **SAS Model Manager**.
+
+---
+
+## Prerequisites
+
+The analytical base table (`LIFE_SCIENCES_ABT`) should be available in the **Public** CAS library. If you went through Step 2 & Step 3 before this one you will have a comprehensive understanding of the data already, if not take a second longer to read through the columns to get an understanding of the data.
+
+---
+
+## Opening SAS Model Studio
+
+1. From the SAS Viya home page, open **SAS Model Studio** (under *Build Models* in the main menu)
+2. Click **New Project**
+3. Configure the project:
+   - **Name:** *MedCare Patient Readmission Prediction*
+   - **Project Type:** *Data Mining and Machine Learning*
+   - **Data Source:** Select `LIFE_SCIENCES_ABT` from the Public caslib
+   - Leave the **Template, Location & Description** as they are by default
+   - **Target Variable:** `readmitted_30days`
+4. Click **Save**
+5. Once the SAS Model Studio project has opened on the Data tab, select the variable `readmitted_30days` and set its Role to ´Target´
+6. On the same tab look for the variable `ins_Medicaid` and activate the checkbox `Assess this variable for bias`, this will enable us to talk more about the Trustworthy AI features of SAS Model Studio
+
+The project is now ready for us to start modelling.
+
+---
+
+## Using the SAS Model Studio Copilot
+
+SAS Model Studio includes a **Copilot** that acts as your AI-powered modeling assistant. Access it from the Copilot icon in the toolbar.
+
+### What the Copilot Can Do
+
+- **Recommend pipeline configurations** — ask it to suggest the best approach for a binary classification problem with imbalanced data
+- **Explain model results** — ask it to interpret feature importance, model comparison metrics, or fairness reports
+- **Generate pipeline nodes** — describe what you want and the Copilot can add nodes to your pipeline
+- **Answer methodology questions** — ask about techniques like "What is gradient boosting?" or "How does oversampling work for imbalanced clinical data?"
+
+### Example Copilot Prompts
+
+- *"Set up an AutoML pipeline for binary classification targeting readmission with class imbalance handling"*
+- *"Add a variable selection node that removes features with importance below 1%"*
+- *"Explain the difference between AUC-ROC and sensitivity for this readmission problem"*
+- *"Why is sensitivity more important than specificity for patient readmission?"*
+- *"How should I handle the class imbalance in this dataset?"*
+
+---
+
+## Clinical Interpretability Requirements
+
+Unlike many machine learning applications, clinical predictive models must be **interpretable** — care teams need to understand *why* a patient was flagged as high-risk in order to trust the recommendation and take appropriate action. This has several implications for model selection:
+
+1. **Explainability over pure performance:** A gradient boosting model with AUC 0.78 and clear feature importance may be preferred over a neural network with AUC 0.80 but opaque reasoning
+2. **Feature importance must align with clinical knowledge:** If the model's top predictors do not make clinical sense, stakeholders will not adopt it
+3. **Individual-level explanations:** Care teams need to know why *this specific patient* was flagged — not just which features matter on average. Look for models that support individual prediction explanations
+4. **Regulatory context:** Under CMS quality reporting requirements, hospitals must be able to explain their quality improvement interventions. A black-box model is harder to defend
+
+> **Tip:** Ask the Copilot *"Which model type gives the best balance of accuracy and clinical interpretability for readmission prediction?"*
+
+---
+
+## Approach 1: AutoML (Recommended Starting Point)
+
+AutoML automatically trains and compares multiple algorithms, handles preprocessing, and selects the best model. This is the fastest way to establish a strong baseline.
+
+### Setting Up AutoML
+
+1. In your project pipeline, click **New Pipeline** and select **Automatically generate the pipeline**
+2. Configure AutoML settings:
+   - **Maximum Time:** Set a time budget (e.g., 5 minutes for the bootcamp)
+3. Click **Save**
+4. Now the Pipeline is going to be built for us.
+
+### What AutoML Does
+
+AutoML will automatically:
+
+- Test multiple algorithms (logistic regression, decision trees, random forests, gradient boosting, neural networks, support vector machines)
+- Handle feature preprocessing (missing value imputation, encoding)
+- Tune hyperparameters
+- Compare models on the validation set
+- Rank models by the chosen optimization metric
+
+### Reviewing AutoML Results
+
+After the run completes:
+
+1. Open the **Model Comparison** node to see all models ranked by AUC
+2. Click on individual models to see:
+   - **Fit Statistics:** AUC, misclassification rate, Gini coefficient, KS statistic
+   - **ROC Chart:** Visual comparison of model discrimination
+   - **Variable Importance:** Which features matter most
+   - **Score Rankings:** How well the model separates high-risk from low-risk patients
+3. The top model is automatically selected as the **champion**
+
+> **What to expect:** For this dataset, gradient boosting or random forest models typically achieve an AUC of 0.75-0.82. Logistic regression is usually close behind at 0.72-0.78.
+
+---
+
+## Approach 2: Custom Pipeline Building
+
+If you want more control — or want to experiment with specific model types — build a custom pipeline step by step.
+
+### Recommended Pipeline Nodes
+
+Add these nodes in sequence by clicking **Add Node** in the pipeline canvas:
+
+1. **Data** — Your input table (already connected)
+3. **Imputation** — Handle any remaining missing values (mean for numeric, mode for categorical)
+5. **Model Nodes** — Add one or more of the following:
+   - **Logistic Regression** — Interpretable baseline model; coefficients map directly to clinical risk factors
+   - **Forest** — Random forest ensemble; provides robust performance with variable importance
+   - **Gradient Boosting** — Often the best performer; offers partial dependence plots for interpretation
+6. **Model Comparison** — Automatically compares all model nodes and selects the champion
+
+### Configuring Individual Models
+
+**Logistic Regression:**
+- Selection-process stopping criterion: Significance level
+- Entry significance level: 0.05
+- This gives you interpretable odds ratios for each clinical risk factor
+
+**Forest (Random Forest):**
+- Number of trees: 200
+- Maximum depth: 10
+- Go to the Post-training Properties and activate *HyperSHAP* under the Local Interpretability section. This is used to explain the model predictions
+
+**Gradient Boosting:**
+- Number of trees: 150
+- Learning rate: 0.1
+- Maximum depth: 5
+- Subsample rate: 0.8
+
+### Running the Custom Pipeline
+
+1. Verify all nodes are connected in the pipeline canvas
+2. Click **Run Pipeline** (or right-click the Model Comparison node and select *Run*)
+3. Wait for all models to finish training
+
+---
+
+## Comparing Models
+
+Once both (or either) approach has completed, open the **Model Comparison** results:
+
+| Metric | What It Tells You | Target |
+|--------|-------------------|--------|
+| **AUC-ROC** | Overall ability to distinguish readmitted from non-readmitted patients | >= 0.75 |
+| **Sensitivity (Recall)** | Proportion of actual readmissions correctly identified | >= 0.80 |
+| **Misclassification Rate** | Percentage of incorrect predictions | <= 0.25 |
+| **KS Statistic** | Maximum separation between cumulative distributions | >= 0.30 |
+| **Specificity** | Proportion of non-readmissions correctly identified | >= 0.50 |
+
+Review the **ROC Overlay Chart** to visually compare how well each model separates the two classes. The model closest to the top-left corner performs best.
+
+Review the **Variable Importance** chart for your champion model — the top predictors should align with what you found in Step 3 (likely `comorbidity_count`, `emergency_flag`, `length_of_stay`, `clinical_risk_score`, `medication_count`).
+
+> **Note on sensitivity vs. specificity:** For readmission prediction, **sensitivity is prioritized over specificity**. Missing a high-risk patient who gets readmitted (false negative) has much worse consequences — CMS penalties, patient harm — than flagging a patient who turns out fine (false positive). The false positive cost is a phone call or extra follow-up; the false negative cost is a preventable readmission.
+
+---
+
+## Fairness Assessment
+
+Trustworthy AI requires that models do not discriminate unfairly against protected groups. In this use case we will assess fairness with respect to **insurance type** — specifically whether the model treats Medicare, Medicaid, Commercial, and Uninsured patients equitably.
+
+### Why Insurance Type?
+
+Insurance type is a critical fairness dimension in healthcare for several reasons:
+
+1. **Socioeconomic proxy:** Insurance type is strongly correlated with socioeconomic status, race, and ethnicity. Medicaid patients are disproportionately from lower-income and minority communities. If the model systematically assigns higher risk scores to Medicaid patients, it may be reinforcing existing health disparities rather than addressing them.
+
+2. **Equity of care:** If the model's accuracy differs across insurance groups — for example, catching 90% of readmissions among Commercial patients but only 60% among Medicaid patients — then the resulting care coordination efforts will disproportionately benefit one population over another. This violates the principle of equitable care delivery.
+
+3. **Resource allocation:** High-risk flags trigger interventions such as follow-up calls, home health referrals, and care manager assignments. If the model over-flags one insurance group, those patients may consume a disproportionate share of limited care management resources — or conversely, if it under-flags a group, those patients miss out on services they need.
+
+4. **Regulatory and reputational risk:** CMS and the Office for Civil Rights monitor for disparities in care delivery. A model that systematically disadvantages patients by payer type could expose MedCare to regulatory scrutiny and reputational harm.
+
+### Running the Fairness Assessment
+
+1. As we set the `ins_Medicaid` variable to be assess for fairness we get this assessments with every model
+4. Review the fairness metrics:
+
+| Metric | What It Measures | Acceptable Range |
+|--------|-----------------|------------------|
+| **Demographic Parity** | Are readmission predictions distributed equally across insurance types? | Ratio > 0.80 |
+| **Equal Opportunity** | Is the sensitivity (true positive rate) similar across insurance types? | Difference < 0.10 |
+| **Predictive Parity** | Is the precision similar across insurance types? | Difference < 0.10 |
+| **Calibration** | Does a 70% predicted probability mean 70% actual readmission for all groups? | Slope close to 1.0 |
+
+### Interpreting Results
+
+- If **Demographic Parity** is below 0.80, the model disproportionately flags one insurance group as high-risk
+- If **Equal Opportunity** difference exceeds 0.10, the model catches readmissions in one group better than another
+- Review the **Score Distribution** by group — both groups should have similarly shaped curves
+
+### The Value of Fairness Assessment
+
+Fairness assessment is not just an ethical checkbox — it provides **direct clinical and business value**:
+
+1. **Better patient outcomes:** A model that performs equally well across insurance groups leads to more effective care coordination for everyone
+2. **Trust:** Clinical staff, hospital leadership, and regulators trust models more when they can see documented fairness evidence
+3. **Risk reduction:** Proactively identifying bias prevents costly remediation and regulatory issues later
+4. **Health equity:** Documented fairness assessment demonstrates MedCare's commitment to equitable care regardless of payer status
+
+> **Tip:** Ask the Copilot *"Is my model fair across insurance types?"* to get a plain-language interpretation of the fairness metrics.
+
+---
+
+## Registering to SAS Model Manager
+
+Once you have selected your champion model and reviewed its fairness, register it to **SAS Model Manager** for governance, version control, and deployment.
+
+### Steps to Register
+
+1. In the Pipeline Comparison tab, identify your overall **champion model** (the one with the best KS (Youden))
+2. Right-click the champion model and select **Register Model** (or use the menu: *Actions* > *Register Model*)
+3. Confirm the Location which is /Model Repositories/DM Repository and click OK
+4. Wait for the registration to finish in this pop up, then you can close and right click the model again and select **Manage Models**
+5. Now we will be navigated into SAS Model Manager where we can review the Model Card of this model
+6. Explore the Model Card that is populated automatically as you develop and manage the model on SAS Viya. The Overview tab offers a high-level summary of the model, including an overview of the model's training accuracy, training fairness, generalizability, and influential variables.
+
+### What Registration Provides
+
+Once registered in SAS Model Manager, your model benefits from:
+
+- **Version control:** Track changes across model iterations
+- **Performance monitoring:** Set up automated performance tracking over time — critical for clinical models where patient populations shift
+- **Governance:** Maintain an audit trail of who built the model, what data was used, and what fairness checks were performed
+- **Deployment readiness:** The model can be published to CAS, MAS (Micro Analytic Service), or a container for scoring
+- **Model card:** Auto-generated documentation capturing inputs, outputs, performance, and lineage — essential for clinical AI governance
+
+> **Tip:** Ask the Copilot *"Register this model to Model Manager"* and it will walk you through the process.
+
+---
+
+## Summary
+
+At this point you have:
+
+1. Built models using AutoML and/or custom pipelines
+2. Compared models on AUC, sensitivity, and other metrics with clinical interpretability in mind
+3. Assessed fairness across insurance types to ensure equitable care delivery
+4. Registered your champion model to SAS Model Manager
+5. Viewed the Model Card in SAS Model Manager
+
+---
+
+## Next Steps
+
+Proceed to **[Step 5: Deploy & Act](../5-deploy-and-act/)** to create a decision flow in SAS Intelligent Decisioning that operationalizes your model.
