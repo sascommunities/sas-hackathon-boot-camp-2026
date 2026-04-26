@@ -231,8 +231,11 @@ for (cp in unique(na.omit(abt$contact_preference))) {
   abt[[safe_name]] <- as.integer(abt$contact_preference == cp)
 }
 
-# Drop columns not needed for modeling
-drop_cols <- c("request_id", "citizen_id", "submission_date", "request_type",
+# Drop columns not needed for modeling.
+# request_id is retained as a pass-through identifier so it is available
+# to the deployed decision flow in Step 5. Model Studio will treat it as
+# a Key (unique row identifier) and exclude it from training.
+drop_cols <- c("citizen_id", "submission_date", "request_type",
                "department", "priority_level", "location_district", "resolved",
                "age_group", "contact_preference")
 abt <- abt[, !(names(abt) %in% drop_cols)]

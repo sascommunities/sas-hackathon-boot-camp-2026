@@ -307,7 +307,10 @@ data work.abt;
     contact_app    = (contact_preference = 'Mobile App');
     contact_portal = (contact_preference = 'Web Portal');
 
-    drop age_group contact_preference i j citizen_id request_id
+    /* request_id is retained as a pass-through identifier so it is available
+       to the deployed decision flow in Step 5. Model Studio will treat it as
+       a Key (unique row identifier) and exclude it from training. */
+    drop age_group contact_preference i j citizen_id
          submission_date request_type department priority_level location_district;
 run;
 

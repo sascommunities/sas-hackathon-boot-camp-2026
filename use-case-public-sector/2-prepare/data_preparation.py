@@ -217,8 +217,11 @@ for col in dist_fill_cols:
 abt = pd.get_dummies(abt, columns=['age_group'], prefix='age')
 abt = pd.get_dummies(abt, columns=['contact_preference'], prefix='contact')
 
-# Drop columns not needed for modeling
-drop_cols = ['request_id', 'citizen_id', 'submission_date', 'request_type',
+# Drop columns not needed for modeling.
+# request_id is retained as a pass-through identifier so it is available
+# to the deployed decision flow in Step 5. Model Studio will treat it as
+# a Key (unique row identifier) and exclude it from training.
+drop_cols = ['citizen_id', 'submission_date', 'request_type',
              'department', 'priority_level', 'location_district', 'resolved']
 abt.drop(columns=[c for c in drop_cols if c in abt.columns], inplace=True)
 
