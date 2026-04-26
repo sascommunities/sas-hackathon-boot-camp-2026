@@ -18,7 +18,7 @@ import os
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-DATA_DIR = '/workspaces/bootcamp/use-case-retail/data'
+DATA_DIR = '/workspaces/bootcamp/sas-hackathon-boot-camp-2026/use-case-retail/data'
 OUTPUT_PATH = os.path.join(DATA_DIR, 'retail_abt.csv')
 
 # Reference date for recency calculations (end of observation period)

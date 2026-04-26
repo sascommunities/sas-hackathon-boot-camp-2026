@@ -14,12 +14,12 @@
 /* -----------------------------------------------------------------------
    Configuration — adjust the path if your working directory differs
    ----------------------------------------------------------------------- */
-%let datadir = /workspaces/bootcamp/use-case-financial-services/data;
+%let datadir = /workspaces/bootcamp/sas-hackathon-boot-camp-2026/use-case-financial-services/data;
 
 /* ========================================================================
    1. LOAD THE DATA
    ========================================================================
-   The CSV files may have Windows line endings (CR+LF). We use TERMSTR=CRLF
+   The CSV files may have Windows line endings (LF). We use TERMSTR=LF
    on the INFILE statement so SAS strips the carriage return properly.
    ======================================================================== */
 title "Step 2: Data Preparation (SAS)";
@@ -27,7 +27,7 @@ title "Step 2: Data Preparation (SAS)";
 /* --- loan_applications.csv ----------------------------------------------- */
 data work.loan_applications;
     infile "&datadir./loan_applications.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2 termstr=lf;
     length loan_id $10 loan_purpose $25 property_type $20;
     informat application_date yymmdd10.;
     format application_date yymmdd10.;
@@ -39,7 +39,7 @@ run;
 /* --- credit_history.csv -------------------------------------------------- */
 data work.credit_history;
     infile "&datadir./credit_history.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2 termstr=lf;
     length loan_id $10;
     input loan_id $ credit_score credit_accounts credit_utilization
           bankruptcies delinquencies_2yr inquiries_6mo
@@ -49,7 +49,7 @@ run;
 /* --- employment.csv ------------------------------------------------------ */
 data work.employment;
     infile "&datadir./employment.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2 termstr=lf;
     length loan_id $10 employment_status $15 employer_type $15;
     input loan_id $ employment_status $ employer_type $
           years_employed annual_income monthly_debt
@@ -59,7 +59,7 @@ run;
 /* --- payment_history.csv ------------------------------------------------- */
 data work.payment_history;
     infile "&datadir./payment_history.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2 termstr=lf;
     length payment_id $10 loan_id $10 payment_status $15;
     informat payment_date yymmdd10.;
     format payment_date yymmdd10.;

@@ -29,7 +29,7 @@ In SAS Viya Workbench, open a new session and navigate to the `use-case-life-sci
 Start SAS Viya Workbench with the languages of your choice and clone the SAS Hackathon Bootcamp 2026 repository into the root of your workspace:
 
 ```bash
-https://github.com/sascommunities/sas-hackathon-boot-camp-2026.git
+git clone https://github.com/sascommunities/sas-hackathon-boot-camp-2026.git
 ```
 
 ### 2. Create a Data Card

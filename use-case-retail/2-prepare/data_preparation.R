@@ -15,7 +15,7 @@
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-data_dir       <- "/workspaces/bootcamp/use-case-retail/data"
+data_dir       <- "/workspaces/bootcamp/sas-hackathon-boot-camp-2026/use-case-retail/data"
 output_path    <- file.path(data_dir, "retail_abt.csv")
 reference_date <- as.Date("2023-12-31")
 
