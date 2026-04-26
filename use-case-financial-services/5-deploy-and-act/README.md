@@ -1,6 +1,6 @@
 # Step 5: Deploy & Act
 
-In this final step you will use **SAS Intelligent Decisioning** to operationalize your loan default prediction model by embedding it in an automated loan approval decision flow. You will also explore its **Copilot** and learn how decisions can function as **tools in agentic workflows** — or become agentic workflows themselves.
+In this final step you will use **SAS Intelligent Decisioning** to operationalize your loan default prediction model by embedding it in an automated loan approval decision flow. You will also explore its **Copilot** and learn how decisions can function as **tools in agentic workflows** - or become agentic workflows themselves.
 
 ---
 
@@ -61,7 +61,7 @@ From here you can also always activate the SAS Viya Copilot via the icon in the 
 ### 2. Add the Model Node
 
 1. In the decision flow canvas, add a **Model** node
-2. Select your registered champion model from SAS Model Manager (*PremierBank Default Prediction — Champion*)
+2. Select your registered champion model from SAS Model Manager (*PremierBank Default Prediction - Gradient Boosting*)
 3. Map the input variables to the model's expected features
     1. For the inputs map `income_verified` to `annual_income` and the `loan_id` should be mapped automatically
     2. For the outputs we are going to be clicking the *More* menu up top and select *Add missing variables* this will add all of the required output variables to our decision - if you copied the variables using the template they are already present - in the dialogue please make sure to deselect them from the Output as we will create our own custom outputs
@@ -122,7 +122,7 @@ Now right click the last node in the decision and add first a Rule Set (see blow
 Next we are going back to the Rule Set node and will assign our prompt variable the following value - you have to go into the editing mode via the pencil icon:
 
 ```
-prompt = 'You are a professional PremierBank loan advisor. Using the loan application data below, write a warm, respectful, and clearly structured long-form explanation (3 to 5 paragraphs) that an applicant with no financial background can read to understand the outcome of their application and what it means for them. Do not expose internal codes or jargon verbatim — translate them into plain consumer-friendly language. Do not promise that the decision can be overturned, and do not provide legal or regulatory advice. Application and decision context: Annual income: $' + annual_income + '. Credit score: ' + credit_score + '. Assigned risk tier: ' + risk_tier + '. Final decision: ' + decision + '. Internal reason code: ' + reason + '. Conditions attached to this decision: ' + conditions + '. Structure your response as follows. First, open with a personal respectful acknowledgment that PremierBank has reached a decision of ' + decision + ' on the application, and thank the applicant for choosing PremierBank Second, explain in plain language what a risk tier of ' + risk_tier + ' means in the context of a credit score of ' + credit_score + ' and a reported annual income of $' + annual_income + '. Describe how these two indicators, combined with the overall profile, shape how PremierBank assesses repayment capacity. Third, expand the internal reason ' + reason + ' into a clear, empathetic explanation of why the decision came out the way it did. Avoid financial jargon — translate terms such as debt-to-income, loan-to-value, or adverse action codes into everyday language. Fourth, describe the conditions attached to this decision — ' + conditions + ' — and explain exactly what the applicant needs to do (documents to provide, verifications to complete underwriter steps) for those conditions to be satisfied. If no conditions apply, briefly say so. Fifth, close with constructive, forward-looking next steps tailored to the decision ' + decision + '. If declined, suggest 2 to 3 concrete, realistic actions the applicant can take over the next 6 to 12 months to strengthen a future application (for example, improving credit score, reducing debt obligations, or increasing documented income). If approved or sent to review, outline what the applicant should expect next and how they will be contacted. Tone: warm, professional, encouraging, and never condescending Length: 350 to 500 words. Write in the second person (you, your application).'
+prompt = 'You are a professional PremierBank loan advisor. Using the loan application data below, write a warm, respectful, and clearly structured long-form explanation (3 to 5 paragraphs) that an applicant with no financial background can read to understand the outcome of their application and what it means for them. Do not expose internal codes or jargon verbatim - translate them into plain consumer-friendly language. Do not promise that the decision can be overturned, and do not provide legal or regulatory advice. Application and decision context: Annual income: $' + annual_income + '. Credit score: ' + credit_score + '. Assigned risk tier: ' + risk_tier + '. Final decision: ' + decision + '. Internal reason code: ' + reason + '. Conditions attached to this decision: ' + conditions + '. Structure your response as follows. First, open with a personal respectful acknowledgment that PremierBank has reached a decision of ' + decision + ' on the application, and thank the applicant for choosing PremierBank Second, explain in plain language what a risk tier of ' + risk_tier + ' means in the context of a credit score of ' + credit_score + ' and a reported annual income of $' + annual_income + '. Describe how these two indicators, combined with the overall profile, shape how PremierBank assesses repayment capacity. Third, expand the internal reason ' + reason + ' into a clear, empathetic explanation of why the decision came out the way it did. Avoid financial jargon - translate terms such as debt-to-income, loan-to-value, or adverse action codes into everyday language. Fourth, describe the conditions attached to this decision - ' + conditions + ' - and explain exactly what the applicant needs to do (documents to provide, verifications to complete underwriter steps) for those conditions to be satisfied. If no conditions apply, briefly say so. Fifth, close with constructive, forward-looking next steps tailored to the decision ' + decision + '. If declined, suggest 2 to 3 concrete, realistic actions the applicant can take over the next 6 to 12 months to strengthen a future application (for example, improving credit score, reducing debt obligations, or increasing documented income). If approved or sent to review, outline what the applicant should expect next and how they will be contacted. Tone: warm, professional, encouraging, and never condescending Length: 350 to 500 words. Write in the second person (you, your application).'
 ```
 
 SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](https://github.com/sassoftware/sas-agentic-ai-accelerator) which enables you to connect any LLM and do extensive prompt engineering & monitoring, but here we have a hard coded LLM (OpenAI GPT 5.4) available.
@@ -148,9 +148,9 @@ SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](htt
 
 1. Click the **Validate** button and then **Publish** to make the decision available as a callable service
 2. Choose a **destination:**
-   - **CAS** — for batch scoring of the entire loan portfolio
-   - **MAS (Micro Analytic Service)** — for real-time API calls during the loan application process - only one available here!
-   - **Container** — for deployment in the bank's loan origination system
+   - **CAS** - for batch scoring of the entire loan portfolio
+   - **MAS (Micro Analytic Service)** - for real-time API calls during the loan application process - only one available here!
+   - **Container** - for deployment in the bank's loan origination system
 3. Please make sure to give it a unique name
 3. Once published, the decision is available as a REST API endpoint
 
@@ -183,7 +183,7 @@ The Copilot is a useful reference tool for quickly getting answers about the pla
 
 ## Decisions as Tools in Agentic Workflows
 
-A published SAS Intelligent Decisioning decision is exposed as a **REST API endpoint**. This means it can be called as a **tool** by any AI agent — including large language model (LLM) agents that use tool-calling capabilities.
+A published SAS Intelligent Decisioning decision is exposed as a **REST API endpoint**. This means it can be called as a **tool** by any AI agent - including large language model (LLM) agents that use tool-calling capabilities.
 
 ### How This Works
 
@@ -200,7 +200,7 @@ A published SAS Intelligent Decisioning decision is exposed as a **REST API endp
 
 1. Collect the applicant's information through a conversational interface
 2. **Call the SAS Intelligent Decisioning API** with the application data
-3. Receive back: "Decline — AA01: Credit score too low; AA03: History of late payments"
+3. Receive back: "Decline - AA01: Credit score too low; AA03: History of late payments"
 4. Communicate the decision to the applicant with the required adverse action notice
 5. If the decision is "Review," escalate to a human underwriter with the full risk assessment
 
@@ -208,9 +208,9 @@ The decision becomes a **tool** in the agent's toolkit, just like a document ret
 
 ### Why This Matters for Financial Services
 
-- **Consistency:** Every application receives the same decision logic — no variance between loan officers or branches
+- **Consistency:** Every application receives the same decision logic - no variance between loan officers or branches
 - **Governance:** The decision is version-controlled and auditable in SAS Intelligent Decisioning, not buried in an LLM's system prompt
-- **Regulatory compliance:** The decision flow enforces adverse action notice generation, hard cutoff rules, and fairness guardrails — the LLM agent cannot override these
+- **Regulatory compliance:** The decision flow enforces adverse action notice generation, hard cutoff rules, and fairness guardrails - the LLM agent cannot override these
 - **Separation of concerns:** Data scientists own the model, credit risk owns the rules, compliance owns the fairness constraints, and the AI agent just calls the endpoint
 - **Real-time execution:** MAS endpoints return in milliseconds, fast enough for real-time application processing
 
@@ -218,7 +218,7 @@ The decision becomes a **tool** in the agent's toolkit, just like a document ret
 
 ## Decisions as Agentic Workflows
 
-Beyond being called as tools, SAS Intelligent Decisioning can itself orchestrate **agentic workflows** — multi-step processes that autonomously execute a chain of decisions and actions.
+Beyond being called as tools, SAS Intelligent Decisioning can itself orchestrate **agentic workflows** - multi-step processes that autonomously execute a chain of decisions and actions.
 
 ### How a Decision Becomes an Agent
 
@@ -226,8 +226,8 @@ An agentic decision flow goes beyond simple "input -> rules -> output." It can:
 
 1. **Observe:** Receive a trigger event (e.g., a borrower has missed their second consecutive payment)
 2. **Reason:** Score the borrower's updated default probability, check their current risk tier, review their payment history trend
-3. **Decide:** Select the optimal intervention — modify terms, offer forbearance, escalate to collections, or continue monitoring
-4. **Act:** Trigger downstream actions — send a letter, create a workout case, adjust the loan's risk rating, notify the loan officer
+3. **Decide:** Select the optimal intervention - modify terms, offer forbearance, escalate to collections, or continue monitoring
+4. **Act:** Trigger downstream actions - send a letter, create a workout case, adjust the loan's risk rating, notify the loan officer
 5. **Monitor:** Track whether the borrower resumes payments and feed that outcome back into future decisions
 
 ### Example: Automated Portfolio Monitoring Agent
@@ -265,10 +265,10 @@ In a production environment, this agentic workflow can process **thousands of lo
 
 - **Batch mode:** Every week, re-score the entire loan portfolio, identify deteriorating loans, trigger interventions
 - **Event-driven mode:** As soon as a payment is missed or a credit bureau alert fires, trigger the flow in real time
-- **Multi-decision chaining:** One decision flow calls another — e.g., the default risk decision calls a "loss mitigation strategy" decision which calls a "channel and timing optimization" decision
+- **Multi-decision chaining:** One decision flow calls another - e.g., the default risk decision calls a "loss mitigation strategy" decision which calls a "channel and timing optimization" decision
 - **Regulatory reporting:** Automatically generate the data needed for Call Report filings, CECL calculations, and fair lending reports
 
-SAS Intelligent Decisioning provides the orchestration layer that turns individual models and rules into **enterprise-scale autonomous agents** — while maintaining the governance, auditability, and compliance controls that financial services demands.
+SAS Intelligent Decisioning provides the orchestration layer that turns individual models and rules into **enterprise-scale autonomous agents** - while maintaining the governance, auditability, and compliance controls that financial services demands.
 
 ---
 

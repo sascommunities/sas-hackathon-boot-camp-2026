@@ -1,6 +1,6 @@
 # Step 5: Deploy & Act
 
-In this final step you will use **SAS Intelligent Decisioning** to operationalize your churn prediction model by embedding it in an automated retention decision flow. You will also explore its **Copilot** and learn how decisions can function as **tools in agentic workflows** — or become agentic workflows themselves.
+In this final step you will use **SAS Intelligent Decisioning** to operationalize your churn prediction model by embedding it in an automated retention decision flow. You will also explore its **Copilot** and learn how decisions can function as **tools in agentic workflows** - or become agentic workflows themselves.
 
 ---
 
@@ -62,9 +62,9 @@ From here you can also always activate the SAS Viya Copilot via the icon in the 
 ### 2. Add the Model Node
 
 1. In the decision flow canvas, add a **Model** node
-2. Select your registered champion model from SAS Model Manager (*ShopEase Churn Prediction — Champion*)
+2. Select your registered champion model from SAS Model Manager (*ShopEase Churn Prediction - Gradient Boosting*)
 3. Map the input variables to the model's expected features
-    1. For the inputs the `customer_id` should be mapped automatically and the remaining customer features will align by name — review any that remain unmapped and connect them to the matching input variable
+    1. For the inputs the `customer_id` should be mapped automatically and the remaining customer features will align by name - review any that remain unmapped and connect them to the matching input variable
     2. For the outputs we are going to be clicking the *More* menu up top and select *Add missing variables* this will add all of the required output variables to our decision - if you copied the variables using the template they are already present - in the dialogue please make sure to deselect them from the Output as we will create our own custom outputs
 
 
@@ -131,7 +131,7 @@ Now right click the last node in the decision and add first a Rule Set (see blow
 Next we are going back to the Rule Set node and will assign our prompt variable the following value - you have to go into the editing mode via the pencil icon:
 
 ```
-prompt = 'You are a helpful ShopEase customer retention specialist. Using the customer profile and retention decision data below, write a warm, personalized, and clearly structured long-form outreach message (3 to 5 paragraphs) that a human account manager can review and send through their preferred channel. Do not reference internal codes or jargon verbatim — translate them into plain customer-friendly language. Do not promise outcomes beyond the specified offer, and do not disclose the underlying model score or risk tier to the customer. Customer profile and decision context: Subscription tier: ' + subscription_tier + '. Total spend to date: $' + total_spend + '. Assigned risk tier: ' + risk_tier + '. Recommended action: ' + action + '. Offer value: $' + offer_value + '. Outreach channel: ' + channel + '. Outreach priority: ' + priority + '. Internal reason code: ' + reason + '. Structure your response as follows. First, open with a warm, sincere thank-you that acknowledges the customer as a ' + subscription_tier + ' member and references their $' + total_spend + ' of lifetime spend in a natural, non-transactional way. Second, acknowledge — without explicitly revealing the ' + risk_tier + ' risk tier — that ShopEase has noticed it has been a while and that we value their continued relationship. Translate the internal reason ' + reason + ' into an empathetic, plain-language acknowledgment of what might have driven the drop in engagement. Third, present the recommended action ' + action + ' as a thoughtful offer rather than a retention tactic, explaining the concrete $' + offer_value + ' benefit in clear terms (how and when it can be redeemed). Fourth, adapt the tone to the ' + channel + ' channel (concise and scannable for email or SMS, warmer and conversational for a phone script) and to the ' + priority + ' outreach priority (immediate urgency vs gentle reminder). Fifth, close with a clear, low-friction next step — a single link, a reply, or a brief call — and invite the customer to share feedback about their recent experience. Tone: warm, appreciative, human, and never guilt-tripping or salesy. Length: 250 to 400 words. Write in the second person (you, your account).'
+prompt = 'You are a helpful ShopEase customer retention specialist. Using the customer profile and retention decision data below, write a warm, personalized, and clearly structured long-form outreach message (3 to 5 paragraphs) that a human account manager can review and send through their preferred channel. Do not reference internal codes or jargon verbatim - translate them into plain customer-friendly language. Do not promise outcomes beyond the specified offer, and do not disclose the underlying model score or risk tier to the customer. Customer profile and decision context: Subscription tier: ' + subscription_tier + '. Total spend to date: $' + total_spend + '. Assigned risk tier: ' + risk_tier + '. Recommended action: ' + action + '. Offer value: $' + offer_value + '. Outreach channel: ' + channel + '. Outreach priority: ' + priority + '. Internal reason code: ' + reason + '. Structure your response as follows. First, open with a warm, sincere thank-you that acknowledges the customer as a ' + subscription_tier + ' member and references their $' + total_spend + ' of lifetime spend in a natural, non-transactional way. Second, acknowledge - without explicitly revealing the ' + risk_tier + ' risk tier - that ShopEase has noticed it has been a while and that we value their continued relationship. Translate the internal reason ' + reason + ' into an empathetic, plain-language acknowledgment of what might have driven the drop in engagement. Third, present the recommended action ' + action + ' as a thoughtful offer rather than a retention tactic, explaining the concrete $' + offer_value + ' benefit in clear terms (how and when it can be redeemed). Fourth, adapt the tone to the ' + channel + ' channel (concise and scannable for email or SMS, warmer and conversational for a phone script) and to the ' + priority + ' outreach priority (immediate urgency vs gentle reminder). Fifth, close with a clear, low-friction next step - a single link, a reply, or a brief call - and invite the customer to share feedback about their recent experience. Tone: warm, appreciative, human, and never guilt-tripping or salesy. Length: 250 to 400 words. Write in the second person (you, your account).'
 ```
 
 SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](https://github.com/sassoftware/sas-agentic-ai-accelerator) which enables you to connect any LLM and do extensive prompt engineering & monitoring, but here we have a hard coded LLM (OpenAI GPT 5.4) available.
@@ -156,9 +156,9 @@ SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](htt
 
 1. Click the **Validate** button and then **Publish** to make the decision available as a callable service
 2. Choose a **destination:**
-   - **CAS** — for batch execution against your full customer base
-   - **MAS (Micro Analytic Service)** — for real-time, low-latency API calls - only one available here!
-   - **Container** — for deployment in external systems
+   - **CAS** - for batch execution against your full customer base
+   - **MAS (Micro Analytic Service)** - for real-time, low-latency API calls - only one available here!
+   - **Container** - for deployment in external systems
 3. Please make sure to give it a unique name
 4. Once published, the decision is available as a REST API endpoint
 
@@ -191,7 +191,7 @@ The Copilot is a useful reference tool for quickly getting answers about the pla
 
 ## Decisions as Tools in Agentic Workflows
 
-A published SAS Intelligent Decisioning decision is exposed as a **REST API endpoint**. This means it can be called as a **tool** by any AI agent — including large language model (LLM) agents that use tool-calling capabilities.
+A published SAS Intelligent Decisioning decision is exposed as a **REST API endpoint**. This means it can be called as a **tool** by any AI agent - including large language model (LLM) agents that use tool-calling capabilities.
 
 ### How This Works
 
@@ -207,14 +207,14 @@ A published SAS Intelligent Decisioning decision is exposed as a **REST API endp
 
 1. Look up the customer's profile
 2. **Call the SAS Intelligent Decisioning API** with the customer's data
-3. Receive back: "Critical risk — offer $50 credit + personal follow-up"
+3. Receive back: "Critical risk - offer $50 credit + personal follow-up"
 4. Tailor its response accordingly, proactively offering the retention incentive
 
 The decision becomes a **tool** in the agent's toolkit, just like a search function or a database query. This bridges the gap between analytical models and conversational AI.
 
 ### Why This Matters
 
-- **Consistency:** Every agent interaction uses the same decision logic — the rules and model scores are centralized, not hardcoded into prompts
+- **Consistency:** Every agent interaction uses the same decision logic - the rules and model scores are centralized, not hardcoded into prompts
 - **Governance:** The decision is version-controlled and auditable in SAS Intelligent Decisioning, not buried in an LLM's system prompt
 - **Separation of concerns:** Data scientists own the model, business analysts own the rules, and the AI agent just calls the endpoint
 - **Real-time execution:** MAS endpoints return in milliseconds, fast enough for conversational use
@@ -223,7 +223,7 @@ The decision becomes a **tool** in the agent's toolkit, just like a search funct
 
 ## Decisions as Agentic Workflows
 
-Beyond being called as tools, SAS Intelligent Decisioning can itself orchestrate **agentic workflows** — multi-step processes that autonomously execute a chain of decisions and actions.
+Beyond being called as tools, SAS Intelligent Decisioning can itself orchestrate **agentic workflows** - multi-step processes that autonomously execute a chain of decisions and actions.
 
 ### How a Decision Becomes an Agent
 
@@ -232,7 +232,7 @@ An agentic decision flow goes beyond simple "input → rules → output." It can
 1. **Observe:** Receive a trigger event (e.g., a customer hasn't logged in for 30 days)
 2. **Reason:** Score the customer's churn risk, check their segment, review their interaction history
 3. **Decide:** Select the optimal retention action from the rule sets
-4. **Act:** Trigger downstream actions — send an email, create a CRM task, schedule a callback, adjust an ad campaign
+4. **Act:** Trigger downstream actions - send an email, create a CRM task, schedule a callback, adjust an ad campaign
 5. **Monitor:** Track whether the customer re-engages and feed that outcome back into future decisions
 
 ### Example: Automated Churn Prevention Agent
@@ -270,7 +270,7 @@ In a production environment, this agentic workflow can process **thousands of cu
 
 - **Batch mode:** Every Monday, score all 1,000+ customers, identify at-risk ones, trigger actions
 - **Event-driven mode:** As soon as a customer's inactivity crosses a threshold, trigger the flow in real time
-- **Multi-decision chaining:** One decision flow calls another — e.g., the churn decision calls a "next best offer" decision which calls a "channel optimization" decision
+- **Multi-decision chaining:** One decision flow calls another - e.g., the churn decision calls a "next best offer" decision which calls a "channel optimization" decision
 
 SAS Intelligent Decisioning provides the orchestration layer that turns individual models and rules into **enterprise-scale autonomous agents**.
 

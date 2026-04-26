@@ -1,6 +1,6 @@
 # Step 5: Deploy & Act
 
-In this final step you will use **SAS Intelligent Decisioning** to operationalize your readmission prediction model by embedding it in an automated discharge decision flow. You will also explore its **Copilot** and learn how decisions can function as **tools in agentic workflows** — or become agentic workflows themselves.
+In this final step you will use **SAS Intelligent Decisioning** to operationalize your readmission prediction model by embedding it in an automated discharge decision flow. You will also explore its **Copilot** and learn how decisions can function as **tools in agentic workflows** - or become agentic workflows themselves.
 
 ---
 
@@ -63,9 +63,9 @@ From here you can also always activate the SAS Viya Copilot via the icon in the 
 ### 2. Add the Model Node
 
 1. In the decision flow canvas, add a **Model** node
-2. Select your registered champion model from SAS Model Manager (*MedCare Readmission Prediction — Champion*)
+2. Select your registered champion model from SAS Model Manager (*MedCare Readmission Prediction - GAM*)
 3. Map the input variables to the model's expected features
-    1. For the inputs the `patient_id` should be mapped automatically and the remaining clinical features will align by name — review any that remain unmapped and connect them to the matching input variable
+    1. For the inputs the `patient_id` should be mapped automatically and the remaining clinical features will align by name - review any that remain unmapped and connect them to the matching input variable
     2. For the outputs we are going to be clicking the *More* menu up top and select *Add missing variables* this will add all of the required output variables to our decision - if you copied the variables using the template they are already present - in the dialogue please make sure to deselect them from the Output as we will create our own custom outputs
 
 
@@ -134,7 +134,7 @@ Now right click the last node in the decision and add first a Rule Set (see blow
 Next we are going back to the Rule Set node and will assign our prompt variable the following value - you have to go into the editing mode via the pencil icon:
 
 ```
-prompt = 'You are a compassionate MedCare patient education specialist. Using the patient discharge data and care plan below, write a warm, respectful, and clearly structured long-form discharge summary (3 to 5 paragraphs) that a patient with no clinical background can read to understand their next steps after leaving the hospital. Do not expose clinical codes or jargon verbatim — translate them into plain, everyday language. Do not provide medical advice beyond what the care plan specifies, do not diagnose, and do not predict outcomes. Patient and care plan context: Assigned risk tier: ' + risk_tier + '. Recommended care plan: ' + care_plan + '. Specific intervention: ' + intervention + '. First follow-up in (days): ' + follow_up_days + '. Care coordination priority: ' + priority + '. Internal reason code: ' + reason + '. Structure your response as follows. First, open with a warm, personal acknowledgment that the patient is being discharged today and that MedCare is committed to supporting their recovery at home. Do not explicitly state the ' + risk_tier + ' risk tier — instead, frame the care plan as tailored to their individual situation. Second, explain the recommended care plan ' + care_plan + ' in plain language and describe what the patient can expect in the coming days. Third, explain the specific intervention ' + intervention + ' — including who will reach out, what the purpose is, and why it matters for their recovery. Translate the internal reason ' + reason + ' into an empathetic, plain-language explanation of why this extra level of support is being offered. Fourth, clearly communicate the follow-up timeline (within ' + follow_up_days + ' days), what kind of follow-up it is, and what the patient needs to do to prepare. Reflect the ' + priority + ' care coordination priority in the tone — more proactive and immediate for urgent priority, calmer and routine for standard priority. Fifth, close with clear guidance on warning signs that require immediate attention (calling 911 or going to the emergency room) and reassure the patient that their care team is available for questions. Tone: warm, respectful, reassuring, and never alarming or condescending. Length: 300 to 450 words. Write in the second person (you, your recovery). Always include a clear reminder to call 911 or go to the emergency room for any life-threatening symptoms.'
+prompt = 'You are a compassionate MedCare patient education specialist. Using the patient discharge data and care plan below, write a warm, respectful, and clearly structured long-form discharge summary (3 to 5 paragraphs) that a patient with no clinical background can read to understand their next steps after leaving the hospital. Do not expose clinical codes or jargon verbatim - translate them into plain, everyday language. Do not provide medical advice beyond what the care plan specifies, do not diagnose, and do not predict outcomes. Patient and care plan context: Assigned risk tier: ' + risk_tier + '. Recommended care plan: ' + care_plan + '. Specific intervention: ' + intervention + '. First follow-up in (days): ' + follow_up_days + '. Care coordination priority: ' + priority + '. Internal reason code: ' + reason + '. Structure your response as follows. First, open with a warm, personal acknowledgment that the patient is being discharged today and that MedCare is committed to supporting their recovery at home. Do not explicitly state the ' + risk_tier + ' risk tier - instead, frame the care plan as tailored to their individual situation. Second, explain the recommended care plan ' + care_plan + ' in plain language and describe what the patient can expect in the coming days. Third, explain the specific intervention ' + intervention + ' - including who will reach out, what the purpose is, and why it matters for their recovery. Translate the internal reason ' + reason + ' into an empathetic, plain-language explanation of why this extra level of support is being offered. Fourth, clearly communicate the follow-up timeline (within ' + follow_up_days + ' days), what kind of follow-up it is, and what the patient needs to do to prepare. Reflect the ' + priority + ' care coordination priority in the tone - more proactive and immediate for urgent priority, calmer and routine for standard priority. Fifth, close with clear guidance on warning signs that require immediate attention (calling 911 or going to the emergency room) and reassure the patient that their care team is available for questions. Tone: warm, respectful, reassuring, and never alarming or condescending. Length: 300 to 450 words. Write in the second person (you, your recovery). Always include a clear reminder to call 911 or go to the emergency room for any life-threatening symptoms.'
 ```
 
 SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](https://github.com/sassoftware/sas-agentic-ai-accelerator) which enables you to connect any LLM and do extensive prompt engineering & monitoring, but here we have a hard coded LLM (OpenAI GPT 5.4) available.
@@ -160,9 +160,9 @@ SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](htt
 
 1. Click the **Validate** button and then **Publish** to make the decision available as a callable service
 2. Choose a **destination:**
-   - **CAS** — for batch execution against your full patient population at discharge
-   - **MAS (Micro Analytic Service)** — for real-time, low-latency API calls during the discharge workflow - only one available here!
-   - **Container** — for deployment in external systems (e.g., integration with Epic EHR)
+   - **CAS** - for batch execution against your full patient population at discharge
+   - **MAS (Micro Analytic Service)** - for real-time, low-latency API calls during the discharge workflow - only one available here!
+   - **Container** - for deployment in external systems (e.g., integration with Epic EHR)
 3. Please make sure to give it a unique name
 4. Once published, the decision is available as a REST API endpoint
 
@@ -195,7 +195,7 @@ The Copilot is a useful reference tool for quickly getting answers about the pla
 
 ## Decisions as Tools in Agentic Workflows
 
-A published SAS Intelligent Decisioning decision is exposed as a **REST API endpoint**. This means it can be called as a **tool** by any AI agent — including large language model (LLM) agents that use tool-calling capabilities.
+A published SAS Intelligent Decisioning decision is exposed as a **REST API endpoint**. This means it can be called as a **tool** by any AI agent - including large language model (LLM) agents that use tool-calling capabilities.
 
 ### How This Works
 
@@ -211,14 +211,14 @@ A published SAS Intelligent Decisioning decision is exposed as a **REST API endp
 
 1. Pull the patient's clinical data from the EHR
 2. **Call the SAS Intelligent Decisioning API** with the patient's features
-3. Receive back: "High risk — home health referral + medication reconciliation, follow-up in 2 days"
+3. Receive back: "High risk - home health referral + medication reconciliation, follow-up in 2 days"
 4. Present this recommendation to the discharging physician with clinical rationale, enabling a more informed discharge plan
 
 The decision becomes a **tool** in the agent's toolkit, just like a medication interaction checker or a lab result lookup. This bridges the gap between analytical models and clinical workflow.
 
 ### Why This Matters
 
-- **Consistency:** Every discharge uses the same evidence-based decision logic — the rules and model scores are centralized, not dependent on individual clinician memory
+- **Consistency:** Every discharge uses the same evidence-based decision logic - the rules and model scores are centralized, not dependent on individual clinician memory
 - **Governance:** The decision is version-controlled and auditable in SAS Intelligent Decisioning, not buried in an LLM's system prompt
 - **Separation of concerns:** Data scientists own the model, clinical leaders own the rules, and the AI agent just calls the endpoint
 - **Real-time execution:** MAS endpoints return in milliseconds, fast enough for use during the discharge conversation
@@ -227,7 +227,7 @@ The decision becomes a **tool** in the agent's toolkit, just like a medication i
 
 ## Decisions as Agentic Workflows
 
-Beyond being called as tools, SAS Intelligent Decisioning can itself orchestrate **agentic workflows** — multi-step processes that autonomously execute a chain of decisions and actions.
+Beyond being called as tools, SAS Intelligent Decisioning can itself orchestrate **agentic workflows** - multi-step processes that autonomously execute a chain of decisions and actions.
 
 ### How a Decision Becomes an Agent
 
@@ -236,8 +236,8 @@ An agentic decision flow goes beyond simple "input -> rules -> output." It can:
 1. **Observe:** Receive a trigger event (e.g., a patient has been discharged and no follow-up appointment is scheduled within 48 hours)
 2. **Reason:** Score the patient's readmission risk, check their care plan, review medication reconciliation status
 3. **Decide:** Select the appropriate escalation action from the rule sets
-4. **Act:** Trigger downstream actions — schedule a follow-up call, alert the care manager, send a patient portal message, create an EHR task
-5. **Monitor:** Track whether the patient attends follow-up, refills medications, or shows signs of deterioration — and feed that outcome back into future decisions
+4. **Act:** Trigger downstream actions - schedule a follow-up call, alert the care manager, send a patient portal message, create an EHR task
+5. **Monitor:** Track whether the patient attends follow-up, refills medications, or shows signs of deterioration - and feed that outcome back into future decisions
 
 ### Example: Automated Post-Discharge Monitoring Agent
 
@@ -277,7 +277,7 @@ In a production environment, this agentic workflow can process **hundreds of dis
 
 - **Batch mode:** Every morning, score all patients discharged in the past 24 hours, identify high-risk ones, trigger care coordination actions
 - **Event-driven mode:** As soon as a patient is discharged, trigger the flow in real time from the EHR discharge event
-- **Multi-decision chaining:** One decision flow calls another — e.g., the readmission risk decision calls a "medication reconciliation priority" decision which calls a "follow-up scheduling optimization" decision
+- **Multi-decision chaining:** One decision flow calls another - e.g., the readmission risk decision calls a "medication reconciliation priority" decision which calls a "follow-up scheduling optimization" decision
 
 SAS Intelligent Decisioning provides the orchestration layer that turns individual models and rules into **enterprise-scale autonomous clinical agents**.
 
