@@ -302,7 +302,12 @@ data work.abt;
     gender_F = (gender = 'F');
     gender_M = (gender = 'M');
 
-    drop subscription_tier gender i j k;
+    /* subscription_tier is retained as a raw character column so the
+       deployed decision flow in Step 5 can pass it through to the model
+       node and reference it in rule sets (e.g. retention action by tier).
+       The tier_Basic/Standard/Premium one-hots above remain available
+       for model training. */
+    drop gender i j k;
 run;
 
 /* ========================================================================

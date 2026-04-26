@@ -91,7 +91,7 @@ We recommend you try to build at least one of these rule sets yourself to get an
 | Critical | Any | Intensive transitional care | 1 |
 | High | Home | Home health referral + phone follow-up | 2 |
 | High | SNF | SNF care coordination + pharmacy consult | 3 |
-| High | Home Health | Enhanced home health with daily check-ins | 2 |
+| High | Home with Services | Enhanced home health with daily check-ins | 2 |
 | Moderate | Any | Standard follow-up protocol | 5 |
 | Low | Any | Routine discharge (continue monitoring) | 14 |
 

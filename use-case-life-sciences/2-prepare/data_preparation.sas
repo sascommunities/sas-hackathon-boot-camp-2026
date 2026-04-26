@@ -232,7 +232,7 @@ data work.admission_features;
     /* Discharge disposition encoding */
     discharged_home        = (discharge_disposition = 'Home');
     discharged_snf         = (discharge_disposition = 'SNF');
-    discharged_home_health = (discharge_disposition = 'Home Health');
+    discharged_home_health = (discharge_disposition = 'Home with Services');
 
     keep patient_id length_of_stay los_category emergency_flag
          discharged_home discharged_snf discharged_home_health
@@ -269,6 +269,7 @@ proc sql;
         a.discharged_home,
         a.discharged_snf,
         a.discharged_home_health,
+        a.discharge_disposition,
         c.bmi,
         c.blood_pressure_systolic,
         c.blood_pressure_diastolic,
@@ -334,9 +335,12 @@ data work.abt;
     gluc_Prediabetic = (glucose_category = 'Prediabetic');
     gluc_Diabetic   = (glucose_category = 'Diabetic');
 
-    drop gender insurance_type primary_diagnosis_category
-         los_category bmi_category bp_classification glucose_category
-         discharge_disposition i;
+    /* insurance_type and discharge_disposition are retained as raw character
+       columns so the deployed decision flow in Step 5 can pass them through
+       to the model node and reference them in rule sets. The one-hot encoded
+       versions (ins_*, discharged_*) remain available for model training. */
+    drop gender primary_diagnosis_category
+         los_category bmi_category bp_classification glucose_category i;
 run;
 
 /* ========================================================================

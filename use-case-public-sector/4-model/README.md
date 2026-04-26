@@ -166,7 +166,7 @@ Senior citizens are a sensitive demographic in public service delivery. They may
 
 This is not a hypothetical concern. Automated decision systems have been documented to produce disparate impacts on protected demographic groups, and age is one of the protected classes under most municipal anti-discrimination frameworks.
 
-> **Note on district equity:** The raw `location_district` column was dropped during feature engineering in Step 2 in favor of district-level aggregates (`district_avg_response_time`, `district_avg_resolution_rate`, etc.). District equity is still present in the model through those aggregates, and you explored it in Step 3. Formal fairness assessment in Model Studio, however, requires a binary/categorical column present on each row — which is why we use the `age_65+` dummy here.
+> **Note on district equity:** The raw `location_district` column is retained in the ABT alongside engineered district-level aggregates (`district_avg_response_time`, `district_avg_resolution_rate`, etc.) so the Step 5 decision flow can pass it through, and district equity is reflected in the model through those aggregates (you explored this in Step 3). Formal fairness assessment in Model Studio works best with a single binary/categorical column present on each row — which is why we use the `age_65+` dummy here rather than `location_district`.
 
 Fairness assessment ensures the model performs **equitably across age groups** and that the resulting triage decisions do not systematically disadvantage older citizens.
 

@@ -182,11 +182,11 @@ adm$emergency_flag <- as.integer(adm$admission_type == "Emergency")
 # Discharge disposition encoding
 adm$discharged_home        <- as.integer(adm$discharge_disposition == "Home")
 adm$discharged_snf         <- as.integer(adm$discharge_disposition == "SNF")
-adm$discharged_home_health <- as.integer(adm$discharge_disposition == "Home Health")
+adm$discharged_home_health <- as.integer(adm$discharge_disposition == "Home with Services")
 
 adm_features <- adm[, c("patient_id", "length_of_stay", "los_category",
                          "emergency_flag", "discharged_home", "discharged_snf",
-                         "discharged_home_health")]
+                         "discharged_home_health", "discharge_disposition")]
 cat(sprintf("  Admission features:  %d\n", ncol(adm_features) - 1))
 
 # ============================================================================
@@ -246,9 +246,11 @@ abt$gluc_Normal      <- as.integer(abt$glucose_category == "Normal")
 abt$gluc_Prediabetic <- as.integer(abt$glucose_category == "Prediabetic")
 abt$gluc_Diabetic    <- as.integer(abt$glucose_category == "Diabetic")
 
-# Drop columns not needed for modeling
+# Drop columns not needed for modeling.
+# insurance_type and discharge_disposition are retained as raw character
+# columns so the deployed decision flow in Step 5 can pass them through
+# to the model node and reference them in rule sets.
 abt$gender                      <- NULL
-abt$insurance_type              <- NULL
 abt$primary_diagnosis_category  <- NULL
 abt$admission_date              <- NULL
 abt$los_category                <- NULL

@@ -188,11 +188,11 @@ adm['emergency_flag'] = (adm['admission_type'] == 'Emergency').astype(int)
 # Discharge disposition encoding
 adm['discharged_home'] = (adm['discharge_disposition'] == 'Home').astype(int)
 adm['discharged_snf'] = (adm['discharge_disposition'] == 'SNF').astype(int)
-adm['discharged_home_health'] = (adm['discharge_disposition'] == 'Home Health').astype(int)
+adm['discharged_home_health'] = (adm['discharge_disposition'] == 'Home with Services').astype(int)
 
 adm_features = adm[['patient_id', 'length_of_stay', 'los_category',
                      'emergency_flag', 'discharged_home', 'discharged_snf',
-                     'discharged_home_health']]
+                     'discharged_home_health', 'discharge_disposition']]
 print(f"  Admission features:  {len(adm_features.columns) - 1}")
 
 # ============================================================================
@@ -227,6 +227,12 @@ for col in numeric_fill:
     if col in abt.columns:
         abt[col] = abt[col].fillna(0)
 
+# Preserve raw character columns needed by the Step 5 decision flow
+# (insurance_type and discharge_disposition are listed as decision input
+# variables and used in rule sets; the one-hot versions below stay available
+# for model training).
+_keep_raw = abt[['insurance_type']].copy()
+
 # One-hot encode categoricals
 abt = pd.get_dummies(abt, columns=['gender'], prefix=['gender'])
 abt = pd.get_dummies(abt, columns=['insurance_type'], prefix=['ins'])
@@ -234,6 +240,8 @@ abt = pd.get_dummies(abt, columns=['los_category'], prefix=['los'])
 abt = pd.get_dummies(abt, columns=['bmi_category'], prefix=['bmi'])
 abt = pd.get_dummies(abt, columns=['bp_classification'], prefix=['bp'])
 abt = pd.get_dummies(abt, columns=['glucose_category'], prefix=['gluc'])
+
+abt = abt.join(_keep_raw)
 
 # Drop columns not needed for modeling
 abt.drop(columns=['admission_date', 'primary_diagnosis_category'], inplace=True)

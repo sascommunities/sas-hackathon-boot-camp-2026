@@ -209,8 +209,11 @@ abt$tier_Premium  <- as.integer(abt$subscription_tier == "Premium")
 abt$gender_F      <- as.integer(abt$gender == "F")
 abt$gender_M      <- as.integer(abt$gender == "M")
 
-# Drop columns not needed for modeling
-abt$subscription_tier <- NULL
+# Drop columns not needed for modeling.
+# subscription_tier is retained as a raw character column so the deployed
+# decision flow in Step 5 can pass it through to the model node and
+# reference it in rule sets (the tier_* one-hots above stay available for
+# model training).
 abt$gender            <- NULL
 abt$signup_date       <- NULL
 abt$location          <- NULL
