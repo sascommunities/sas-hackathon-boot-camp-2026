@@ -42,7 +42,7 @@ SAS Visual Analytics includes a **Copilot** — an AI assistant that helps you e
 
 A few behaviors to be aware of while working through this step:
 
-- **Reference columns by their exact name.** The prompts in this guide use backtick-quoted column names (e.g., `` `is_urgent` ``, `` `district_avg_response_time` ``). Copilot works best when you do the same — vague terms like *"district"* or *"request type"* will often fail because those raw columns are not in the ABT.
+- **Reference columns by their exact name.** The prompts in this guide use backtick-quoted column names (e.g., `` `is_urgent` ``, `` `district_avg_response_time` ``). Copilot works best when you do the same. The ABT carries both the raw columns (`request_type`, `department`, `location_district`) and the engineered features derived from them (`inherent_urgency`, `dept_avg_*`, `district_*`) — pick the column that matches the question you're asking.
 - **Charts sometimes land on a different page.** If a generated visualization appears on another report page, drag it to the page you are working on.
 - **Ignore suggestions to reclassify numeric measures as categories.** Copilot occasionally recommends changing numeric columns (e.g., `district_avg_request_count`) to categories. Decline those suggestions — they are measures and should stay that way.
 - **If a chart doesn't answer the question, rephrase.** Ask Copilot for a specific chart type and specific column roles rather than an open-ended question (e.g., *"Create a bar chart with `inherent_urgency` on the x-axis and average `is_urgent` on the y-axis"*).
@@ -69,8 +69,9 @@ Create a **bar chart** or **pie chart** of the `is_urgent` variable. Examine the
 - *"Show the average of `is_urgent` grouped by `inherent_urgency`"*
 - *"Compare the distribution of `response_time_hours` for `inherent_urgency`=1 vs `inherent_urgency`=0"*
 - *"What percentage of requests with `inherent_urgency`=1 are marked `is_urgent`=1?"*
+- *"Show the average of `is_urgent` grouped by `request_type`"*
 
-Create a **bar chart** of `is_urgent` (as a measure, aggregated as average) grouped by `inherent_urgency`. The raw `request_type` column was one-hot encoded into features like `inherent_urgency` during Step 2, so we analyze the engineered signal directly.
+Create a **bar chart** of `is_urgent` (as a measure, aggregated as average) grouped by `inherent_urgency`. The `inherent_urgency` flag was derived during Step 2 from a curated list of safety-related request types (water main breaks, gas leaks, etc.); the raw `request_type` column is also retained in the ABT, so you can drill into specific request categories that drive the signal.
 
 > **What to look for:** Requests flagged as inherently urgent (safety hazards, water main breaks) should have a much higher average `is_urgent` value than non-inherent ones. If the gap is small, the flag is not pulling its weight as a predictor.
 
@@ -81,8 +82,9 @@ Create a **bar chart** of `is_urgent` (as a measure, aggregated as average) grou
 - *"Show the correlation between `dept_avg_staff_count` and `dept_avg_response_time`"*
 - *"Show the correlation between `dept_avg_budget_util` and `dept_avg_resolution_rate`"*
 - *"Show the distribution of `dept_avg_overtime` across requests"*
+- *"Show the average of `response_time_hours` grouped by `department`"*
 
-Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_time` (y). Create a second scatter plot of `dept_avg_overtime` (x) vs. `dept_avg_resolution_rate` (y). The raw `department` column was dropped in Step 2 — the `dept_avg_*` aggregates are what carry forward into the model, so we analyze those directly.
+Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_time` (y). Create a second scatter plot of `dept_avg_overtime` (x) vs. `dept_avg_resolution_rate` (y). The ABT keeps both the raw `department` column and the engineered `dept_avg_*` aggregates — use the aggregates for capacity-vs-response correlation analysis and the raw column when you want a per-department breakdown.
 
 > **What to look for:** Negative correlation between staff count and response time (more staff = faster response). Departments with high overtime and low resolution rates are the bottlenecks.
 
@@ -94,8 +96,9 @@ Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_t
 - *"Show the correlation between `district_avg_request_count` and `district_avg_response_time`"*
 - *"Show the correlation between `district_avg_resolution_rate` and `response_time_hours`"*
 - *"Show the sum of `district_total_critical` and `district_total_high` across all requests"*
+- *"Show the average of `response_time_hours` grouped by `location_district`"*
 
-Create a **histogram** of `district_avg_response_time` to see the spread of district-level service speed. Create a **scatter plot** of `district_avg_request_count` (x) vs. `district_avg_response_time` (y) to check whether high-volume districts are slower. The raw `location_district` label was dropped in Step 2 — each request still carries the aggregate metrics for the district it came from, so district-level equity analysis is done through those aggregates.
+Create a **histogram** of `district_avg_response_time` to see the spread of district-level service speed. Create a **scatter plot** of `district_avg_request_count` (x) vs. `district_avg_response_time` (y) to check whether high-volume districts are slower. The ABT keeps both the raw `location_district` label and the engineered `district_*` aggregates — use the aggregates to look at the overall spread of service speed, and the raw column when you want to call out specific districts that fall behind.
 
 > **What to look for:** Wide spread in `district_avg_response_time` indicates the 40% variance problem is real. A strong positive correlation with request volume suggests capacity, not bias, is the driver; a weak correlation suggests uneven service allocation.
 

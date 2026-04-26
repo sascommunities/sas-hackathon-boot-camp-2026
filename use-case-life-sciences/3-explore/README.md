@@ -104,7 +104,7 @@ Create **box plots** of `medication_count` and `high_risk_med_count` grouped by 
 
 **Goal:** Investigate whether vital signs and lab results at admission predict readmission.
 
-- *"Show me readmission rates by lab results flag"*
+- *"Show me readmission rates by `lab_abnormal`"*
 - *"Compare blood pressure distributions between readmitted and non-readmitted patients"*
 - *"What is the readmission rate by BMI category?"*
 - *"How does clinical risk score relate to readmission?"*
