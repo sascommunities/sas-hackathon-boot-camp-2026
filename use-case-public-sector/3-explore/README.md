@@ -132,11 +132,11 @@ Create a **scatter plot** with `response_time_hours` on the x-axis and `citizen_
 **Goal:** Specifically assess service equity across district aggregates and age groups.
 
 - *"Show the scatter plot of `district_avg_response_time` vs `response_time_hours` filtered where `is_urgent`=1"*
-- *"Show the correlation between `age_65+` and `citizen_satisfaction`"*
-- *"Show the correlation between `age_18-24` and `citizen_satisfaction`"*
+- *"Show the correlation between `age_65p` and `citizen_satisfaction`"*
+- *"Show the correlation between `age_18_24` and `citizen_satisfaction`"*
 - *"Show the correlation between `district_avg_request_count` and `district_avg_resolution_rate`"*
 
-Create a **scatter plot** of `district_avg_response_time` vs. the individual `response_time_hours`, filtered to `is_urgent`=1. Create a **bar chart** showing average `citizen_satisfaction` for each age-group dummy (`age_18-24` through `age_65+`, where the value is 1).
+Create a **scatter plot** of `district_avg_response_time` vs. the individual `response_time_hours`, filtered to `is_urgent`=1. Create a **bar chart** showing average `citizen_satisfaction` for each age-group dummy (`age_18_24` through `age_65p`, where the value is 1).
 
 > **What to look for:** If districts with high `district_avg_response_time` also have high individual `response_time_hours` for urgent requests, the slowness is systemic. If certain age-group dummies have markedly lower average satisfaction, that is a demographic equity signal to carry into the fairness assessment in Step 4.
 

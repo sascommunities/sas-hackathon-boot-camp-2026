@@ -22,7 +22,7 @@ The analytical base table (`PUBLIC_SECTOR_ABT`) should be available in the **Pub
    - **Target Variable:** `is_urgent`
 4. Click **Save**
 5. Once the SAS Model Studio project has opened on the Data tab, select the variable `is_urgent` and set its Role to ´Target´
-6. On the same tab look for the variable `age_65+` and activate the checkbox `Assess this variable for bias`, this will enable us to talk more about the Trustworthy AI features of SAS Model Studio
+6. On the same tab look for the variable `age_65p` and activate the checkbox `Assess this variable for bias`, this will enable us to talk more about the Trustworthy AI features of SAS Model Studio
 
 The project is now ready for us to start modelling.
 
@@ -152,13 +152,13 @@ Review the **Variable Importance** chart for your champion model — the top pre
 
 ## Fairness Assessment
 
-Trustworthy AI requires that models do not discriminate unfairly against certain groups. In this use case we will assess fairness with respect to **`age_65+`** — the age-group dummy indicating whether the citizen submitting the request is 65 or older.
+Trustworthy AI requires that models do not discriminate unfairly against certain groups. In this use case we will assess fairness with respect to **`age_65p`** — the age-group dummy indicating whether the citizen submitting the request is 65 or older.
 
 ### Why Age 65+?
 
 Senior citizens are a sensitive demographic in public service delivery. They may rely more heavily on municipal services, face barriers to submitting digital requests, and be less able to tolerate delays on safety-related issues (heating outages, sidewalk hazards, water problems). If the urgency prediction model systematically under-predicts urgency for requests from older citizens, the consequences are direct:
 
-1. **Model under-predicts urgency** for requests where `age_65+`=1
+1. **Model under-predicts urgency** for requests where `age_65p`=1
 2. Those requests are **deprioritized** in the triage queue
 3. Response times for older citizens **increase**
 4. Citizen satisfaction among older citizens **decreases**
@@ -166,13 +166,13 @@ Senior citizens are a sensitive demographic in public service delivery. They may
 
 This is not a hypothetical concern. Automated decision systems have been documented to produce disparate impacts on protected demographic groups, and age is one of the protected classes under most municipal anti-discrimination frameworks.
 
-> **Note on district equity:** The raw `location_district` column is retained in the ABT alongside engineered district-level aggregates (`district_avg_response_time`, `district_avg_resolution_rate`, etc.) so the Step 5 decision flow can pass it through, and district equity is reflected in the model through those aggregates (you explored this in Step 3). Formal fairness assessment in Model Studio works best with a single binary/categorical column present on each row — which is why we use the `age_65+` dummy here rather than `location_district`.
+> **Note on district equity:** The raw `location_district` column is retained in the ABT alongside engineered district-level aggregates (`district_avg_response_time`, `district_avg_resolution_rate`, etc.) so the Step 5 decision flow can pass it through, and district equity is reflected in the model through those aggregates (you explored this in Step 3). Formal fairness assessment in Model Studio works best with a single binary/categorical column present on each row — which is why we use the `age_65p` dummy here rather than `location_district`.
 
 Fairness assessment ensures the model performs **equitably across age groups** and that the resulting triage decisions do not systematically disadvantage older citizens.
 
 ### Running the Fairness Assessment
 
-1. As we set the `age_65+` variable to be assessed for fairness we get this assessment with every model
+1. As we set the `age_65p` variable to be assessed for fairness we get this assessment with every model
 2. Review the fairness metrics:
 
 | Metric | What It Measures | Acceptable Range |
@@ -235,7 +235,7 @@ At this point you have:
 
 1. Built models using AutoML and/or custom pipelines
 2. Compared models on accuracy, recall, AUC, and other metrics
-3. Assessed fairness across age groups (`age_65+`) to ensure equitable service for older citizens
+3. Assessed fairness across age groups (`age_65p`) to ensure equitable service for older citizens
 4. Registered your champion model to SAS Model Manager
 5. Viewed the Model Card in SAS Model Manager
 

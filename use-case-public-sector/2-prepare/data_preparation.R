@@ -219,10 +219,14 @@ for (col in dist_fill) {
   abt[[col]][is.na(abt[[col]])] <- 0
 }
 
-# One-hot encode age_group
+# One-hot encode age_group.
+# Map values to SAS-valid suffixes (no '-' or '+') so the resulting column
+# names (e.g. age_65p) match SAS Step 2 and are valid SAS variable names.
+age_suffix <- list("18-24"="18_24", "25-34"="25_34", "35-44"="35_44",
+                   "45-54"="45_54", "55-64"="55_64", "65+"="65p")
 for (ag in unique(na.omit(abt$age_group))) {
-  safe_name <- paste0("age_", gsub("[^A-Za-z0-9]", "_", ag))
-  abt[[safe_name]] <- as.integer(abt$age_group == ag)
+  suffix <- if (!is.null(age_suffix[[ag]])) age_suffix[[ag]] else gsub("[^A-Za-z0-9]", "_", ag)
+  abt[[paste0("age_", suffix)]] <- as.integer(abt$age_group == ag)
 }
 
 # One-hot encode contact_preference

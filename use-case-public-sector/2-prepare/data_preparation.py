@@ -213,7 +213,13 @@ dist_fill_cols = [c for c in abt.columns if c.startswith('district_')]
 for col in dist_fill_cols:
     abt[col] = abt[col].fillna(0)
 
-# One-hot encode categoricals
+# One-hot encode categoricals.
+# Map age_group values to SAS-valid suffixes (no '-' or '+') so the resulting
+# dummy column names (e.g. age_65p) match what SAS Step 2 produces and are
+# valid SAS variable names when the ABT is loaded into CAS.
+_age_suffix = {'18-24':'18_24', '25-34':'25_34', '35-44':'35_44',
+               '45-54':'45_54', '55-64':'55_64', '65+':'65p'}
+abt['age_group'] = abt['age_group'].map(_age_suffix).fillna(abt['age_group'])
 abt = pd.get_dummies(abt, columns=['age_group'], prefix='age')
 abt = pd.get_dummies(abt, columns=['contact_preference'], prefix='contact')
 
