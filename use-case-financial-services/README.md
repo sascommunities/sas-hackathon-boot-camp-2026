@@ -4,11 +4,48 @@
 
 This use case walks you through the complete **Data and AI Life Cycle** using a realistic loan default prediction scenario, powered by SAS Viya technology.
 
-## Business Context
+## Business Understanding
 
-**Company:** PremierBank (fictional regional bank, $2.1B in assets, 50,000+ customers)
-**Problem:** Loan default rate of 8.5% — well above the 5.2% industry average — resulting in $12.8M in annual losses
-**Goal:** Predict which loans are likely to default, ensure fair lending compliance, and reduce the default rate to 5.5% within 12 months
+### Company Background
+
+**PremierBank** is a regional bank that provides personal loans, auto loans, and home equity products across a multi-state footprint. The bank prides itself on community lending and relationship banking, but mounting credit losses are threatening profitability and capital ratios.
+
+### Problem Statement
+
+The bank is experiencing a **8.5% loan default rate**, significantly above the **5.2% industry average**. This translates to approximately **$12.8 million in annual losses** from charge-offs, collections costs, and foregone interest income.
+
+**What does this mean in practice?** For every 1,000 loans on the books, roughly 85 will default — meaning the borrower stops making payments for 90 or more consecutive days. Each default triggers a cascade of costs: collections staff time, legal proceedings, collateral recovery (if secured), and ultimately a write-off against the bank's reserves. If PremierBank can predict which loans are likely to default at the time of origination or early in the loan life, it can tighten underwriting criteria for high-risk applicants, offer modified terms to borderline borrowers, and proactively intervene with struggling borrowers before they miss multiple payments.
+
+### Business Objectives
+
+1. **Primary Goal:** Reduce the annual default rate from 8.5% to 5.5% within 12 months
+2. **Secondary Goals:**
+    - Identify the top factors driving loan default
+    - Build an early warning system for loans at risk of delinquency
+    - Ensure all models comply with fair lending regulations (ECOA, Fair Housing Act, FCRA)
+    - Document model risk management per SR 11-7 guidance
+
+### Success Criteria
+
+- Loan default prediction model with **AUC-ROC >= 0.82**
+- Adverse action reason codes for every decline or modified-terms decision
+- Demonstrated fairness across income bands and other proxy variables
+- ROI-positive loss reduction within 6 months of deployment
+
+---
+
+## Regulatory Context
+
+Financial services models operate under strict regulatory oversight. Key regulations that apply to this use case include:
+
+| Regulation                                  | What It Requires                                             |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| **ECOA** (Equal Credit Opportunity Act)     | Prohibits discrimination in credit decisions based on race, color, religion, national origin, sex, marital status, age, or public assistance status |
+| **Fair Housing Act**                        | Prohibits discrimination in housing-related lending          |
+| **FCRA** (Fair Credit Reporting Act)        | Requires adverse action notices when credit is denied or terms are modified based on credit information |
+| **SR 11-7** (OCC/Fed Model Risk Management) | Requires validation, documentation, and ongoing monitoring of models used in banking decisions |
+
+These regulations mean that unlike many other analytics use cases, the model you build here must not only be accurate — it must be **explainable, auditable, and demonstrably fair**.
 
 ## The 5 Steps
 

@@ -4,11 +4,48 @@
 
 This use case walks you through the complete **Data and AI Life Cycle** using a realistic citizen service request prioritization scenario, powered by SAS Viya technology.
 
-## Business Context
+## Business Understanding
 
-**Organization:** Metro City (fictional municipality, population 850,000, 12 districts)
-**Problem:** 15,000 service requests per month with 40% response time variance across districts and growing equity concerns
-**Goal:** Predict which service requests are urgent, reduce average response time from 48.2 to 36 hours, and improve citizen satisfaction from 3.2 to 3.7 out of 5.0
+### Organization Background
+
+**Metro City** is a mid-sized municipality that processes approximately 15,000 citizen service requests per month across departments including Public Works, Parks & Recreation, Transportation, Building & Safety, and others. Requests range from pothole repairs and streetlight outages to permit inquiries and noise complaints. The city operates a 311 service center, an online portal, and a mobile app for request submission.
+
+### Problem Statement
+
+Metro City is experiencing a **40% variance in average response times across its 12 districts**, with the overall average sitting at **48.2 hours** — well above the 36-hour target. Citizen satisfaction has declined to **3.2 out of 5.0**, and there are growing concerns about **service equity**: are some neighborhoods consistently receiving slower responses than others? Are urgent requests being identified and escalated quickly enough?
+
+**What does this mean in practice?** A water main break in one district might wait 60 hours while a cosmetic sidewalk complaint in another district gets resolved in 20 hours. Without a systematic way to assess request urgency and allocate resources, departments rely on first-come-first-served processing — which fails to account for the severity, safety implications, or equity dimensions of each request. If Metro City can predict which requests are truly urgent, it can triage them faster, route them to the right department with the right priority, and ensure all districts receive equitable service.
+
+### Business Objectives
+
+1. **Primary Goal:** Reduce average response time from 48.2 to 36 hours within 6 months
+2. **Secondary Goals:**
+    - Improve citizen satisfaction from 3.2 to 3.7 out of 5.0
+    - Achieve less than 10% response time variance between districts
+    - Ensure urgent requests (Critical and High priority) are identified with at least 90% recall
+    - Comply with Public Records Act, ADA requirements, and algorithmic bias prevention policies
+
+### Success Criteria
+
+- Urgency prediction model with **accuracy greater than 85%**
+- **Recall greater than 90%** for urgent requests (do not miss Critical or High priority requests)
+- Equitable model performance across all 12 districts
+- Actionable triage system that routes requests in real time
+
+---
+
+## Regulatory Context
+
+Public sector analytics operate under transparency, equity, and accountability requirements. Key regulations and policies that apply to this use case include:
+
+| Regulation / Policy                       | What It Requires                                             |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| **Public Records Act / FOIA**             | Government data and algorithmic decision-making processes may be subject to public disclosure requests |
+| **ADA** (Americans with Disabilities Act) | Service delivery must be accessible; model-driven triage must not disadvantage residents with disabilities |
+| **Algorithmic Accountability Policies**   | Many municipalities require impact assessments for automated decision systems that affect public services |
+| **Title VI of the Civil Rights Act**      | Prohibits discrimination in programs receiving federal funding; applies to service delivery equity |
+
+These requirements mean that the model must not only be accurate — it must be **transparent, auditable, and demonstrably equitable** across all districts and demographics.
 
 ## The 5 Steps
 

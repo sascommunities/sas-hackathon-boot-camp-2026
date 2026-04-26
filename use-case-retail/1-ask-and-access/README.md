@@ -4,44 +4,16 @@ Welcome to **ShopEase**, a fictional online retail platform. In this step you wi
 
 ---
 
-## Business Understanding
-
-### Company Background
-
-**ShopEase** is an e-commerce platform serving 1,000+ active customers across the United States. The company offers products in Electronics, Clothing, Home & Garden, and Books categories through a web and mobile platform.
-
-### Problem Statement
-
-The company is experiencing a **12% monthly customer churn rate**, significantly impacting revenue and growth. Leadership wants to understand why customers are leaving and identify at-risk customers before they churn.
-
-**What does this mean in practice?** Every month, roughly 120 out of every 1,000 customers stop purchasing. Acquiring a new customer costs 5-7x more than retaining an existing one, making this churn rate a direct threat to profitability. If ShopEase can predict which customers are about to leave, it can intervene with targeted retention offers, personalized outreach, or service improvements — turning potential losses into saved relationships.
-
-### Business Objectives
-
-1. **Primary Goal:** Reduce monthly churn rate from 12% to 8% within 6 months
-2. **Secondary Goals:**
-   - Identify top 5 factors driving customer churn
-   - Create an early warning system for at-risk customers
-   - Enable proactive retention campaigns
-
-### Success Criteria
-
-- Churn prediction model with **≥80% accuracy**
-- Actionable insights for the retention team
-- ROI-positive retention campaign within 3 months
-
----
-
 ## Data Assessment
 
 ### Available Data Sources
 
-| Dataset | Description | Records | Key Fields |
-|---------|-------------|---------|------------|
-| `customers.csv` | Customer demographics and churn status | 1,000 | customer_id, signup_date, age, gender, location, subscription_tier, email_opt_in, churned |
-| `transactions.csv` | Purchase history | ~5,000 | transaction_id, customer_id, transaction_date, amount, product_category, payment_method, discount_applied |
-| `sessions.csv` | Website/app activity | ~10,000 | session_id, customer_id, session_date, duration_minutes, pages_viewed, device_type, referral_source, cart_abandonment |
-| `support_tickets.csv` | Customer service interactions | ~400 | ticket_id, customer_id, ticket_date, issue_category, priority, resolution_time_hours, satisfaction_score, resolved |
+| Dataset               | Description                            | Records | Key Fields                                                   |
+| --------------------- | -------------------------------------- | ------- | ------------------------------------------------------------ |
+| `customers.csv`       | Customer demographics and churn status | 1,000   | customer_id, signup_date, age, gender, location, subscription_tier, email_opt_in, churned |
+| `transactions.csv`    | Purchase history                       | ~5,000  | transaction_id, customer_id, transaction_date, amount, product_category, payment_method, discount_applied |
+| `sessions.csv`        | Website/app activity                   | ~10,000 | session_id, customer_id, session_date, duration_minutes, pages_viewed, device_type, referral_source, cart_abandonment |
+| `support_tickets.csv` | Customer service interactions          | ~400    | ticket_id, customer_id, ticket_date, issue_category, priority, resolution_time_hours, satisfaction_score, resolved |
 
 ### Data Quality Notes
 
@@ -55,13 +27,13 @@ The company is experiencing a **12% monthly customer churn rate**, significantly
 
 Before building models, confirm alignment with key stakeholders:
 
-| Stakeholder | What They Need |
-|------------|---------------|
-| **VP of Marketing** | Targeting criteria for retention campaigns, ROI projections for campaign spend |
+| Stakeholder                     | What They Need                                               |
+| ------------------------------- | ------------------------------------------------------------ |
+| **VP of Marketing**             | Targeting criteria for retention campaigns, ROI projections for campaign spend |
 | **Head of Customer Experience** | Root cause insights into churn drivers, service improvement recommendations |
-| **Product Manager** | Feature-level engagement data to prioritize product roadmap decisions |
-| **Data Science Lead** | Model performance targets, fairness requirements, deployment timeline |
-| **CFO** | Revenue impact analysis, customer lifetime value preservation estimates |
+| **Product Manager**             | Feature-level engagement data to prioritize product roadmap decisions |
+| **Data Science Lead**           | Model performance targets, fairness requirements, deployment timeline |
+| **CFO**                         | Revenue impact analysis, customer lifetime value preservation estimates |
 
 ---
 
@@ -69,13 +41,13 @@ Before building models, confirm alignment with key stakeholders:
 
 Based on domain knowledge and preliminary exploration, we hypothesize:
 
-| # | Hypothesis | Metrics to Test |
-|---|-----------|-----------------|
-| H1 | **Engagement Drives Retention** — Customers with low engagement (fewer sessions, shorter durations) are more likely to churn | Average session duration, sessions per month, pages viewed per session |
-| H2 | **Purchase Frequency Matters** — Customers who purchase less frequently or have decreasing transaction amounts are at higher churn risk | Number of transactions, average order value, days since last purchase |
-| H3 | **Support Issues Indicate Risk** — Customers with multiple support tickets, especially unresolved or low-satisfaction ones, are more likely to churn | Number of support tickets, ticket priority distribution, average satisfaction score |
-| H4 | **Subscription Tier Impacts Churn** — Basic tier customers churn at higher rates than Premium customers due to lower investment/commitment | Churn rate by subscription tier |
-| H5 | **Email Opt-Out Signals Disengagement** — Customers who have opted out of marketing emails are less engaged and more likely to churn | Churn rate by email_opt_in status |
+| #    | Hypothesis                                                   | Metrics to Test                                              |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| H1   | **Engagement Drives Retention** — Customers with low engagement (fewer sessions, shorter durations) are more likely to churn | Average session duration, sessions per month, pages viewed per session |
+| H2   | **Purchase Frequency Matters** — Customers who purchase less frequently or have decreasing transaction amounts are at higher churn risk | Number of transactions, average order value, days since last purchase |
+| H3   | **Support Issues Indicate Risk** — Customers with multiple support tickets, especially unresolved or low-satisfaction ones, are more likely to churn | Number of support tickets, ticket priority distribution, average satisfaction score |
+| H4   | **Subscription Tier Impacts Churn** — Basic tier customers churn at higher rates than Premium customers due to lower investment/commitment | Churn rate by subscription tier                              |
+| H5   | **Email Opt-Out Signals Disengagement** — Customers who have opted out of marketing emails are less engaged and more likely to churn | Churn rate by email_opt_in status                            |
 
 ---
 
@@ -94,8 +66,6 @@ Based on domain knowledge and preliminary exploration, we hypothesize:
 - Product recommendation engine
 - External market or competitor data
 - Pricing strategy optimization
-
----
 
 ## The Value of Synthetic Data
 

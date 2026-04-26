@@ -4,11 +4,35 @@
 
 This use case walks you through the complete **Data and AI Life Cycle** using a realistic e-commerce customer churn prediction scenario, powered by SAS Viya technology.
 
-## Business Context
+## Business Understanding
 
-**Company:** ShopEase (fictional online retail platform)
-**Problem:** Monthly customer churn rate of 12% is significantly impacting revenue
-**Goal:** Predict which customers are likely to churn, understand why, and automate retention actions
+### Company Background
+
+**ShopEase** is an e-commerce platform serving 1,000+ active customers across the United States. The company offers products in Electronics, Clothing, Home & Garden, and Books categories through a web and mobile platform.
+
+### Problem Statement
+
+The company is experiencing a **12% monthly customer churn rate**, significantly impacting revenue and growth. Leadership wants to understand why customers are leaving and identify at-risk customers before they churn.
+
+**What does this mean in practice?** Every month, roughly 120 out of every 1,000 customers stop purchasing. Acquiring a new customer costs 5-7x more than retaining an existing one, making this churn rate a direct threat to profitability. If ShopEase can predict which customers are about to leave, it can intervene with targeted retention offers, personalized outreach, or service improvements — turning potential losses into saved relationships.
+
+### Business Objectives
+
+1. **Primary Goal:** Reduce monthly churn rate from 12% to 8% within 6 months
+2. **Secondary Goals:**
+    - Identify top 5 factors driving customer churn
+    - Create an early warning system for at-risk customers
+    - Enable proactive retention campaigns
+
+### Success Criteria
+
+- Churn prediction model with **≥80% accuracy**
+- Actionable insights for the retention team
+- ROI-positive retention campaign within 3 months
+
+---
+
+
 
 ## The 5 Steps
 

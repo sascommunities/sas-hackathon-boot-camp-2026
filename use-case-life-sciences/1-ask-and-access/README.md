@@ -4,51 +4,6 @@ Welcome to **MedCare Health System**, a fictional regional healthcare network. I
 
 ---
 
-## Business Understanding
-
-### Organization Background
-
-**MedCare Health System** is a regional healthcare network operating 12 hospitals and 45 outpatient facilities, serving over 2 million patients annually across medical, surgical, and cardiac service lines. MedCare's mission is to deliver high-quality, patient-centered care while maintaining operational efficiency.
-
-### Problem Statement
-
-MedCare is experiencing a **18.2% 30-day readmission rate**, significantly exceeding the national benchmark of 15.5%. This gap is costing the organization an estimated **$12.4 million per year** in Centers for Medicare & Medicaid Services (CMS) penalties under the Hospital Readmissions Reduction Program (HRRP).
-
-**What does this mean in practice?** For every 1,000 discharged patients, roughly 182 return to the hospital within 30 days — many of these readmissions are preventable with the right post-discharge support. Beyond the financial penalties, readmissions signal gaps in care transitions: patients may be discharged without adequate medication reconciliation, follow-up appointments, or understanding of their self-care instructions. If MedCare can identify high-risk patients before they leave the hospital, care teams can intervene with targeted discharge planning, follow-up calls, home health referrals, and medication management — reducing both costs and patient suffering.
-
-### Business Objectives
-
-1. **Primary Goal:** Reduce the 30-day readmission rate from 18.2% to 14.5% within 18 months
-2. **Secondary Goals:**
-   - Identify the top clinical and operational drivers of readmission
-   - Create an at-discharge risk scoring system for care teams
-   - Enable proactive care coordination for high-risk patients
-   - Reduce CMS penalties from $12.4M to $7.5M annually
-
-### Success Criteria
-
-- Readmission prediction model with **AUC-ROC >= 0.75**
-- High-risk patient identification with **sensitivity >= 0.80** (catch at least 80% of patients who will be readmitted)
-- Clinically interpretable model outputs that care teams can trust and act on
-- All analytics compliant with HIPAA regulations
-
----
-
-## Regulatory Context
-
-Healthcare analytics operate under strict regulatory and ethical oversight. Key regulations that apply to this use case include:
-
-| Regulation | What It Requires |
-|-----------|-----------------|
-| **HIPAA** (Health Insurance Portability and Accountability Act) | Protects patient health information; requires safeguards for PHI access, use, and disclosure |
-| **HITECH Act** | Strengthens HIPAA enforcement; requires breach notification for unsecured PHI |
-| **CMS HRRP** (Hospital Readmissions Reduction Program) | Penalizes hospitals with excess readmissions for specific conditions; directly motivates this use case |
-| **Joint Commission Standards** | Requires evidence-based care transition processes and quality measurement |
-
-These regulations mean that beyond building an accurate model, the analytics workflow must protect patient privacy, produce clinically interpretable outputs, and support the quality improvement documentation required by CMS and accreditation bodies.
-
----
-
 ## Data Assessment
 
 ### Available Data Sources
