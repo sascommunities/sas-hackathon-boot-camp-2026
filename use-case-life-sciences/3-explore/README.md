@@ -44,6 +44,10 @@ SAS Visual Analytics includes a **Copilot** — an AI assistant that helps you e
 
 Work through the following questions to build your understanding of the readmission patterns. For each question, try creating the visualization manually **and/or** by asking the Copilot.
 
+Please do not feel obligated to answer all of these questions, rather pick and choose questions that interest you, help you advance your understanding of the data or sound challenging for your current level.
+
+You are also more than welcome to just explore the data on your own making use of SAS Visual Analytics and the SAS Viya Copilot.
+
 ### Understanding the Target Variable
 
 **Goal:** Get a baseline understanding of readmission in the dataset.

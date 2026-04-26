@@ -74,6 +74,8 @@ After the model scores the customer, add **Rule Set** nodes to determine the ret
 
 We recommend you try to build at least one of these rule sets yourself to get an understanding of how it is done. If you have any questions around SAS Intelligent Decisioning activate the SAS Viya copilot within the application via the icon in the top right hand corner next to your profile or ask one of the onsite SAS Mentors.
 
+For Rule Sets with multiple conditions please change the second condition from **IF** to **ELSE** - this will reduce the amount of typing you have to do and also improves runtime performance. If a condition contains a / then this indicates it applies to both values.
+
 **Rule Set: Risk Tier Classification**
 
 | Rule Conditions | risk_tier |
