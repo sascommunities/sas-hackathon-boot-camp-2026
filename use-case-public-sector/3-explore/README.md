@@ -91,7 +91,7 @@ Create a **bar chart** of `is_urgent` (as a measure, aggregated as average) grou
 
 Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_time` (y). Create a second scatter plot of `dept_avg_overtime` (x) vs. `dept_avg_resolution_rate` (y). The ABT keeps both the raw `department` column and the engineered `dept_avg_*` aggregates — use the aggregates for capacity-vs-response correlation analysis and the raw column when you want a per-department breakdown.
 
-> **What to look for:** Negative correlation between staff count and response time (more staff = faster response). Departments with high overtime and low resolution rates are the bottlenecks.
+> **What to look for:** Negative correlation between staff count and response time (more staff = faster response). Overtime and resolution rate do not show a strong relationship in this dataset — flag this as an open question rather than a confirmed bottleneck pattern.
 
 ### Hypothesis 3: District Equity
 
@@ -105,7 +105,7 @@ Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_t
 
 Create a **histogram** of `district_avg_response_time` to see the spread of district-level service speed. Create a **scatter plot** of `district_avg_request_count` (x) vs. `district_avg_response_time` (y) to check whether high-volume districts are slower. The ABT keeps both the raw `location_district` label and the engineered `district_*` aggregates — use the aggregates to look at the overall spread of service speed, and the raw column when you want to call out specific districts that fall behind.
 
-> **What to look for:** Wide spread in `district_avg_response_time` indicates the 40% variance problem is real. A strong positive correlation with request volume suggests capacity, not bias, is the driver; a weak correlation suggests uneven service allocation.
+> **What to look for:** Some spread in `district_avg_response_time` across districts (a few hours from the slowest to the fastest district). The correlation between `district_avg_request_count` and `district_avg_response_time` is **negative** in this dataset — higher-volume districts tend to be faster, suggesting capacity follows demand rather than the inverse.
 
 ### Hypothesis 4: Seasonal Patterns
 
@@ -130,7 +130,7 @@ Create a **line chart** with `submit_month` on the x-axis and count of requests 
 
 Create a **scatter plot** with `response_time_hours` on the x-axis and `citizen_satisfaction` on the y-axis. Create a **bar chart** of average `citizen_satisfaction` grouped by `is_urgent`.
 
-> **What to look for:** A strong negative correlation between `response_time_hours` and `citizen_satisfaction` (faster = happier). `is_urgent`=1 requests resolved quickly should maintain satisfaction; slow urgent requests are the worst customer experience.
+> **What to look for:** A moderate negative correlation between `response_time_hours` and `citizen_satisfaction` (faster = happier). Average satisfaction does not differ meaningfully between `is_urgent`=0 and `is_urgent`=1 in this dataset — response time is a stronger driver of satisfaction than urgency tier.
 
 ### Equity-Focused Deep Dive
 
@@ -177,7 +177,7 @@ Use **filters** and **interactions** between visualizations — clicking a bar i
 
 Before moving on to Step 4, summarize what you have learned. Expected answers (if your exploration went well) are shown alongside each question — if your numbers differ substantially, revisit the relevant hypothesis before continuing.
 
-1. **Which hypotheses were confirmed?** Expect **H1** (inherent urgency is the single strongest predictor), **H3** (wide spread in `district_avg_response_time`), and **H5** (strong negative correlation between `response_time_hours` and `citizen_satisfaction`). H2 and H4 tend to be weaker signals in this dataset.
+1. **Which hypotheses were confirmed?** Expect **H1** (inherent urgency is by far the strongest predictor of `is_urgent`) and **H5** (moderate negative correlation between `response_time_hours` and `citizen_satisfaction`). **H2**, **H3**, and **H4** are weaker signals in this dataset — district-level response times only span a few hours from fastest to slowest, and seasonal urgency variation across `submit_month` is modest.
 2. **Which features show the strongest separation** between `is_urgent`=1 and `is_urgent`=0? Expect `inherent_urgency`, `response_time_hours`, `district_total_critical`, and `district_total_high` to separate the two classes most clearly.
 3. **Which districts have the biggest equity gaps?** The highest values of `district_avg_response_time` combined with the lowest values of `district_avg_resolution_rate` mark the districts with the biggest service gap.
 4. **What is the class balance?** Roughly **36% `is_urgent`=1** and **64% `is_urgent`=0** — moderately imbalanced, but not so skewed that you must rebalance before modeling.

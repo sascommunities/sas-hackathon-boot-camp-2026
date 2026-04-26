@@ -75,11 +75,11 @@ Create **box plots** of `comorbidity_count` grouped by `readmitted_30days`. Also
 
 - *"Show me the distribution of length of stay by readmission status"*
 - *"What is the average length of stay for readmitted vs. non-readmitted patients?"*
-- *"Is there a U-shaped relationship between length of stay and readmission?"*
+- *"At what length of stay does readmission risk start to climb sharply?"*
 
 Create a **histogram** of `length_of_stay` colored by `readmitted_30days`. Also create a **bar chart** using the LOS category variables (`los_Short`, `los_Medium`, `los_Long`) to compare readmission rates across categories.
 
-> **What to look for:** Very short stays (potential premature discharge) and very long stays (very sick patients) may both carry elevated risk, creating a U-shaped pattern.
+> **What to look for:** In this dataset readmission risk increases monotonically with length of stay — long stays carry by far the highest risk, while short and medium stays remain low. The "long stay = sicker patient" signal dominates; there is no lower-end U-shape from premature-discharge cases.
 
 ### Hypothesis 3: Emergency Admissions Carry Higher Risk
 

@@ -76,11 +76,11 @@ Create **box plots** of `avg_session_duration`, `total_sessions`, and `avg_pages
 
 - *"Show me the distribution of days since last purchase by churn status"*
 - *"Compare total spend between churned and active customers"*
-- *"What is the average purchase frequency for each group?"*
+- *"How does `total_transactions` compare between churned and active customers?"*
 
-Create a **histogram** of `days_since_last_purchase` colored by `churned`. Also create a **scatter plot** of `total_spend` vs. `purchase_frequency` with `churned` as the color.
+Create a **histogram** of `days_since_last_purchase` colored by `churned`. Also create a **box plot** of `total_spend` by `churned`.
 
-> **What to look for:** Churned customers likely have higher `days_since_last_purchase` and lower `purchase_frequency`. This is often the strongest predictor.
+> **What to look for:** Churned customers should have a much higher `days_since_last_purchase` and much lower `total_spend` — these are typically the strongest predictors. `purchase_frequency` is normalized by tenure (transactions per month the customer was active), so it is not a clean churn signal in this dataset; rely on the recency and total-spend columns instead.
 
 ### Hypothesis 3: Support Issues Indicate Risk
 

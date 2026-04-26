@@ -86,12 +86,12 @@ Create a **histogram** of `debt_to_income` colored by `defaulted`. Also create a
 **Goal:** Explore whether past payment patterns signal default risk.
 
 - *"Show me the average late payment rate for defaulted vs. current loans"*
-- *"How does the severe delinquency flag relate to default?"*
 - *"What is the distribution of average days late by default status?"*
+- *"Compare `late_payment_count` between defaulted and current loans"*
 
-Create a **heat map** or **crosstab** of `severe_delinquency_flag` by `defaulted`. Create a **box plot** of `avg_days_late` by `defaulted`.
+Create a **box plot** of `avg_days_late` by `defaulted` and a **box plot** of `late_payment_rate` by `defaulted`.
 
-> **What to look for:** Loans with any severe delinquency (60+ days late) should have dramatically higher default rates. Late payment rate is likely one of the strongest predictors.
+> **What to look for:** Defaulted loans should show a higher mean late payment rate and longer maximum days late than current loans. Note that in this synthetic dataset no loans cross the 60-day severe-delinquency threshold (`severe_delinquency_flag` is uniformly 0), so payment behavior shows up through the rate and days-late columns rather than the flag.
 
 ### Hypothesis 4: Employment Stability Matters
 
@@ -115,7 +115,7 @@ Create **stacked bar charts** showing default proportions for each income band a
 
 Create a **scatter plot** of `loan_to_value` vs. `interest_rate` with `defaulted` as the color. Create a **histogram** of `loan_amount` by default status.
 
-> **What to look for:** Higher LTV ratios (less equity), higher interest rates, and longer loan terms should correlate with more defaults. Interest rate itself may be a proxy for the lender's initial risk assessment.
+> **What to look for:** Higher LTV ratios (less equity) and higher interest rates should correlate with more defaults — interest rate itself may be a proxy for the lender's initial risk assessment. `loan_term_months` does not show a clean monotonic relationship with default in this dataset, so don't expect a strong signal there.
 
 ### Correlation and Multi-Variable Exploration
 
