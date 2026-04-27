@@ -15,7 +15,7 @@
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-data_dir    <- "/workspaces/bootcamp/sas-hackathon-boot-camp-2026/use-case-financial-services/data"
+data_dir    <- "/workspaces/myfolder/sas-hackathon-boot-camp-2026/use-case-financial-services/data"
 output_path <- file.path(data_dir, "financial_services_abt.csv")
 
 # ============================================================================

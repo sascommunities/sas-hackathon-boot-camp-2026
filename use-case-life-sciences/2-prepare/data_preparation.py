@@ -18,7 +18,7 @@ import os
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-DATA_DIR = '/workspaces/bootcamp/sas-hackathon-boot-camp-2026/use-case-life-sciences/data'
+DATA_DIR = '/workspaces/myfolder/sas-hackathon-boot-camp-2026/use-case-life-sciences/data'
 OUTPUT_PATH = os.path.join(DATA_DIR, 'life_sciences_abt.csv')
 
 # ============================================================================

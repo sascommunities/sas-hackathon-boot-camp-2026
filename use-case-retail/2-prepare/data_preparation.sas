@@ -14,7 +14,7 @@
 /* -----------------------------------------------------------------------
    Configuration — adjust the path if your working directory differs
    ----------------------------------------------------------------------- */
-%let datadir = /workspaces/bootcamp/sas-hackathon-boot-camp-2026/use-case-retail/data;
+%let datadir = /workspaces/myfolder/sas-hackathon-boot-camp-2026/use-case-retail/data;
 
 /* ========================================================================
    1. LOAD THE DATA
