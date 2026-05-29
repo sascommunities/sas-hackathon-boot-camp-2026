@@ -21,8 +21,11 @@ The analytical base table (`LIFE_SCIENCES_ABT`) should be available in the **Pub
    - Leave the **Template, Location & Description** as they are by default
    - **Target Variable:** `readmitted_30days`
 4. Click **Save**
+    ![image-20260529144108273](img/README/image-20260529144108273.png)
 5. Once the SAS Model Studio project has opened on the Data tab, select the variable `readmitted_30days` and set its Role to ´Target´
-6. On the same tab look for the variable `ins_Medicaid` and activate the checkbox `Assess this variable for bias`, this will enable us to talk more about the Trustworthy AI features of SAS Model Studio
+    ![image-20260529144236588](img/README/image-20260529144236588.png)
+6. On the same tab look for the variable `ins_Medicaid` and activate the checkbox `Assess this variable for bias`, this will enable us to talk more about the Trustworthy AI features of SAS Model Studio and then click over to the *Pipelines* tab to get started.
+    ![image-20260529144314430](img/README/image-20260529144314430.png)
 
 The project is now ready for us to start modelling.
 
@@ -217,10 +220,12 @@ Once you have selected your champion model and reviewed its fairness, register i
 
 1. In the Pipeline Comparison tab, identify your overall **champion model** (the one with the best KS (Youden))
 2. Right-click the champion model and select **Register Model** (or use the menu: *Actions* > *Register Model*)
+    ![image-20260529151408862](img/README/image-20260529151408862.png)
 3. Confirm the Location which is /Model Repositories/DM Repository and click OK
 4. Wait for the registration to finish in this pop up, then you can close and right click the model again and select **Manage Models**
 5. Now we will be navigated into SAS Model Manager where we can review the Model Card of this model
 6. Explore the Model Card that is populated automatically as you develop and manage the model on SAS Viya. The Overview tab offers a high-level summary of the model, including an overview of the model's training accuracy, training fairness, generalizability, and influential variables.
+    ![image-20260529151516744](img/README/image-20260529151516744.png)
 
 ### What Registration Provides
 
