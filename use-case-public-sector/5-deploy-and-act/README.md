@@ -35,45 +35,68 @@ If you have any questions around SAS Intelligent Decisioning activate the SAS Vi
 2. Click **New Decision**
 3. Name it: *Metro City Service Request Triage*
 4. Leave the Description, Location and Workflow on default and click OK
+    ![image-20260529172317915](img/README/image-20260529172317915.png)
 5. Navigate to the *Variables* tab, click on the *Add variable* dropdown and either select *Custom variable* if you want to add them all yourself of *Decision* if you want to copy it from the template (this is faster). The manual steps are described in the below sub steps 1 & 2 while the copy is described in step 3:
-    1. Define the **input variables** (these will be passed in when the decision is called):
-        1. `request_id` (character)
-        2. `request_type` (character)
-        3. `department` (character)
-        4. `location_district` (character)
-        5. `response_time_hours` (decimal)
-    2. Define the **output variables** (what the decision returns):
+    ![image-20260529172529128](img/README/image-20260529172529128.png)
+    1. Define the **input variables** (these will be passed in when the decision is called) - The structure is: `name` (data type):
+        1. `request_type` (character)
+    2. Define the **output variables** (what the decision returns)  - The structure is: `name` (data type) - Explanation (this is just for us as context):
         1. `urgency_tier` (character) - the classified priority level
         2. `assigned_department` (character) - the department to handle the request
-        3. `target_response_hours` (decimal) - the SLA target for this tier
-        4. `resource_allocation` (character) - resource level to assign
-        5. `escalation_flag` (character) - whether to escalate to management
-        6. `reason` (character) - why this triage decision was made
+        3. `resource_allocation` (character) - resource level to assign
+        4. `escalation_flag` (character) - whether to escalate to management
+        5. `reason` (character) - why this triage decision was made
+        6. `target_response_hours` (decimal) - the SLA target for this tier
         7. Now click OK to add all of them
+            ![image-20260529173207540](img/README/image-20260529173207540.png)
     3. Copy the **variables** from a template decision:
         1. Click on the folder icon in the *Decision* input field
         2. Navigate to *SAS Content > SAS Hackathon Bootcamp 2026 > Use Case Public Sector* select *Metro City Service Request Triage* and click OK
         3. Click on the *Add all* icon in the middle of the dialogue to bring all the variables into your decision and then click the Add button
+
+Once you have added the variables (no matter which way you choose) please click on the save icon in the upper right hand corner. It is recommended that anytime you change something about the variables before you continue to quickly use this icon to save the changes.
 
 
 From here you can also always activate the SAS Viya Copilot via the icon in the top right hand corner to ask questions about SAS Intelligent Decisioning to deepen your understanding of the application.
 
 ### 2. Add the Model Node
 
-1. In the decision flow canvas, add a **Model** node
-2. Select your registered champion model from SAS Model Manager (*Metro City Urgency Prediction — Champion*)
-3. Map the input variables to the model's expected features
-    1. For the inputs the `request_id` should be mapped automatically and the remaining request features will align by name — review any that remain unmapped and connect them to the matching input variable
-    2. For the outputs we are going to be clicking the *More* menu up top and select *Add missing variables* this will add all of the required output variables to our decision - if you copied the variables using the template they are already present - in the dialogue please make sure to deselect them from the Output as we will create our own custom outputs
+1. Switch to the *Decision Flow* tab.
+2. In the decision flow canvas, you can either right click the *Start* node and from the context menu select *Add below > Model* or on the right hand side click on the icon that looks a little bit like a postcard and from that side bar drag & drop a model node onto the *Start* node.
+    ![image-20260529173330775](img/README/image-20260529173330775.png)
+3. Select your registered champion model from SAS Model Manager or the pre-registered champion model by navigating to *DM Repository > Metro City Service Request Urgency Prediction_1 > Version 1 > Gradient Boosting (SAS Automatically Generated Pipeline* and click OK.
+    ![image-20260529173444298](img/README/image-20260529173444298.png)
+4. Upon doing this you will see a little red error icon next to the model and that is because it is missing variable inputs and outputs - we will address this in the next steps.
+5. There are a lot of variables missing for the model to run. We are going to be clicking the *More* menu up top and select *Add missing variables* this will add all of the required output variables to our decision - if you copied the variables using the template they are already present - in the dialogue please make sure to deselect them from the Output as we will create our own custom outputs. The Inputs should be left in place.
+    ![image-20260529173747543](img/README/image-20260529173747543.png)
 
 
 ### 3. Add Business Rules
 
-After the model scores the request, add **Rule Set** nodes to determine the triage decision. For this make first sure that you have clicked the save icon of your decision and than we will be adding Rule Sets to our decision. There are two ways of doing this the easy way where you use the pre build rule sets by clicking on the three vertical dots on the model node and selecting *Add > Rule Set*, then in the dialogue navigate to *SAS Content > SAS Hackathon Bootcamp 2026 > Use Case Public Sector* and add the rule set as specified below. If you want to create them yourself you can go to the right hand side click on the *Objects* and drag & drop a Rule Set onto the previous node. This will open up a dialogue where you should name your decision correspondingly, please leave the location as the default (*My Folder*) - then add the variables from the decision you created and start building the Rule Sets as described below - the required variables are noted either as the columns or in the **Rule Conditions**.
+After the model scores the application, add **Rule Set** nodes to determine the lending decision. For this make first sure that you have clicked the save icon of your decision and than we will be adding Rule Sets to our decision.
+
+There are two ways of adding **Rule Sets** to the decision:
+
+1.    *The easy way*, where you use the pre build rule sets by clicking on the three vertical dots on the model node and selecting *Add > Rule Set*, then in the dialogue navigate to *SAS Content > SAS Hackathon Bootcamp 2026 > Use Case Public Sector* and add the rule set as specified below.
+2.    *The learning way*, if you want to create them yourself you can go to the right hand side click on the *Objects* (postcard icon) and drag & drop a Rule Set onto the previous node. This will open up a dialogue where you should name your decision correspondingly, please leave the location as the default (*My Folder*) - then add the variables from the decision you created and start building the Rule Sets as described below - the required variables are noted either as the columns or in the **Rule Conditions**. The first rule set we will be building has notes and screenshots attached on how to do this.
 
 We recommend you try to build at least one of these rule sets yourself to get an understanding of how it is done. If you have any questions around SAS Intelligent Decisioning activate the SAS Viya copilot within the application via the icon in the top right hand corner next to your profile or ask one of the onsite SAS Mentors.
 
 **Rule Set: Urgency Tier Classification**
+
+1.   From the *Objects* side panel drag and drop a *Rule Set* node onto the *Model* node you already have in your decision. Then enter the name from above and click *Save*
+     ![image-20260529174004365](img/README/image-20260529174004365.png)
+2.   Now on the right hand side you will see the *Properties* pane for this new *Rule Set* and there is a button *Open* that will take you to the *Rule set editor* so that you can build the decision so click on that button.
+3.   A new UI opened up for you on the *Variables* tab for the *Rule Set*, under *Add variable* select, via the folder icon navigate to *My Folder* and select the *PremierBank Loan Approval Decision* that you have already created. Select the **P_is_urgent1, target_response_hours ** & **urgency_tier** variables and add it to the Rule Set - the **P_is_urgent1 ** variable is specified in the Rule Conditions column in the table below and the **urgency_tier** and **target_response_hours** variables have their own column as it gets assigned values.
+     ![image-20260529174331866](img/README/image-20260529174331866.png)
+4.   For the **P_is_urgent1 ** change it so that it is required as an input and then click on the save icon to add this change. The **risk_tier** & **target_response_hours** currently doesn't have any value from the decision so we can just leave it as an output.
+     ![image-20260529174428872](img/README/image-20260529174428872.png)
+5.   Navigate to the *Rule set* tab and click on the *Add rule* button
+     ![image-20260529174505488](img/README/image-20260529174505488.png)
+6.   Change the operator from the default of equal to greater than and then enter the comparison in the *IF* condition, in the THEN assignment change the variable to **risk_tier** and enter the corresponding value into the field enclosed in single quotes. Then as you are hovering over the THEN assignment there is a plus icon at the end of the row, click it to add an additional one, where you can assign the value for the **target_response_hours**
+     ![image-20260529174608572](img/README/image-20260529174608572.png)
+7.   Next click on *Add rule* and click on the *IF* statement dropdown and change it to an *ELSE* condition. This will combine the additional condition into one rule. From here continue to enter all the rest of the conditions and assignments as listed below and once you are done click on the save icon and then either use the little *x* icon in the right hand corner or click on *** Metro City Service Request Triage (1.0)* in the breadcrumb navigation up top to navigate back to the decision.
+     ![image-20260529174819697](img/README/image-20260529174819697.png)
 
 | Rule Conditions | urgency_tier | target_response_hours |
 |-----------|-------------|-----------------|
@@ -119,27 +142,73 @@ These rules capture the dominant driver behind the triage decision and populate 
 
 ### 4. Adding an LLM to the Mix
 
-Now right click the last node in the decision and add first a Rule Set (see blow) assignment and then on that node a Call LLM node. The Call LLM node will ask us to add missing variables again (like we did for the model node) - only add the prompt variable  (not as an input) and for the XXX we will map our reason variable that we have been using all along - then click the save icon.
+We are going to be adding a Large Language Model to our decision now. For this please open up the *Objects* side bar (postcard icon) and drag & drop a Call LLM node onto the *End* node. Then go ahead and add the missing variables like you did for the model node (do not make the prompt a required input for the decision) - and make sure to click on the save icon.
 
-Next we are going back to the Rule Set node and will assign our prompt variable the following value - you have to go into the editing mode via the pencil icon:
+![image-20260529174850134](img/README/image-20260529174850134.png)
+
+Now you can either add the *Prompt Assignment* Rule Set to the decision just like you added the other Rule Sets before or you can create it yourself. If you choose to create it yourself, please add the following variables from your decision as inputs to it:
+
+-   assigned_department
+-   escalation_flag
+-   reason
+-   resource_allocation
+-   taret_response_hours
+-   urgency_tier
+
+And as output add the prompt variable (do not forget to click the save icon). Then switch to the *Rule set* tab, click on the *Add other* button, select the Rule type of *Assignment* and click *OK* - as we do not want to do a condition, but rather just fill in our prompt with a long value.
+
+![image-20260529175037923](img/README/image-20260529175037923.png)
+
+Next you are going to assign the prompt value by clicking on the pencil icon, in the *Expression Editor* removing all the values from the main editor and the copy and paste the value from below into it, then click the *Save* button, the save icon on the *Rule set* and return to the main decision.
 
 ```
-prompt = 'You are a professional Metro City 311 citizen communications specialist. Using the service request triage data below, write a warm, respectful, and clearly structured long-form citizen notification (2 to 4 paragraphs) that the person who filed the request can read to understand how their request has been triaged and what to expect next. Do not expose internal codes or jargon verbatim — translate them into plain, everyday language. Do not commit to outcomes beyond the target response time specified, and do not make political or judgmental statements about the city or about other requests. Request and triage context: Urgency tier: ' + urgency_tier + '. Assigned department: ' + assigned_department + '. Target response time (hours): ' + target_response_hours + '. Resource allocation: ' + resource_allocation + '. Escalation flag: ' + escalation_flag + '. Internal reason code: ' + reason + '. Structure your response as follows. First, open with a respectful thank-you for filing the request and confirm that Metro City has received it and takes it seriously. Second, explain in plain language what the ' + urgency_tier + ' urgency tier means for this request — translate it into everyday expectations rather than quoting the tier label verbatim. Third, describe which department (' + assigned_department + ') will handle the request and, in a single sentence, what level of resources (' + resource_allocation + ') has been assigned. Fourth, clearly communicate the target response window of ' + target_response_hours + ' hours, what the citizen can expect during that window, and how they will be notified of progress or completion. If the escalation flag ' + escalation_flag + ' indicates an immediate escalation, briefly note that senior city operations have also been notified. Translate the internal reason ' + reason + ' into a brief, plain-language note about why this particular triage decision was made. Fifth, close with clear next steps — how the citizen can check status, how to reach 311 with questions, and a clear instruction to call 911 for any life-threatening emergency. Tone: warm, accountable, professional, and never dismissive or bureaucratic. Length: 200 to 350 words. Write in the second person (you, your request).'
+prompt = CAT('You are a professional Metro City 311 citizen communications specialist. Using the service request triage data below, write a warm, respectful, and clearly structured long-form citizen notification (2 to 4 paragraphs) that the person who filed the request can read to understand how their request has been triaged and what to expect next. Do not expose internal codes or jargon verbatim — translate them into plain, everyday language. Do not commit to outcomes beyond the target response time specified, and do not make political or judgmental statements about the city or about other requests. Request and triage context: Urgency tier: ', urgency_tier, '. Assigned department: ', assigned_department, '. Target response time (hours): ', target_response_hours, '. Resource allocation: ', resource_allocation, '. Escalation flag: ', escalation_flag, '. Internal reason code: ', reason, '. Structure your response as follows. First, open with a respectful thank-you for filing the request and confirm that Metro City has received it and takes it seriously. Second, explain in plain language what the ', urgency_tier, ' urgency tier means for this request — translate it into everyday expectations rather than quoting the tier label verbatim. Third, describe which department (', assigned_department, ') will handle the request and, in a single sentence, what level of resources (', resource_allocation, ') has been assigned. Fourth, clearly communicate the target response window of ', target_response_hours, ' hours, what the citizen can expect during that window, and how they will be notified of progress or completion. If the escalation flag ', escalation_flag, ' indicates an immediate escalation, briefly note that senior city operations have also been notified. Translate the internal reason ', reason, ' into a brief, plain-language note about why this particular triage decision was made. Fifth, close with clear next steps — how the citizen can check status, how to reach 311 with questions, and a clear instruction to call 911 for any life-threatening emergency. Tone: warm, accountable, professional, and never dismissive or bureaucratic. Length: 200 to 350 words. Write in the second person (you, your request).')
 ```
 
-SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](https://github.com/sassoftware/sas-agentic-ai-accelerator) which enables you to connect any LLM and do extensive prompt engineering & monitoring, but here we have a hard coded LLM (OpenAI GPT 5.4) available.
+![image-20260529175321189](img/README/image-20260529175321189.png)
+
+This is a very simplistic approach to prompt engineering and also doesn't provide you with the ability to test and compare different large languages models. That is why SAS provides the [SAS Agentic AI Accelerator](https://github.com/sassoftware/sas-agentic-ai-accelerator) open-source project, which enables you to connect any LLM and do extensive prompt engineering & monitoring, but here we have a hard coded LLM (OpenAI GPT 5.4) available.
 
 ### 5. Test the Decision
 
-1. Click **Test** in the toolbar
-2. Enter sample values:
-   - request_id: REQ000501
-   - request_type: Water Main Break
+1. In the decision click on the *Scoring* tab and then in there click on the *Scenarios* sub tab
+
+2. Click on the *New test* button
+    ![image-20260529175345494](img/README/image-20260529175345494.png)
+
+3. Enter sample values:
+
+   - citizen_account_age_days: 1921
+   - citizen_engagement_score: 1.08
+   - citizen_previous_requests: 2
+   - citizen_satisfaction: 4.4
+   - contact_SMS: True
+   - day_of_week: 3
    - department: Public Works
-   - location_district: Downtown
+   - dept_avg_budget_util: 0.8698333333
+   - dept_avg_overtime: 82.916666667
+   - dept_avg_requests_received: 170.91666667
+   - dept_avg_resolution_rate: 0.7976666667
+   - dept_avg_response_time: 55.775
+   - dept_avg_satisfaction: 3.6416666667
+   - dept_avg_staff_count: 31.916666667
+   - district_avg_request_count: 18.402777778
+   - district_avg_resolution_rate: 0.7860347222
+   - district_avg_response_time: 59.110069444
+   - district_total_critical: 726
+   - district_total_high: 2451
+   - location_district: Southside
+   - request_id: REQ000501
+   - request_type: Pothole Repair
    - response_time_hours: 48.0
-3. Review the output
-4. Feel free to further test with different scenarios to validate the logic:
+   - submit_month: 11
+
+   ![image-20260529181023982](img/README/image-20260529181023982.png)
+
+4. Review the output by clicking on the Results icon once the *Status* as switched to a green check mark
+    ![image-20260529181053235](img/README/image-20260529181053235.png)
+
+5. Feel free to further test with different scenarios to validate the logic:
    - A low-priority park maintenance request should fall into the Low tier with scheduled queue
    - A high-urgency request from a district with known equity gaps should trigger the equity-review escalation
    - A medium request that has been open for more than 48 hours should be flagged for reassignment
