@@ -18,16 +18,13 @@
 
 /* ========================================================================
    1. LOAD THE DATA
-   ========================================================================
-   The CSV files may have Windows line endings (CR+LF). We use TERMSTR=CRLF
-   on the INFILE statement so SAS strips the carriage return properly.
    ======================================================================== */
 title "Step 2: Data Preparation (SAS)";
 
 /* --- customers.csv ------------------------------------------------------ */
 data work.customers;
     infile "&datadir./customers.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length customer_id $5 gender $1 location $25 subscription_tier $8;
     informat signup_date yymmdd10.;
     format signup_date yymmdd10.;
@@ -38,7 +35,7 @@ run;
 /* --- transactions.csv --------------------------------------------------- */
 data work.transactions;
     infile "&datadir./transactions.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length transaction_id $5 customer_id $5 product_category $15 payment_method $15;
     informat transaction_date yymmdd10.;
     format transaction_date yymmdd10.;
@@ -49,7 +46,7 @@ run;
 /* --- sessions.csv ------------------------------------------------------- */
 data work.sessions;
     infile "&datadir./sessions.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length session_id $5 customer_id $5 device_type $10 referral_source $15;
     informat session_date yymmdd10.;
     format session_date yymmdd10.;
@@ -61,7 +58,7 @@ run;
 /* --- support_tickets.csv ------------------------------------------------ */
 data work.support_tickets;
     infile "&datadir./support_tickets.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length ticket_id $5 customer_id $5 issue_category $20 priority $6;
     informat ticket_date yymmdd10.;
     format ticket_date yymmdd10.;

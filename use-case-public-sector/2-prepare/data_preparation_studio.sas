@@ -18,16 +18,13 @@
 
 /* ========================================================================
    1. LOAD THE DATA
-   ========================================================================
-   The CSV files may have Windows line endings (CR+LF). We use TERMSTR=CRLF
-   on the INFILE statement so SAS strips the carriage return properly.
    ======================================================================== */
 title "Step 2: Data Preparation (SAS)";
 
 /* --- service_requests.csv ------------------------------------------------ */
 data work.service_requests;
     infile "&datadir./service_requests.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length request_id $10 citizen_id $8 request_type $30
            department $25 priority_level $8 location_district $20 resolved $5;
     informat submission_date yymmdd10.;
@@ -40,7 +37,7 @@ run;
 /* --- citizens.csv -------------------------------------------------------- */
 data work.citizens;
     infile "&datadir./citizens.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length citizen_id $8 age_group $10 district $20 contact_preference $15;
     informat registration_date yymmdd10.;
     format registration_date yymmdd10.;
@@ -51,7 +48,7 @@ run;
 /* --- department_performance.csv ------------------------------------------ */
 data work.dept_perf;
     infile "&datadir./department_performance.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length department $25;
     input department $ month year avg_response_time_hours resolution_rate
           citizen_satisfaction_avg staff_count budget_utilization
@@ -61,7 +58,7 @@ run;
 /* --- request_history.csv ------------------------------------------------- */
 data work.request_history;
     infile "&datadir./request_history.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=crlf;
+           lrecl=32767 firstobs=2;
     length district $20 department $25;
     input year month district $ department $ request_count avg_response_time
           resolution_rate priority_critical_count priority_high_count
