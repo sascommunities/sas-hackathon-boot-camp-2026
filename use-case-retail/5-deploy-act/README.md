@@ -32,49 +32,81 @@ If you have any questions around SAS Intelligent Decisioning activate the SAS Vi
 ### 1. Open SAS Intelligent Decisioning
 
 1. From the SAS Viya main menu, navigate to **SAS Intelligent Decisioning** (under *Build Decisions*)
+
 2. Click **New Decision**
+
 3. Name it: *ShopEase Churn Retention Decision*
+
 4. Leave the Description, Location and Workflow on default and click OK
+    ![image-20260529181358511](img/README/image-20260529181358511.png)
+
 5. Navigate to the *Variables* tab, click on the *Add variable* dropdown and either select *Custom variable* if you want to add them all yourself of *Decision* if you want to copy it from the template (this is faster). The manual steps are described in the below sub steps 1 & 2 while the copy is described in step 3:
-    1. Define the **input variables** (these will be passed in when the decision is called):
-        1. `customer_id` (character)
-        2. `subscription_tier` (character)
-        3. `total_spend` (decimal)
-        4. `days_since_last_purchase` (decimal)
-        5. `total_sessions` (decimal)
-        6. `avg_session_duration` (decimal)
-    2. Define the **output variables** (what the decision returns):
-        1. `action` (character) - the recommended retention action
-        2. `risk_tier` (character) - risk classification
-        3. `offer_value` (decimal) - discount or incentive amount
+    ![image-20260529181434924](img/README/image-20260529181434924.png)
+    
+    1. Define the **input variables** (these will be passed in when the decision is called) - The structure is: `name` (data type):
+        1. `subscription_tier` (character)
+        2. `total_spend` (decimal)
+        3. `days_since_last_purchase` (decimal)
+        
+    2. Define the **output variables** (what the decision returns)  - The structure is: `name` (data type) - Explanation (this is just for us as context):
+        1. `offer_value` (decimal) - discount or incentive amount
+        2. `action` (character) - the recommended retention action
+        3. `risk_tier` (character) - risk classification
         4. `channel` (character) - preferred communication channel
         5. `priority` (character) - urgency of outreach
         6. `reason` (character) - why this retention action was selected
         7. Now click OK to add all of them
+        
+        ![image-20260529181942098](img/README/image-20260529181942098.png)
+        
     3. Copy the **variables** from a template decision:
         1. Click on the folder icon in the *Decision* input field
         2. Navigate to *SAS Content > SAS Hackathon Bootcamp 2026 > Use Case Retail* select *ShopEase Churn Retention Decision* and click OK
         3. Click on the *Add all* icon in the middle of the dialogue to bring all the variables into your decision and then click the Add button
+
+Once you have added the variables (no matter which way you choose) please click on the save icon in the upper right hand corner. It is recommended that anytime you change something about the variables before you continue to quickly use this icon to save the changes.
 
 
 From here you can also always activate the SAS Viya Copilot via the icon in the top right hand corner to ask questions about SAS Intelligent Decisioning to deepen your understanding of the application.
 
 ### 2. Add the Model Node
 
-1. In the decision flow canvas, add a **Model** node
-2. Select your registered champion model from SAS Model Manager (*ShopEase Churn Prediction — Champion*)
-3. Map the input variables to the model's expected features
-    1. For the inputs the `customer_id` should be mapped automatically and the remaining customer features will align by name — review any that remain unmapped and connect them to the matching input variable
-    2. For the outputs we are going to be clicking the *More* menu up top and select *Add missing variables* this will add all of the required output variables to our decision - if you copied the variables using the template they are already present - in the dialogue please make sure to deselect them from the Output as we will create our own custom outputs
+1. Switch to the *Decision Flow* tab.
+2. In the decision flow canvas, you can either right click the *Start* node and from the context menu select *Add below > Model* or on the right hand side click on the icon that looks a little bit like a postcard and from that side bar drag & drop a model node onto the *Start* node.
+    ![image-20260529182110234](img/README/image-20260529182110234.png)
+3. Select your registered champion model from SAS Model Manager or the pre-registered champion model by navigating to *DM Repository > ShopEase Customer Churn Prediction > Version 1 > Gradient Boosting (1) (SAS Automatically Generated Pipeline* and click OK.
+    ![image-20260529182231044](img/README/image-20260529182231044.png)
+4. Upon doing this you will see a little red error icon next to the model and that is because it is missing variable inputs and outputs - we will address this in the next steps.
+5. There are a lot of variables missing for the model to run. We are going to be clicking the *More* menu up top and select *Add missing variables* this will add all of the required output variables to our decision - if you copied the variables using the template they are already present - in the dialogue please make sure to deselect them from the Output as we will create our own custom outputs. The Inputs should be left in place.
+    ![image-20260529182344878](img/README/image-20260529182344878.png)
 
 
 ### 3. Add Business Rules
 
-After the model scores the customer, add **Rule Set** nodes to determine the retention decision. For this make first sure that you have clicked the save icon of your decision and than we will be adding Rule Sets to our decision. There are two ways of doing this the easy way where you use the pre build rule sets by clicking on the three vertical dots on the model node and selecting *Add > Rule Set*, then in the dialogue navigate to *SAS Content > SAS Hackathon Bootcamp 2026 > Use Case Retail* and add the rule set as specified below. If you want to create them yourself you can go to the right hand side click on the *Objects* and drag & drop a Rule Set onto the previous node. This will open up a dialogue where you should name your decision correspondingly, please leave the location as the default (*My Folder*) - then add the variables from the decision you created and start building the Rule Sets as described below - the required variables are noted either as the columns or in the **Rule Conditions**.
+After the model scores the application, add **Rule Set** nodes to determine the lending decision. For this make first sure that you have clicked the save icon of your decision and than we will be adding Rule Sets to our decision.
+
+There are two ways of adding **Rule Sets** to the decision:
+
+1.    *The easy way*, where you use the pre build rule sets by clicking on the three vertical dots on the model node and selecting *Add > Rule Set*, then in the dialogue navigate to *SAS Content > SAS Hackathon Bootcamp 2026 > Use Case Retail* and add the rule set as specified below.
+2.    *The learning way*, if you want to create them yourself you can go to the right hand side click on the *Objects* (postcard icon) and drag & drop a Rule Set onto the previous node. This will open up a dialogue where you should name your decision correspondingly, please leave the location as the default (*My Folder*) - then add the variables from the decision you created and start building the Rule Sets as described below - the required variables are noted either as the columns or in the **Rule Conditions**. The first rule set we will be building has notes and screenshots attached on how to do this.
 
 We recommend you try to build at least one of these rule sets yourself to get an understanding of how it is done. If you have any questions around SAS Intelligent Decisioning activate the SAS Viya copilot within the application via the icon in the top right hand corner next to your profile or ask one of the onsite SAS Mentors.
 
 **Rule Set: Risk Tier Classification**
+
+1.   From the *Objects* side panel drag and drop a *Rule Set* node onto the *Model* node you already have in your decision. Then enter the name from above and click *Save*
+     ![image-20260529182523411](img/README/image-20260529182523411.png)
+2.   Now on the right hand side you will see the *Properties* pane for this new *Rule Set* and there is a button *Open* that will take you to the *Rule set editor* so that you can build the decision so click on that button.
+3.   A new UI opened up for you on the *Variables* tab for the *Rule Set*, under *Add variable* select, via the folder icon navigate to *My Folder* and select the *ShopEase Churn Retention Decision* that you have already created. Select the **P_churned1 ** & **risk_tier** variables and add it to the Rule Set - the **P_churned1 ** variable is specified in the Rule Conditions column in the table below and the **risk_tier** variable has its own column as it gets assigned values.
+     ![image-20260529182736552](img/README/image-20260529182736552.png)
+4.   For the **P_churned1** change it so that it is required as an input and then click on the save icon to add this change. The **risk_tier** currently doesn't have any value from the decision so we can just leave it as an output.
+     ![image-20260529182819653](img/README/image-20260529182819653.png)
+5.   Navigate to the *Rule set* tab and click on the *Add rule* button
+     ![image-20260529182844859](img/README/image-20260529182844859.png)
+6.   Change the operator from the default of equal to greater than and then enter the comparison in the *IF* condition, in the THEN assignment change the variable to **risk_tier** and enter the corresponding value into the field enclosed in single quotes.
+     ![image-20260529182941876](img/README/image-20260529182941876.png)
+7.   Next click on *Add rule* and click on the *IF* statement dropdown and change it to an *ELSE* condition. This will combine the additional condition into one rule. From here continue to enter all the rest of the conditions and assignments as listed below and once you are done click on the save icon and then either use the little *x* icon in the right hand corner or click on *** ShopEase Churn Retention Decision (1.0)* in the breadcrumb navigation up top to navigate back to the decision.
+     ![image-20260529183309136](img/README/image-20260529183309136.png)
 
 | Rule Conditions | risk_tier |
 |-----------|-----------|
@@ -126,28 +158,66 @@ These rules capture the dominant driver behind the retention action and populate
 
 ### 4. Adding an LLM to the Mix
 
-Now right click the last node in the decision and add first a Rule Set (see blow) assignment and then on that node a Call LLM node. The Call LLM node will ask us to add missing variables again (like we did for the model node) - only add the prompt variable  (not as an input) and for the XXX we will map our reason variable that we have been using all along - then click the save icon.
+We are going to be adding a Large Language Model to our decision now. For this please open up the *Objects* side bar (postcard icon) and drag & drop a Call LLM node onto the *End* node. Then go ahead and add the missing variables like you did for the model node (do not make the prompt a required input for the decision) - and make sure to click on the save icon.
 
-Next we are going back to the Rule Set node and will assign our prompt variable the following value - you have to go into the editing mode via the pencil icon:
+![image-20260529183326445](img/README/image-20260529183326445.png)
+
+Now you can either add the *Prompt Assignment* Rule Set to the decision just like you added the other Rule Sets before or you can create it yourself. If you choose to create it yourself, please add the following variables from your decision as inputs to it:
+
+-   subscription_tier
+-   total_spend
+-   risk_tier
+-   action
+-   offer_value
+-   channel
+-   priority
+-   reason
+
+And as output add the prompt variable (do not forget to click the save icon). Then switch to the *Rule set* tab, click on the *Add other* button, select the Rule type of *Assignment* and click *OK* - as we do not want to do a condition, but rather just fill in our prompt with a long value.
+
+![image-20260529183622628](img/README/image-20260529183622628.png)
+
+Next you are going to assign the prompt value by clicking on the pencil icon, in the *Expression Editor* removing all the values from the main editor and the copy and paste the value from below into it, then click the *Save* button, the save icon on the *Rule set* and return to the main decision.
 
 ```
-prompt = 'You are a helpful ShopEase customer retention specialist. Using the customer profile and retention decision data below, write a warm, personalized, and clearly structured long-form outreach message (3 to 5 paragraphs) that a human account manager can review and send through their preferred channel. Do not reference internal codes or jargon verbatim — translate them into plain customer-friendly language. Do not promise outcomes beyond the specified offer, and do not disclose the underlying model score or risk tier to the customer. Customer profile and decision context: Subscription tier: ' + subscription_tier + '. Total spend to date: $' + total_spend + '. Assigned risk tier: ' + risk_tier + '. Recommended action: ' + action + '. Offer value: $' + offer_value + '. Outreach channel: ' + channel + '. Outreach priority: ' + priority + '. Internal reason code: ' + reason + '. Structure your response as follows. First, open with a warm, sincere thank-you that acknowledges the customer as a ' + subscription_tier + ' member and references their $' + total_spend + ' of lifetime spend in a natural, non-transactional way. Second, acknowledge — without explicitly revealing the ' + risk_tier + ' risk tier — that ShopEase has noticed it has been a while and that we value their continued relationship. Translate the internal reason ' + reason + ' into an empathetic, plain-language acknowledgment of what might have driven the drop in engagement. Third, present the recommended action ' + action + ' as a thoughtful offer rather than a retention tactic, explaining the concrete $' + offer_value + ' benefit in clear terms (how and when it can be redeemed). Fourth, adapt the tone to the ' + channel + ' channel (concise and scannable for email or SMS, warmer and conversational for a phone script) and to the ' + priority + ' outreach priority (immediate urgency vs gentle reminder). Fifth, close with a clear, low-friction next step — a single link, a reply, or a brief call — and invite the customer to share feedback about their recent experience. Tone: warm, appreciative, human, and never guilt-tripping or salesy. Length: 250 to 400 words. Write in the second person (you, your account).'
+prompt = CAT('You are a helpful ShopEase customer retention specialist. Using the customer profile and retention decision data below, write a warm, personalized, and clearly structured long-form outreach message (3 to 5 paragraphs) that a human account manager can review and send through their preferred channel. Do not reference internal codes or jargon verbatim — translate them into plain customer-friendly language. Do not promise outcomes beyond the specified offer, and do not disclose the underlying model score or risk tier to the customer. Customer profile and decision context: Subscription tier: ', subscription_tier, '. Total spend to date: $', total_spend, '. Assigned risk tier: ', risk_tier, '. Recommended action: ',  action, '. Offer value: $', offer_value, '. Outreach channel: ', channel, '. Outreach priority: ', priority, '. Internal reason code: ', reason, '. Structure your response as follows. First, open with a warm, sincere thank-you that acknowledges the customer as a ', subscription_tier, ' member and references their $', total_spend, ' of lifetime spend in a natural, non-transactional way. Second, acknowledge — without explicitly revealing the ', risk_tier, ' risk tier — that ShopEase has noticed it has been a while and that we value their continued relationship. Translate the internal reason ', reason, ' into an empathetic, plain-language acknowledgment of what might have driven the drop in engagement. Third, present the recommended action ', action, ' as a thoughtful offer rather than a retention tactic, explaining the concrete $', offer_value, ' benefit in clear terms (how and when it can be redeemed). Fourth, adapt the tone to the ', channel, ' channel (concise and scannable for email or SMS, warmer and conversational for a phone script) and to the ', priority, ' outreach priority (immediate urgency vs gentle reminder). Fifth, close with a clear, low-friction next step — a single link, a reply, or a brief call — and invite the customer to share feedback about their recent experience. Tone: warm, appreciative, human, and never guilt-tripping or salesy. Length: 250 to 400 words. Write in the second person (you, your account).')
 ```
 
-SAS provides the [https://github.com/sassoftware/sas-agentic-ai-accelerator](https://github.com/sassoftware/sas-agentic-ai-accelerator) which enables you to connect any LLM and do extensive prompt engineering & monitoring, but here we have a hard coded LLM (OpenAI GPT 5.4) available.
+This is a very simplistic approach to prompt engineering and also doesn't provide you with the ability to test and compare different large languages models. That is why SAS provides the [SAS Agentic AI Accelerator](https://github.com/sassoftware/sas-agentic-ai-accelerator) open-source project, which enables you to connect any LLM and do extensive prompt engineering & monitoring, but here we have a hard coded LLM (OpenAI GPT 5.4) available.
 
 ### 5. Test the Decision
 
-1. Click **Test** in the toolbar
-2. Enter sample values:
-   - customer_id: C004
-   - subscription_tier: Basic
-   - total_spend: 250
-   - days_since_last_purchase: 75
-   - total_sessions: 8
+1. In the decision click on the *Scoring* tab and then in there click on the *Scenarios* sub tab
+
+2. Click on the *New test* button
+    ![image-20260529183957319](img/README/image-20260529183957319.png)
+
+3. Enter sample values:
+   - account_age_days: 294
+   - age: 23
    - avg_session_duration: 45
-3. Review the output
-4. Feel free to further test with different scenarios to validate the logic:
+   - customer_id: C501
+   - customer_tenure_days:  500
+   - days_since_last_purchase: 75
+   - email_opt_in: 1
+   - gender_F: False
+   - high_priority_tickets: 3
+   - max_order_value:  123
+   - max_resolution_time: 6
+   - min_order_value: 7
+   - std_order_value: 54
+   - subscription_tier: Basic
+   - tier_Basic: True
+   - total_sessions: 8
+   - total_spend: 250
+   - unique_categories: 1
+
+   ![image-20260529184621969](img/README/image-20260529184621969.png)
+
+4. Review the output by clicking on the Results icon once the *Status* as switched to a green check mark
+    ![image-20260529184658915](img/README/image-20260529184658915.png)
+
+5. Feel free to further test with different scenarios to validate the logic:
    - A strong, engaged customer (low churn probability, high spend, recent activity) should fall into Low risk with no action
    - A borderline customer should receive an automated engagement nudge
    - A Critical-risk Basic-tier customer should be flagged for a personal call with Urgent priority
