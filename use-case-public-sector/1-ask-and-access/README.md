@@ -4,36 +4,6 @@ Welcome to **Metro City**, a fictional municipality serving 850,000 residents ac
 
 ---
 
-## Business Understanding
-
-### Organization Background
-
-**Metro City** is a mid-sized municipality that processes approximately 15,000 citizen service requests per month across departments including Public Works, Parks & Recreation, Transportation, Building & Safety, and others. Requests range from pothole repairs and streetlight outages to permit inquiries and noise complaints. The city operates a 311 service center, an online portal, and a mobile app for request submission.
-
-### Problem Statement
-
-Metro City is experiencing a **40% variance in average response times across its 12 districts**, with the overall average sitting at **48.2 hours** — well above the 36-hour target. Citizen satisfaction has declined to **3.2 out of 5.0**, and there are growing concerns about **service equity**: are some neighborhoods consistently receiving slower responses than others? Are urgent requests being identified and escalated quickly enough?
-
-**What does this mean in practice?** A water main break in one district might wait 60 hours while a cosmetic sidewalk complaint in another district gets resolved in 20 hours. Without a systematic way to assess request urgency and allocate resources, departments rely on first-come-first-served processing — which fails to account for the severity, safety implications, or equity dimensions of each request. If Metro City can predict which requests are truly urgent, it can triage them faster, route them to the right department with the right priority, and ensure all districts receive equitable service.
-
-### Business Objectives
-
-1. **Primary Goal:** Reduce average response time from 48.2 to 36 hours within 6 months
-2. **Secondary Goals:**
-   - Improve citizen satisfaction from 3.2 to 3.7 out of 5.0
-   - Achieve less than 10% response time variance between districts
-   - Ensure urgent requests (Critical and High priority) are identified with at least 90% recall
-   - Comply with Public Records Act, ADA requirements, and algorithmic bias prevention policies
-
-### Success Criteria
-
-- Urgency prediction model with **accuracy greater than 85%**
-- **Recall greater than 90%** for urgent requests (do not miss Critical or High priority requests)
-- Equitable model performance across all 12 districts
-- Actionable triage system that routes requests in real time
-
----
-
 ## Regulatory Context
 
 Public sector analytics operate under transparency, equity, and accountability requirements. Key regulations and policies that apply to this use case include:
@@ -49,73 +19,6 @@ These requirements mean that the model must not only be accurate — it must be 
 
 ---
 
-## Data Assessment
-
-### Available Data Sources
-
-| Dataset | Description | Records | Key Fields |
-|---------|-------------|---------|------------|
-| `service_requests.csv` | Individual service request records | 500 | request_id, citizen_id, submission_date, request_type, department, priority_level, location_district, response_time_hours, citizen_satisfaction, resolved |
-| `citizens.csv` | Citizen profiles and service history | 300 | citizen_id, registration_date, age_group, district, contact_preference, previous_requests, satisfaction_history |
-| `department_performance.csv` | Monthly department-level metrics | 96 | department, month, year, avg_response_time_hours, resolution_rate, citizen_satisfaction_avg, staff_count, budget_utilization, requests_received, requests_completed, overtime_hours |
-| `request_history.csv` | Historical request volumes by district and department | ~3,456 | year, month, district, department, request_count, avg_response_time, resolution_rate, priority_critical_count, priority_high_count, priority_medium_count, priority_low_count |
-
-### Data Quality Notes
-
-- Service requests data covers 2024 (12 months)
-- Target variable is derived: `is_urgent` = 1 if `priority_level` is Critical or High, 0 otherwise
-- `citizen_id` links `service_requests` to `citizens`
-- `department` links `service_requests` to `department_performance`
-- `request_history` provides aggregate trends by district and department over multiple years
-
----
-
-## Stakeholder Alignment
-
-Before building models, confirm alignment with key stakeholders:
-
-| Stakeholder | What They Need |
-|------------|---------------|
-| **City Manager** | Measurable improvement in response times and citizen satisfaction scores |
-| **District Council Members** | Evidence of equitable service delivery across all 12 districts |
-| **Department Heads** | Actionable triage recommendations, workload balancing insights |
-| **IT Director** | Integration plan with 311 system, data governance compliance |
-| **Equity & Inclusion Officer** | Fairness assessment across districts, bias mitigation evidence |
-
----
-
-## Initial Hypotheses
-
-Based on domain knowledge and preliminary exploration, we hypothesize:
-
-| # | Hypothesis | Metrics to Test |
-|---|-----------|-----------------|
-| H1 | **Request Type Drives Urgency** — Certain request types (e.g., water main breaks, safety hazards) are inherently more urgent than others (e.g., cosmetic repairs, permit inquiries) | Urgency rate by request type, response time by request type |
-| H2 | **Department Capacity Affects Response** — Departments with higher workloads, lower staff counts, or higher budget utilization have slower response times and lower resolution rates | Average response time vs. staff count, requests per staff member, budget utilization vs. resolution rate |
-| H3 | **District Equity Matters** — Some districts consistently receive slower service, potentially correlated with request volume, district demographics, or resource allocation | Response time by district, satisfaction by district, resolution rate by district |
-| H4 | **Seasonal Patterns Exist** — Request volumes and types vary by season (e.g., potholes spike after winter, park complaints rise in summer), affecting department workload and response times | Monthly request counts, seasonal response time trends, priority distribution by month |
-| H5 | **Citizen History Predicts Engagement** — Citizens with more previous requests and higher historical satisfaction are more engaged and may submit higher-quality, more actionable requests | Previous requests vs. response time, satisfaction history vs. current satisfaction |
-
----
-
-## Scope
-
-### In Scope
-
-- Service requests submitted during the 2024 observation period
-- All four data sources (service requests, citizens, department performance, request history)
-- Binary classification: urgent (1) vs. non-urgent (0), derived from priority_level
-- Fairness assessment across districts (location_district)
-
-### Out of Scope
-
-- Budget allocation and financial planning
-- Personnel management and staffing optimization
-- External factors (weather events, population changes)
-- Cross-jurisdiction service agreements
-
----
-
 ## The Value of Synthetic Data
 
 Synthetic data is artificially generated data that mirrors the statistical properties, patterns, and structure of real-world data — without containing any actual records from the original dataset. It is produced using generative models that learn the distributions, correlations, and relationships present in real data and then create entirely new records that are statistically representative but not traceable back to any individual. In the public sector, where data is often subject to stringent regulatory requirements, synthetic data has become an essential tool for responsible innovation.
@@ -126,23 +29,13 @@ For a use case like citizen service request prioritization at Metro City, synthe
 
 ## Working with SAS Data Maker
 
-[SAS Data Maker](https://www.sas.com/en_us/software/data-maker.html) is the SAS platform for generating high-quality synthetic data. In this section you will pull the Metro City datasets into SAS Data Maker and create a synthetic version that preserves the statistical relationships across all four tables.
+[SAS Data Maker](https://www.sas.com/en_us/software/data-maker.html) is the SAS platform for generating high-quality synthetic data. In this section you will pull the PremierBank datasets into SAS Data Maker and create a synthetic version that preserves the statistical relationships across all four tables.
 
-### Accessing the Data
+### Log into SAS Data Maker
 
-The four source datasets are located in:
+The SAS Hackathon Bootcamp mentors will provide you with three links, a username and a password. Your username and password are consistent across all three environments. In order to access SAS Data Maker please enter the link that contains the word Data Maker. Here you will be asked to sign in using an Username/E-Mail and then enter a password - these are the once provided to you by the mentors. Please note if you have a SAS Communities profile do not log in using those credentials and if you see an error trying to log in, try to use an incognito browser tab, as you might still be logged into SAS somewhere.
 
-```
-SAS-Hackathon-Bootcamp-2026/use-case-public-sector/data
-├── service_requests.csv
-├── citizens.csv
-├── department_performance.csv
-└── request_history.csv
-```
-
-### Workflow: Generating Synthetic Data with SAS Data Maker
-
-Follow these steps to create your synthetic dataset:
+### Generating Synthetic Data with SAS Data Maker
 
 #### 1. Create a Project
 
@@ -150,28 +43,45 @@ Follow these steps to create your synthetic dataset:
 2. Click **New project** to start a new project
 3. Give it a descriptive name, e.g., *Metro City Service Requests — Synthetic Generation*
 
+![image-20260529135847400](img/README/image-20260529135847400.png)
+
 #### 2. Import Source Data
 
 1. Within your data plan, click **Add Data Source**
-2. Navigate to the `SAS-Hackathon-Bootcamp-2026/use-case-public-sector/data` folder
+
+2. Navigate to the `Bootcamp/use-case-public-sector/data` folder
+
 3. This will import all four CSV files:
    - `service_requests.csv` — this is your primary request-level table
    - `citizens.csv` — related table linked by `citizen_id`
    - `department_performance.csv` — aggregate reference table linked by `department`
    - `request_history.csv` — aggregate reference table for historical trends
-4. SAS Data Maker will profile each table and display column types, distributions, and summary statistics
+
+4. SAS Data Maker will profile each table and display column types, distributions, and summary statistics![image-20260529135940784](img/README/image-20260529135940784.png)
+
+    Next you will see a loading bar like the one below that, this should finish in less than two minutes - feel free to start reading the next step already while you wait for this to finish:
+
+    ![image-20260529140021786](img/README/image-20260529140021786.png)
+
+    
+
 5. Review the **Columns** tab for each table. For `service_requests` you will notice that the `request_type` column has no semantic type set (shown as *(Not set)* with a red indicator). Click that cell and set its semantic type to **Category** — otherwise training will fail with the error *"The semantic type must be set, or the column should be dropped."*
 
 #### 3. Define Relationships
 
-The job that ran to understand the tables also will try to resolve the relationships between the tables. Please review that the relationship is mapped correctly
+The job that ran to understand the tables also will try to resolve the relationships between the tables. Please review that the relationship is mapped correctly. Your goal is to map a relationship that looks like the one below, but initially it will not look like.
+
+![image-20260529141405534](img/README/image-20260529141405534.png)
+
+In order to connect the tables correctly please click on each table and then on the right hand side under *Foreign keys* change the *Key* and *Target* values as described below
 
 1. For `citizens` set `citizen_id` as the Primary key
 2. For `service_requests` set `request_id` as the Primary key and `citizen_id` as the Foreign key
-3. `department_performance` and `request_history` are aggregate reference tables — review that their `department` and `district` values are consistent with those in `service_requests` and `citizens`
-4. All tables are of the type Tabular
-5. Review the key relationships between the tables:
-   - `service_requests.citizen_id` -> `citizens.citizen_id`
+3. `department_performance` and `request_history` are aggregate reference tables - so change their table type to *Reference*
+    ![image-20260529141531993](img/README/image-20260529141531993.png)
+4. All other tables are of the type Tabular
+5. Now switch to the *Columns* tab to adjust the *Semantic type* for one columns in the `service_requests` table `request_type` to `Category`
+   ![image-20260529141702643](img/README/image-20260529141702643.png)
 6. These relationships ensure that the synthetic data maintains referential integrity — every synthetic service request will belong to a valid synthetic citizen and reference a valid department
 
 #### 4. Training Settings
@@ -182,18 +92,25 @@ The job that ran to understand the tables also will try to resolve the relations
 4.   The rest of the values we can leave at the default values and click the Start training button. If you want to feel free to explore the options though in more detail there is inline hints, or reach out to one of the SAS Mentors on site.
 5.   The training process will take a moment and once it is done and all the metrics are calculated we can move to the next step which is `Evaluation`
 
+![image-20260529141437724](img/README/image-20260529141437724.png)
+
 #### 5. Evaluation
 
 On the Evaluation tab we get a lot of insights into our Synthetic Data Generation Model, how it compares to the input sources and not just on a per table basis but also across the different tables.
+
+![image-20260529141727038](img/README/image-20260529141727038.png)
 
 Please take your time and explore these results to gain an understanding of how closely the synthetic data will match the original data sources. Feel free to discuss these results in the group and also reach out to SAS Mentors on site if you have question or consult the [SAS Documentation](https://go.documentation.sas.com/doc/en/sdgcdc/v_001/sdgug/p0ki9glx7acxpyn1wttognicd7qi.htm).
 
 #### 6. Generation
 
-1. **Output destination**, select the path here and let it generate a unique path on its own
+1. **Output destination**, select the path `datamakerdemodata:output` here and set the *Output format* to one that you prefer (for example *parquet*)
 2. Leave all other options at default and click the Generate button
+    ![image-20260529141801238](img/README/image-20260529141801238.png)
 3. Now a generation job is triggered that will create the synthetic data for each table for us and make that 
 4. Once the generation has finished we get a summary of everything, a note on where the data is stored and a sample of the synthetic data. The generated data is stored onto a blob storage, don't worry you will not have to download anything onto your laptop as we will provide the data already available in SAS Viya and SAS Viya Workbench so that you can get to work.
+
+![image-20260529141951073](img/README/image-20260529141951073.png)
 
 ---
 
