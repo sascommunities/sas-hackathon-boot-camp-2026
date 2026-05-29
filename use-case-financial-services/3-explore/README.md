@@ -12,9 +12,10 @@ The analytical base table should already be loaded into the **Public** CAS libra
 
 ## Accessing the Data in SAS Visual Analytics
 
-1. Open **SAS Visual Analytics** from the SAS Viya home page
+1. Open **SAS Visual Analytics** from the SAS Viya home page (or use the main menu in the top right corner and click on *Explore and Visualize*)
 2. Click **New Report**
 3. In the data panel click on the Add Data button and from the available tables please select **FINANCIAL_SERVICES_ABT**
+    ![image-20260528142033207](img/README/image-20260528142033207.png)
 4. Add it as your data source — you should see all the features from Step 2 listed in the data items pane on the left
 
 > **Tip:** If the table does not appear in the Public caslib, ask your SAS Mentor to help promote it. You can also load it directly by uploading the CSV through the **Manage Data** interface.
@@ -38,15 +39,13 @@ SAS Visual Analytics includes a **Copilot** — an AI assistant that helps you e
 4. You can refine the result by following up with additional prompts
 5. You can right click into the chat panel and get suggestions on prompts to help you.
 
+![image-20260528142508361](img/README/image-20260528142508361.png)
+
 ---
 
 ## Guided Exploration: Questions to Ask
 
 Work through the following questions to build your understanding of the default patterns. For each question, try creating the visualization manually **and/or** by asking the Copilot.
-
-Please do not feel obligated to answer all of these questions, rather pick and choose questions that interest you, help you advance your understanding of the data or sound challenging for your current level.
-
-You are also more than welcome to just explore the data on your own making use of SAS Visual Analytics and the SAS Viya Copilot.
 
 ### Understanding the Target Variable
 
@@ -86,12 +85,12 @@ Create a **histogram** of `debt_to_income` colored by `defaulted`. Also create a
 **Goal:** Explore whether past payment patterns signal default risk.
 
 - *"Show me the average late payment rate for defaulted vs. current loans"*
+- *"How does the severe delinquency flag relate to default?"*
 - *"What is the distribution of average days late by default status?"*
-- *"Compare `late_payment_count` between defaulted and current loans"*
 
-Create a **box plot** of `avg_days_late` by `defaulted` and a **box plot** of `late_payment_rate` by `defaulted`.
+Create a **heat map** or **crosstab** of `severe_delinquency_flag` by `defaulted`. Create a **box plot** of `avg_days_late` by `defaulted`.
 
-> **What to look for:** Defaulted loans should show a higher mean late payment rate and longer maximum days late than current loans. Note that in this synthetic dataset no loans cross the 60-day severe-delinquency threshold (`severe_delinquency_flag` is uniformly 0), so payment behavior shows up through the rate and days-late columns rather than the flag.
+> **What to look for:** Loans with any severe delinquency (60+ days late) should have dramatically higher default rates. Late payment rate is likely one of the strongest predictors.
 
 ### Hypothesis 4: Employment Stability Matters
 
@@ -115,7 +114,7 @@ Create **stacked bar charts** showing default proportions for each income band a
 
 Create a **scatter plot** of `loan_to_value` vs. `interest_rate` with `defaulted` as the color. Create a **histogram** of `loan_amount` by default status.
 
-> **What to look for:** Higher LTV ratios (less equity) and higher interest rates should correlate with more defaults — interest rate itself may be a proxy for the lender's initial risk assessment. `loan_term_months` does not show a clean monotonic relationship with default in this dataset, so don't expect a strong signal there.
+> **What to look for:** Higher LTV ratios (less equity), higher interest rates, and longer loan terms should correlate with more defaults. Interest rate itself may be a proxy for the lender's initial risk assessment.
 
 ### Correlation and Multi-Variable Exploration
 

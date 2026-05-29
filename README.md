@@ -51,3 +51,37 @@ The lifecycle is **iterative** — teams often move backward and forward between
 ## The Environment
 
 Access to the SAS Viya environment, SAS Viya Workbench and SAS Data Maker will be provided onsite at the SAS Hackathon Bootcamp event. Please do not forget to bring your own laptop.
+
+It is recommended to open up the URLs in a Incognito tab in your browser, as that ensures you are not logged into another SAS property.
+
+### Logging into SAS Data Maker
+
+Please use the URL for SAS Data Maker provided by your local SAS Hackathon Bootcamp mentors - this link will include the word *datamaker* in the URL. Once you have opened up that link you will see the following screen where you have to selected *SAS Managed Trials*:
+
+![image-20260527175528517](img/README/image-20260527175528517.png)
+
+Then you get redirected to a login screen where you will have to first enter the provided username and then the password.
+
+![image-20260527175642540](img/README/image-20260527175642540.png)
+
+Once you have entered the password and the login was successful you will be redirected to SAS Data Maker.
+
+### Logging into SAS Viya Workbench
+
+Please use the URL for SAS Viya Workbench provided by your local SAS Hackathon Bootcamp mentors - this link will include the word *workbench* in the URL. If you already logged into SAS Data Maker than the next steps can be skipped, as you should be redirected to SAS Viya Workbench directly.
+
+On this login screen you will have to first enter the provided username and then the password.
+
+![image-20260527175642540](img/README/image-20260527175642540.png)
+
+Once you have entered the password and the login was successful you will be redirected to SAS Viya Workbench.
+
+### Logging into SAS Viya
+
+Please use the URL for SAS Viya provided by your local SAS Hackathon Bootcamp mentors - this link will include the word *bootcamp* in the URL. If you already logged into SAS Data Maker or SAS Viya Workbench than the next steps can be skipped, as you should be redirected to SAS Viya directly.
+
+On this login screen you will have to first enter the provided username and then the password.
+
+![image-20260527175642540](img/README/image-20260527175642540.png)
+
+Once you have entered the password and the login was successful you will be redirected to SAS Viya.

@@ -12,9 +12,10 @@ The analytical base table should already be loaded into the **Public** CAS libra
 
 ## Accessing the Data in SAS Visual Analytics
 
-1. Open **SAS Visual Analytics** from the SAS Viya home page
+1. Open **SAS Visual Analytics** from the SAS Viya home page (or use the main menu in the top right corner and click on *Explore and Visualize*)
 2. Click **New Report**
 3. In the data panel click on the Add Data button and from the available tables please select **PUBLIC_SECTOR_ABT**
+    ![image-20260528142114059](img/README/image-20260528142114059.png)
 4. Add it as your data source — you should see all the features from Step 2 listed in the data items pane on the left
 
 > **Tip:** If the table does not appear in the Public caslib, ask your SAS Mentor to help promote it. You can also load it directly by uploading the CSV through the **Manage Data** interface.
@@ -38,11 +39,13 @@ SAS Visual Analytics includes a **Copilot** — an AI assistant that helps you e
 4. You can refine the result by following up with additional prompts
 5. You can right click into the chat panel and get suggestions on prompts to help you.
 
+![image-20260528142454478](img/README/image-20260528142454478.png)
+
 ### Copilot Tips and Caveats
 
 A few behaviors to be aware of while working through this step:
 
-- **Reference columns by their exact name.** The prompts in this guide use backtick-quoted column names (e.g., `` `is_urgent` ``, `` `district_avg_response_time` ``). Copilot works best when you do the same. The ABT carries both the raw columns (`request_type`, `department`, `location_district`) and the engineered features derived from them (`inherent_urgency`, `dept_avg_*`, `district_*`) — pick the column that matches the question you're asking.
+- **Reference columns by their exact name.** The prompts in this guide use backtick-quoted column names (e.g., `` `is_urgent` ``, `` `district_avg_response_time` ``). Copilot works best when you do the same — vague terms like *"district"* or *"request type"* will often fail because those raw columns are not in the ABT.
 - **Charts sometimes land on a different page.** If a generated visualization appears on another report page, drag it to the page you are working on.
 - **Ignore suggestions to reclassify numeric measures as categories.** Copilot occasionally recommends changing numeric columns (e.g., `district_avg_request_count`) to categories. Decline those suggestions — they are measures and should stay that way.
 - **If a chart doesn't answer the question, rephrase.** Ask Copilot for a specific chart type and specific column roles rather than an open-ended question (e.g., *"Create a bar chart with `inherent_urgency` on the x-axis and average `is_urgent` on the y-axis"*).
@@ -52,11 +55,6 @@ A few behaviors to be aware of while working through this step:
 ## Guided Exploration: Questions to Ask
 
 Work through the following questions to build your understanding of service request urgency patterns. For each question, try creating the visualization manually **and/or** by asking the Copilot.
-
-
-Please do not feel obligated to answer all of these questions, rather pick and choose questions that interest you, help you advance your understanding of the data or sound challenging for your current level.
-
-You are also more than welcome to just explore the data on your own making use of SAS Visual Analytics and the SAS Viya Copilot.
 
 ### Understanding the Target Variable
 
@@ -74,9 +72,8 @@ Create a **bar chart** or **pie chart** of the `is_urgent` variable. Examine the
 - *"Show the average of `is_urgent` grouped by `inherent_urgency`"*
 - *"Compare the distribution of `response_time_hours` for `inherent_urgency`=1 vs `inherent_urgency`=0"*
 - *"What percentage of requests with `inherent_urgency`=1 are marked `is_urgent`=1?"*
-- *"Show the average of `is_urgent` grouped by `request_type`"*
 
-Create a **bar chart** of `is_urgent` (as a measure, aggregated as average) grouped by `inherent_urgency`. The `inherent_urgency` flag was derived during Step 2 from a curated list of safety-related request types (water main breaks, gas leaks, etc.); the raw `request_type` column is also retained in the ABT, so you can drill into specific request categories that drive the signal.
+Create a **bar chart** of `is_urgent` (as a measure, aggregated as average) grouped by `inherent_urgency`. The raw `request_type` column was one-hot encoded into features like `inherent_urgency` during Step 2, so we analyze the engineered signal directly.
 
 > **What to look for:** Requests flagged as inherently urgent (safety hazards, water main breaks) should have a much higher average `is_urgent` value than non-inherent ones. If the gap is small, the flag is not pulling its weight as a predictor.
 
@@ -87,11 +84,10 @@ Create a **bar chart** of `is_urgent` (as a measure, aggregated as average) grou
 - *"Show the correlation between `dept_avg_staff_count` and `dept_avg_response_time`"*
 - *"Show the correlation between `dept_avg_budget_util` and `dept_avg_resolution_rate`"*
 - *"Show the distribution of `dept_avg_overtime` across requests"*
-- *"Show the average of `response_time_hours` grouped by `department`"*
 
-Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_time` (y). Create a second scatter plot of `dept_avg_overtime` (x) vs. `dept_avg_resolution_rate` (y). The ABT keeps both the raw `department` column and the engineered `dept_avg_*` aggregates — use the aggregates for capacity-vs-response correlation analysis and the raw column when you want a per-department breakdown.
+Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_time` (y). Create a second scatter plot of `dept_avg_overtime` (x) vs. `dept_avg_resolution_rate` (y). The raw `department` column was dropped in Step 2 — the `dept_avg_*` aggregates are what carry forward into the model, so we analyze those directly.
 
-> **What to look for:** Negative correlation between staff count and response time (more staff = faster response). Overtime and resolution rate do not show a strong relationship in this dataset — flag this as an open question rather than a confirmed bottleneck pattern.
+> **What to look for:** Negative correlation between staff count and response time (more staff = faster response). Departments with high overtime and low resolution rates are the bottlenecks.
 
 ### Hypothesis 3: District Equity
 
@@ -101,11 +97,10 @@ Create a **scatter plot** of `dept_avg_staff_count` (x) vs. `dept_avg_response_t
 - *"Show the correlation between `district_avg_request_count` and `district_avg_response_time`"*
 - *"Show the correlation between `district_avg_resolution_rate` and `response_time_hours`"*
 - *"Show the sum of `district_total_critical` and `district_total_high` across all requests"*
-- *"Show the average of `response_time_hours` grouped by `location_district`"*
 
-Create a **histogram** of `district_avg_response_time` to see the spread of district-level service speed. Create a **scatter plot** of `district_avg_request_count` (x) vs. `district_avg_response_time` (y) to check whether high-volume districts are slower. The ABT keeps both the raw `location_district` label and the engineered `district_*` aggregates — use the aggregates to look at the overall spread of service speed, and the raw column when you want to call out specific districts that fall behind.
+Create a **histogram** of `district_avg_response_time` to see the spread of district-level service speed. Create a **scatter plot** of `district_avg_request_count` (x) vs. `district_avg_response_time` (y) to check whether high-volume districts are slower. The raw `location_district` label was dropped in Step 2 — each request still carries the aggregate metrics for the district it came from, so district-level equity analysis is done through those aggregates.
 
-> **What to look for:** Some spread in `district_avg_response_time` across districts (a few hours from the slowest to the fastest district). The correlation between `district_avg_request_count` and `district_avg_response_time` is **negative** in this dataset — higher-volume districts tend to be faster, suggesting capacity follows demand rather than the inverse.
+> **What to look for:** Wide spread in `district_avg_response_time` indicates the 40% variance problem is real. A strong positive correlation with request volume suggests capacity, not bias, is the driver; a weak correlation suggests uneven service allocation.
 
 ### Hypothesis 4: Seasonal Patterns
 
@@ -130,18 +125,18 @@ Create a **line chart** with `submit_month` on the x-axis and count of requests 
 
 Create a **scatter plot** with `response_time_hours` on the x-axis and `citizen_satisfaction` on the y-axis. Create a **bar chart** of average `citizen_satisfaction` grouped by `is_urgent`.
 
-> **What to look for:** A moderate negative correlation between `response_time_hours` and `citizen_satisfaction` (faster = happier). Average satisfaction does not differ meaningfully between `is_urgent`=0 and `is_urgent`=1 in this dataset — response time is a stronger driver of satisfaction than urgency tier.
+> **What to look for:** A strong negative correlation between `response_time_hours` and `citizen_satisfaction` (faster = happier). `is_urgent`=1 requests resolved quickly should maintain satisfaction; slow urgent requests are the worst customer experience.
 
 ### Equity-Focused Deep Dive
 
 **Goal:** Specifically assess service equity across district aggregates and age groups.
 
 - *"Show the scatter plot of `district_avg_response_time` vs `response_time_hours` filtered where `is_urgent`=1"*
-- *"Show the correlation between `age_65p` and `citizen_satisfaction`"*
-- *"Show the correlation between `age_18_24` and `citizen_satisfaction`"*
+- *"Show the correlation between `age_65+` and `citizen_satisfaction`"*
+- *"Show the correlation between `age_18-24` and `citizen_satisfaction`"*
 - *"Show the correlation between `district_avg_request_count` and `district_avg_resolution_rate`"*
 
-Create a **scatter plot** of `district_avg_response_time` vs. the individual `response_time_hours`, filtered to `is_urgent`=1. Create a **bar chart** showing average `citizen_satisfaction` for each age-group dummy (`age_18_24` through `age_65p`, where the value is 1).
+Create a **scatter plot** of `district_avg_response_time` vs. the individual `response_time_hours`, filtered to `is_urgent`=1. Create a **bar chart** showing average `citizen_satisfaction` for each age-group dummy (`age_18-24` through `age_65+`, where the value is 1).
 
 > **What to look for:** If districts with high `district_avg_response_time` also have high individual `response_time_hours` for urgent requests, the slowness is systemic. If certain age-group dummies have markedly lower average satisfaction, that is a demographic equity signal to carry into the fairness assessment in Step 4.
 
@@ -177,7 +172,7 @@ Use **filters** and **interactions** between visualizations — clicking a bar i
 
 Before moving on to Step 4, summarize what you have learned. Expected answers (if your exploration went well) are shown alongside each question — if your numbers differ substantially, revisit the relevant hypothesis before continuing.
 
-1. **Which hypotheses were confirmed?** Expect **H1** (inherent urgency is by far the strongest predictor of `is_urgent`) and **H5** (moderate negative correlation between `response_time_hours` and `citizen_satisfaction`). **H2**, **H3**, and **H4** are weaker signals in this dataset — district-level response times only span a few hours from fastest to slowest, and seasonal urgency variation across `submit_month` is modest.
+1. **Which hypotheses were confirmed?** Expect **H1** (inherent urgency is the single strongest predictor), **H3** (wide spread in `district_avg_response_time`), and **H5** (strong negative correlation between `response_time_hours` and `citizen_satisfaction`). H2 and H4 tend to be weaker signals in this dataset.
 2. **Which features show the strongest separation** between `is_urgent`=1 and `is_urgent`=0? Expect `inherent_urgency`, `response_time_hours`, `district_total_critical`, and `district_total_high` to separate the two classes most clearly.
 3. **Which districts have the biggest equity gaps?** The highest values of `district_avg_response_time` combined with the lowest values of `district_avg_resolution_rate` mark the districts with the biggest service gap.
 4. **What is the class balance?** Roughly **36% `is_urgent`=1** and **64% `is_urgent`=0** — moderately imbalanced, but not so skewed that you must rebalance before modeling.

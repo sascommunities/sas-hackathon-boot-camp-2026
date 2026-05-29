@@ -15,7 +15,7 @@
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-data_dir       <- "/workspaces/myfolder/sas-hackathon-boot-camp-2026/use-case-public-sector/data"
+data_dir       <- "/workspaces/bootcamp/use-case-public-sector/data"
 output_path    <- file.path(data_dir, "public_sector_abt.csv")
 reference_date <- as.Date("2024-12-31")
 
@@ -219,14 +219,10 @@ for (col in dist_fill) {
   abt[[col]][is.na(abt[[col]])] <- 0
 }
 
-# One-hot encode age_group.
-# Map values to SAS-valid suffixes (no '-' or '+') so the resulting column
-# names (e.g. age_65p) match SAS Step 2 and are valid SAS variable names.
-age_suffix <- list("18-24"="18_24", "25-34"="25_34", "35-44"="35_44",
-                   "45-54"="45_54", "55-64"="55_64", "65+"="65p")
+# One-hot encode age_group
 for (ag in unique(na.omit(abt$age_group))) {
-  suffix <- if (!is.null(age_suffix[[ag]])) age_suffix[[ag]] else gsub("[^A-Za-z0-9]", "_", ag)
-  abt[[paste0("age_", suffix)]] <- as.integer(abt$age_group == ag)
+  safe_name <- paste0("age_", gsub("[^A-Za-z0-9]", "_", ag))
+  abt[[safe_name]] <- as.integer(abt$age_group == ag)
 }
 
 # One-hot encode contact_preference
@@ -235,14 +231,9 @@ for (cp in unique(na.omit(abt$contact_preference))) {
   abt[[safe_name]] <- as.integer(abt$contact_preference == cp)
 }
 
-# Drop columns not needed for modeling.
-# request_id, request_type, department, and location_district are retained
-# as raw columns so the deployed decision flow in Step 5 can pass them
-# through to the model node and reference them in rule sets (e.g.
-# department routing on request_type). Model Studio will treat request_id
-# as a Key and the engineered numeric features (district_*, dept_avg_*,
-# inherent_urgency, etc.) drive training.
-drop_cols <- c("citizen_id", "submission_date", "priority_level", "resolved",
+# Drop columns not needed for modeling
+drop_cols <- c("request_id", "citizen_id", "submission_date", "request_type",
+               "department", "priority_level", "location_district", "resolved",
                "age_group", "contact_preference")
 abt <- abt[, !(names(abt) %in% drop_cols)]
 

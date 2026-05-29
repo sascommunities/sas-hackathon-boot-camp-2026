@@ -12,9 +12,10 @@ The analytical base table should already be loaded into the **Public** CAS libra
 
 ## Accessing the Data in SAS Visual Analytics
 
-1. Open **SAS Visual Analytics** from the SAS Viya home page
+1. Open **SAS Visual Analytics** from the SAS Viya home page (or use the main menu in the top right corner and click on *Explore and Visualize*)
 2. Click **New Report**
 3. In the data panel click on the Add Data button and from the available tables please select **LIFE_SCIENCES_ABT**
+    ![image-20260528142056258](img/README/image-20260528142056258.png)
 4. Add it as your data source — you should see all the features from Step 2 listed in the data items pane on the left
 
 > **Tip:** If the table does not appear in the Public caslib, ask your SAS Mentor to help promote it. You can also load it directly by uploading the CSV through the **Manage Data** interface.
@@ -38,15 +39,13 @@ SAS Visual Analytics includes a **Copilot** — an AI assistant that helps you e
 4. You can refine the result by following up with additional prompts
 5. You can right click into the chat panel and get suggestions on prompts to help you.
 
+![image-20260528142442820](img/README/image-20260528142442820.png)
+
 ---
 
 ## Guided Exploration: Questions to Ask
 
 Work through the following questions to build your understanding of the readmission patterns. For each question, try creating the visualization manually **and/or** by asking the Copilot.
-
-Please do not feel obligated to answer all of these questions, rather pick and choose questions that interest you, help you advance your understanding of the data or sound challenging for your current level.
-
-You are also more than welcome to just explore the data on your own making use of SAS Visual Analytics and the SAS Viya Copilot.
 
 ### Understanding the Target Variable
 
@@ -75,11 +74,11 @@ Create **box plots** of `comorbidity_count` grouped by `readmitted_30days`. Also
 
 - *"Show me the distribution of length of stay by readmission status"*
 - *"What is the average length of stay for readmitted vs. non-readmitted patients?"*
-- *"At what length of stay does readmission risk start to climb sharply?"*
+- *"Is there a U-shaped relationship between length of stay and readmission?"*
 
 Create a **histogram** of `length_of_stay` colored by `readmitted_30days`. Also create a **bar chart** using the LOS category variables (`los_Short`, `los_Medium`, `los_Long`) to compare readmission rates across categories.
 
-> **What to look for:** In this dataset readmission risk increases monotonically with length of stay — long stays carry by far the highest risk, while short and medium stays remain low. The "long stay = sicker patient" signal dominates; there is no lower-end U-shape from premature-discharge cases.
+> **What to look for:** Very short stays (potential premature discharge) and very long stays (very sick patients) may both carry elevated risk, creating a U-shaped pattern.
 
 ### Hypothesis 3: Emergency Admissions Carry Higher Risk
 
@@ -108,7 +107,7 @@ Create **box plots** of `medication_count` and `high_risk_med_count` grouped by 
 
 **Goal:** Investigate whether vital signs and lab results at admission predict readmission.
 
-- *"Show me readmission rates by `lab_abnormal`"*
+- *"Show me readmission rates by lab results flag"*
 - *"Compare blood pressure distributions between readmitted and non-readmitted patients"*
 - *"What is the readmission rate by BMI category?"*
 - *"How does clinical risk score relate to readmission?"*

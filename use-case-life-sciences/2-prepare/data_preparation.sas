@@ -14,12 +14,12 @@
 /* -----------------------------------------------------------------------
    Configuration — adjust the path if your working directory differs
    ----------------------------------------------------------------------- */
-%let datadir = /workspaces/myfolder/sas-hackathon-boot-camp-2026/use-case-life-sciences/data;
+%let datadir = /workspaces/bootcamp/use-case-life-sciences/data;
 
 /* ========================================================================
    1. LOAD THE DATA
    ========================================================================
-   The CSV files may have Windows line endings (LF). We use TERMSTR=LF
+   The CSV files may have Windows line endings (CR+LF). We use TERMSTR=CRLF
    on the INFILE statement so SAS strips the carriage return properly.
    ======================================================================== */
 title "Step 2: Data Preparation (SAS)";
@@ -27,7 +27,7 @@ title "Step 2: Data Preparation (SAS)";
 /* --- patients.csv -------------------------------------------------------- */
 data work.patients;
     infile "&datadir./patients.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=lf;
+           lrecl=32767 firstobs=2 termstr=crlf;
     length patient_id $5 gender $1 insurance_type $15
            primary_diagnosis_category $20;
     informat admission_date yymmdd10.;
@@ -39,7 +39,7 @@ run;
 /* --- admissions.csv ------------------------------------------------------ */
 data work.admissions;
     infile "&datadir./admissions.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=lf;
+           lrecl=32767 firstobs=2 termstr=crlf;
     length admission_id $5 patient_id $5 admission_type $15
            discharge_disposition $30;
     informat admission_date yymmdd10. discharge_date yymmdd10.;
@@ -51,7 +51,7 @@ run;
 /* --- clinical_measures.csv ----------------------------------------------- */
 data work.clinical_measures;
     infile "&datadir./clinical_measures.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=lf;
+           lrecl=32767 firstobs=2 termstr=crlf;
     length patient_id $5 lab_results_flag $10;
     input patient_id $ bmi blood_pressure_systolic blood_pressure_diastolic
           glucose_level lab_results_flag $;
@@ -60,7 +60,7 @@ run;
 /* --- medications.csv ----------------------------------------------------- */
 data work.medications;
     infile "&datadir./medications.csv" delimiter=',' missover dsd
-           lrecl=32767 firstobs=2 termstr=lf;
+           lrecl=32767 firstobs=2 termstr=crlf;
     length medication_id $5 patient_id $5 medication_name $30
            medication_class $25 dosage $10 frequency $20;
     informat start_date yymmdd10. end_date yymmdd10.;
@@ -232,7 +232,7 @@ data work.admission_features;
     /* Discharge disposition encoding */
     discharged_home        = (discharge_disposition = 'Home');
     discharged_snf         = (discharge_disposition = 'SNF');
-    discharged_home_health = (discharge_disposition = 'Home with Services');
+    discharged_home_health = (discharge_disposition = 'Home Health');
 
     keep patient_id length_of_stay los_category emergency_flag
          discharged_home discharged_snf discharged_home_health
@@ -269,7 +269,6 @@ proc sql;
         a.discharged_home,
         a.discharged_snf,
         a.discharged_home_health,
-        a.discharge_disposition,
         c.bmi,
         c.blood_pressure_systolic,
         c.blood_pressure_diastolic,
@@ -335,12 +334,9 @@ data work.abt;
     gluc_Prediabetic = (glucose_category = 'Prediabetic');
     gluc_Diabetic   = (glucose_category = 'Diabetic');
 
-    /* insurance_type and discharge_disposition are retained as raw character
-       columns so the deployed decision flow in Step 5 can pass them through
-       to the model node and reference them in rule sets. The one-hot encoded
-       versions (ins_*, discharged_*) remain available for model training. */
-    drop gender primary_diagnosis_category
-         los_category bmi_category bp_classification glucose_category i;
+    drop gender insurance_type primary_diagnosis_category
+         los_category bmi_category bp_classification glucose_category
+         discharge_disposition i;
 run;
 
 /* ========================================================================

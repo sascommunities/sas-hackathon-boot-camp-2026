@@ -12,9 +12,10 @@ The analytical base table should already be loaded into the **Public** CAS libra
 
 ## Accessing the Data in SAS Visual Analytics
 
-1. Open **SAS Visual Analytics** from the SAS Viya home page
+1. Open **SAS Visual Analytics** from the SAS Viya home page (or use the main menu in the top right corner and click on *Explore and Visualize*)
 2. Click **New Report**
 3. In the data panel click on the Add Data button and from the available tables please select **RETAIL_ABT**
+    ![image-20260528142158439](img/README/image-20260528142158439.png)
 4. Add it as your data source — you should see all the features from Step 2 listed in the data items pane on the left
 
 > **Tip:** If the table does not appear in the Public caslib, ask your SAS Mentor to help promote it. You can also load it directly by uploading the CSV through the **Manage Data** interface.
@@ -38,16 +39,13 @@ SAS Visual Analytics includes a **Copilot** — an AI assistant that helps you e
 4. You can refine the result by following up with additional prompts
 5. You can right click into the chat panel and get suggestions on prompts to help you.
 
+![image-20260528142501932](img/README/image-20260528142501932.png)
+
 ---
 
 ## Guided Exploration: Questions to Ask
 
 Work through the following questions to build your understanding of the churn patterns. For each question, try creating the visualization manually **and/or** by asking the Copilot.
-
-
-Please do not feel obligated to answer all of these questions, rather pick and choose questions that interest you, help you advance your understanding of the data or sound challenging for your current level.
-
-You are also more than welcome to just explore the data on your own making use of SAS Visual Analytics and the SAS Viya Copilot.
 
 ### Understanding the Target Variable
 
@@ -76,11 +74,11 @@ Create **box plots** of `avg_session_duration`, `total_sessions`, and `avg_pages
 
 - *"Show me the distribution of days since last purchase by churn status"*
 - *"Compare total spend between churned and active customers"*
-- *"How does `total_transactions` compare between churned and active customers?"*
+- *"What is the average purchase frequency for each group?"*
 
-Create a **histogram** of `days_since_last_purchase` colored by `churned`. Also create a **box plot** of `total_spend` by `churned`.
+Create a **histogram** of `days_since_last_purchase` colored by `churned`. Also create a **scatter plot** of `total_spend` vs. `purchase_frequency` with `churned` as the color.
 
-> **What to look for:** Churned customers should have a much higher `days_since_last_purchase` and much lower `total_spend` — these are typically the strongest predictors. `purchase_frequency` is normalized by tenure (transactions per month the customer was active), so it is not a clean churn signal in this dataset; rely on the recency and total-spend columns instead.
+> **What to look for:** Churned customers likely have higher `days_since_last_purchase` and lower `purchase_frequency`. This is often the strongest predictor.
 
 ### Hypothesis 3: Support Issues Indicate Risk
 

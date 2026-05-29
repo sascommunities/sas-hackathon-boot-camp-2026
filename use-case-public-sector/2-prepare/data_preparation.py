@@ -18,7 +18,7 @@ import os
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-DATA_DIR = '/workspaces/myfolder/sas-hackathon-boot-camp-2026/use-case-public-sector/data'
+DATA_DIR = '/workspaces/bootcamp/use-case-public-sector/data'
 OUTPUT_PATH = os.path.join(DATA_DIR, 'public_sector_abt.csv')
 
 # Reference date for recency calculations (end of observation period)
@@ -213,24 +213,13 @@ dist_fill_cols = [c for c in abt.columns if c.startswith('district_')]
 for col in dist_fill_cols:
     abt[col] = abt[col].fillna(0)
 
-# One-hot encode categoricals.
-# Map age_group values to SAS-valid suffixes (no '-' or '+') so the resulting
-# dummy column names (e.g. age_65p) match what SAS Step 2 produces and are
-# valid SAS variable names when the ABT is loaded into CAS.
-_age_suffix = {'18-24':'18_24', '25-34':'25_34', '35-44':'35_44',
-               '45-54':'45_54', '55-64':'55_64', '65+':'65p'}
-abt['age_group'] = abt['age_group'].map(_age_suffix).fillna(abt['age_group'])
+# One-hot encode categoricals
 abt = pd.get_dummies(abt, columns=['age_group'], prefix='age')
 abt = pd.get_dummies(abt, columns=['contact_preference'], prefix='contact')
 
-# Drop columns not needed for modeling.
-# request_id, request_type, department, and location_district are retained
-# as raw columns so the deployed decision flow in Step 5 can pass them
-# through to the model node and reference them in rule sets (e.g.
-# department routing on request_type). Model Studio will treat request_id
-# as a Key and the engineered numeric features (district_*, dept_avg_*,
-# inherent_urgency, etc.) drive training.
-drop_cols = ['citizen_id', 'submission_date', 'priority_level', 'resolved']
+# Drop columns not needed for modeling
+drop_cols = ['request_id', 'citizen_id', 'submission_date', 'request_type',
+             'department', 'priority_level', 'location_district', 'resolved']
 abt.drop(columns=[c for c in drop_cols if c in abt.columns], inplace=True)
 
 print(f"  Final ABT shape: {abt.shape[0]:,} rows x {abt.shape[1]} columns")

@@ -18,7 +18,7 @@ import os
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-DATA_DIR = '/workspaces/myfolder/sas-hackathon-boot-camp-2026/use-case-retail/data'
+DATA_DIR = '/workspaces/bootcamp/use-case-retail/data'
 OUTPUT_PATH = os.path.join(DATA_DIR, 'retail_abt.csv')
 
 # Reference date for recency calculations (end of observation period)
@@ -209,15 +209,8 @@ for col in fill_zero_cols:
     else:
         abt[col] = abt[col].fillna(0)
 
-# Preserve raw subscription_tier so the Step 5 decision flow can pass it
-# through to the model node and reference it in rule sets (the tier_*
-# one-hots created below stay available for model training).
-_keep_raw = abt[['subscription_tier']].copy()
-
 # One-hot encode categoricals
 abt = pd.get_dummies(abt, columns=['subscription_tier', 'gender'], prefix=['tier', 'gender'])
-
-abt = abt.join(_keep_raw)
 
 # Drop columns not needed for modeling
 abt.drop(columns=['signup_date', 'location'], inplace=True)
