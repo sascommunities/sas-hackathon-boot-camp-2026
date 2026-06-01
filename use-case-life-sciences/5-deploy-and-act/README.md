@@ -202,11 +202,10 @@ This is a very simplistic approach to prompt engineering and also doesn't provid
    - discharge_disposition: Home
    - discharged_home: 1
    - emergency_flag: 1
-   - insurance_type: Medicare
    - polypharmacy_flag: 1
-
+   
    ![image-20260529171953925](img/README/image-20260529171953925.png)
-
+   
 5. Review the output
 
 6. Feel free to further test with different scenarios to validate the logic:
