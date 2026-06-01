@@ -183,6 +183,7 @@ data work.clinical_features;
     set work.clinical_measures;
 
     /* BMI categories */
+    length bp_classification $15 bmi_category $11 glucose_category $11;
     if bmi < 18.5 then bmi_category = 'Underweight';
     else if bmi < 25 then bmi_category = 'Normal';
     else if bmi < 30 then bmi_category = 'Overweight';
@@ -222,6 +223,7 @@ data work.admission_features;
     set work.admissions;
 
     /* LOS categories */
+    length los_category $6 ;
     if length_of_stay <= 2 then los_category = 'Short';
     else if length_of_stay <= 5 then los_category = 'Medium';
     else los_category = 'Long';
