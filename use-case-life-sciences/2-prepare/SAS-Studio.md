@@ -51,7 +51,7 @@ For numeric columns, compute descriptive statistics (mean, median, standard devi
 
 ### 4. Engineer Features and Build the Analytical Base Table
 
-The four datasets each capture a different dimension of loan risk. To build a predictive model we need to aggregate these into a single loan-level table where each row is one loan and each column is a feature. The key transformations are:
+The four datasets each capture a different dimension of the patient encounter. To build a predictive model we need to aggregate these into a single patient-level table where each row is one patient and each column is a feature. The key transformations are:
 
 - **Medication features:** total medication count per patient, high-risk medication count, polypharmacy flag (5+ medications), unique medication classes
 - **Clinical features:** BMI categories (underweight/normal/overweight/obese), blood pressure classification (normal/elevated/hypertension stage 1/hypertension stage 2), glucose level categories, clinical risk score

@@ -336,7 +336,7 @@ data work.abt;
 
     drop gender insurance_type primary_diagnosis_category
          los_category bmi_category bp_classification glucose_category
-         discharge_disposition i;
+         i;
 run;
 
 /* ========================================================================

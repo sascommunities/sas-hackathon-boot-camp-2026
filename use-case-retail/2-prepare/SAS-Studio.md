@@ -51,7 +51,7 @@ For numeric columns, compute descriptive statistics (mean, median, standard devi
 
 ### 4. Engineer Features and Build the Analytical Base Table
 
-The four datasets each capture a different dimension of loan risk. To build a predictive model we need to aggregate these into a single loan-level table where each row is one loan and each column is a feature. The key transformations are:
+The four datasets each capture a different dimension of customer behavior. To build a predictive model we need to aggregate these into a single customer-level table where each row is one customer and each column is a feature. The key transformations are:
 
 - **Transaction features:** total spend, average order value, purchase frequency, days since last purchase, product category diversity
 - **Session features:** total sessions, average session duration, pages viewed, cart abandonment rate, mobile usage rate
